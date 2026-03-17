@@ -1,4 +1,4 @@
-import { getPostBySlug } from '@/lib/content';
+import { getPostBySlug, extractHeadings } from '@/lib/content';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import Link from 'next/link';
 import { NatureExample } from '@/components/mdx/NatureExample';
@@ -43,9 +43,11 @@ export default function Home() {
     );
   }
 
+  const headings = extractHeadings(post.content);
+
   return (
     <article className="markdown-content">
-      <MdxPageWrapper slug={slug} title={post.frontmatter.title as string || 'Ecology Curriculum'}>
+      <MdxPageWrapper slug={slug} title={post.frontmatter.title as string || 'Ecology Curriculum'} headings={headings}>
         <div className="prose prose-lg max-w-none">
           <MDXRemote
             source={post.content}

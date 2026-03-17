@@ -3,6 +3,8 @@
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { useEffect, useState } from 'react';
+import { useResourcePack } from '@/contexts/ResourcePackContext';
+import { usePageNavigation } from '@/contexts/PageNavigationContext';
 
 interface NavItem {
   label: string;
@@ -110,6 +112,34 @@ function pathMatchesEntry(pathname: string, entry: NavEntry): boolean {
   return entry.children.some((child) => pathMatchesEntry(pathname, child));
 }
 
+function PageSectionLinks({ depth }: { depth: number }) {
+  const { headings } = usePageNavigation();
+  const { setSidebarOpen } = useResourcePack();
+  if (headings.length === 0) return null;
+
+  return (
+    <ul className="sidebar-children">
+      {headings.map((h) => (
+        <li key={h.id}>
+          <button
+            onClick={() => {
+              document.getElementById(h.id)?.scrollIntoView({ behavior: 'smooth' });
+              if (typeof window !== 'undefined' && window.matchMedia('(max-width: 1100px)').matches) {
+                setSidebarOpen(false);
+              }
+            }}
+            className="sidebar-section-heading"
+            style={{ paddingLeft: `${0.75 + (depth + 1) * 0.75}rem`, paddingRight: '0.75rem' }}
+            data-level={h.level}
+          >
+            {h.text}
+          </button>
+        </li>
+      ))}
+    </ul>
+  );
+}
+
 function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number }) {
   const pathname = usePathname();
   const isActive = !isSection(entry) && pathname === entry.href;
@@ -133,6 +163,7 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
         >
           {entry.label}
         </Link>
+        {isActive && <PageSectionLinks depth={depth} />}
       </li>
     );
   }
@@ -185,15 +216,23 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
 }
 
 export function Sidebar() {
-  const [mobileOpen, setMobileOpen] = useState(false);
+  const pathname = usePathname();
+  const { isSidebarOpen, setSidebarOpen } = useResourcePack();
+
+  // Close sidebar on navigation (mobile only)
+  useEffect(() => {
+    if (isSidebarOpen && typeof window !== 'undefined' && window.matchMedia('(max-width: 1100px)').matches) {
+      setSidebarOpen(false);
+    }
+  }, [pathname]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <>
       {/* Side-edge toggle tab (visible when sidebar is auto-hidden) */}
       <button
         className="sidebar-toggle-tab"
-        onClick={() => setMobileOpen(!mobileOpen)}
-        aria-label={mobileOpen ? 'Close navigation' : 'Open navigation'}
+        onClick={() => setSidebarOpen(true)}
+        aria-label="Open navigation"
       >
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="w-5 h-5">
           <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
@@ -201,17 +240,26 @@ export function Sidebar() {
       </button>
 
       {/* Backdrop for mobile */}
-      {mobileOpen && (
+      {isSidebarOpen && (
         <div
           className="sidebar-backdrop"
-          onClick={() => setMobileOpen(false)}
+          onClick={() => setSidebarOpen(false)}
         />
       )}
 
       {/* Sidebar nav */}
-      <aside className={`sidebar ${mobileOpen ? 'sidebar-open' : ''}`}>
+      <aside className={`sidebar ${isSidebarOpen ? 'sidebar-open' : ''}`}>
         <div className="sidebar-header">
-          <span className="font-semibold text-green-800">Navigation</span>
+          <span className="sidebar-header-title">Navigation</span>
+          <button
+            onClick={() => setSidebarOpen(false)}
+            className="panel-close-btn"
+            aria-label="Close navigation"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
         </div>
         <nav>
           <ul className="sidebar-nav">

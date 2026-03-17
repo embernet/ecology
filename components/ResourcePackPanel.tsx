@@ -7,7 +7,7 @@ import { exportAsHtml, exportAsHtmlWithUrls } from '@/lib/export-html';
 
 
 export function ResourcePackPanel() {
-  const { items, isPanelOpen, togglePanel, itemCount, clearAll, mounted, showPrintView, togglePrintView, packName, setPackName } = useResourcePack();
+  const { items, isPanelOpen, togglePanel, setResourcePanelOpen, itemCount, clearAll, mounted, showPrintView, togglePrintView, packName, setPackName } = useResourcePack();
   const [exporting, setExporting] = useState(false);
   const [linkCopied, setLinkCopied] = useState(false);
   const [editingName, setEditingName] = useState(false);
@@ -92,13 +92,22 @@ export function ResourcePackPanel() {
         <div className="resource-pack-header">
           <div className="flex items-center gap-2">
             <span className="text-lg">📦</span>
-            <h2 className="text-sm font-bold text-slate-700 uppercase tracking-wide">Resource Pack</h2>
+            <h2 className="resource-pack-header-title">Resource Pack</h2>
             {itemCount > 0 && (
-              <span className="bg-green-600 text-white text-xs font-bold rounded-full w-5 h-5 flex items-center justify-center">
+              <span className="resource-pack-badge">
                 {itemCount}
               </span>
             )}
           </div>
+          <button
+            onClick={() => setResourcePanelOpen(false)}
+            className="panel-close-btn"
+            aria-label="Close resource pack"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
         </div>
 
         {packName && (
@@ -269,7 +278,7 @@ export function ResourcePackPanel() {
 
       {/* Mobile backdrop */}
       {isPanelOpen && (
-        <div className="resource-pack-backdrop" onClick={togglePanel} />
+        <div className="resource-pack-backdrop" onClick={() => setResourcePanelOpen(false)} />
       )}
     </>
   );

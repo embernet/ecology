@@ -7,6 +7,10 @@ import { makeResourceLookupKey } from '@/lib/resource-pack-types';
 const STORAGE_KEY = 'ecology-resource-pack';
 const STORAGE_VERSION = 1;
 
+function isSmallScreen() {
+  return typeof window !== 'undefined' && window.matchMedia('(max-width: 1100px)').matches;
+}
+
 interface StoredData {
   version: number;
   items: ResourcePackItem[];
@@ -32,6 +36,9 @@ interface ResourcePackContextValue {
   loadItems: (newItems: ResourcePackItem[], name?: string) => void;
   isPanelOpen: boolean;
   togglePanel: () => void;
+  setResourcePanelOpen: (open: boolean) => void;
+  isSidebarOpen: boolean;
+  setSidebarOpen: (open: boolean) => void;
   showPrintView: boolean;
   togglePrintView: () => void;
   itemCount: number;
@@ -83,7 +90,8 @@ function generateDefaultPackName(): string {
 export function ResourcePackProvider({ children }: { children: React.ReactNode }) {
   const [items, setItems] = useState<ResourcePackItem[]>([]);
   const [packName, setPackName] = useState('');
-  const [isPanelOpen, setIsPanelOpen] = useState(false);
+  const [isPanelOpen, setIsPanelOpenRaw] = useState(false);
+  const [isSidebarOpen, setIsSidebarOpenRaw] = useState(false);
   const [showPrintView, setShowPrintView] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -101,6 +109,20 @@ export function ResourcePackProvider({ children }: { children: React.ReactNode }
       saveToStorage(items, packName);
     }
   }, [items, packName, mounted]);
+
+  const setSidebarOpen = useCallback((open: boolean) => {
+    setIsSidebarOpenRaw(open);
+    if (open && isSmallScreen()) {
+      setIsPanelOpenRaw(false);
+    }
+  }, []);
+
+  const setResourcePanelOpen = useCallback((open: boolean) => {
+    setIsPanelOpenRaw(open);
+    if (open && isSmallScreen()) {
+      setIsSidebarOpenRaw(false);
+    }
+  }, []);
 
   const addItem = useCallback((item: {
     type: ResourceType;
@@ -129,7 +151,10 @@ export function ResourcePackProvider({ children }: { children: React.ReactNode }
       return [...prev, newItem];
     });
     // Auto-open panel when first item is added
-    setIsPanelOpen(true);
+    setIsPanelOpenRaw(true);
+    if (isSmallScreen()) {
+      setIsSidebarOpenRaw(false);
+    }
   }, []);
 
   const loadItems = useCallback((newItems: ResourcePackItem[], name?: string) => {
@@ -149,7 +174,10 @@ export function ResourcePackProvider({ children }: { children: React.ReactNode }
       return merged;
     });
     if (newItems.length > 0) {
-      setIsPanelOpen(true);
+      setIsPanelOpenRaw(true);
+      if (isSmallScreen()) {
+        setIsSidebarOpenRaw(false);
+      }
       if (name) {
         setPackName(name);
       }
@@ -190,7 +218,13 @@ export function ResourcePackProvider({ children }: { children: React.ReactNode }
   }, []);
 
   const togglePanel = useCallback(() => {
-    setIsPanelOpen(prev => !prev);
+    setIsPanelOpenRaw(prev => {
+      const next = !prev;
+      if (next && isSmallScreen()) {
+        setIsSidebarOpenRaw(false);
+      }
+      return next;
+    });
   }, []);
 
   const togglePrintView = useCallback(() => {
@@ -210,6 +244,9 @@ export function ResourcePackProvider({ children }: { children: React.ReactNode }
       loadItems,
       isPanelOpen,
       togglePanel,
+      setResourcePanelOpen,
+      isSidebarOpen,
+      setSidebarOpen,
       showPrintView,
       togglePrintView,
       itemCount: items.length,

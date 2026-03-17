@@ -1,4 +1,4 @@
-import { getPostBySlug, getPostSlugs } from '@/lib/content';
+import { getPostBySlug, getPostSlugs, extractHeadings, slugifyHeading } from '@/lib/content';
 import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import Link from 'next/link';
@@ -28,6 +28,16 @@ const components = {
         }
         return <a href={href} target="_blank" rel="noopener noreferrer">{children}</a>;
     },
+    h2: ({ children }: any) => {
+        const text = typeof children === 'string' ? children : '';
+        const id = slugifyHeading(text);
+        return <h2 id={id}>{children}</h2>;
+    },
+    h3: ({ children }: any) => {
+        const text = typeof children === 'string' ? children : '';
+        const id = slugifyHeading(text);
+        return <h3 id={id}>{children}</h3>;
+    },
 };
 
 interface PageProps {
@@ -49,10 +59,12 @@ export default async function Page({ params }: PageProps) {
         notFound();
     }
 
+    const headings = extractHeadings(post.content);
+
     return (
         <article className="markdown-content">
             <h1 className="mb-6">{post.frontmatter.title}</h1>
-            <MdxPageWrapper slug={slug} title={post.frontmatter.title as string}>
+            <MdxPageWrapper slug={slug} title={post.frontmatter.title as string} headings={headings}>
                 <div className="prose prose-lg max-w-none">
                     <MDXRemote
                         source={post.content}

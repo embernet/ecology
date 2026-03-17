@@ -2,14 +2,25 @@
 
 import { useEffect } from 'react';
 import { PageContext } from '@/contexts/PageContext';
+import { usePageNavigation } from '@/contexts/PageNavigationContext';
+import type { PageHeading } from '@/lib/content';
 
 interface MdxPageWrapperProps {
   slug: string;
   title: string;
+  headings: PageHeading[];
   children: React.ReactNode;
 }
 
-export function MdxPageWrapper({ slug, title, children }: MdxPageWrapperProps) {
+export function MdxPageWrapper({ slug, title, headings, children }: MdxPageWrapperProps) {
+  const { setHeadings } = usePageNavigation();
+
+  // Publish headings to root-level context so Sidebar can read them
+  useEffect(() => {
+    setHeadings(headings);
+    return () => setHeadings([]);
+  }, [slug, headings, setHeadings]);
+
   // When navigating from the media library, the URL contains a hash like #img-abc123.
   // The browser handles scrolling to the element with that id automatically.
   // We just add a brief highlight effect so the user can spot the image.
@@ -43,7 +54,7 @@ export function MdxPageWrapper({ slug, title, children }: MdxPageWrapperProps) {
   }, []);
 
   return (
-    <PageContext.Provider value={{ slug, title }}>
+    <PageContext.Provider value={{ slug, title, headings }}>
       {children}
     </PageContext.Provider>
   );

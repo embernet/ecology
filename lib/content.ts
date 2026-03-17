@@ -27,6 +27,33 @@ export function getPostBySlug(slug: string) {
     };
 }
 
+export function slugifyHeading(text: string): string {
+    return text
+        .toLowerCase()
+        .replace(/[^a-z0-9\s-]/g, '')
+        .replace(/\s+/g, '-')
+        .replace(/-+/g, '-')
+        .trim();
+}
+
+export interface PageHeading {
+    id: string;
+    text: string;
+    level: number;
+}
+
+export function extractHeadings(content: string): PageHeading[] {
+    const headings: PageHeading[] = [];
+    for (const line of content.split('\n')) {
+        const match = line.match(/^(#{2,3})\s+(.+)$/);
+        if (match) {
+            const text = match[2].trim();
+            headings.push({ id: slugifyHeading(text), text, level: match[1].length });
+        }
+    }
+    return headings;
+}
+
 export function getAllPosts() {
     const slugs = getPostSlugs();
     const posts = slugs
