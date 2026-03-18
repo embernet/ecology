@@ -82,6 +82,11 @@ function removeJSXComponents(body) {
           continue;
         }
       }
+      // Quoted string props on their own attribute line: alt="...", caption="..."
+      for (const attr of ['alt', 'caption']) {
+        const m = t.match(new RegExp('\\b' + attr + '="([^"]*)"'));
+        if (m && m[1].trim()) out.push(m[1]);
+      }
       // End of opening tag?
       if (/\/>$/.test(t) || t === '/>') {
         inOpenTag = false;
@@ -96,6 +101,11 @@ function removeJSXComponents(body) {
       // Extract searchable props from single-line components (self-closing etc.)
       for (const attr of ['title', 'facts', 'text', 'description']) {
         const m = t.match(new RegExp('\\b' + attr + '=\\{`([^`]*)`\\}'));
+        if (m && m[1].trim()) out.push(m[1]);
+      }
+      // Extract quoted string props: alt="...", caption="..."
+      for (const attr of ['alt', 'caption']) {
+        const m = t.match(new RegExp('\\b' + attr + '="([^"]*)"'));
         if (m && m[1].trim()) out.push(m[1]);
       }
       if (/\/>$/.test(t)) {
