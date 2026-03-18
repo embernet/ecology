@@ -9,6 +9,7 @@ import { PageNavigationProvider } from '@/contexts/PageNavigationContext';
 import { ResourcePackPanel } from '@/components/ResourcePackPanel';
 import { ResourcePackUrlLoader } from '@/components/ResourcePackUrlLoader';
 import { MainContent } from '@/components/MainContent';
+import { SearchBar } from '@/components/SearchBar';
 
 export const metadata: Metadata = {
   title: 'Ecology Curriculum',
@@ -29,11 +30,16 @@ export default function RootLayout({
             <ResourcePackUrlLoader />
           </Suspense>
           <header className="bg-primary text-white shadow-md sticky top-0 z-[60]">
-            <div className="container mx-auto px-4 flex items-center header-bar">
-              <HeaderNav />
-              <Link href="/" className="header-title-link">
-                <h1 className="text-2xl font-bold bg-clip-text">🌱 Ecology Curriculum</h1>
-              </Link>
+            <div className="container mx-auto px-4">
+              <div className="flex items-center header-bar">
+                <HeaderNav />
+                <Link href="/" className="header-title-link">
+                  <h1 className="text-2xl font-bold bg-clip-text">🌱 Ecology Curriculum</h1>
+                </Link>
+              </div>
+              <div className="search-bar-row">
+                <SearchBar />
+              </div>
             </div>
           </header>
           <div className="layout-with-sidebar">

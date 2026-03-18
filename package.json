@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/build-resource-registry.mjs",
+    "prebuild": "node scripts/build-resource-registry.mjs && node scripts/build-search-index.mjs",
     "build": "next build",
     "build:registry": "node scripts/build-resource-registry.mjs",
     "start": "next start",
