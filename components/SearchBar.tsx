@@ -18,6 +18,7 @@ interface SectionEntry {
   sectionId: string;
   level: number;
   preview: string;
+  body?: string;
 }
 
 type SearchEntry = PageEntry | SectionEntry;
@@ -45,11 +46,14 @@ function scoreEntry(entry: SearchEntry, q: string): number {
   const pageTitle = entry.type === 'section' ? entry.pageTitle.toLowerCase() : '';
   const preview = entry.preview.toLowerCase();
 
+  const body = entry.type === 'section' && entry.body ? entry.body.toLowerCase() : '';
+
   if (title === q) return 100;
   if (title.startsWith(q)) return 60;
   if (title.includes(q)) return 40;
   if (pageTitle.includes(q)) return 15;
   if (preview.includes(q)) return 5;
+  if (body.includes(q)) return 5;
   return 0;
 }
 

@@ -19,6 +19,12 @@ This page contains a list of external websites from UK organisations that provid
 - **[Earthwatch Green Earth Schools](https://earthwatch.org.uk/program/green-earth-schools/)**
 : Earthwatch's Green Earth Schools programme assists primary teachers with designing and installing nature features such as gardens and ponds in school grounds, alongside training and creative activities like LEGO redesign challenges to promote environmental stewardship and outdoor ecology learning.
 
+- **[Explorify](https://www.stem.org.uk/explorify)**
+: A free digital teaching platform developed by the Primary Science Teaching Trust and STEM Learning, used in over 70% of UK primary schools. It offers over 650 curriculum-linked activities including videos and images designed to spark scientific curiosity, promote classroom discussion, and develop thinking skills in primary science lessons.
+
+- **[Moss Safari](https://mosssafari.com/)**
+: Created by Dr. Andy Chandler-Grevatt, Moss Safari guides primary school children through the hidden microscopic world of moss, introducing them to tiny creatures such as tardigrades, nematodes, and rotifers. Teachers can access free resources for running their own Moss Safari sessions using a microscope, with curriculum links across science and working scientifically. School visits and live online sessions are also available.
+
 - **[The Natural History Museum, London](https://www.nhm.ac.uk/schools.html)**
 : A leading science research centre and museum. This 'Schools' page is the gateway to their classroom resources, virtual workshops, and information for planning school visits.
 

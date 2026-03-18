@@ -205,7 +205,8 @@ function buildIndex() {
     // Section entries
     const sections = extractSections(cleanBody);
     for (const section of sections) {
-      const preview = section.bodyLines.join(' ').slice(0, 200);
+      const fullText = section.bodyLines.join(' ');
+      const preview = fullText.slice(0, 200);
       entries.push({
         type: 'section',
         slug,
@@ -214,6 +215,7 @@ function buildIndex() {
         sectionId: section.id,
         level: section.level,
         preview,
+        body: fullText,
       });
     }
   }

@@ -4,7 +4,7 @@ A Next.js web application serving free ecology and nature curriculum resources f
 
 ## Why I Created This
 
-Knowledge of the natural world – its creatures, the ecosystems and habitats they live in, and the ecology connecting all living things – is important foundational knowledge for everyone on Earth. I work with local schools in my spare time and saw there was a gap in terms of resources easily available to teachers for connecting examples from nature to topics in the educational curriculum. I applied the innovation methods I have learnt in industry to map examples from nature and how biomimicry led to some of our greatest inventions. The youth of today will be the innovators of tomorrow. Nature may well be their best innovation toolbox. Let's share it.
+Knowledge of the natural world – its creatures, the ecosystems and habitats they live in, and the ecology connecting all living things – is important foundational knowledge for everyone on Earth. I work with local schools in my spare time and saw there was a gap in terms of resources easily available to teachers for connecting examples from nature to topics in the educational curriculum. I applied the innovation methods I have learnt in industry to map examples from nature to the curriculum and how biomimicry led to some of our greatest inventions. The youth of today will be the innovators of tomorrow. Nature may well be their best innovation toolbox. Let's share it.
 
 ## What This Project Does
 
