@@ -284,8 +284,7 @@
   display: none;
   position: fixed;
   left: 0;
-  top: calc(50% + 1.75rem);
-  transform: translateY(-50%);
+  top: 8rem;
   z-index: 35;
   padding: 0.75rem 0.4rem;
   background-color: white;
@@ -534,8 +533,7 @@
   display: none;
   position: fixed;
   right: 0;
-  top: calc(50% + 1.75rem);
-  transform: translateY(-50%);
+  top: 8rem;
   z-index: 35;
   padding: 0.75rem 0.4rem;
   background-color: white;
