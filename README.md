@@ -1,14 +1,22 @@
 # Ecology Curriculum
 
-A Next.js web application that serves ecology and nature curriculum resources for UK primary school teachers (Key Stage 1 & 2). The content was converted from a MediaWiki instance into a modern, statically generated website.
+A Next.js web application serving free ecology and nature curriculum resources for UK primary school teachers, parents, and anyone wanting to teach or learn about ecology and nature.
+
+## Why I Created This
+
+Knowledge of the natural world – its creatures, the ecosystems and habitats they live in, and the ecology connecting all living things – is important foundational knowledge for everyone on Earth. I work with local schools in my spare time and saw there was a gap in terms of resources easily available to teachers for connecting examples from nature to topics in the educational curriculum. I applied the innovation methods I have learnt in industry to map examples from nature and how biomimicry led to some of our greatest inventions. The youth of today will be the innovators of tomorrow. Nature may well be their best innovation toolbox. Let's share it.
 
 ## What This Project Does
 
 - Presents ecology-focused curriculum content aligned to the UK National Curriculum for Science and Geography
-- Covers Years 1-6, including topics like plants, animals, habitats, seasonal changes, evolution, and Earth & space
+- Covers Years 1–6, including topics like plants, animals, habitats, seasonal changes, evolution, and Earth & space
 - Provides teaching activities, reflections, curriculum requirements, and nature examples with fun facts
 - Loads images from Wikimedia Commons with a lightbox viewer
 - Renders Markdown/MDX content with custom React components
+
+## Licence
+
+This project is licensed under the [MIT Licence](LICENSE). You are free to use it directly or copy it and use it as the basis for your own ecology site.
 
 ## Project Structure
 
@@ -26,7 +34,7 @@ ecology-curriculum/
 │   ├── Micro.tsx             # Note and Guidance callout blocks
 │   ├── Gallery.tsx           # Image gallery grid
 │   └── WikiImage.tsx         # Wikimedia Commons image with lightbox modal
-├── content/                  # 31 Markdown files with frontmatter (converted from wiki)
+├── content/                  # 31 Markdown files with frontmatter
 │   ├── ecology-curriculum-home.md
 │   ├── science.md
 │   ├── geography.md
@@ -57,26 +65,12 @@ ecology-curriculum/
 │   └── ...
 ├── lib/
 │   └── content.ts            # File-based content loading (gray-matter + fs)
-├── scripts/
-│   └── convert_wiki.js       # MediaWiki XML to Markdown converter
 └── package.json
 ```
 
 ## How It Was Built
 
-### 1. Wiki Export & Conversion
-
-The original content lived in a MediaWiki instance. A conversion script (`scripts/convert_wiki.js`) was written to:
-
-- Parse the MediaWiki XML export using `xml2js`
-- Convert wikitext markup to Markdown (headings, bold/italic, lists, links)
-- Transform `[[File:...]]` and `[[Image:...]]` references into `<WikiImage>` components
-- Convert `<gallery>` blocks into `<Gallery>` components
-- Map custom wiki templates (`{{NatureExample}}`, `{{Requirement}}`, `{{Activity}}`, `{{Reflection}}`, `{{Note}}`, `{{Guidance}}`) into JSX/MDX component syntax
-- Convert `[[internal links]]` to Next.js `/wiki/slug` routes
-- Output each page as a Markdown file with YAML frontmatter (`title`, `slug`)
-
-### 2. Next.js App
+### Next.js App
 
 - **Framework**: Next.js 16 with the App Router
 - **Styling**: Tailwind CSS v4 with the Typography plugin for prose styling
@@ -84,7 +78,7 @@ The original content lived in a MediaWiki instance. A conversion script (`script
 - **Routing**: Dynamic `[slug]` route under `/wiki/` serves all content pages; `generateStaticParams` enables static generation
 - **Content loading**: `lib/content.ts` reads `.md` files from the `content/` directory, parses frontmatter with `gray-matter`
 
-### 3. Custom MDX Components
+### Custom MDX Components
 
 | Component | Purpose |
 |-----------|---------|
@@ -97,7 +91,7 @@ The original content lived in a MediaWiki instance. A conversion script (`script
 | `Gallery` | Responsive image grid using WikiImage |
 | `WikiImage` | Loads images from Wikimedia Commons with error fallback and click-to-zoom lightbox |
 
-### 4. Design
+### Design
 
 - Green/nature color theme (`--color-primary: #2E8B57`)
 - Responsive layout with Tailwind utility classes
@@ -115,16 +109,6 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) to view the site.
-
-### Re-converting wiki content
-
-If you have the MediaWiki XML export file, place it at the expected path and run:
-
-```bash
-node scripts/convert_wiki.js
-```
-
-This regenerates all Markdown files in `content/`.
 
 ## Resource Pack & Resource IDs
 
@@ -159,7 +143,7 @@ When adding a new resource component to a content file, you **must** include an 
 <Requirement id={`q31`} text={`Requirement text`} />
 ```
 
-To find the next available number for a type prefix, run the build script — it will show the count per type, or search the content files for the highest existing number.
+To find the next available number for a type prefix, search the content files for the highest existing number of that prefix.
 
 ### Build Validation
 
@@ -183,4 +167,3 @@ Running `npm run build:registry` (or automatically via `prebuild`) generates `pu
 - **next-mdx-remote** for MDX rendering
 - **gray-matter** for frontmatter parsing
 - **react-markdown** for inline markdown in components
-- **xml2js** for MediaWiki XML parsing (build tool)
