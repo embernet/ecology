@@ -25,6 +25,7 @@ function isSection(entry: NavEntry): entry is NavSection {
 
 const navigation: NavEntry[] = [
   { label: 'Home', href: '/' },
+  { label: 'About This Site', href: '/wiki/about' },
   {
     label: 'Science',
     href: '/wiki/science',
