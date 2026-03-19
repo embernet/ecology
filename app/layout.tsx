@@ -2,11 +2,11 @@ import type { Metadata } from 'next';
 import { Suspense } from 'react';
 import './globals.css';
 import Link from 'next/link';
-import { Sidebar } from '@/components/Sidebar';
+import { Sidebar, SidebarToggleButton } from '@/components/Sidebar';
 import { HeaderNav } from '@/components/HeaderNav';
 import { ResourcePackProvider } from '@/contexts/ResourcePackContext';
 import { PageNavigationProvider } from '@/contexts/PageNavigationContext';
-import { ResourcePackPanel } from '@/components/ResourcePackPanel';
+import { ResourcePackPanel, ResourcePackToggleButton } from '@/components/ResourcePackPanel';
 import { ResourcePackUrlLoader } from '@/components/ResourcePackUrlLoader';
 import { MainContent } from '@/components/MainContent';
 import { SearchBar } from '@/components/SearchBar';
@@ -38,7 +38,9 @@ export default function RootLayout({
                 </Link>
               </div>
               <div className="search-bar-row">
+                <SidebarToggleButton />
                 <SearchBar />
+                <ResourcePackToggleButton />
               </div>
             </div>
           </header>

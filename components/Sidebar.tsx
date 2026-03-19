@@ -215,6 +215,32 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
   );
 }
 
+export function SidebarToggleButton() {
+  const { isSidebarOpen, setSidebarOpen } = useResourcePack();
+  return (
+    <button
+      className={`sidebar-header-toggle${isSidebarOpen ? ' header-toggle-active' : ''}`}
+      onClick={() => setSidebarOpen(!isSidebarOpen)}
+      aria-label={isSidebarOpen ? 'Close navigation' : 'Open navigation'}
+      aria-expanded={isSidebarOpen}
+    >
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
+        {/* Vertical trunk */}
+        <line x1="4" y1="3" x2="4" y2="21" />
+        {/* Top branch + node */}
+        <line x1="4" y1="7" x2="15" y2="7" />
+        <circle cx="17" cy="7" r="2" fill="currentColor" stroke="none" />
+        {/* Middle branch + node */}
+        <line x1="4" y1="13" x2="13" y2="13" />
+        <circle cx="15" cy="13" r="2" fill="currentColor" stroke="none" />
+        {/* Bottom branch + node */}
+        <line x1="4" y1="19" x2="10" y2="19" />
+        <circle cx="12" cy="19" r="2" fill="currentColor" stroke="none" />
+      </svg>
+    </button>
+  );
+}
+
 export function Sidebar() {
   const pathname = usePathname();
   const { isSidebarOpen, setSidebarOpen } = useResourcePack();
@@ -228,17 +254,6 @@ export function Sidebar() {
 
   return (
     <>
-      {/* Side-edge toggle tab (visible when sidebar is auto-hidden) */}
-      <button
-        className="sidebar-toggle-tab"
-        onClick={() => setSidebarOpen(true)}
-        aria-label="Open navigation"
-      >
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} className="w-5 h-5">
-          <path strokeLinecap="round" strokeLinejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-        </svg>
-      </button>
-
       {/* Backdrop for mobile */}
       {isSidebarOpen && (
         <div

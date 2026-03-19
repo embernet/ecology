@@ -262,24 +262,31 @@ export function ResourcePackPanel() {
         )}
       </aside>
 
-      {/* Side-edge toggle tab (visible when panel is auto-hidden) */}
-      <button
-        onClick={togglePanel}
-        className="resource-pack-toggle-tab"
-        aria-label="Toggle resource pack"
-      >
-        <span className="text-base">📦</span>
-        {itemCount > 0 && (
-          <span className="absolute -top-1 -right-1 bg-green-600 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center" style={{ fontSize: '0.6rem' }}>
-            {itemCount}
-          </span>
-        )}
-      </button>
-
       {/* Mobile backdrop */}
       {isPanelOpen && (
         <div className="resource-pack-backdrop" onClick={() => setResourcePanelOpen(false)} />
       )}
     </>
+  );
+}
+
+export function ResourcePackToggleButton() {
+  const { isPanelOpen, togglePanel, itemCount, mounted } = useResourcePack();
+  return (
+    <button
+      onClick={togglePanel}
+      className={`resource-pack-header-toggle${isPanelOpen ? ' header-toggle-active' : ''}`}
+      aria-label="Toggle resource pack"
+      aria-expanded={isPanelOpen}
+    >
+      <span style={{ position: 'relative', display: 'inline-flex' }}>
+        <span className="text-base">📦</span>
+        {mounted && itemCount > 0 && (
+          <span className="absolute -top-1 -right-1 bg-green-600 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center" style={{ fontSize: '0.6rem' }}>
+            {itemCount}
+          </span>
+        )}
+      </span>
+    </button>
   );
 }
