@@ -10,6 +10,7 @@ export function ResourcePackPanel() {
   const { items, isPanelOpen, togglePanel, setResourcePanelOpen, itemCount, clearAll, mounted, showPrintView, togglePrintView, packName, setPackName } = useResourcePack();
   const [exporting, setExporting] = useState(false);
   const [linkCopied, setLinkCopied] = useState(false);
+  const [showBookmarkModal, setShowBookmarkModal] = useState(false);
   const [editingName, setEditingName] = useState(false);
   const [nameInput, setNameInput] = useState('');
   const nameInputRef = useRef<HTMLInputElement>(null);
@@ -66,22 +67,8 @@ export function ResourcePackPanel() {
   }, [buildPackUrl]);
 
   const handleBookmark = useCallback(() => {
-    const url = buildPackUrl();
-    const title = packName || `Resource Pack (${items.length} items)`;
-    // Use the browser bookmark dialog prompt
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const win = window as any;
-    if (win.sidebar && (win.sidebar as { addPanel?: unknown }).addPanel) {
-      // Firefox legacy
-      (win.sidebar as { addPanel: (t: string, u: string, r: string) => void }).addPanel(title, url, '');
-    } else {
-      // Prompt user to bookmark manually (modern browsers block programmatic bookmarking)
-      window.prompt(
-        'Press Ctrl+D (Cmd+D on Mac) to bookmark this URL, or copy it:',
-        url
-      );
-    }
-  }, [buildPackUrl, items.length, packName]);
+    setShowBookmarkModal(true);
+  }, []);
 
   if (!mounted) return null;
 
@@ -266,7 +253,187 @@ export function ResourcePackPanel() {
       {isPanelOpen && (
         <div className="resource-pack-backdrop" onClick={() => setResourcePanelOpen(false)} />
       )}
+
+      {/* Bookmark modal */}
+      {showBookmarkModal && (
+        <BookmarkModal
+          baseUrl={buildPackUrl()}
+          title={packName || `Resource Pack (${items.length} items)`}
+          onClose={() => setShowBookmarkModal(false)}
+          onRename={setPackName}
+        />
+      )}
     </>
+  );
+}
+
+function BookmarkModal({ baseUrl, title, onClose, onRename }: { baseUrl: string; title: string; onClose: () => void; onRename: (name: string) => void }) {
+  const [name, setName] = useState(title);
+  const urlInputRef = useRef<HTMLInputElement>(null);
+
+  // Rebuild URL with current name
+  const url = (() => {
+    try {
+      const u = new URL(baseUrl);
+      if (name) u.searchParams.set('packName', name);
+      return u.toString();
+    } catch {
+      return baseUrl;
+    }
+  })();
+
+  const handleClose = () => {
+    if (name !== title) onRename(name);
+    onClose();
+  };
+
+  return (
+    <div
+      style={{
+        position: 'fixed',
+        inset: 0,
+        zIndex: 10000,
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        backgroundColor: 'rgba(0,0,0,0.4)',
+      }}
+      onClick={handleClose}
+    >
+      <div
+        style={{
+          backgroundColor: 'white',
+          borderRadius: '12px',
+          padding: '24px',
+          maxWidth: '420px',
+          width: '90%',
+          boxShadow: '0 20px 60px rgba(0,0,0,0.3)',
+        }}
+        onClick={e => e.stopPropagation()}
+      >
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: '16px' }}>
+          <h3 style={{ margin: 0, fontSize: '1rem', fontWeight: 600, color: '#1e293b' }}>Bookmark Resource Pack</h3>
+          <button
+            onClick={handleClose}
+            style={{ background: 'none', border: 'none', cursor: 'pointer', padding: '4px', color: '#94a3b8' }}
+            aria-label="Close"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" style={{ width: '20px', height: '20px' }}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <label style={{ display: 'block', margin: '0 0 4px', fontSize: '0.75rem', color: '#94a3b8' }}>
+          Bookmark name:
+        </label>
+        <input
+          type="text"
+          value={name}
+          onChange={e => setName(e.target.value)}
+          style={{
+            width: '100%',
+            fontSize: '0.85rem',
+            padding: '8px 10px',
+            border: '1px solid #e2e8f0',
+            borderRadius: '6px',
+            color: '#1e293b',
+            fontWeight: 600,
+            marginBottom: '12px',
+            outline: 'none',
+            boxSizing: 'border-box',
+          }}
+          maxLength={80}
+          autoFocus
+        />
+
+        <p style={{ margin: '0 0 12px', fontSize: '0.8rem', color: '#64748b' }}>
+          Drag this link to your bookmarks bar to save this resource pack:
+        </p>
+
+        <div style={{
+          display: 'flex',
+          justifyContent: 'center',
+          padding: '16px',
+          backgroundColor: '#f0fdf4',
+          borderRadius: '8px',
+          border: '2px dashed #86efac',
+          marginBottom: '16px',
+        }}>
+          <a
+            href={url}
+            style={{
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: '8px',
+              padding: '10px 20px',
+              backgroundColor: '#16a34a',
+              color: 'white',
+              borderRadius: '8px',
+              textDecoration: 'none',
+              fontSize: '0.9rem',
+              fontWeight: 600,
+              cursor: 'grab',
+              boxShadow: '0 2px 8px rgba(22,163,74,0.3)',
+              userSelect: 'none',
+            }}
+            onClick={e => e.preventDefault()}
+            title={name}
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" style={{ width: '16px', height: '16px', flexShrink: 0 }}>
+              <path strokeLinecap="round" strokeLinejoin="round" d="M17.593 3.322c1.1.128 1.907 1.077 1.907 2.185V21L12 17.25 4.5 21V5.507c0-1.108.806-2.057 1.907-2.185a48.507 48.507 0 0111.186 0z" />
+            </svg>
+            {name || 'Resource Pack'}
+          </a>
+        </div>
+
+        <p style={{ margin: '0 0 8px', fontSize: '0.75rem', color: '#94a3b8' }}>
+          You can also copy and paste the URL below to share the pack:
+        </p>
+        <div style={{ display: 'flex', gap: '6px' }}>
+          <input
+            ref={urlInputRef}
+            type="text"
+            readOnly
+            value={url}
+            style={{
+              flex: 1,
+              fontSize: '0.7rem',
+              padding: '6px 8px',
+              border: '1px solid #e2e8f0',
+              borderRadius: '6px',
+              color: '#64748b',
+              backgroundColor: '#f8fafc',
+              minWidth: 0,
+            }}
+            onClick={() => urlInputRef.current?.select()}
+          />
+          <button
+            onClick={async () => {
+              try {
+                await navigator.clipboard.writeText(url);
+              } catch {
+                urlInputRef.current?.select();
+                document.execCommand('copy');
+              }
+            }}
+            style={{
+              padding: '6px 12px',
+              fontSize: '0.7rem',
+              fontWeight: 500,
+              backgroundColor: '#f1f5f9',
+              border: '1px solid #e2e8f0',
+              borderRadius: '6px',
+              cursor: 'pointer',
+              color: '#475569',
+              whiteSpace: 'nowrap',
+            }}
+          >
+            Copy
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }
 
