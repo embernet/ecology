@@ -39,6 +39,10 @@ interface ResourcePackContextValue {
   setResourcePanelOpen: (open: boolean) => void;
   isSidebarOpen: boolean;
   setSidebarOpen: (open: boolean) => void;
+  isSidebarDesktopOpen: boolean;
+  setSidebarDesktopOpen: (open: boolean) => void;
+  isPanelDesktopOpen: boolean;
+  setPanelDesktopOpen: (open: boolean) => void;
   showPrintView: boolean;
   togglePrintView: () => void;
   itemCount: number;
@@ -92,6 +96,8 @@ export function ResourcePackProvider({ children }: { children: React.ReactNode }
   const [packName, setPackName] = useState('');
   const [isPanelOpen, setIsPanelOpenRaw] = useState(false);
   const [isSidebarOpen, setIsSidebarOpenRaw] = useState(false);
+  const [isSidebarDesktopOpen, setIsSidebarDesktopOpenRaw] = useState(true);
+  const [isPanelDesktopOpen, setIsPanelDesktopOpenRaw] = useState(true);
   const [showPrintView, setShowPrintView] = useState(false);
   const [mounted, setMounted] = useState(false);
 
@@ -115,6 +121,14 @@ export function ResourcePackProvider({ children }: { children: React.ReactNode }
     if (open && isSmallScreen()) {
       setIsPanelOpenRaw(false);
     }
+  }, []);
+
+  const setSidebarDesktopOpen = useCallback((open: boolean) => {
+    setIsSidebarDesktopOpenRaw(open);
+  }, []);
+
+  const setPanelDesktopOpen = useCallback((open: boolean) => {
+    setIsPanelDesktopOpenRaw(open);
   }, []);
 
   const setResourcePanelOpen = useCallback((open: boolean) => {
@@ -247,6 +261,10 @@ export function ResourcePackProvider({ children }: { children: React.ReactNode }
       setResourcePanelOpen,
       isSidebarOpen,
       setSidebarOpen,
+      isSidebarDesktopOpen,
+      setSidebarDesktopOpen,
+      isPanelDesktopOpen,
+      setPanelDesktopOpen,
       showPrintView,
       togglePrintView,
       itemCount: items.length,

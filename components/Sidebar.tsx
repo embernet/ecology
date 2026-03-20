@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { useResourcePack } from '@/contexts/ResourcePackContext';
 import { usePageNavigation } from '@/contexts/PageNavigationContext';
 
@@ -242,13 +242,30 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
 }
 
 export function SidebarToggleButton() {
-  const { isSidebarOpen, setSidebarOpen } = useResourcePack();
+  const { isSidebarOpen, setSidebarOpen, isSidebarDesktopOpen, setSidebarDesktopOpen, mounted } = useResourcePack();
+
+  const handleClick = useCallback(() => {
+    if (typeof window !== 'undefined' && window.matchMedia('(max-width: 1100px)').matches) {
+      setSidebarOpen(!isSidebarOpen);
+    } else {
+      setSidebarDesktopOpen(!isSidebarDesktopOpen);
+    }
+  }, [isSidebarOpen, isSidebarDesktopOpen, setSidebarOpen, setSidebarDesktopOpen]);
+
+  // On desktop: active = sidebar is visible. On mobile: active = overlay is shown.
+  // Guard with `mounted` to avoid SSR mismatch.
+  const isActive = mounted && (
+    typeof window !== 'undefined' && !window.matchMedia('(max-width: 1100px)').matches
+      ? isSidebarDesktopOpen
+      : isSidebarOpen
+  );
+
   return (
     <button
-      className={`sidebar-header-toggle${isSidebarOpen ? ' header-toggle-active' : ''}`}
-      onClick={() => setSidebarOpen(!isSidebarOpen)}
-      aria-label={isSidebarOpen ? 'Close navigation' : 'Open navigation'}
-      aria-expanded={isSidebarOpen}
+      className={`sidebar-header-toggle${isActive ? ' header-toggle-active' : ''}`}
+      onClick={handleClick}
+      aria-label="Toggle navigation"
+      aria-expanded={isActive}
     >
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" width="20" height="20">
         {/* Vertical trunk */}
@@ -269,7 +286,7 @@ export function SidebarToggleButton() {
 
 export function Sidebar() {
   const pathname = usePathname();
-  const { isSidebarOpen, setSidebarOpen } = useResourcePack();
+  const { isSidebarOpen, setSidebarOpen, isSidebarDesktopOpen, mounted } = useResourcePack();
 
   // Close sidebar on navigation (mobile only)
   useEffect(() => {
@@ -289,7 +306,7 @@ export function Sidebar() {
       )}
 
       {/* Sidebar nav */}
-      <aside className={`sidebar ${isSidebarOpen ? 'sidebar-open' : ''}`}>
+      <aside className={`sidebar ${isSidebarOpen ? 'sidebar-open' : ''} ${mounted && !isSidebarDesktopOpen ? 'sidebar-desktop-hidden' : ''}`}>
         <div className="sidebar-header">
           <span className="sidebar-header-title">Navigation</span>
           <button
