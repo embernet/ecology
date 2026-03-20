@@ -124,7 +124,12 @@ function PageSectionLinks({ depth }: { depth: number }) {
         <li key={h.id}>
           <button
             onClick={() => {
-              document.getElementById(h.id)?.scrollIntoView({ behavior: 'smooth' });
+              const el = document.getElementById(h.id);
+              if (el) {
+                const headerHeight = (document.querySelector('header') as HTMLElement | null)?.offsetHeight ?? 0;
+                const y = el.getBoundingClientRect().top + window.scrollY - headerHeight - 12;
+                window.scrollTo({ top: y, behavior: 'smooth' });
+              }
               if (typeof window !== 'undefined' && window.matchMedia('(max-width: 1100px)').matches) {
                 setSidebarOpen(false);
               }
@@ -157,13 +162,26 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
   if (!isSection(entry)) {
     return (
       <li>
-        <Link
-          href={entry.href}
-          className={`sidebar-link ${isActive ? 'sidebar-link-active' : ''}`}
-          style={{ paddingLeft: `${0.75 + depth * 0.75}rem` }}
-        >
-          {entry.label}
-        </Link>
+        <div className="sidebar-section-header" style={{ paddingLeft: `${0.75 + depth * 0.75}rem` }}>
+          <Link
+            href={entry.href}
+            className={`sidebar-toggle${isActive ? ' font-semibold text-green-800' : ''}`}
+            style={{ textDecoration: 'none' }}
+          >
+            <svg
+              className="sidebar-chevron"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fillRule="evenodd"
+                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
+                clipRule="evenodd"
+              />
+            </svg>
+            <span>{entry.label}</span>
+          </Link>
+        </div>
         {isActive && <PageSectionLinks depth={depth} />}
       </li>
     );

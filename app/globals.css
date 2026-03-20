@@ -104,10 +104,15 @@
 /* ── Layout with sidebar ── */
 .layout-with-sidebar {
   display: flex;
+  flex-wrap: wrap;
   max-width: 90rem;
   margin: 0 auto;
   padding: 0 1rem;
-  gap: 1.5rem;
+  column-gap: 1.5rem;
+}
+
+.layout-footer {
+  flex: 0 0 100%;
 }
 
 .main-content {
