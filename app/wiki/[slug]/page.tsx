@@ -6,6 +6,7 @@ import { NatureExample } from '@/components/mdx/NatureExample';
 import { Requirement } from '@/components/mdx/Requirement';
 import { Activity, Reflection } from '@/components/mdx/Activities';
 import { Note, Guidance } from '@/components/mdx/Micro';
+import { Handout } from '@/components/mdx/Handout';
 import { Gallery } from '@/components/mdx/Gallery';
 import { WikiImage } from '@/components/mdx/WikiImage';
 import { MdxPageWrapper } from '@/components/MdxPageWrapper';
@@ -17,6 +18,7 @@ const components = {
     Reflection,
     Note,
     Guidance,
+    Handout,
     Gallery,
     WikiImage,
     Ref: ({ children }: any) => (

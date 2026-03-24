@@ -117,6 +117,16 @@ export const exportCSS = `
   .guidance strong { display: block; margin-bottom: 0.25rem; }
   .guidance p { margin: 0.25rem 0; }
 
+  /* Handout */
+  .handout {
+    border: 1px solid #fde68a;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    background: white;
+    box-shadow: 0 1px 3px rgb(0 0 0 / 0.08);
+  }
+  .handout img { border-radius: 0; }
+
   .source-tag {
     font-size: 0.75rem;
     color: #94a3b8;

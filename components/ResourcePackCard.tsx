@@ -11,6 +11,7 @@ const typeIcons: Record<string, string> = {
   Requirement: '📋',
   Note: '📝',
   Guidance: '📖',
+  Handout: '🖼️',
 };
 
 const typeColors: Record<string, string> = {
@@ -20,6 +21,7 @@ const typeColors: Record<string, string> = {
   Requirement: 'bg-blue-100 text-blue-700',
   Note: 'bg-yellow-100 text-yellow-700',
   Guidance: 'bg-gray-100 text-gray-700',
+  Handout: 'bg-amber-100 text-amber-700',
 };
 
 interface ResourcePackCardProps {

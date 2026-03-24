@@ -123,6 +123,22 @@ export function ResourceRenderer({ item }: ResourceRendererProps) {
         </div>
       );
 
+    case 'Handout':
+      return (
+        <div className="my-6 rounded-xl overflow-hidden shadow-lg border border-amber-100 bg-white">
+          {data.imageSrc ? (
+            <img
+              src={data.imageSrc}
+              alt={item.title}
+              className="w-full h-auto"
+            />
+          ) : data.childrenHtml ? (
+            <div dangerouslySetInnerHTML={{ __html: data.childrenHtml }} />
+          ) : null}
+          {sourceTag}
+        </div>
+      );
+
     default:
       return null;
   }

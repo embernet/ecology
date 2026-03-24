@@ -4,7 +4,8 @@ export type ResourceType =
   | 'Reflection'
   | 'Requirement'
   | 'Note'
-  | 'Guidance';
+  | 'Guidance'
+  | 'Handout';
 
 export interface WikiImageData {
   filename: string;
@@ -18,6 +19,7 @@ export interface ResourcePackItemData {
   facts?: string;
   text?: string;
   description?: string;
+  imageSrc?: string;
   childrenHtml: string;
   wikiImages: WikiImageData[];
 }

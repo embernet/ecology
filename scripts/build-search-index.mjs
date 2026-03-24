@@ -69,13 +69,13 @@ function removeJSXComponents(body) {
     // ── Inside a multi-line opening tag (collecting attributes) ──
     if (inOpenTag) {
       // Single-line template literal prop: title={`value`}
-      const slMatch = t.match(/^(?:title|facts|text|description)=\{`([^`]*)`\}/);
+      const slMatch = t.match(/^(?:title|facts|text|description|altText)=\{`([^`]*)`\}/);
       if (slMatch) {
         if (slMatch[1].trim()) out.push(slMatch[1]);
         // fall through to check end-of-tag below
       } else {
         // Multi-line template literal prop start: facts={`first line...
-        const mlMatch = t.match(/^(?:title|facts|text|description)=\{`(.*)/);
+        const mlMatch = t.match(/^(?:title|facts|text|description|altText)=\{`(.*)/);
         if (mlMatch) {
           if (mlMatch[1].trim()) out.push(mlMatch[1]);
           inTemplateProp = true;
@@ -99,7 +99,7 @@ function removeJSXComponents(body) {
     // ── Opening component tag ──
     if (/^<[A-Z]/.test(t)) {
       // Extract searchable props from single-line components (self-closing etc.)
-      for (const attr of ['title', 'facts', 'text', 'description']) {
+      for (const attr of ['title', 'facts', 'text', 'description', 'altText']) {
         const m = t.match(new RegExp('\\b' + attr + '=\\{`([^`]*)`\\}'));
         if (m && m[1].trim()) out.push(m[1]);
       }

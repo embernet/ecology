@@ -58,6 +58,23 @@ async function fetchImageAsBase64(filename: string): Promise<string | null> {
   }
 }
 
+async function fetchLocalImageAsBase64(path: string): Promise<string | null> {
+  try {
+    const url = `${window.location.origin}${path}`;
+    const response = await fetch(url);
+    if (!response.ok) return null;
+    const blob = await response.blob();
+    return new Promise((resolve) => {
+      const reader = new FileReader();
+      reader.onloadend = () => resolve(reader.result as string);
+      reader.onerror = () => resolve(null);
+      reader.readAsDataURL(blob);
+    });
+  } catch {
+    return null;
+  }
+}
+
 function replaceImagesWithBase64(html: string, imageMap: Map<string, string>): string {
   // Replace wikimedia URLs with base64
   let result = html;
@@ -144,6 +161,20 @@ function renderItemToHtml(item: ResourcePackItem, imageMap: Map<string, string>)
           ${sourceTag}
         </div>`;
 
+    case 'Handout': {
+      const imgSrc = data.imageSrc || '';
+      const childrenHtml = data.childrenHtml ? processHtml(data.childrenHtml) : '';
+      const imgHtml = imgSrc
+        ? `<img src="${imgSrc}" alt="${item.title}" style="width:100%;height:auto;" />`
+        : childrenHtml;
+
+      return `
+        <div class="resource-item handout">
+          ${imgHtml}
+          ${sourceTag}
+        </div>`;
+    }
+
     default:
       return '';
   }
@@ -165,7 +196,7 @@ export async function exportAsHtml(items: ResourcePackItem[], packName?: string)
     }
   }
 
-  // Fetch all images as base64 (parallel with concurrency limit)
+  // Fetch all wiki images as base64 (parallel with concurrency limit)
   const imageMap = new Map<string, string>();
   const imageArray = Array.from(allImages);
 
@@ -183,13 +214,40 @@ export async function exportAsHtml(items: ResourcePackItem[], packName?: string)
     }
   }
 
+  // Collect and convert local images (e.g. handout PNGs) to base64
+  const localImageMap = new Map<string, string>();
+  const localPaths = new Set<string>();
+  for (const item of items) {
+    if (item.data.imageSrc && item.data.imageSrc.startsWith('/')) {
+      localPaths.add(item.data.imageSrc);
+    }
+  }
+  const localArray = Array.from(localPaths);
+  for (let i = 0; i < localArray.length; i += 4) {
+    const batch = localArray.slice(i, i + 4);
+    const results = await Promise.all(batch.map(async (path) => {
+      const base64 = await fetchLocalImageAsBase64(path);
+      return { path, base64 };
+    }));
+    for (const { path, base64 } of results) {
+      if (base64) {
+        localImageMap.set(path, base64);
+      }
+    }
+  }
+
   // Count unique source pages
   const sourcePages = new Set(items.map(i => i.sourcePage));
   const date = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
   const title = packName || 'Ecology Resource Pack';
 
   // Build the HTML document
-  const itemsHtml = items.map(item => renderItemToHtml(item, imageMap)).join('\n');
+  let itemsHtml = items.map(item => renderItemToHtml(item, imageMap)).join('\n');
+
+  // Replace local image paths with base64 data
+  for (const [path, base64] of localImageMap) {
+    itemsHtml = itemsHtml.replaceAll(path, base64);
+  }
 
   const html = `<!DOCTYPE html>
 <html lang="en">
@@ -235,8 +293,16 @@ export function exportAsHtmlWithUrls(items: ResourcePackItem[], packName?: strin
   const date = new Date().toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' });
   const title = packName || 'Ecology Resource Pack';
 
-  // Build the HTML document
-  const itemsHtml = items.map(item => renderItemToHtml(item, imageMap)).join('\n');
+  // Build the HTML document — convert local paths to absolute URLs
+  const origin = typeof window !== 'undefined' ? window.location.origin : '';
+  let itemsHtml = items.map(item => renderItemToHtml(item, imageMap)).join('\n');
+
+  // Replace local image paths with absolute URLs so they work in standalone HTML
+  for (const item of items) {
+    if (item.data.imageSrc && item.data.imageSrc.startsWith('/')) {
+      itemsHtml = itemsHtml.replaceAll(item.data.imageSrc, `${origin}${item.data.imageSrc}`);
+    }
+  }
 
   const html = `<!DOCTYPE html>
 <html lang="en">
