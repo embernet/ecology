@@ -2,9 +2,11 @@
 
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { useCallback, useEffect, useState } from 'react';
+import { createContext, useCallback, useContext, useEffect, useState } from 'react';
 import { useResourcePack } from '@/contexts/ResourcePackContext';
 import { usePageNavigation } from '@/contexts/PageNavigationContext';
+
+const CollapseContext = createContext(0);
 
 interface NavItem {
   label: string;
@@ -173,6 +175,7 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
   const isActive = !isSection(entry) && pathname === entry.href;
   const containsActive = isSection(entry) && pathMatchesEntry(pathname, entry);
   const [expanded, setExpanded] = useState(containsActive);
+  const collapseVersion = useContext(CollapseContext);
 
   // Auto-expand when navigating to a child page
   useEffect(() => {
@@ -180,6 +183,13 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
       setExpanded(true);
     }
   }, [containsActive]);
+
+  // Collapse when "close all" is triggered
+  useEffect(() => {
+    if (collapseVersion > 0) {
+      setExpanded(false);
+    }
+  }, [collapseVersion]);
 
   if (!isSection(entry)) {
     return (
@@ -302,6 +312,8 @@ export function SidebarToggleButton() {
 export function Sidebar() {
   const pathname = usePathname();
   const { isSidebarOpen, setSidebarOpen, isSidebarDesktopOpen, mounted } = useResourcePack();
+  const [collapseVersion, setCollapseVersion] = useState(0);
+  const collapseAll = useCallback(() => setCollapseVersion((v) => v + 1), []);
 
   // Close sidebar on navigation (mobile only)
   useEffect(() => {
@@ -324,26 +336,41 @@ export function Sidebar() {
       <aside className={`sidebar ${isSidebarOpen ? 'sidebar-open' : ''} ${mounted && !isSidebarDesktopOpen ? 'sidebar-desktop-hidden' : ''}`}>
         <div className="sidebar-header">
           <span className="sidebar-header-title">Navigation</span>
-          <button
-            onClick={() => setSidebarOpen(false)}
-            className="panel-close-btn"
-            aria-label="Close navigation"
-          >
-            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
-              <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-          </button>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>
+            <button
+              onClick={collapseAll}
+              className="sidebar-collapse-btn"
+              title="Collapse all sections"
+              aria-label="Collapse all sections"
+            >
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" width="14" height="14">
+                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                <line x1="8" y1="12" x2="16" y2="12" />
+              </svg>
+            </button>
+            <button
+              onClick={() => setSidebarOpen(false)}
+              className="panel-close-btn"
+              aria-label="Close navigation"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-5 h-5">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+              </svg>
+            </button>
+          </div>
         </div>
-        <nav>
-          <ul className="sidebar-nav">
-            {navigation.map((entry) => (
-              <SidebarSection
-                key={isSection(entry) ? entry.label : entry.href}
-                entry={entry}
-              />
-            ))}
-          </ul>
-        </nav>
+        <CollapseContext.Provider value={collapseVersion}>
+          <nav className="sidebar-nav-wrapper">
+            <ul className="sidebar-nav">
+              {navigation.map((entry) => (
+                <SidebarSection
+                  key={isSection(entry) ? entry.label : entry.href}
+                  entry={entry}
+                />
+              ))}
+            </ul>
+          </nav>
+        </CollapseContext.Provider>
       </aside>
     </>
   );
