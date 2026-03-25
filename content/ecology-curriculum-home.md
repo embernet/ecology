@@ -24,6 +24,6 @@ Teaching resources are structured to match the UK National Curriculum Key Stages
 
 ## Teaching Support
 
-- [About This Site](/wiki/about) — how to use these resources and what each page contains
+- [How to Guide](/wiki/how-to-guide) — how to use these resources and what each page contains
 - [Teaching Principles](/wiki/teaching-principles-used-to-create-the-learning-resources)
 - [Other useful ecology websites](/wiki/other-websites-with-useful-ecology-resources)
