@@ -9,6 +9,6 @@ Share this site with anyone you think would find it interesting, useful, or fun!
 ## About the Content
 This website provides nature and ecology examples for each of the learning requirements listed in The national curriculum in England: Primary curriculum, Key Stages 1 & 2.
 
-Ref: https://www.gov.uk/government/publications/national-curriculum-in-england-primary-curriculum
+Ref: [National Curriculum in England: Primary Curriculum](https://www.gov.uk/government/publications/national-curriculum-in-england-primary-curriculum)
 
 These [Teaching Principles used to create the learning resources](/wiki/teaching-principles-used-to-create-the-learning-resources) were used to create content that is engaging and memorable.

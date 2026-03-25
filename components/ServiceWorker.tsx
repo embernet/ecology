@@ -6,6 +6,10 @@ export function ServiceWorker() {
   useEffect(() => {
     if (!('serviceWorker' in navigator)) return;
 
+    // Skip service worker entirely in development — caching causes stale assets
+    // because Next.js dev mode can reuse filenames with changed content
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') return;
+
     // updateViaCache: 'none' means the browser always fetches sw.js fresh from
     // the network (ignoring HTTP cache), so it picks up your updates immediately
     navigator.serviceWorker

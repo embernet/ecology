@@ -913,9 +913,10 @@
   z-index: 200;
   background: rgba(0, 0, 0, 0.45);
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
   padding: 1rem;
+  overflow-y: auto;
   animation: modal-fade-in 0.15s ease-out;
 }
 
@@ -927,11 +928,14 @@
 .about-modal {
   position: relative;
   background: white;
+  color: #1e293b;
   border-radius: 0.75rem;
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
   padding: 2rem;
   max-width: 420px;
   width: 100%;
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
   animation: modal-slide-in 0.15s ease-out;
 }
 
@@ -961,11 +965,88 @@
   color: #334155;
 }
 
-.about-modal-title {
-  font-size: 1.35rem;
+.about-modal-app-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.25rem;
+  padding-bottom: 1.1rem;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.about-modal-app-icon {
+  font-size: 2rem;
+  line-height: 1;
+  flex-shrink: 0;
+}
+
+.about-modal-app-title-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.about-modal-app-name {
+  font-size: 1.05rem;
   font-weight: 700;
   color: #1e293b;
-  margin: 0 0 1.25rem;
+  line-height: 1.2;
+}
+
+.about-modal-app-url {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.about-modal-creator-box {
+  padding: 0.9rem 1rem;
+  background: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 0.5rem;
+  margin-bottom: 0.85rem;
+}
+
+.about-modal-title {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0 0 0.9rem;
+}
+
+.about-modal-licence-btn {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: inherit;
+  font-weight: 600;
+  color: #2563eb;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.about-modal-licence-btn:hover {
+  color: #1d4ed8;
+}
+
+.about-modal-licence-text {
+  margin-top: 0.75rem;
+  padding: 0.75rem;
+  background: #f1f5f9;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  color: #475569;
+  line-height: 1.5;
+}
+
+.about-modal-licence-text p {
+  margin: 0 0 0.5rem;
+}
+
+.about-modal-licence-text p:last-child {
+  margin-bottom: 0;
 }
 
 .about-modal-links {

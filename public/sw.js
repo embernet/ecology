@@ -68,9 +68,9 @@ self.addEventListener('fetch', event => {
     return;
   }
 
-  // Everything else (HTML pages, JSON data) → stale-while-revalidate
-  // Serves cached version instantly, updates cache in background for next visit
-  event.respondWith(staleWhileRevalidate(request, CACHE_NAMES.pages));
+  // Everything else (HTML pages, JSON data) → network-first
+  // Always fetches fresh content; falls back to cache only when offline
+  event.respondWith(networkFirst(request, CACHE_NAMES.pages));
 });
 
 // ── Strategies ────────────────────────────────────────────────────────────────
@@ -92,19 +92,18 @@ async function cacheFirst(request, cacheName) {
   }
 }
 
-/** Serve from cache immediately; fetch in background to update cache */
-async function staleWhileRevalidate(request, cacheName) {
+/** Try network first; fall back to cache when offline */
+async function networkFirst(request, cacheName) {
   const cache = await caches.open(cacheName);
-  const cached = await cache.match(request);
-
-  // Always kick off a background fetch to keep the cache fresh
-  const networkPromise = fetch(request).then(response => {
+  try {
+    const response = await fetch(request);
     if (response.ok) {
       cache.put(request, response.clone());
     }
     return response;
-  }).catch(() => null);
-
-  // Return cache hit immediately, or wait for network if nothing cached
-  return cached ?? networkPromise;
+  } catch {
+    // Network unavailable — serve from cache for offline support
+    const cached = await cache.match(request);
+    return cached ?? new Response('Offline', { status: 503 });
+  }
 }
