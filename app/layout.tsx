@@ -15,6 +15,15 @@ import { ServiceWorker } from '@/components/ServiceWorker';
 export const metadata: Metadata = {
   title: 'Ecology Curriculum',
   description: 'An Ecology Resource Wiki for primary school teachers',
+  manifest: '/manifest.json',
+  appleWebApp: {
+    capable: true,
+    statusBarStyle: 'default',
+    title: 'Ecology Curriculum',
+  },
+  formatDetection: {
+    telephone: false,
+  },
 };
 
 export default function RootLayout({
