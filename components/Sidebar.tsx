@@ -122,6 +122,7 @@ const navigation: NavEntry[] = [
     label: 'Media Library',
     children: [
       { label: 'Images', href: '/media/images' },
+      { label: 'Live Streams', href: '/media/live-streams' },
     ],
   },
 ];

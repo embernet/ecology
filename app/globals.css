@@ -19,6 +19,37 @@
   @apply text-2xl font-semibold text-green-600 mt-6 mb-3;
 }
 
+.markdown-content a {
+  color: #2E8B57;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.markdown-content a:hover {
+  color: #166534;
+}
+
+/* ── Live Streams table ── */
+.stream-visit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.5rem 1.1rem;
+  background-color: #2E8B57;
+  color: white !important;
+  border-radius: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-decoration: none !important;
+  white-space: nowrap;
+  transition: background-color 0.15s;
+}
+
+.stream-visit-btn:hover {
+  background-color: #246e45;
+  color: white !important;
+}
+
 .markdown-content img {
   @apply rounded-xl shadow-md my-4;
 }
