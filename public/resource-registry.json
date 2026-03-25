@@ -1,52 +1,4 @@
 {
-  "n1": {
-    "type": "NatureExample",
-    "title": "Nature Examples",
-    "sourcePage": "ecology-curriculum-home",
-    "sourcePageTitle": "Ecology Curriculum Home",
-    "data": {
-      "type": "NatureExample",
-      "facts": "- Fun facts related to each example to bring the examples to life and help create memorable learning experiences.",
-      "childrenHtml": "<p>Specific, real-world examples to illustrate the topic, each supported by factual information.</p>",
-      "wikiImages": []
-    }
-  },
-  "a1": {
-    "type": "Activity",
-    "title": "Individual, pair, group, and class activities",
-    "sourcePage": "ecology-curriculum-home",
-    "sourcePageTitle": "Ecology Curriculum Home",
-    "data": {
-      "type": "Activity",
-      "description": "A list of suggested classroom or outside activities designed to reinforce the concepts presented and provide additional modes of learning.",
-      "childrenHtml": "",
-      "wikiImages": []
-    }
-  },
-  "r1": {
-    "type": "Reflection",
-    "title": "Reflections",
-    "sourcePage": "ecology-curriculum-home",
-    "sourcePageTitle": "Ecology Curriculum Home",
-    "data": {
-      "type": "Reflection",
-      "description": "Short, end-of-lesson plenary activities designed to consolidate learning and encourage pupils to reflect on what they have learnt.",
-      "childrenHtml": "",
-      "wikiImages": []
-    }
-  },
-  "q1": {
-    "type": "Requirement",
-    "title": "Requirements",
-    "sourcePage": "ecology-curriculum-home",
-    "sourcePageTitle": "Ecology Curriculum Home",
-    "data": {
-      "type": "Requirement",
-      "text": "Boxes formatted like this contain text directly copied from the national curriculum",
-      "childrenHtml": "",
-      "wikiImages": []
-    }
-  },
   "n2": {
     "type": "NatureExample",
     "title": "The Tropical Rainforest",
@@ -3240,11 +3192,11 @@
       "type": "NatureExample",
       "emoji": "🍎",
       "facts": "- A hummingbird has to eat about every 10 minutes to get enough energy for flapping its wings so fast.\n- Some snakes can go for months without eating a meal because their bodies work very slowly.\n- A giant anteater uses its long, sticky tongue to eat up to 30,000 ants and termites in a single day!",
-      "childrenHtml": "<figure data-wiki-filename=\"Squirrel eating nut in grass.png\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Squirrel_eating_nut_in_grass.png\" alt=\"Squirrel eating nut\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Squirrel eating nut</figcaption></figure>\n<p>All animals need food to give them the energy to move, grow, and stay warm.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"Squirrel eating nut in grass.png\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Squirrel_eating_nut_in_grass.png\" alt=\"Grey squirrel eating nut\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Grey squirrel eating nut</figcaption></figure>\n<p>All animals need food to give them the energy to move, grow, and stay warm.</p>",
       "wikiImages": [
         {
           "filename": "Squirrel eating nut in grass.png",
-          "alt": "Squirrel eating nut"
+          "alt": "Grey squirrel eating nut"
         }
       ]
     }

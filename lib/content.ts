@@ -42,13 +42,23 @@ export interface PageHeading {
     level: number;
 }
 
+export function makeHeadingIdCounter() {
+    const counts: Record<string, number> = {};
+    return (text: string): string => {
+        const baseId = slugifyHeading(text);
+        counts[baseId] = (counts[baseId] || 0) + 1;
+        return counts[baseId] === 1 ? baseId : `${baseId}-${counts[baseId]}`;
+    };
+}
+
 export function extractHeadings(content: string): PageHeading[] {
     const headings: PageHeading[] = [];
+    const getId = makeHeadingIdCounter();
     for (const line of content.split('\n')) {
         const match = line.match(/^(#{2,3})\s+(.+)$/);
         if (match) {
             const text = match[2].trim();
-            headings.push({ id: slugifyHeading(text), text, level: match[1].length });
+            headings.push({ id: getId(text), text, level: match[1].length });
         }
     }
     return headings;

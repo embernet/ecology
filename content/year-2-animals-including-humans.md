@@ -136,7 +136,7 @@ All animals need water. It helps their bodies work properly and keeps them from 
 - Some snakes can go for months without eating a meal because their bodies work very slowly.
 - A giant anteater uses its long, sticky tongue to eat up to 30,000 ants and termites in a single day!`}
 >
-<WikiImage filename="Squirrel eating nut in grass.png" alt="Squirrel eating nut" />
+<WikiImage filename="Squirrel eating nut in grass.png" alt="Grey squirrel eating nut" />
 All animals need food to give them the energy to move, grow, and stay warm.
 </NatureExample>
 
