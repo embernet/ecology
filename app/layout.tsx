@@ -10,6 +10,7 @@ import { ResourcePackPanel, ResourcePackToggleButton } from '@/components/Resour
 import { ResourcePackUrlLoader } from '@/components/ResourcePackUrlLoader';
 import { MainContent } from '@/components/MainContent';
 import { SearchBar } from '@/components/SearchBar';
+import { ServiceWorker } from '@/components/ServiceWorker';
 
 export const metadata: Metadata = {
   title: 'Ecology Curriculum',
@@ -24,6 +25,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="bg-slate-50 text-slate-800">
+        <ServiceWorker />
         <PageNavigationProvider>
         <ResourcePackProvider>
           <Suspense fallback={null}>
