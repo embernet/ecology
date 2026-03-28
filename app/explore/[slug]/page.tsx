@@ -159,7 +159,7 @@ export default async function ExplorePermalinkPage({ params }: PageProps) {
                         <span className="inline-block px-3 py-1 text-[11px] font-bold tracking-wider text-emerald-800 uppercase bg-emerald-200/50 rounded-full border border-emerald-300/50">
                             {typeLabel}
                         </span>
-                        <span className="text-slate-400 text-xs font-mono tracking-tight">#{resource.id}</span>
+
                     </div>
                     {/* Mobile only source link */}
                     <div className="text-sm text-slate-500 sm:hidden">
