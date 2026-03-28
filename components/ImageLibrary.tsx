@@ -218,23 +218,23 @@ export function ImageLibrary({ images }: { images: ImageEntry[] }) {
             {/* Full-view modal */}
             {modalImage && createPortal(
                 <div
-                    className="fixed inset-0 z-50 flex items-center justify-center bg-black/90 p-4"
+                    className="fixed top-[7rem] left-0 right-0 bottom-0 z-50 flex items-center justify-center bg-black/90 p-4"
                     onClick={() => setModalImage(null)}
                 >
-                    <div className="relative max-w-7xl max-h-screen w-full flex flex-col items-center justify-center">
-                        <button
-                            onClick={(e) => { e.stopPropagation(); setModalImage(null); }}
-                            className="absolute -top-12 right-0 text-white hover:text-gray-300 p-2 focus:outline-none"
-                            aria-label="Close"
-                        >
-                            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-8 h-8">
-                                <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
-                            </svg>
-                        </button>
+                    <button
+                        onClick={(e) => { e.stopPropagation(); setModalImage(null); }}
+                        className="absolute top-4 right-4 z-[60] text-white hover:text-gray-300 bg-black/50 hover:bg-black/80 rounded-full p-2 focus:outline-none backdrop-blur-sm transition-colors"
+                        aria-label="Close"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-8 h-8">
+                            <path strokeLinecap="round" strokeLinejoin="round" d="M6 18L18 6M6 6l12 12" />
+                        </svg>
+                    </button>
+                    <div className="relative max-w-7xl h-full w-full flex flex-col items-center justify-center">
                         <img
                             src={modalImage.src}
                             alt={modalImage.alt}
-                            className="max-w-full max-h-[80vh] object-contain rounded-md shadow-2xl"
+                            className="max-w-full max-h-[calc(100vh-14rem)] object-contain rounded-md shadow-2xl"
                             onClick={(e) => e.stopPropagation()}
                         />
                         <div className="mt-4 text-white/90 text-center font-medium bg-black/50 px-4 py-2 rounded-full backdrop-blur-sm">

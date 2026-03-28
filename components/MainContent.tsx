@@ -9,11 +9,27 @@ export function MainContent({ children }: { children: React.ReactNode }) {
   const { items, showPrintView, togglePrintView, mounted, packName } = useResourcePack();
   const pathname = usePathname();
 
-  // Close print view when navigating to a different page
+  // Close print view and reset scroll position when navigating
   useEffect(() => {
     if (showPrintView) {
       togglePrintView();
     }
+    
+    // Defer scroll reset to ensure it happens after Next.js finishes updating the DOM
+    const resetScroll = () => {
+      // Find the active scroll container inside main-content
+      const scrollArea = document.querySelector('.main-scroll-area');
+      if (scrollArea) {
+        scrollArea.scrollTop = 0;
+      }
+    };
+    
+    resetScroll();
+    requestAnimationFrame(() => {
+      resetScroll();
+      setTimeout(resetScroll, 50);
+    });
+    
     // Only react to pathname changes, not showPrintView/togglePrintView
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);

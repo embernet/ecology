@@ -7,6 +7,8 @@ import { Activity, Reflection } from '@/components/mdx/Activities';
 import { Note, Guidance } from '@/components/mdx/Micro';
 import { Gallery } from '@/components/mdx/Gallery';
 import { WikiImage } from '@/components/mdx/WikiImage';
+import { HandoutCard } from '@/components/mdx/HandoutCard';
+import { HandoutHeader } from '@/components/mdx/HandoutHeader';
 import { MdxPageWrapper } from '@/components/MdxPageWrapper';
 
 export default function Home() {
@@ -35,6 +37,8 @@ export default function Home() {
     Guidance,
     Gallery,
     WikiImage,
+    HandoutCard,
+    HandoutHeader,
     Ref: ({ children }: any) => (
       <p className="text-sm text-gray-500 italic">{children}</p>
     ),
@@ -57,7 +61,7 @@ export default function Home() {
   };
 
   return (
-    <article className="markdown-content">
+    <article className="markdown-content main-scroll-area">
       <MdxPageWrapper slug={slug} title={post.frontmatter.title as string || 'Ecology Curriculum'} headings={headings}>
         <div className="prose prose-lg max-w-none">
           <MDXRemote

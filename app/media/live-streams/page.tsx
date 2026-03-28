@@ -90,7 +90,7 @@ function StreamTable({ entries }: { entries: StreamEntry[] }) {
 
 export default function LiveStreamsPage() {
     return (
-        <article className="markdown-content">
+        <article className="markdown-content main-scroll-area">
             <h1>Live Streams</h1>
             <p>
                 The best way to experience nature is to be out in it, to hear it, smell it, touch it, and see it. But it&apos;s not always practical so here are some live feeds.

@@ -5,129 +5,10 @@ import { usePathname } from 'next/navigation';
 import { createContext, useCallback, useContext, useEffect, useState } from 'react';
 import { useResourcePack } from '@/contexts/ResourcePackContext';
 import { usePageNavigation } from '@/contexts/PageNavigationContext';
+import { navigation, isSection } from '@/lib/navigation';
+import type { NavEntry, NavItem, NavSection } from '@/lib/navigation';
 
 const CollapseContext = createContext(0);
-
-interface NavItem {
-  label: string;
-  href: string;
-}
-
-interface NavSection {
-  label: string;
-  href?: string;
-  children: (NavItem | NavSection)[];
-}
-
-type NavEntry = NavItem | NavSection;
-
-function isSection(entry: NavEntry): entry is NavSection {
-  return 'children' in entry;
-}
-
-const navigation: NavEntry[] = [
-  { label: 'Home', href: '/' },
-  {
-    label: 'How to Guide',
-    href: '/wiki/how-to-guide',
-    children: [
-      { label: 'Content Overview', href: '/wiki/how-to-guide-content-overview' },
-      { label: 'Creating Your Own Resource Packs', href: '/wiki/how-to-guide-resource-packs' },
-    ],
-  },
-  {
-    label: 'Science',
-    href: '/wiki/science',
-    children: [
-      { label: 'Working Scientifically (Years 1-2)', href: '/wiki/years-1-and-2-working-scientifically' },
-      {
-        label: 'Year 1',
-        children: [
-          { label: 'Plants', href: '/wiki/year-1-plants' },
-          { label: 'Animals, including humans', href: '/wiki/year-1-animals-including-humans' },
-          { label: 'Seasonal changes', href: '/wiki/year-1-seasonal-changes' },
-          { label: 'Everyday materials', href: '/wiki/year-1-everyday-materials' },
-        ],
-      },
-      {
-        label: 'Year 2',
-        children: [
-          { label: 'Plants', href: '/wiki/year-2-plants' },
-          { label: 'Animals, including humans', href: '/wiki/year-2-animals-including-humans' },
-          { label: 'Living things and their habitats', href: '/wiki/year-2-living-things-and-their-habitats' },
-          { label: 'Everyday materials', href: '/wiki/year-2-everyday-materials' },
-        ],
-      },
-      {
-        label: 'Year 3',
-        children: [
-          { label: 'Plants', href: '/wiki/year-3-plants' },
-          { label: 'Light', href: '/wiki/year-3-light' },
-        ],
-      },
-      {
-        label: 'Year 4',
-        children: [
-          { label: 'Animals, including humans', href: '/wiki/year-4-animals-including-humans' },
-          { label: 'Electricity', href: '/wiki/year-4-electricity' },
-          { label: 'Living things and their habitats', href: '/wiki/year-4-living-things-and-their-habitats' },
-          { label: 'Sound', href: '/wiki/year-4-sound' },
-          { label: 'States of matter', href: '/wiki/year-4-states-of-matter' },
-        ],
-      },
-      {
-        label: 'Year 5',
-        children: [
-          { label: 'Earth and space', href: '/wiki/year-5-earth-and-space' },
-          { label: 'Living things and their habitats', href: '/wiki/year-5-living-things-and-their-habitats' },
-        ],
-      },
-      {
-        label: 'Year 6',
-        children: [
-          { label: 'Evolution and inheritance', href: '/wiki/year-6-evolution-and-inheritance' },
-          { label: 'Living things and their habitats', href: '/wiki/year-6-living-things-and-their-habitats' },
-        ],
-      },
-    ],
-  },
-  {
-    label: 'Geography',
-    href: '/wiki/geography',
-    children: [
-      { label: 'Key Stage 1', href: '/wiki/key-stage-1-geography' },
-      { label: 'Key Stage 2', href: '/wiki/key-stage-2-geography' },
-    ],
-  },
-  {
-    label: 'Teaching Resources',
-    children: [
-      { label: 'Teaching Principles', href: '/wiki/teaching-principles-used-to-create-the-learning-resources' },
-      { label: 'Useful External Resources', href: '/wiki/other-websites-with-useful-ecology-resources' },
-    ],
-  },
-  {
-    label: 'Handouts',
-    children: [
-      { label: 'Bees vs. Wasps', href: '/wiki/handout-bees-vs-wasps' },
-      { label: 'Bees vs. Wasps Nests', href: '/wiki/handout-wax-castles-vs-paper-palaces' },
-      { label: 'Butterflies vs. Moths', href: '/wiki/handout-butterflies-vs-moths' },
-      { label: 'Butterfly & Moth Life-Cycle', href: '/wiki/handout-butterfly-moth-life-cycle' },
-      { label: 'Centipedes vs. Millipedes', href: '/wiki/handout-centipedes-vs-millipedes' },
-      { label: 'Dragonflies vs. Damselflies', href: '/wiki/handout-dragonflies-vs-damselflies' },
-      { label: 'Frogs and Toads', href: '/wiki/handout-frogs-and-toads' },
-      { label: 'Grasshoppers vs. Crickets', href: '/wiki/handout-grasshoppers-vs-crickets' },
-      { label: 'Snails vs. Slugs', href: '/wiki/handout-snails-vs-slugs' },
-    ],
-  },
-  {
-    label: 'Media Library',
-    children: [
-      { label: 'Images', href: '/media/images' },
-      { label: 'Live Streams', href: '/media/live-streams' },
-    ],
-  },
-];
 
 function pathMatchesEntry(pathname: string, entry: NavEntry): boolean {
   if (!isSection(entry)) {
@@ -222,9 +103,10 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
   return (
     <li>
       <div className="sidebar-section-header" style={{ paddingLeft: `${0.75 + depth * 0.75}rem` }}>
+        {/* Chevron button: toggles expand/collapse only */}
         <button
           onClick={() => setExpanded(!expanded)}
-          className="sidebar-toggle"
+          className="sidebar-chevron-btn"
           aria-expanded={expanded}
           aria-label={`${expanded ? 'Collapse' : 'Expand'} ${entry.label}`}
         >
@@ -239,16 +121,23 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
               clipRule="evenodd"
             />
           </svg>
-          <span className={containsActive ? 'font-semibold text-green-800' : ''}>{entry.label}</span>
         </button>
-        {entry.href && (
+        {/* Label: navigates (if href) and also toggles expand/collapse */}
+        {entry.href ? (
           <Link
             href={entry.href}
-            className={`sidebar-section-link ${pathname === entry.href ? 'sidebar-section-link-active' : ''}`}
-            title={`Go to ${entry.label}`}
+            onClick={() => setExpanded(!expanded)}
+            className={`sidebar-section-label${containsActive ? ' font-semibold text-green-800' : ''}`}
           >
-            →
+            {entry.label}
           </Link>
+        ) : (
+          <button
+            onClick={() => setExpanded(!expanded)}
+            className={`sidebar-section-label${containsActive ? ' font-semibold text-green-800' : ''}`}
+          >
+            {entry.label}
+          </button>
         )}
       </div>
       {expanded && (

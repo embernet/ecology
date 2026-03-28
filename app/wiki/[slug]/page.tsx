@@ -1,4 +1,5 @@
 import { getPostBySlug, getPostSlugs, extractHeadings, makeHeadingIdCounter } from '@/lib/content';
+import { getSiblingPages } from '@/lib/navigation';
 import { notFound } from 'next/navigation';
 import { MDXRemote } from 'next-mdx-remote/rsc';
 import Link from 'next/link';
@@ -7,9 +8,12 @@ import { Requirement } from '@/components/mdx/Requirement';
 import { Activity, Reflection } from '@/components/mdx/Activities';
 import { Note, Guidance } from '@/components/mdx/Micro';
 import { Handout } from '@/components/mdx/Handout';
+import { HandoutCard } from '@/components/mdx/HandoutCard';
+import { HandoutHeader } from '@/components/mdx/HandoutHeader';
 import { Gallery } from '@/components/mdx/Gallery';
 import { WikiImage } from '@/components/mdx/WikiImage';
 import { MdxPageWrapper } from '@/components/MdxPageWrapper';
+import { PrevNextNav } from '@/components/PrevNextNav';
 
 
 interface PageProps {
@@ -32,6 +36,7 @@ export default async function Page({ params }: PageProps) {
     }
 
     const headings = extractHeadings(post.content);
+    const { prev, next, sectionLabel, sectionHref } = getSiblingPages(slug);
 
     const getId = makeHeadingIdCounter();
     const components = {
@@ -42,6 +47,8 @@ export default async function Page({ params }: PageProps) {
         Note,
         Guidance,
         Handout,
+        HandoutCard,
+        HandoutHeader,
         Gallery,
         WikiImage,
         Ref: ({ children }: any) => (
@@ -66,16 +73,23 @@ export default async function Page({ params }: PageProps) {
     };
 
     return (
-        <article className="markdown-content">
-            <h1 className="mb-6">{post.frontmatter.title}</h1>
-            <MdxPageWrapper slug={slug} title={post.frontmatter.title as string} headings={headings}>
-                <div className="prose prose-lg max-w-none">
-                    <MDXRemote
-                        source={post.content}
-                        components={components}
-                    />
+        <article className="flex flex-col h-full w-full">
+            <div className="flex-shrink-0 z-10 bg-white border-b border-slate-200" style={{ padding: '0.8rem 2rem' }}>
+                <PrevNextNav prev={prev} next={next} sectionLabel={sectionLabel} sectionHref={sectionHref} />
+            </div>
+            <div className="main-scroll-area" id="wiki-scroll-container">
+                <div className="markdown-content">
+                    <h1 className="mb-6">{post.frontmatter.title}</h1>
+                    <MdxPageWrapper slug={slug} title={post.frontmatter.title as string} headings={headings}>
+                        <div className="prose prose-lg max-w-none">
+                            <MDXRemote
+                                source={post.content}
+                                components={components}
+                            />
+                        </div>
+                    </MdxPageWrapper>
                 </div>
-            </MdxPageWrapper>
+            </div>
         </article>
     );
 }

@@ -33,14 +33,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-slate-50 text-slate-800">
+      <body className="bg-slate-50 text-slate-800 h-screen overflow-hidden flex flex-col">
         <ServiceWorker />
         <PageNavigationProvider>
         <ResourcePackProvider>
           <Suspense fallback={null}>
             <ResourcePackUrlLoader />
           </Suspense>
-          <header className="bg-primary text-white shadow-md sticky top-0 z-[60]">
+          <header className="bg-primary text-white shadow-md z-[60] flex-shrink-0">
             <div className="container mx-auto px-4">
               <div className="flex items-center header-bar">
                 <HeaderNav />
@@ -55,9 +55,9 @@ export default function RootLayout({
               </div>
             </div>
           </header>
-          <div className="layout-with-sidebar">
+          <div className="layout-with-sidebar flex-1 overflow-hidden min-h-0 pb-4">
             <Sidebar />
-            <main className="main-content bg-white shadow-sm mt-4 rounded-lg">
+            <main className="main-content flex-1 flex flex-col bg-white shadow-sm mt-4 rounded-lg overflow-hidden">
               <MainContent>{children}</MainContent>
             </main>
             <ResourcePackPanel />
