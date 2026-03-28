@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <!-- Soil mound at base -->
+  <ellipse cx="256" cy="375" rx="70" ry="22" fill="white"/>
+
+  <!-- Stem -->
+  <rect x="244" y="200" width="24" height="180" rx="12" fill="white"/>
+
+  <!-- Left leaf -->
+  <path d="M256 272
+    C250 265, 224 242, 172 228
+    C152 222, 145 196, 164 181
+    C183 166, 212 175, 233 200
+    C250 220, 256 260, 256 272Z"
+    fill="white"/>
+
+  <!-- Right leaf (slightly transparent for depth) -->
+  <path d="M256 255
+    C262 245, 282 218, 302 198
+    C322 178, 352 170, 364 188
+    C376 205, 364 230, 340 240
+    C314 252, 272 258, 256 255Z"
+    fill="white" opacity="0.78"/>
+</svg>
