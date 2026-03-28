@@ -87,6 +87,7 @@ export const navigation: NavEntry[] = [
     children: [
       { label: 'Key Stage 1', href: '/wiki/key-stage-1-geography' },
       { label: 'Key Stage 2', href: '/wiki/key-stage-2-geography' },
+      { label: 'Physical Geography', href: '/wiki/physical-geography' },
     ],
   },
   {
