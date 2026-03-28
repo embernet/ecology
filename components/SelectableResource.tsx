@@ -81,9 +81,13 @@ export function SelectableResource({ resourceId, type, title, data, captureRef, 
       {children}
       <button
         onClick={handleToggle}
-        className={`selectable-resource-btn ${added ? 'selectable-resource-btn-added' : ''}`}
+        className={`group/tooltip relative selectable-resource-btn ${added ? 'selectable-resource-btn-added' : ''}`}
         aria-label={added ? `Remove ${title} from resource pack` : `Add ${title} to resource pack`}
       >
+        <span className="pointer-events-none absolute left-1/2 top-full z-[100] mt-2 -translate-x-1/2 whitespace-nowrap rounded bg-slate-700 px-2.5 py-1 text-[11px] font-medium text-white opacity-0 transition-opacity delay-500 duration-200 group-hover/tooltip:opacity-100 group-focus-visible/tooltip:opacity-100 shadow-md">
+          {added ? 'Remove from resource pack' : 'Add to resource pack'}
+          <span className="absolute bottom-full left-1/2 -ml-1 border-4 border-transparent border-b-slate-700" />
+        </span>
         {added ? (
           <>
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-3.5 h-3.5">

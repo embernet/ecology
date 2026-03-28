@@ -120,6 +120,7 @@ export const navigation: NavEntry[] = [
       { label: 'Live Streams', href: '/media/live-streams' },
     ],
   },
+  { label: 'Resource Index', href: '/resources' },
 ];
 
 /** Recursively flatten all leaf NavItems (pages with hrefs) from a list of entries. */

@@ -79,6 +79,9 @@ export function HeaderNav() {
             <Link href="/media/images" className="header-dropdown-link" onClick={() => setIsOpen(false)}>
               Media Library
             </Link>
+            <Link href="/resources" className="header-dropdown-link" onClick={() => setIsOpen(false)}>
+              Resource Index
+            </Link>
             <button
               className="header-dropdown-link"
               onClick={() => { setIsOpen(false); setShowAbout(true); }}
