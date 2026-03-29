@@ -3,6 +3,7 @@
 import React, { useRef } from 'react';
 import ReactMarkdown from 'react-markdown';
 import { SelectableResource } from '../SelectableResource';
+import { dictionaryMarkdownComponents } from '../DictionaryWrapper';
 
 interface NatureExampleProps {
     /** Unique resource ID (e.g. "n1", "n2"). Required for URL-based resource pack sharing. */
@@ -45,7 +46,7 @@ export const NatureExample: React.FC<NatureExampleProps> = ({ id, title, emoji, 
                             <span className="text-xl">💡</span> Fun Facts
                         </h4>
                         <div className="prose prose-yellow max-w-none text-slate-700">
-                            <ReactMarkdown>{facts}</ReactMarkdown>
+                            <ReactMarkdown components={dictionaryMarkdownComponents}>{facts}</ReactMarkdown>
                         </div>
                     </div>
                 )}

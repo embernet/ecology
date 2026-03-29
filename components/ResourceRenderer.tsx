@@ -2,6 +2,7 @@
 
 import ReactMarkdown from 'react-markdown';
 import type { ResourcePackItem } from '@/lib/resource-pack-types';
+import { dictionaryMarkdownComponents } from '@/components/DictionaryWrapper';
 
 interface ResourceRendererProps {
   item: ResourcePackItem;
@@ -40,7 +41,7 @@ export function ResourceRenderer({ item }: ResourceRendererProps) {
                 Fun Facts
               </h4>
               <div className="prose prose-yellow max-w-none text-slate-700">
-                <ReactMarkdown>{data.facts}</ReactMarkdown>
+                <ReactMarkdown components={dictionaryMarkdownComponents}>{data.facts}</ReactMarkdown>
               </div>
             </div>
           )}
@@ -61,7 +62,7 @@ export function ResourceRenderer({ item }: ResourceRendererProps) {
             <h3 className="text-xl font-bold text-gray-800 m-0">{item.title}</h3>
           </div>
           <div className="text-gray-600 prose prose-indigo max-w-none">
-            <ReactMarkdown>{data.description || ''}</ReactMarkdown>
+            <ReactMarkdown components={dictionaryMarkdownComponents}>{data.description || ''}</ReactMarkdown>
           </div>
           {sourceTag}
         </div>
@@ -79,7 +80,7 @@ export function ResourceRenderer({ item }: ResourceRendererProps) {
             <h3 className="text-lg font-bold text-purple-900 m-0">{item.title}</h3>
           </div>
           <div className="text-purple-800 italic leading-relaxed prose prose-purple max-w-none">
-            <ReactMarkdown>{data.description || ''}</ReactMarkdown>
+            <ReactMarkdown components={dictionaryMarkdownComponents}>{data.description || ''}</ReactMarkdown>
           </div>
           {sourceTag}
         </div>
@@ -90,7 +91,7 @@ export function ResourceRenderer({ item }: ResourceRendererProps) {
         <div className="my-6 p-5 border-l-4 border-blue-500 bg-blue-50 rounded-r-lg shadow-sm">
           <h4 className="text-blue-800 font-bold mb-2 uppercase text-xs tracking-wider">Curriculum Requirement</h4>
           <div className="text-blue-900 font-medium text-lg leading-relaxed prose prose-blue max-w-none">
-            {data.text && <ReactMarkdown>{data.text}</ReactMarkdown>}
+            {data.text && <ReactMarkdown components={dictionaryMarkdownComponents}>{data.text}</ReactMarkdown>}
             {data.childrenHtml && (
               <div dangerouslySetInnerHTML={{ __html: data.childrenHtml }} />
             )}
@@ -103,7 +104,7 @@ export function ResourceRenderer({ item }: ResourceRendererProps) {
       return (
         <div className="bg-slate-50 border-l-4 border-slate-400 p-4 my-4 text-slate-900 prose prose-slate max-w-none">
           <strong>Note:</strong>
-          {data.text && <div className="inline-block ml-1"><ReactMarkdown>{data.text}</ReactMarkdown></div>}
+          {data.text && <div className="inline-block ml-1"><ReactMarkdown components={dictionaryMarkdownComponents}>{data.text}</ReactMarkdown></div>}
           {data.childrenHtml && (
             <div dangerouslySetInnerHTML={{ __html: data.childrenHtml }} />
           )}
@@ -115,7 +116,7 @@ export function ResourceRenderer({ item }: ResourceRendererProps) {
       return (
         <div className="bg-gray-100 border-l-4 border-gray-500 p-4 my-4 text-gray-800 text-sm prose prose-gray max-w-none">
           <strong>Guidance:</strong>
-          {data.text && <div className="mt-2"><ReactMarkdown>{data.text}</ReactMarkdown></div>}
+          {data.text && <div className="mt-2"><ReactMarkdown components={dictionaryMarkdownComponents}>{data.text}</ReactMarkdown></div>}
           {data.childrenHtml && (
             <div dangerouslySetInnerHTML={{ __html: data.childrenHtml }} />
           )}

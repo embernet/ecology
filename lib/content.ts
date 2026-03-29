@@ -6,7 +6,7 @@ const contentDirectory = path.join(process.cwd(), 'content');
 
 export function getPostSlugs() {
     if (!fs.existsSync(contentDirectory)) return [];
-    return fs.readdirSync(contentDirectory);
+    return fs.readdirSync(contentDirectory).filter(file => file.endsWith('.md'));
 }
 
 export function getPostBySlug(slug: string) {

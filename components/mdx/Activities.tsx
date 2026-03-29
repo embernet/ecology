@@ -2,6 +2,7 @@
 
 import ReactMarkdown from 'react-markdown';
 import { SelectableResource } from '../SelectableResource';
+import { dictionaryMarkdownComponents } from '../DictionaryWrapper';
 
 interface CardProps {
     /** Unique resource ID (e.g. "a1", "r1"). Required for URL-based resource pack sharing. */
@@ -29,7 +30,7 @@ export const Activity: React.FC<CardProps> = ({ id, title, description }) => {
                     <h3 className="text-xl font-bold text-gray-800 m-0">{title}</h3>
                 </div>
                 <div className="text-gray-600 prose prose-indigo max-w-none">
-                    <ReactMarkdown>{description}</ReactMarkdown>
+                    <ReactMarkdown components={dictionaryMarkdownComponents}>{description}</ReactMarkdown>
                 </div>
             </div>
         </SelectableResource>
@@ -54,7 +55,7 @@ export const Reflection: React.FC<CardProps> = ({ id, title, description }) => {
                     <h3 className="text-lg font-bold text-purple-900 m-0">{title}</h3>
                 </div>
                 <div className="text-purple-800 italic leading-relaxed prose prose-purple max-w-none">
-                    <ReactMarkdown>{description}</ReactMarkdown>
+                    <ReactMarkdown components={dictionaryMarkdownComponents}>{description}</ReactMarkdown>
                 </div>
             </div>
         </SelectableResource>

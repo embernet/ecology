@@ -44,8 +44,16 @@ export default function RootLayout({
             <div className="container mx-auto px-4">
               <div className="flex items-center header-bar">
                 <HeaderNav />
-                <Link href="/" className="header-title-link">
-                  <h1 className="text-2xl font-bold bg-clip-text">🌱 Ecology Curriculum</h1>
+                <Link href="/" className="header-title-link flex items-center gap-2 sm:gap-3 overflow-hidden">
+                  <h1 className="font-bold bg-clip-text whitespace-nowrap truncate" style={{ fontSize: 'clamp(1.2rem, 4.5vw, 1.5rem)' }}>
+                    🌱 Ecology Curriculum
+                  </h1>
+                  <span 
+                    className="text-[10px] sm:text-sm leading-tight font-extrabold -rotate-3 bg-gradient-to-r from-yellow-300 via-pink-300 to-cyan-300 text-transparent bg-clip-text flex-shrink-0 w-16 sm:w-auto text-center" 
+                    style={{ filter: 'drop-shadow(0px 1px 1px rgba(0,0,0,0.3))' }}
+                  >
+                    Not just for kids!
+                  </span>
                 </Link>
               </div>
               <div className="search-bar-row">

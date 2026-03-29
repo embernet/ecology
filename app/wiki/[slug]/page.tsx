@@ -14,6 +14,7 @@ import { Gallery } from '@/components/mdx/Gallery';
 import { WikiImage } from '@/components/mdx/WikiImage';
 import { MdxPageWrapper } from '@/components/MdxPageWrapper';
 import { PrevNextNav } from '@/components/PrevNextNav';
+import { DictionaryParserProvider } from '@/components/DictionaryWrapper';
 
 
 interface PageProps {
@@ -70,6 +71,8 @@ export default async function Page({ params }: PageProps) {
             const id = getId(text);
             return <h3 id={id}>{children}</h3>;
         },
+        p: ({ children }: any) => <p><DictionaryParserProvider>{children}</DictionaryParserProvider></p>,
+        li: ({ children }: any) => <li><DictionaryParserProvider>{children}</DictionaryParserProvider></li>,
     };
 
     return (

@@ -113,6 +113,7 @@ export const navigation: NavEntry[] = [
       { label: 'Snails vs. Slugs', href: '/wiki/handout-snails-vs-slugs' },
     ],
   },
+  { label: 'Dictionary', href: '/dictionary' },
   {
     label: 'Media Library',
     children: [
