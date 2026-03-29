@@ -18,7 +18,7 @@ export function PrevNextNav({ prev, next, sectionLabel, sectionHref }: PrevNextN
           {prev && (
             <Link href={prev.href} className="prevnext-arrow" aria-label={`Previous: ${prev.label}`}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
-                <path d="M15 18l-6-6 6-6" />
+                <path d="M 15 18 L 9 12 L 15 6" />
               </svg>
             </Link>
           )}
@@ -36,7 +36,7 @@ export function PrevNextNav({ prev, next, sectionLabel, sectionHref }: PrevNextN
           {next && (
             <Link href={next.href} className="prevnext-arrow" aria-label={`Next: ${next.label}`}>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2.5} strokeLinecap="round" strokeLinejoin="round">
-                <path d="M9 18l6-6-6-6" />
+                <path d="M 9 18 L 15 12 L 9 6" />
               </svg>
             </Link>
           )}
