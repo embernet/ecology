@@ -64,6 +64,23 @@ export function extractHeadings(content: string): PageHeading[] {
     return headings;
 }
 
+export function resolveEmbedResources(content: string): string {
+    const dir = path.join(process.cwd(), 'content', 'resources');
+    if (!fs.existsSync(dir)) return content;
+    const files = fs.readdirSync(dir);
+    // Use ^ and $ with m flag so we only match block-level tags (tag is the sole content on its line).
+    // This avoids matching tags inside inline code spans (e.g. documentation text like `<EmbedResource id="n234" />`).
+    return content.replace(/^[ \t]*<EmbedResource\s+id=["']([^"']+)["']\s*\/>[ \t]*$/gm, (_match, id) => {
+        const resourceFile = files.find(f => f === `${id}.md` || f.startsWith(`${id}-`));
+        if (!resourceFile) return _match;
+        try {
+            return fs.readFileSync(path.join(dir, resourceFile), 'utf8').trim();
+        } catch {
+            return _match;
+        }
+    });
+}
+
 export function getAllPosts() {
     const slugs = getPostSlugs();
     const posts = slugs

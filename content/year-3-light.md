@@ -116,6 +116,8 @@ Go outside on a sunny day and look at the ground behind you. You will see a dark
 
 
 
+<EmbedResource id="n234" />
+
 <Note id={`t30`} title={`Daytime and night-time animals`} text={`Our world is always spinning around, a bit like a roundabout. When our part of the world faces the sun, it's bright daytime. When it spins away from the sun, it becomes dark nighttime.
 
 This pattern splits animals into two big teams.

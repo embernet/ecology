@@ -12,7 +12,7 @@
  * Run: node scripts/build-resource-registry.mjs
  */
 
-import { readFileSync, writeFileSync, readdirSync } from 'fs';
+import { readFileSync, writeFileSync, readdirSync, existsSync } from 'fs';
 import { join, dirname } from 'path';
 import { fileURLToPath } from 'url';
 
@@ -334,6 +334,15 @@ function extractResources(content, slug, pageTitle, fileName) {
 // Main
 function main() {
   const files = readdirSync(CONTENT_DIR).filter(f => f.endsWith('.md'));
+  
+  const resourcesDir = join(CONTENT_DIR, 'resources');
+  if (existsSync(resourcesDir)) {
+    const resFiles = readdirSync(resourcesDir)
+      .filter(f => f.endsWith('.md'))
+      .map(f => join('resources', f));
+    files.push(...resFiles);
+  }
+
   const registry = {};
   let totalResources = 0;
   const allErrors = [];
@@ -342,9 +351,13 @@ function main() {
   for (const file of files) {
     const content = readFileSync(join(CONTENT_DIR, file), 'utf-8');
     const fm = parseFrontmatter(content);
-    if (!fm.slug) continue;
+    
+    if (!fm.slug && !file.startsWith('resources/')) continue;
 
-    const { resources, errors } = extractResources(content, fm.slug, fm.title || fm.slug, file);
+    const sourceSlug = fm.slug || file.replace('.md', '').split('/').pop();
+    const sourceTitle = fm.title || sourceSlug;
+
+    const { resources, errors } = extractResources(content, sourceSlug, sourceTitle, file);
     allErrors.push(...errors);
 
     for (const res of resources) {
