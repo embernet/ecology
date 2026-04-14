@@ -16,7 +16,6 @@ export function isSection(entry: NavEntry): entry is NavSection {
 }
 
 export const navigation: NavEntry[] = [
-  { label: 'Home', href: '/' },
   {
     label: 'How to Guide',
     href: '/wiki/how-to-guide',
@@ -113,7 +112,6 @@ export const navigation: NavEntry[] = [
       { label: 'Snails vs. Slugs', href: '/wiki/handout-snails-vs-slugs' },
     ],
   },
-  { label: 'Dictionary', href: '/dictionary' },
   {
     label: 'Media Library',
     children: [
@@ -121,7 +119,13 @@ export const navigation: NavEntry[] = [
       { label: 'Live Streams', href: '/media/live-streams' },
     ],
   },
-  { label: 'Resource Index', href: '/resources' },
+  {
+    label: 'Reference',
+    children: [
+      { label: 'Dictionary', href: '/dictionary' },
+      { label: 'Resource Index', href: '/resources' },
+    ],
+  },
 ];
 
 /** Recursively flatten all leaf NavItems (pages with hrefs) from a list of entries. */

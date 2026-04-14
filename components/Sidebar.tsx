@@ -248,6 +248,21 @@ export function Sidebar() {
             </button>
           </div>
         </div>
+        <Link
+          href="/"
+          className={`sidebar-home-link${pathname === '/' ? ' sidebar-home-link-active' : ''}`}
+          onClick={() => {
+            if (typeof window !== 'undefined' && window.matchMedia('(max-width: 1100px)').matches) {
+              setSidebarOpen(false);
+            }
+          }}
+        >
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" strokeLinejoin="round" width="16" height="16" aria-hidden="true" style={{ flexShrink: 0 }}>
+            <path d="M3 9.5L12 3l9 6.5V20a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5z" />
+            <polyline points="9 21 9 12 15 12 15 21" />
+          </svg>
+          Home
+        </Link>
         <CollapseContext.Provider value={collapseVersion}>
           <nav className="sidebar-nav-wrapper">
             <ul className="sidebar-nav">

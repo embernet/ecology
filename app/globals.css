@@ -292,13 +292,19 @@
 
 .header-dropdown-link {
   display: block;
+  width: 100%;
+  text-align: left;
   padding: 0.75rem 1rem;
   color: #334155;
   text-decoration: none;
   font-weight: 500;
   font-size: 0.95rem;
-  transition: background-color 0.1s;
+  background: none;
+  border: none;
   border-bottom: 1px solid #f1f5f9;
+  transition: background-color 0.1s;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .header-dropdown-link:last-child {
@@ -401,6 +407,32 @@
   color: #166534;
 }
 
+/* ── Pinned Home link (above nav tree) ── */
+.sidebar-home-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.6rem 1rem;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: #334155;
+  text-decoration: none;
+  border-bottom: 1px solid #e2e8f0;
+  transition: background-color 0.1s, color 0.1s;
+  flex-shrink: 0;
+}
+
+.sidebar-home-link:hover {
+  background-color: #f0fdf4;
+  color: #166534;
+}
+
+.sidebar-home-link-active {
+  color: #166534;
+  font-weight: 600;
+  background-color: #f0fdf4;
+}
+
 .sidebar-nav {
   list-style: none;
   padding: 0.25rem 0;
@@ -475,7 +507,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  padding: 0.35rem 0.15rem;
+  padding: 0.35rem 0;
   background: none;
   border: none;
   cursor: pointer;
