@@ -13,10 +13,12 @@
 
 .markdown-content h2 {
   @apply text-3xl font-bold text-green-700 mt-8 mb-4;
+  scroll-margin-top: 12px;
 }
 
 .markdown-content h3 {
   @apply text-2xl font-semibold text-green-600 mt-6 mb-3;
+  scroll-margin-top: 12px;
 }
 
 .markdown-content a {
@@ -135,19 +137,38 @@
   gap: 0.5rem;
 }
 
-.prevnext-slot {
-  flex: 1;
+.prevnext-slot-arrow {
+  flex-shrink: 0;
+  width: 2.5rem; /* matches button size so layout is predictable */
+  display: flex;
+  align-items: center;
+}
+
+.prevnext-slot-arrow-right {
+  justify-content: flex-end;
 }
 
 .prevnext-slot-center {
-  flex: 1; /* Equal flex ensures perfect centering */
+  flex: 1 1 0%;
   display: flex;
-  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  min-width: 0;
 }
 
-.prevnext-slot-next {
-  display: flex;
-  justify-content: flex-end;
+.prevnext-title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #166534;
+  background: #f0fdf4;
+  padding: 0.4rem 1.25rem;
+  border-radius: 9999px;
+  border: 1px solid #bbf7d0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-width: 0;
 }
 
 .prevnext-arrow {
@@ -182,7 +203,7 @@
   transition: all 0.15s;
   border: 1px solid #e2e8f0;
   white-space: nowrap;
-  text-align: center;
+  flex-shrink: 0;
 }
 
 .prevnext-section-btn:hover {
@@ -292,7 +313,7 @@
 /* ── Layout with sidebar ── */
 .layout-with-sidebar {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   max-width: 90rem;
   margin: 0 auto;
   padding: 0 1rem;
@@ -300,7 +321,10 @@
 }
 
 .layout-footer {
-  flex: 0 0 100%;
+  max-width: 90rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  flex-shrink: 0;
 }
 
 .main-content {
@@ -508,6 +532,7 @@
   border-radius: 0.25rem;
   transition: background-color 0.15s, color 0.15s;
   line-height: 1.3;
+  text-decoration: none;
 }
 
 .sidebar-section-heading:hover {
