@@ -7,6 +7,7 @@ import { RegistryResource } from '@/lib/resource-registry-api';
 
 import { useResourcePack } from '@/contexts/ResourcePackContext';
 import { makeResourceLookupKey } from '@/lib/resource-pack-types';
+import { typeColorConfig } from '@/lib/type-colors';
 
 interface Props {
   resources: (RegistryResource & { id: string, exploreSlug: string })[];
@@ -127,9 +128,9 @@ export default function ResourceIndexClient({ resources }: Props) {
                   key={type}
                   onClick={() => setFilterType(type)}
                   className={`whitespace-nowrap px-4 py-1.5 rounded-full text-sm font-medium transition-colors border ${
-                    filterType === type 
-                      ? 'bg-emerald-600 border-emerald-600 text-white shadow-sm' 
-                      : 'bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100'
+                    filterType === type
+                      ? (typeColorConfig[type]?.lozengeActive ?? 'bg-emerald-600 border-emerald-600 text-white shadow-sm')
+                      : (typeColorConfig[type]?.lozengeInactive ?? 'bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100')
                   }`}
                 >
                   {type === 'All' ? type : type.replace(/([A-Z])/g, ' $1').trim()}
@@ -232,8 +233,8 @@ function ResourceCard({ resource }: { resource: RegistryResource & { id: string,
       className="group flex flex-col bg-white rounded-2xl shadow-sm hover:shadow-lg border border-slate-200 overflow-hidden transition-all duration-300 hover:-translate-y-1"
     >
       {/* Full-width Type Bar */}
-      <div className="w-full bg-emerald-100 border-b border-emerald-200 px-5 py-2 flex-shrink-0">
-        <span className="block text-[10px] font-bold tracking-widest text-emerald-900 uppercase truncate">
+      <div className={`w-full border-b px-5 py-2 flex-shrink-0 ${typeColorConfig[resource.type]?.barBg ?? 'bg-emerald-100'} ${typeColorConfig[resource.type]?.barBorder ?? 'border-emerald-200'}`}>
+        <span className={`block text-[10px] font-bold tracking-widest uppercase truncate ${typeColorConfig[resource.type]?.barText ?? 'text-emerald-900'}`}>
           {typeLabel}
         </span>
       </div>

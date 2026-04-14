@@ -1,6 +1,7 @@
 import { getResourceBySlug, getAllResourceSlugs } from '@/lib/resource-registry-api';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import { typeColorConfig } from '@/lib/type-colors';
 
 // Import the actual MDX components
 import { NatureExample } from '@/components/mdx/NatureExample';
@@ -156,7 +157,7 @@ export default async function ExplorePermalinkPage({ params }: PageProps) {
             <div className="flex-shrink-0 bg-slate-100/90 backdrop-blur shadow-sm border-b border-slate-200 px-6 py-3 md:px-8 z-10">
                 <div className="max-w-4xl mx-auto flex items-center justify-between">
                     <div className="flex items-center gap-3">
-                        <span className="inline-block px-3 py-1 text-[11px] font-bold tracking-wider text-emerald-800 uppercase bg-emerald-200/50 rounded-full border border-emerald-300/50">
+                        <span className={`inline-block px-3 py-1 text-[11px] font-bold tracking-wider uppercase rounded-full border ${typeColorConfig[resource.type]?.badgeBg ?? 'bg-emerald-200/50'} ${typeColorConfig[resource.type]?.badgeBorder ?? 'border-emerald-300/50'} ${typeColorConfig[resource.type]?.badgeText ?? 'text-emerald-800'}`}>
                             {typeLabel}
                         </span>
 

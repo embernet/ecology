@@ -48,10 +48,10 @@ export const Guidance: React.FC<NoteProps> = ({ id, text, children }) => {
             data={{ text }}
             captureRef={captureRef}
         >
-            <div className="bg-gray-100 border-l-4 border-gray-500 p-4 my-4 text-gray-800 text-sm prose prose-gray max-w-none">
+            <div className="bg-sky-50 border-l-4 border-sky-400 p-4 my-4 text-sky-900 text-sm prose prose-sky max-w-none">
                 <strong>Guidance:</strong>
                 <div ref={captureRef}>
-                    {text && <div className="mt-2 text-gray-700 font-normal"><ReactMarkdown components={dictionaryMarkdownComponents}>{text}</ReactMarkdown></div>}
+                    {text && <div className="mt-2 text-sky-800 font-normal"><ReactMarkdown components={dictionaryMarkdownComponents}>{text}</ReactMarkdown></div>}
                     {children}
                 </div>
             </div>
