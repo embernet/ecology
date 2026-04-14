@@ -27,24 +27,19 @@ function PageSectionLinks({ depth }: { depth: number }) {
     <ul className="sidebar-children">
       {headings.map((h) => (
         <li key={h.id}>
-          <button
+          <a
+            href={`#${h.id}`}
+            className="sidebar-section-heading"
+            style={{ paddingLeft: `${0.75 + (depth + 1) * 0.75}rem`, paddingRight: '0.75rem' }}
+            data-level={h.level}
             onClick={() => {
-              const el = document.getElementById(h.id);
-              if (el) {
-                const headerHeight = (document.querySelector('header') as HTMLElement | null)?.offsetHeight ?? 0;
-                const y = el.getBoundingClientRect().top + window.scrollY - headerHeight - 12;
-                window.scrollTo({ top: y, behavior: 'smooth' });
-              }
               if (typeof window !== 'undefined' && window.matchMedia('(max-width: 1100px)').matches) {
                 setSidebarOpen(false);
               }
             }}
-            className="sidebar-section-heading"
-            style={{ paddingLeft: `${0.75 + (depth + 1) * 0.75}rem`, paddingRight: '0.75rem' }}
-            data-level={h.level}
           >
             {h.text}
-          </button>
+          </a>
         </li>
       ))}
     </ul>
@@ -58,12 +53,12 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
   const [expanded, setExpanded] = useState(containsActive);
   const collapseVersion = useContext(CollapseContext);
 
-  // Auto-expand when navigating to a child page
+  // Auto-expand when navigating to a child page (sections) or to this page (leaf entries)
   useEffect(() => {
-    if (containsActive) {
+    if (containsActive || isActive) {
       setExpanded(true);
     }
-  }, [containsActive]);
+  }, [containsActive, isActive]);
 
   // Collapse when "close all" is triggered
   useEffect(() => {
@@ -78,11 +73,17 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
         <div className="sidebar-section-header" style={{ paddingLeft: `${0.75 + depth * 0.75}rem` }}>
           <Link
             href={entry.href}
+            onClick={(e) => {
+              if (isActive) {
+                e.preventDefault();
+                setExpanded(!expanded);
+              }
+            }}
             className={`sidebar-toggle${isActive ? ' font-semibold text-green-800' : ''}`}
             style={{ textDecoration: 'none' }}
           >
             <svg
-              className="sidebar-chevron"
+              className={`sidebar-chevron ${isActive && expanded ? 'sidebar-chevron-open' : ''}`}
               viewBox="0 0 20 20"
               fill="currentColor"
             >
@@ -95,7 +96,7 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
             <span>{entry.label}</span>
           </Link>
         </div>
-        {isActive && <PageSectionLinks depth={depth} />}
+        {isActive && expanded && <PageSectionLinks depth={depth} />}
       </li>
     );
   }
@@ -156,7 +157,7 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
 }
 
 export function SidebarToggleButton() {
-  const { isSidebarOpen, setSidebarOpen, isSidebarDesktopOpen, setSidebarDesktopOpen, mounted } = useResourcePack();
+  const { isSidebarOpen, setSidebarOpen, isSidebarDesktopOpen, setSidebarDesktopOpen } = useResourcePack();
 
   const handleClick = useCallback(() => {
     if (typeof window !== 'undefined' && window.matchMedia('(max-width: 1100px)').matches) {
@@ -167,15 +168,14 @@ export function SidebarToggleButton() {
   }, [isSidebarOpen, isSidebarDesktopOpen, setSidebarOpen, setSidebarDesktopOpen]);
 
   // On desktop: active = sidebar is visible. On mobile: active = overlay is shown.
-  // Guard with `mounted` to avoid SSR mismatch.
-  const isActive = mounted && (
-    typeof window !== 'undefined' && !window.matchMedia('(max-width: 1100px)').matches
-      ? isSidebarDesktopOpen
-      : isSidebarOpen
-  );
+  // Server renders as inactive (window unavailable); client corrects during hydration.
+  const isActive = typeof window !== 'undefined' && !window.matchMedia('(max-width: 1100px)').matches
+    ? isSidebarDesktopOpen
+    : isSidebarOpen;
 
   return (
     <button
+      suppressHydrationWarning
       className={`sidebar-header-toggle${isActive ? ' header-toggle-active' : ''}`}
       onClick={handleClick}
       aria-label="Toggle navigation"
@@ -200,7 +200,7 @@ export function SidebarToggleButton() {
 
 export function Sidebar() {
   const pathname = usePathname();
-  const { isSidebarOpen, setSidebarOpen, isSidebarDesktopOpen, mounted } = useResourcePack();
+  const { isSidebarOpen, setSidebarOpen, isSidebarDesktopOpen } = useResourcePack();
   const [collapseVersion, setCollapseVersion] = useState(0);
   const collapseAll = useCallback(() => setCollapseVersion((v) => v + 1), []);
 
@@ -222,7 +222,7 @@ export function Sidebar() {
       )}
 
       {/* Sidebar nav */}
-      <aside className={`sidebar ${isSidebarOpen ? 'sidebar-open' : ''} ${mounted && !isSidebarDesktopOpen ? 'sidebar-desktop-hidden' : ''}`}>
+      <aside className={`sidebar ${isSidebarOpen ? 'sidebar-open' : ''} ${!isSidebarDesktopOpen ? 'sidebar-desktop-hidden' : ''}`}>
         <div className="sidebar-header">
           <span className="sidebar-header-title">Navigation</span>
           <div style={{ display: 'flex', alignItems: 'center', gap: '0.25rem' }}>

@@ -192,13 +192,13 @@ function ResourceCard({ resource }: { resource: RegistryResource & { id: string,
     setActiveImageIndex(0);
   };
 
-  const { addItem, removeItem, isInPack, mounted } = useResourcePack();
+  const { addItem, removeItem, isInPack } = useResourcePack();
   const typeLabel = resource.type.replace(/([A-Z])/g, ' $1').trim();
   const title = resource.data.title || resource.title;
   const previewText = resource.data.text || resource.data.facts || resource.data.description || 'View resource to see content details.';
-  
+
   const lookupKey = makeResourceLookupKey(resource.type as any, title, resource.sourcePage);
-  const added = mounted && isInPack(lookupKey);
+  const added = isInPack(lookupKey);
 
   const handleTogglePack = (e: React.MouseEvent) => {
     e.preventDefault(); // Prevent navigating to explore page

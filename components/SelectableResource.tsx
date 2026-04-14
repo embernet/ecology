@@ -41,10 +41,10 @@ function extractWikiImages(element: HTMLElement): WikiImageData[] {
 }
 
 export function SelectableResource({ resourceId, type, title, data, captureRef, children }: SelectableResourceProps) {
-  const { addItem, removeItem, isInPack, mounted } = useResourcePack();
+  const { addItem, removeItem, isInPack } = useResourcePack();
   const { slug, title: pageTitle } = usePageContext();
   const lookupKey = makeResourceLookupKey(type, title, slug);
-  const added = mounted && isInPack(lookupKey);
+  const added = isInPack(lookupKey);
 
   const handleToggle = useCallback(() => {
     if (added) {

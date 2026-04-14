@@ -18,11 +18,11 @@ type ResourceRegistry = Record<string, RegistryEntry>;
 
 export function ResourcePackUrlLoader() {
   const searchParams = useSearchParams();
-  const { loadItems, mounted, showPrintView, togglePrintView } = useResourcePack();
+  const { loadItems, storageReady, showPrintView, togglePrintView } = useResourcePack();
   const loadedRef = useRef(false);
 
   useEffect(() => {
-    if (!mounted || loadedRef.current) return;
+    if (!storageReady || loadedRef.current) return;
 
     const resourcesParam = searchParams.get('resources');
     if (!resourcesParam) return;
@@ -71,7 +71,7 @@ export function ResourcePackUrlLoader() {
         // Silently fail if registry can't be loaded
       });
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [mounted, searchParams, loadItems]);
+  }, [storageReady, searchParams, loadItems]);
 
   return null;
 }

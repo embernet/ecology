@@ -5,13 +5,7 @@ import { ResourceRenderer } from '@/components/ResourceRenderer';
 import Link from 'next/link';
 
 export default function PrintResourcePack() {
-  const { items, mounted, packName } = useResourcePack();
-
-  if (!mounted) {
-    return (
-      <div className="text-center py-20 text-slate-400">Loading...</div>
-    );
-  }
+  const { items, packName } = useResourcePack();
 
   if (items.length === 0) {
     return (

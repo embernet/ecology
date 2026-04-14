@@ -69,10 +69,10 @@ export default function RootLayout({
               <MainContent>{children}</MainContent>
             </main>
             <ResourcePackPanel />
-            <footer className="layout-footer text-center py-8 text-slate-500 text-sm">
-              <p>&copy; {new Date().getFullYear()} Ecology Curriculum - Open Educational Resource</p>
-            </footer>
           </div>
+          <footer className="layout-footer text-center py-8 text-slate-500 text-sm">
+            <p>&copy; {new Date().getFullYear()} Ecology Curriculum - Open Educational Resource</p>
+          </footer>
         </ResourcePackProvider>
         </PageNavigationProvider>
       </body>

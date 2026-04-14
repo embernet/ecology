@@ -6,7 +6,7 @@ import { useResourcePack } from '@/contexts/ResourcePackContext';
 import { ResourceRenderer } from './ResourceRenderer';
 
 export function MainContent({ children }: { children: React.ReactNode }) {
-  const { items, showPrintView, togglePrintView, mounted, packName } = useResourcePack();
+  const { items, showPrintView, togglePrintView, packName } = useResourcePack();
   const pathname = usePathname();
 
   // Close print view and reset scroll position when navigating
@@ -34,7 +34,7 @@ export function MainContent({ children }: { children: React.ReactNode }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
-  if (!mounted || !showPrintView) {
+  if (!showPrintView) {
     return <>{children}</>;
   }
 

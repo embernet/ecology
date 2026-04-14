@@ -1,6 +1,6 @@
 'use client';
 
-import { createContext, useContext, useState, useEffect, useCallback } from 'react';
+import { createContext, useContext, useState, useEffect, useCallback, useRef } from 'react';
 import type { ResourcePackItem, ResourcePackItemData, ResourceType } from '@/lib/resource-pack-types';
 import { makeResourceLookupKey } from '@/lib/resource-pack-types';
 
@@ -46,7 +46,8 @@ interface ResourcePackContextValue {
   showPrintView: boolean;
   togglePrintView: () => void;
   itemCount: number;
-  mounted: boolean;
+  /** True once localStorage has been read. Only use this for initialization ordering (e.g. URL loader), NOT for conditional rendering. */
+  storageReady: boolean;
 }
 
 const ResourcePackContext = createContext<ResourcePackContextValue | null>(null);
@@ -99,22 +100,26 @@ export function ResourcePackProvider({ children }: { children: React.ReactNode }
   const [isSidebarDesktopOpen, setIsSidebarDesktopOpenRaw] = useState(true);
   const [isPanelDesktopOpen, setIsPanelDesktopOpenRaw] = useState(true);
   const [showPrintView, setShowPrintView] = useState(false);
-  const [mounted, setMounted] = useState(false);
+  const [storageReady, setStorageReady] = useState(false);
+  // Prevents overwriting localStorage with the empty initial state before the load effect applies.
+  const storageLoaded = useRef(false);
 
   // Load from localStorage on mount
   useEffect(() => {
     const stored = loadFromStorage();
     setItems(stored.items);
     setPackName(stored.packName);
-    setMounted(true);
+    setStorageReady(true);
   }, []);
 
-  // Persist to localStorage on change (skip initial empty state)
+  // Persist to localStorage on change — skip the first run (before load has been applied)
   useEffect(() => {
-    if (mounted) {
-      saveToStorage(items, packName);
+    if (!storageLoaded.current) {
+      storageLoaded.current = true;
+      return;
     }
-  }, [items, packName, mounted]);
+    saveToStorage(items, packName);
+  }, [items, packName]);
 
   const setSidebarOpen = useCallback((open: boolean) => {
     setIsSidebarOpenRaw(open);
@@ -268,7 +273,7 @@ export function ResourcePackProvider({ children }: { children: React.ReactNode }
       showPrintView,
       togglePrintView,
       itemCount: items.length,
-      mounted,
+      storageReady,
     }}>
       {children}
     </ResourcePackContext.Provider>

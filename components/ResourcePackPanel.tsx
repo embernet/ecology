@@ -7,7 +7,7 @@ import { exportAsHtml, exportAsHtmlWithUrls } from '@/lib/export-html';
 
 
 export function ResourcePackPanel() {
-  const { items, isPanelOpen, togglePanel, setResourcePanelOpen, itemCount, clearAll, mounted, showPrintView, togglePrintView, packName, setPackName, isPanelDesktopOpen } = useResourcePack();
+  const { items, isPanelOpen, togglePanel, setResourcePanelOpen, itemCount, clearAll, showPrintView, togglePrintView, packName, setPackName, isPanelDesktopOpen } = useResourcePack();
   const [exporting, setExporting] = useState(false);
   const [linkCopied, setLinkCopied] = useState(false);
   const [showBookmarkModal, setShowBookmarkModal] = useState(false);
@@ -70,12 +70,10 @@ export function ResourcePackPanel() {
     setShowBookmarkModal(true);
   }, []);
 
-  if (!mounted) return null;
-
   return (
     <>
       {/* Desktop panel - always open on desktop, toggleable on mobile */}
-      <aside className={`resource-pack-panel ${isPanelOpen ? 'resource-pack-panel-open' : ''} ${mounted && !isPanelDesktopOpen ? 'resource-pack-panel-desktop-hidden' : ''}`}>
+      <aside className={`resource-pack-panel ${isPanelOpen ? 'resource-pack-panel-open' : ''} ${!isPanelDesktopOpen ? 'resource-pack-panel-desktop-hidden' : ''}`}>
         <div className="resource-pack-header">
           <div className="flex items-center gap-2">
             <span className="text-lg">📦</span>
@@ -438,7 +436,7 @@ function BookmarkModal({ baseUrl, title, onClose, onRename }: { baseUrl: string;
 }
 
 export function ResourcePackToggleButton() {
-  const { isPanelOpen, togglePanel, setResourcePanelOpen, itemCount, mounted, isPanelDesktopOpen, setPanelDesktopOpen } = useResourcePack();
+  const { isPanelOpen, togglePanel, setResourcePanelOpen, itemCount, isPanelDesktopOpen, setPanelDesktopOpen } = useResourcePack();
 
   const handleClick = useCallback(() => {
     if (typeof window !== 'undefined' && window.matchMedia('(max-width: 1100px)').matches) {
@@ -449,14 +447,14 @@ export function ResourcePackToggleButton() {
   }, [isPanelOpen, isPanelDesktopOpen, togglePanel, setResourcePanelOpen, setPanelDesktopOpen]);
 
   // On desktop: active = panel is visible. On mobile: active = overlay is shown.
-  const isActive = mounted && (
-    typeof window !== 'undefined' && !window.matchMedia('(max-width: 1100px)').matches
-      ? isPanelDesktopOpen
-      : isPanelOpen
-  );
+  // Server renders as inactive (window unavailable); client corrects during hydration.
+  const isActive = typeof window !== 'undefined' && !window.matchMedia('(max-width: 1100px)').matches
+    ? isPanelDesktopOpen
+    : isPanelOpen;
 
   return (
     <button
+      suppressHydrationWarning
       onClick={handleClick}
       className={`resource-pack-header-toggle${isActive ? ' header-toggle-active' : ''}`}
       aria-label="Toggle resource pack"
@@ -464,7 +462,7 @@ export function ResourcePackToggleButton() {
     >
       <span style={{ position: 'relative', display: 'inline-flex' }}>
         <span className="text-base">📦</span>
-        {mounted && itemCount > 0 && (
+        {itemCount > 0 && (
           <span className="absolute -top-1 -right-1 bg-green-600 text-white text-xs font-bold rounded-full w-4 h-4 flex items-center justify-center" style={{ fontSize: '0.6rem' }}>
             {itemCount}
           </span>
