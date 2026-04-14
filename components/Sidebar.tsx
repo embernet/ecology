@@ -8,7 +8,9 @@ import { usePageNavigation } from '@/contexts/PageNavigationContext';
 import { navigation, isSection } from '@/lib/navigation';
 import type { NavEntry, NavItem, NavSection } from '@/lib/navigation';
 
-const CollapseContext = createContext(0);
+// Accordion: tracks which top-level section (depth=0) is open
+type AccordionCtx = { openKey: string | null; setOpenKey: (key: string | null) => void };
+const AccordionContext = createContext<AccordionCtx>({ openKey: null, setOpenKey: () => {} });
 
 function pathMatchesEntry(pathname: string, entry: NavEntry): boolean {
   if (!isSection(entry)) {
@@ -50,22 +52,33 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
   const pathname = usePathname();
   const isActive = !isSection(entry) && pathname === entry.href;
   const containsActive = isSection(entry) && pathMatchesEntry(pathname, entry);
-  const [expanded, setExpanded] = useState(containsActive);
-  const collapseVersion = useContext(CollapseContext);
+  const { openKey, setOpenKey } = useContext(AccordionContext);
 
-  // Auto-expand when navigating to a child page (sections) or to this page (leaf entries)
+  const myKey = isSection(entry) ? entry.label : (entry as NavItem).href;
+  const isTopLevel = depth === 0;
+
+  // Top-level sections: controlled by accordion context. Nested sections: local state.
+  const [localExpanded, setLocalExpanded] = useState(!isTopLevel && containsActive);
+  const expanded = isTopLevel ? openKey === myKey : localExpanded;
+
+  const toggle = useCallback(() => {
+    if (isTopLevel) {
+      setOpenKey(expanded ? null : myKey);
+    } else {
+      setLocalExpanded((v) => !v);
+    }
+  }, [isTopLevel, expanded, myKey, setOpenKey]);
+
+  // Auto-expand when this section contains the active page
   useEffect(() => {
     if (containsActive || isActive) {
-      setExpanded(true);
+      if (isTopLevel) {
+        setOpenKey(myKey);
+      } else {
+        setLocalExpanded(true);
+      }
     }
-  }, [containsActive, isActive]);
-
-  // Collapse when "close all" is triggered
-  useEffect(() => {
-    if (collapseVersion > 0) {
-      setExpanded(false);
-    }
-  }, [collapseVersion]);
+  }, [containsActive, isActive]); // eslint-disable-line react-hooks/exhaustive-deps
 
   if (!isSection(entry)) {
     return (
@@ -76,7 +89,7 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
             onClick={(e) => {
               if (isActive) {
                 e.preventDefault();
-                setExpanded(!expanded);
+                toggle();
               }
             }}
             className={`sidebar-toggle${isActive ? ' font-semibold text-green-800' : ''}`}
@@ -106,7 +119,7 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
       <div className="sidebar-section-header" style={{ paddingLeft: `${0.75 + depth * 0.75}rem` }}>
         {/* Chevron button: toggles expand/collapse only */}
         <button
-          onClick={() => setExpanded(!expanded)}
+          onClick={toggle}
           className="sidebar-chevron-btn"
           aria-expanded={expanded}
           aria-label={`${expanded ? 'Collapse' : 'Expand'} ${entry.label}`}
@@ -127,14 +140,14 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
         {entry.href ? (
           <Link
             href={entry.href}
-            onClick={() => setExpanded(!expanded)}
+            onClick={toggle}
             className={`sidebar-section-label${containsActive ? ' font-semibold text-green-800' : ''}`}
           >
             {entry.label}
           </Link>
         ) : (
           <button
-            onClick={() => setExpanded(!expanded)}
+            onClick={toggle}
             className={`sidebar-section-label${containsActive ? ' font-semibold text-green-800' : ''}`}
           >
             {entry.label}
@@ -201,8 +214,8 @@ export function SidebarToggleButton() {
 export function Sidebar() {
   const pathname = usePathname();
   const { isSidebarOpen, setSidebarOpen, isSidebarDesktopOpen } = useResourcePack();
-  const [collapseVersion, setCollapseVersion] = useState(0);
-  const collapseAll = useCallback(() => setCollapseVersion((v) => v + 1), []);
+  const [openKey, setOpenKey] = useState<string | null>(null);
+  const collapseAll = useCallback(() => setOpenKey(null), []);
 
   // Close sidebar on navigation (mobile only)
   useEffect(() => {
@@ -263,7 +276,7 @@ export function Sidebar() {
           </svg>
           Home
         </Link>
-        <CollapseContext.Provider value={collapseVersion}>
+        <AccordionContext.Provider value={{ openKey, setOpenKey }}>
           <nav className="sidebar-nav-wrapper">
             <ul className="sidebar-nav">
               {navigation.map((entry) => (
@@ -274,7 +287,7 @@ export function Sidebar() {
               ))}
             </ul>
           </nav>
-        </CollapseContext.Provider>
+        </AccordionContext.Provider>
       </aside>
     </>
   );
