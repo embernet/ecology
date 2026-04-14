@@ -95,16 +95,8 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
             className={`sidebar-toggle${isActive ? ' font-semibold text-green-800' : ''}`}
             style={{ textDecoration: 'none' }}
           >
-            <svg
-              className={`sidebar-chevron ${isActive && expanded ? 'sidebar-chevron-open' : ''}`}
-              viewBox="0 0 20 20"
-              fill="currentColor"
-            >
-              <path
-                fillRule="evenodd"
-                d="M7.21 14.77a.75.75 0 01.02-1.06L11.168 10 7.23 6.29a.75.75 0 111.04-1.08l4.5 4.25a.75.75 0 010 1.08l-4.5 4.25a.75.75 0 01-1.06-.02z"
-                clipRule="evenodd"
-              />
+            <svg className="sidebar-page-dash" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth={2} strokeLinecap="round" aria-hidden="true">
+              <line x1="5" y1="10" x2="15" y2="10" />
             </svg>
             <span>{entry.label}</span>
           </Link>

@@ -90,14 +90,6 @@ export const navigation: NavEntry[] = [
     ],
   },
   {
-    label: 'Teaching Resources',
-    href: '/wiki/teaching-resources',
-    children: [
-      { label: 'Teaching Principles', href: '/wiki/teaching-principles-used-to-create-the-learning-resources' },
-      { label: 'Useful External Resources', href: '/wiki/other-websites-with-useful-ecology-resources' },
-    ],
-  },
-  {
     label: 'Handouts',
     href: '/wiki/handouts',
     children: [
@@ -124,6 +116,14 @@ export const navigation: NavEntry[] = [
     children: [
       { label: 'Dictionary', href: '/dictionary' },
       { label: 'Resource Index', href: '/resources' },
+    ],
+  },
+  {
+    label: 'Teaching Resources',
+    href: '/wiki/teaching-resources',
+    children: [
+      { label: 'Teaching Principles', href: '/wiki/teaching-principles-used-to-create-the-learning-resources' },
+      { label: 'Useful External Resources', href: '/wiki/other-websites-with-useful-ecology-resources' },
     ],
   },
 ];
