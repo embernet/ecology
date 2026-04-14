@@ -250,7 +250,7 @@ export function Sidebar() {
         </div>
         <Link
           href="/"
-          className={`sidebar-home-link${pathname === '/' ? ' sidebar-home-link-active' : ''}`}
+          className={`sidebar-home-link flex items-center gap-2${pathname === '/' ? ' sidebar-home-link-active' : ''}`}
           onClick={() => {
             if (typeof window !== 'undefined' && window.matchMedia('(max-width: 1100px)').matches) {
               setSidebarOpen(false);
