@@ -17,8 +17,23 @@ interface ImageEntry {
 
 type ViewTab = 'list' | 'grid';
 
+const VIEW_STORAGE_KEY = 'image-library-view';
+
 export function ImageLibrary({ images }: { images: ImageEntry[] }) {
     const [activeTab, setActiveTab] = useState<ViewTab>('list');
+
+    // Restore saved view on mount
+    useEffect(() => {
+        try {
+            const saved = localStorage.getItem(VIEW_STORAGE_KEY);
+            if (saved === 'list' || saved === 'grid') setActiveTab(saved);
+        } catch { /* quota / private mode */ }
+    }, []);
+
+    function setTab(tab: ViewTab) {
+        setActiveTab(tab);
+        try { localStorage.setItem(VIEW_STORAGE_KEY, tab); } catch { /* ignore */ }
+    }
     const [search, setSearch] = useState('');
     const [modalImage, setModalImage] = useState<ImageEntry | null>(null);
     const [hoverImage, setHoverImage] = useState<{ entry: ImageEntry; x: number; y: number } | null>(null);
@@ -55,7 +70,7 @@ export function ImageLibrary({ images }: { images: ImageEntry[] }) {
             <div className="image-library-tabs">
                 <button
                     className={`image-library-tab ${activeTab === 'list' ? 'image-library-tab-active' : ''}`}
-                    onClick={() => setActiveTab('list')}
+                    onClick={() => setTab('list')}
                 >
                     <svg viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                         <path fillRule="evenodd" d="M2 4.75A.75.75 0 012.75 4h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 4.75zm0 10.5a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75a.75.75 0 01-.75-.75zM2 10a.75.75 0 01.75-.75h14.5a.75.75 0 010 1.5H2.75A.75.75 0 012 10z" clipRule="evenodd" />
@@ -64,7 +79,7 @@ export function ImageLibrary({ images }: { images: ImageEntry[] }) {
                 </button>
                 <button
                     className={`image-library-tab ${activeTab === 'grid' ? 'image-library-tab-active' : ''}`}
-                    onClick={() => setActiveTab('grid')}
+                    onClick={() => setTab('grid')}
                 >
                     <svg viewBox="0 0 20 20" fill="currentColor" className="w-4 h-4">
                         <path fillRule="evenodd" d="M4.25 2A2.25 2.25 0 002 4.25v2.5A2.25 2.25 0 004.25 9h2.5A2.25 2.25 0 009 6.75v-2.5A2.25 2.25 0 006.75 2h-2.5zm0 9A2.25 2.25 0 002 13.25v2.5A2.25 2.25 0 004.25 18h2.5A2.25 2.25 0 009 15.75v-2.5A2.25 2.25 0 006.75 11h-2.5zm9-9A2.25 2.25 0 0011 4.25v2.5A2.25 2.25 0 0013.25 9h2.5A2.25 2.25 0 0018 6.75v-2.5A2.25 2.25 0 0015.75 2h-2.5zm0 9A2.25 2.25 0 0011 13.25v2.5A2.25 2.25 0 0013.25 18h2.5A2.25 2.25 0 0018 15.75v-2.5A2.25 2.25 0 0015.75 11h-2.5z" clipRule="evenodd" />
