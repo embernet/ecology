@@ -69,7 +69,7 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
     }
   }, [isTopLevel, expanded, myKey, setOpenKey]);
 
-  // Auto-expand when this section contains the active page
+  // Auto-expand when this section contains the active page; auto-collapse when it doesn't
   useEffect(() => {
     if (containsActive || isActive) {
       if (isTopLevel) {
@@ -77,6 +77,8 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
       } else {
         setLocalExpanded(true);
       }
+    } else if (!isTopLevel) {
+      setLocalExpanded(false);
     }
   }, [containsActive, isActive]); // eslint-disable-line react-hooks/exhaustive-deps
 
@@ -128,7 +130,7 @@ function SidebarSection({ entry, depth = 0 }: { entry: NavEntry; depth?: number 
             />
           </svg>
         </button>
-        {/* Label: navigates (if href) and also toggles expand/collapse */}
+        {/* Label: navigates if href and toggles expand/collapse */}
         {entry.href ? (
           <Link
             href={entry.href}

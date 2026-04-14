@@ -31,6 +31,7 @@ export const navigation: NavEntry[] = [
       { label: 'Working Scientifically (Years 1-2)', href: '/wiki/years-1-and-2-working-scientifically' },
       {
         label: 'Year 1',
+        href: '/wiki/year-1',
         children: [
           { label: 'Plants', href: '/wiki/year-1-plants' },
           { label: 'Animals, including humans', href: '/wiki/year-1-animals-including-humans' },
@@ -40,6 +41,7 @@ export const navigation: NavEntry[] = [
       },
       {
         label: 'Year 2',
+        href: '/wiki/year-2',
         children: [
           { label: 'Plants', href: '/wiki/year-2-plants' },
           { label: 'Animals, including humans', href: '/wiki/year-2-animals-including-humans' },
@@ -49,6 +51,7 @@ export const navigation: NavEntry[] = [
       },
       {
         label: 'Year 3',
+        href: '/wiki/year-3',
         children: [
           { label: 'Plants', href: '/wiki/year-3-plants' },
           { label: 'Light', href: '/wiki/year-3-light' },
@@ -56,6 +59,7 @@ export const navigation: NavEntry[] = [
       },
       {
         label: 'Year 4',
+        href: '/wiki/year-4',
         children: [
           { label: 'Animals, including humans', href: '/wiki/year-4-animals-including-humans' },
           { label: 'Electricity', href: '/wiki/year-4-electricity' },
@@ -66,6 +70,7 @@ export const navigation: NavEntry[] = [
       },
       {
         label: 'Year 5',
+        href: '/wiki/year-5',
         children: [
           { label: 'Earth and space', href: '/wiki/year-5-earth-and-space' },
           { label: 'Living things and their habitats', href: '/wiki/year-5-living-things-and-their-habitats' },
@@ -73,6 +78,7 @@ export const navigation: NavEntry[] = [
       },
       {
         label: 'Year 6',
+        href: '/wiki/year-6',
         children: [
           { label: 'Evolution and inheritance', href: '/wiki/year-6-evolution-and-inheritance' },
           { label: 'Living things and their habitats', href: '/wiki/year-6-living-things-and-their-habitats' },
@@ -106,6 +112,7 @@ export const navigation: NavEntry[] = [
   },
   {
     label: 'Media Library',
+    href: '/media',
     children: [
       { label: 'Images', href: '/media/images' },
       { label: 'Live Streams', href: '/media/live-streams' },
@@ -113,6 +120,7 @@ export const navigation: NavEntry[] = [
   },
   {
     label: 'Reference',
+    href: '/reference',
     children: [
       { label: 'Dictionary', href: '/dictionary' },
       { label: 'Resource Index', href: '/resources' },
@@ -158,7 +166,7 @@ export interface SiblingPages {
 export function getSiblingPages(slug: string): SiblingPages {
   const href = `/wiki/${slug}`;
 
-  // First, check if this is a top-level section landing page
+  // Check if this is a top-level section landing page
   const sectionNode = navigation.find(entry => isSection(entry) && entry.href === href);
   if (sectionNode) {
     return {
@@ -167,6 +175,21 @@ export function getSiblingPages(slug: string): SiblingPages {
       sectionLabel: 'Home',
       sectionHref: '/'
     };
+  }
+
+  // Check if this is a nested section landing page (e.g. Year 1 under Science)
+  for (const entry of navigation) {
+    if (!isSection(entry)) continue;
+    for (const child of entry.children) {
+      if (isSection(child) && child.href === href) {
+        return {
+          prev: null,
+          next: null,
+          sectionLabel: entry.label,
+          sectionHref: entry.href ?? null,
+        };
+      }
+    }
   }
 
   for (const entry of navigation) {
