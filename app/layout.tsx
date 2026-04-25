@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Suspense } from 'react';
 import './globals.css';
 import Link from 'next/link';
@@ -11,6 +11,11 @@ import { ResourcePackUrlLoader } from '@/components/ResourcePackUrlLoader';
 import { MainContent } from '@/components/MainContent';
 import { SearchBar } from '@/components/SearchBar';
 import { ServiceWorker } from '@/components/ServiceWorker';
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+};
 
 export const metadata: Metadata = {
   title: 'Ecology Curriculum',

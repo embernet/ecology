@@ -29,7 +29,8 @@ export const Handout: React.FC<HandoutProps> = ({ id, title, imageSrc, altText }
                     <img
                         src={imageSrc}
                         alt={altText || title}
-                        className="w-full h-auto"
+                        className="w-full h-auto block"
+                        style={{ maxWidth: '100%' }}
                     />
                 </div>
                 <div className="handout-footer-bar bg-amber-50 px-6 py-4 border-t border-amber-100 flex items-center justify-end">

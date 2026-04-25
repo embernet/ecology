@@ -26,17 +26,17 @@ export const NatureExample: React.FC<NatureExampleProps> = ({ id, title, emoji, 
             captureRef={captureRef}
         >
             <div className="my-8 rounded-xl overflow-hidden shadow-lg border border-green-100 bg-white">
-                <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 flex items-start gap-4 border-b border-green-100">
-                    {emoji && (
-                        <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center text-4xl bg-white rounded-full shadow-sm border border-green-100">
-                            {emoji}
-                        </div>
-                    )}
-                    <div className="flex-grow">
+                <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 border-b border-green-100">
+                    <div className="flex items-center gap-4 mb-4">
+                        {emoji && (
+                            <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center text-4xl bg-white rounded-full shadow-sm border border-green-100">
+                                {emoji}
+                            </div>
+                        )}
                         <h3 className="text-2xl font-bold text-green-800 m-0">{title}</h3>
-                        <div ref={captureRef} className="mt-4 prose prose-green max-w-none">
-                            {children}
-                        </div>
+                    </div>
+                    <div ref={captureRef} className="prose prose-green max-w-none">
+                        {children}
                     </div>
                 </div>
 

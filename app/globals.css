@@ -320,6 +320,7 @@
 .layout-with-sidebar {
   display: flex;
   flex-wrap: nowrap;
+  width: 100%;
   max-width: 90rem;
   margin: 0 auto;
   padding: 0 1rem;
@@ -345,6 +346,7 @@
 .main-scroll-area {
   flex: 1;
   overflow-y: auto;
+  overflow-x: hidden;
   padding: 2rem;
   scrollbar-width: thin;
   scrollbar-color: #cbd5e1 transparent;
