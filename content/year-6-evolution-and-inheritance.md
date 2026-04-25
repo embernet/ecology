@@ -67,6 +67,8 @@ The world's tallest mammal, native to the African savanna.
 A common moth from Britain, famous for changing its colour to stay hidden as its surroundings changed.
 
 **Adaptations:** A famous example of natural selection, where the darker form of the moth became more common on soot-covered trees during the Industrial Revolution because it was better camouflaged.
+
+<WikiImage filename="Biston betularia couple.JPG" alt="The light (typica) and dark (carbonaria) forms of the peppered moth side by side" />
 </NatureExample>
 
 

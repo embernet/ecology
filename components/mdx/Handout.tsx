@@ -32,7 +32,7 @@ export const Handout: React.FC<HandoutProps> = ({ id, title, imageSrc, altText }
                         className="w-full h-auto"
                     />
                 </div>
-                <div className="bg-amber-50 px-6 py-4 border-t border-amber-100 flex items-center justify-end">
+                <div className="handout-footer-bar bg-amber-50 px-6 py-4 border-t border-amber-100 flex items-center justify-end">
                     <a
                         href={imageSrc}
                         download={filename}

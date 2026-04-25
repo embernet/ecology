@@ -7179,8 +7179,13 @@
     "data": {
       "type": "NatureExample",
       "facts": "- **Camouflage:** Before pollution, the light, speckled form of the peppered moth was most common because it blended in perfectly with lichen on tree bark. The rare dark form was easily spotted and eaten by birds.\n- **Industrial Melanism:** During the Industrial Revolution, soot from factories killed the lichen and blackened the tree trunks. Suddenly, the dark moths were camouflaged, and the light ones were easily spotted.\n- **Evolution in Action:** As air quality has improved in recent decades, the lichens have returned and tree trunks are cleaner. The light-coloured peppered moth has now become the more common form again, providing a perfect example of evolution that scientists have observed.",
-      "childrenHtml": "<p>A common moth from Britain, famous for changing its colour to stay hidden as its surroundings changed.</p>\n<p><strong>Adaptations:</strong> A famous example of natural selection, where the darker form of the moth became more common on soot-covered trees during the Industrial Revolution because it was better camouflaged.</p>",
-      "wikiImages": []
+      "childrenHtml": "<p>A common moth from Britain, famous for changing its colour to stay hidden as its surroundings changed.</p>\n<p><strong>Adaptations:</strong> A famous example of natural selection, where the darker form of the moth became more common on soot-covered trees during the Industrial Revolution because it was better camouflaged.</p>\n<figure data-wiki-filename=\"Biston betularia couple.JPG\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Biston_betularia_couple.JPG\" alt=\"The light (typica) and dark (carbonaria) forms of the peppered moth side by side\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>The light (typica) and dark (carbonaria) forms of the peppered moth side by side</figcaption></figure>",
+      "wikiImages": [
+        {
+          "filename": "Biston betularia couple.JPG",
+          "alt": "The light (typica) and dark (carbonaria) forms of the peppered moth side by side"
+        }
+      ]
     }
   },
   "a91": {

@@ -665,7 +665,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: all 0.2s;
-  opacity: 0;
+  opacity: 1;
   background-color: #2E8B57;
   color: white;
   box-shadow: 0 2px 8px rgb(0 0 0 / 0.15);
@@ -702,13 +702,11 @@
   width: 16rem;
   flex-shrink: 0;
   height: 100%;
-  overflow-y: auto;
+  overflow: hidden;
   margin-top: 1rem;
   background: white;
   border-radius: 0.5rem;
   box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
-  scrollbar-width: thin;
-  scrollbar-color: #cbd5e1 transparent;
   display: flex;
   flex-direction: column;
 }
@@ -996,8 +994,23 @@
   }
 
   .main-content {
-    margin: 0.5rem;
+    margin: 0.25rem;
+  }
+
+  .main-scroll-area {
     padding: 1rem;
+  }
+
+  /* Ensure all images in content area scale to fit narrow screens */
+  .main-scroll-area img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  /* Handout footer: tighter padding and stack button on very small screens */
+  .handout-footer-bar {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 
