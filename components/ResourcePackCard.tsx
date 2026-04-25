@@ -32,7 +32,7 @@ interface ResourcePackCardProps {
 }
 
 export function ResourcePackCard({ item, index, total }: ResourcePackCardProps) {
-  const { removeItem, moveItem } = useResourcePack();
+  const { removeItem, moveItem, setResourcePanelOpen } = useResourcePack();
   const lookupKey = makeResourceLookupKey(item.type, item.title, item.sourcePage);
 
   return (
@@ -41,7 +41,15 @@ export function ResourcePackCard({ item, index, total }: ResourcePackCardProps) 
         <span className={`flex-shrink-0 text-xs px-1.5 py-0.5 rounded font-medium ${typeColors[item.type] || 'bg-gray-100'}`}>
           {typeIcons[item.type] || '📄'}
         </span>
-        <Link href={`/wiki/${item.sourcePage}`} className="flex-grow min-w-0 group">
+        <Link
+          href={`/wiki/${item.sourcePage}#${item.shortId}`}
+          className="flex-grow min-w-0 group"
+          onClick={() => {
+            if (typeof window !== 'undefined' && window.matchMedia('(max-width: 1100px)').matches) {
+              setResourcePanelOpen(false);
+            }
+          }}
+        >
           <p className="text-xs font-semibold text-slate-700 truncate leading-tight group-hover:text-green-700">
             {item.data.emoji && `${item.data.emoji} `}{item.title}
           </p>

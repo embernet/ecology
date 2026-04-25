@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useCallback, useRef, useEffect } from 'react';
+import { usePathname } from 'next/navigation';
 import { useResourcePack } from '@/contexts/ResourcePackContext';
 import { ResourcePackCard } from './ResourcePackCard';
 import { exportAsHtml, exportAsHtmlWithUrls } from '@/lib/export-html';
@@ -8,6 +9,7 @@ import { exportAsHtml, exportAsHtmlWithUrls } from '@/lib/export-html';
 
 export function ResourcePackPanel() {
   const { items, isPanelOpen, togglePanel, setResourcePanelOpen, itemCount, clearAll, showPrintView, togglePrintView, packName, setPackName, isPanelDesktopOpen } = useResourcePack();
+  const pathname = usePathname();
   const [exporting, setExporting] = useState(false);
   const [linkCopied, setLinkCopied] = useState(false);
   const [showBookmarkModal, setShowBookmarkModal] = useState(false);
@@ -21,6 +23,13 @@ export function ResourcePackPanel() {
       nameInputRef.current.select();
     }
   }, [editingName]);
+
+  // Close panel on navigation (mobile overlay only)
+  useEffect(() => {
+    if (isPanelOpen && typeof window !== 'undefined' && window.matchMedia('(max-width: 1100px)').matches) {
+      setResourcePanelOpen(false);
+    }
+  }, [pathname]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const startEditingName = useCallback(() => {
     setNameInput(packName);

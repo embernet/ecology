@@ -77,7 +77,7 @@ export function SelectableResource({ resourceId, type, title, data, captureRef, 
   }, [added, addItem, removeItem, lookupKey, type, title, slug, pageTitle, data, captureRef]);
 
   return (
-    <div className={`selectable-resource ${added ? 'selectable-resource-added' : ''}`}>
+    <div id={resourceId} className={`selectable-resource ${added ? 'selectable-resource-added' : ''}`}>
       {children}
       <button
         onClick={handleToggle}

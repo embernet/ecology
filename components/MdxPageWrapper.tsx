@@ -21,37 +21,39 @@ export function MdxPageWrapper({ slug, title, headings, children }: MdxPageWrapp
     return () => setHeadings([]);
   }, [slug, headings, setHeadings]);
 
-  // When navigating from the media library, the URL contains a hash like #img-abc123.
-  // The browser handles scrolling to the element with that id automatically.
-  // We just add a brief highlight effect so the user can spot the image.
+  // On every slug change, scroll to any hash target and highlight it if it's a resource.
+  // Uses [slug] not [] so it re-runs across slug navigations even when the component
+  // is reconciled rather than remounted (Next.js App Router behaviour).
   useEffect(() => {
     const hash = window.location.hash;
-    if (!hash.startsWith('#img-')) return;
+    if (!hash) return;
 
-    const id = hash.slice(1); // remove the leading #
+    const id = hash.slice(1);
 
-    const highlightElement = () => {
+    const scrollToTarget = () => {
       const el = document.getElementById(id);
       if (el) {
-        el.scrollIntoView({ behavior: 'smooth', block: 'center' });
-        el.classList.add('image-scroll-highlight');
-        setTimeout(() => el.classList.remove('image-scroll-highlight'), 2000);
+        el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        if (el.classList.contains('selectable-resource') || hash.startsWith('#img-')) {
+          el.classList.add('image-scroll-highlight');
+          setTimeout(() => el.classList.remove('image-scroll-highlight'), 2000);
+        }
         return true;
       }
       return false;
     };
 
-    // Try immediately, then retry for lazy-loaded content
-    if (!highlightElement()) {
+    if (!scrollToTarget()) {
       let attempts = 0;
       const interval = setInterval(() => {
         attempts++;
-        if (highlightElement() || attempts >= 15) {
+        if (scrollToTarget() || attempts >= 15) {
           clearInterval(interval);
         }
       }, 400);
+      return () => clearInterval(interval);
     }
-  }, []);
+  }, [slug]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
     <PageContext.Provider value={{ slug, title, headings }}>

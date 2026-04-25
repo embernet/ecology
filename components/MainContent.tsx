@@ -28,7 +28,11 @@ export function MainContent({ children }: { children: React.ReactNode }) {
       togglePrintView();
     }
 
+    // If the URL has a hash, MdxPageWrapper handles scroll positioning — don't reset.
+    if (window.location.hash) return;
+
     const resetScroll = () => {
+      if (window.location.hash) return;
       const scrollArea = document.querySelector('.main-scroll-area');
       if (scrollArea) {
         scrollArea.scrollTop = 0;

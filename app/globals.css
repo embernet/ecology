@@ -146,10 +146,12 @@
 
 .prevnext-slot-arrow-right {
   justify-content: flex-end;
+  order: 3;
 }
 
 .prevnext-slot-center {
-  flex: 1 1 0%;
+  order: 1;
+  flex: 0 0 auto;
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -158,17 +160,18 @@
 }
 
 .prevnext-title {
+  order: 2;
+  flex: 1;
   font-size: 0.875rem;
   font-weight: 700;
   color: #166534;
   background: #f0fdf4;
   padding: 0.4rem 1.25rem;
-  border-radius: 9999px;
+  border-radius: 1rem;
   border: 1px solid #bbf7d0;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
   min-width: 0;
+  text-align: center;
+  line-height: 1.35;
 }
 
 .prevnext-arrow {
@@ -986,6 +989,25 @@
   /* Make add buttons always visible on touch/narrow devices */
   .selectable-resource-btn {
     opacity: 1;
+  }
+}
+
+/* ── PrevNext mobile: title drops to its own full-width row ── */
+@media (max-width: 768px) {
+  .prevnext-inner {
+    flex-wrap: wrap;
+    gap: 0.4rem;
+  }
+
+  .prevnext-slot-center {
+    flex: 1;
+    justify-content: center;
+  }
+
+  .prevnext-title {
+    order: 10;
+    flex: 0 0 100%;
+    text-align: center;
   }
 }
 

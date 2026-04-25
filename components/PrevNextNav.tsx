@@ -31,9 +31,6 @@ export function PrevNextNav({ prev, next, sectionLabel, sectionHref, title }: Pr
               {sectionLabel}
             </Link>
           )}
-          {title && (
-            <span className="prevnext-title">{title}</span>
-          )}
         </div>
 
         <div className="prevnext-slot-arrow prevnext-slot-arrow-right">
@@ -45,6 +42,8 @@ export function PrevNextNav({ prev, next, sectionLabel, sectionHref, title }: Pr
             </Link>
           )}
         </div>
+
+        {title && <span className="prevnext-title">{title}</span>}
       </div>
     </nav>
   );

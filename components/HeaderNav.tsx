@@ -73,6 +73,9 @@ export function HeaderNav() {
             <Link href="/wiki/geography" className="header-dropdown-link" onClick={() => setIsOpen(false)}>
               Geography
             </Link>
+            <Link href="/wiki/handouts" className="header-dropdown-link" onClick={() => setIsOpen(false)}>
+              Handouts
+            </Link>
             <Link href="/wiki/teaching-principles-used-to-create-the-learning-resources" className="header-dropdown-link" onClick={() => setIsOpen(false)}>
               Teaching Resources
             </Link>
