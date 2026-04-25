@@ -148,6 +148,12 @@ export function ResourcePackPanel() {
           button on any resource to build a custom resource pack, then download it using the buttons that will appear below.
         </div>
 
+        {items.length > 0 && (
+          <div style={{ padding: '0.5rem 0.75rem', backgroundColor: '#eff6ff', borderBottom: '1px solid #e2e8f0', fontSize: '0.7rem', lineHeight: 1.8, color: '#475569', flexShrink: 0 }}>
+            Click on any resource to view it
+          </div>
+        )}
+
         <div className="resource-pack-items">
           {items.length === 0 ? (
             <div className="p-4 text-center text-slate-400 text-xs">

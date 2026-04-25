@@ -18,7 +18,7 @@ type ResourceRegistry = Record<string, RegistryEntry>;
 
 export function ResourcePackUrlLoader() {
   const searchParams = useSearchParams();
-  const { loadItems, storageReady, showPrintView, togglePrintView } = useResourcePack();
+  const { loadItems, storageReady, openPrintView } = useResourcePack();
   const loadedRef = useRef(false);
 
   useEffect(() => {
@@ -55,17 +55,17 @@ export function ResourcePackUrlLoader() {
         }
         if (items.length > 0) {
           loadItems(items, packNameParam || undefined);
-          // Auto-open print view when loading from a shared link
-          if (!showPrintView) {
-            togglePrintView();
-          }
+          openPrintView();
         }
 
-        // Clean the URL parameters without triggering a page reload
-        const url = new URL(window.location.href);
-        url.searchParams.delete('resources');
-        url.searchParams.delete('packName');
-        window.history.replaceState({}, '', url.pathname + url.search + url.hash);
+        // Defer URL cleanup to the next macrotask so React commits the state
+        // changes above before replaceState triggers Next.js router processing
+        setTimeout(() => {
+          const url = new URL(window.location.href);
+          url.searchParams.delete('resources');
+          url.searchParams.delete('packName');
+          window.history.replaceState({}, '', url.pathname + url.search + url.hash);
+        }, 0);
       })
       .catch(() => {
         // Silently fail if registry can't be loaded

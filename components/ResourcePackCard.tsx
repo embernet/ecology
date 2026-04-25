@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useResourcePack } from '@/contexts/ResourcePackContext';
 import type { ResourcePackItem } from '@/lib/resource-pack-types';
 import { makeResourceLookupKey } from '@/lib/resource-pack-types';
@@ -40,14 +41,14 @@ export function ResourcePackCard({ item, index, total }: ResourcePackCardProps) 
         <span className={`flex-shrink-0 text-xs px-1.5 py-0.5 rounded font-medium ${typeColors[item.type] || 'bg-gray-100'}`}>
           {typeIcons[item.type] || '📄'}
         </span>
-        <div className="flex-grow min-w-0">
-          <p className="text-xs font-semibold text-slate-700 truncate leading-tight">
+        <Link href={`/wiki/${item.sourcePage}`} className="flex-grow min-w-0 group">
+          <p className="text-xs font-semibold text-slate-700 truncate leading-tight group-hover:text-green-700">
             {item.data.emoji && `${item.data.emoji} `}{item.title}
           </p>
-          <p className="text-[10px] text-slate-400 truncate mt-0.5">
+          <p className="text-[10px] text-slate-400 truncate mt-0.5 group-hover:text-green-600">
             {item.sourcePageTitle}
           </p>
-        </div>
+        </Link>
       </div>
       <div className="flex items-center gap-0.5 mt-1.5">
         <button

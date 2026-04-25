@@ -45,6 +45,7 @@ interface ResourcePackContextValue {
   setPanelDesktopOpen: (open: boolean) => void;
   showPrintView: boolean;
   togglePrintView: () => void;
+  openPrintView: () => void;
   itemCount: number;
   /** True once localStorage has been read. Only use this for initialization ordering (e.g. URL loader), NOT for conditional rendering. */
   storageReady: boolean;
@@ -250,6 +251,10 @@ export function ResourcePackProvider({ children }: { children: React.ReactNode }
     setShowPrintView(prev => !prev);
   }, []);
 
+  const openPrintView = useCallback(() => {
+    setShowPrintView(true);
+  }, []);
+
   return (
     <ResourcePackContext.Provider value={{
       items,
@@ -272,6 +277,7 @@ export function ResourcePackProvider({ children }: { children: React.ReactNode }
       setPanelDesktopOpen,
       showPrintView,
       togglePrintView,
+      openPrintView,
       itemCount: items.length,
       storageReady,
     }}>

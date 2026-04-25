@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef } from 'react';
 import { usePathname } from 'next/navigation';
 import { useResourcePack } from '@/contexts/ResourcePackContext';
 import { ResourceRenderer } from './ResourceRenderer';
@@ -9,28 +9,37 @@ export function MainContent({ children }: { children: React.ReactNode }) {
   const { items, showPrintView, togglePrintView, packName } = useResourcePack();
   const pathname = usePathname();
 
-  // Close print view and reset scroll position when navigating
+  // Always-current ref so the effect below never reads a stale value
+  const showPrintViewRef = useRef(showPrintView);
+  showPrintViewRef.current = showPrintView;
+
+  // Track the last pathname the effect actually ran for, so we can
+  // distinguish a genuine navigation from Next.js re-emitting the same
+  // pathname after replaceState (which would otherwise close the print view
+  // that was just opened by the URL loader)
+  const prevPathnameRef = useRef(pathname);
+
   useEffect(() => {
-    if (showPrintView) {
+    const prev = prevPathnameRef.current;
+    prevPathnameRef.current = pathname;
+
+    // Only close print view when navigating to a genuinely different page
+    if (showPrintViewRef.current && prev !== pathname) {
       togglePrintView();
     }
-    
-    // Defer scroll reset to ensure it happens after Next.js finishes updating the DOM
+
     const resetScroll = () => {
-      // Find the active scroll container inside main-content
       const scrollArea = document.querySelector('.main-scroll-area');
       if (scrollArea) {
         scrollArea.scrollTop = 0;
       }
     };
-    
+
     resetScroll();
     requestAnimationFrame(() => {
       resetScroll();
       setTimeout(resetScroll, 50);
     });
-    
-    // Only react to pathname changes, not showPrintView/togglePrintView
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pathname]);
 
