@@ -10,7 +10,7 @@ interface ImageEntry {
     alt: string;
     caption?: string;
     credit?: string;
-    pages: { slug: string; title: string }[];
+    pages: { slug: string; title: string; href?: string }[];
     src: string;
     thumbnailSrc: string;
 }
@@ -151,7 +151,7 @@ export function ImageLibrary({ images }: { images: ImageEntry[] }) {
                                 {img.pages.map((page) => (
                                     <Link
                                         key={page.slug}
-                                        href={`/wiki/${page.slug}#${img.id}`}
+                                        href={page.href ?? `/wiki/${page.slug}#${img.id}`}
                                         className="image-library-page-link"
                                     >
                                         {page.title}
@@ -185,7 +185,7 @@ export function ImageLibrary({ images }: { images: ImageEntry[] }) {
                             }}
                             onMouseLeave={() => setHoverImage(null)}
                         >
-                            <Link href={`/wiki/${img.pages[0]?.slug || ''}#${img.id}`} className="image-library-grid-link">
+                            <Link href={img.pages[0]?.href ?? `/wiki/${img.pages[0]?.slug || ''}#${img.id}`} className="image-library-grid-link">
                                 <div className="image-library-grid-thumb">
                                     <img
                                         src={img.thumbnailSrc}
@@ -262,7 +262,7 @@ export function ImageLibrary({ images }: { images: ImageEntry[] }) {
                             {modalImage.pages.map(page => (
                                 <Link
                                     key={page.slug}
-                                    href={`/wiki/${page.slug}#${modalImage.id}`}
+                                    href={page.href ?? `/wiki/${page.slug}#${modalImage.id}`}
                                     className="text-sm bg-white/10 hover:bg-white/20 text-white px-3 py-1 rounded-full transition-colors"
                                 >
                                     {page.title}

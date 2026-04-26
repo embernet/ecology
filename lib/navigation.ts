@@ -111,18 +111,25 @@ export const navigation: NavEntry[] = [
     ],
   },
   {
-    label: 'Activity Sheets',
-    href: '/wiki/activity-sheets',
+    label: 'Interactive Activities',
+    href: '/activities',
     children: [
-      { label: 'Bees vs. Wasps', href: '/wiki/activity-sheet-bees-vs-wasps' },
-      { label: 'Bees vs. Wasps Nests', href: '/wiki/activity-sheet-wax-castles-vs-paper-palaces' },
-      { label: 'Butterflies vs. Moths', href: '/wiki/activity-sheet-butterflies-vs-moths' },
-      { label: 'Butterfly & Moth Life-Cycle', href: '/wiki/activity-sheet-butterfly-moth-life-cycle' },
-      { label: 'Centipedes vs. Millipedes', href: '/wiki/activity-sheet-centipedes-vs-millipedes' },
-      { label: 'Dragonflies vs. Damselflies', href: '/wiki/activity-sheet-dragonflies-vs-damselflies' },
-      { label: 'Frogs and Toads', href: '/wiki/activity-sheet-frogs-and-toads' },
-      { label: 'Grasshoppers vs. Crickets', href: '/wiki/activity-sheet-grasshoppers-vs-crickets' },
-      { label: 'Snails vs. Slugs', href: '/wiki/activity-sheet-snails-vs-slugs' },
+      { label: 'Butterfly or Moth?', href: '/activities/name-describe-butterfly-moth-y12' },
+      { label: 'Name the Butterfly', href: '/activities/name-butterfly-y12' },
+      { label: 'Name the Moth', href: '/activities/name-moth-y12' },
+      { label: 'Name the Wildflower', href: '/activities/name-wildflower-y12' },
+      { label: 'Frog or Toad?', href: '/activities/name-describe-frog-toad-y12' },
+      { label: 'Slug or Snail?', href: '/activities/name-describe-slug-snail-y12' },
+      { label: 'Name the Snail', href: '/activities/name-snail-y34' },
+      { label: 'Frog Life Cycle', href: '/activities/sequence-frog-lifecycle-y12' },
+      { label: 'Toad Life Cycle', href: '/activities/sequence-toad-lifecycle-y12' },
+      { label: 'Butterfly Life Cycle', href: '/activities/sequence-butterfly-lifecycle-y12' },
+      { label: 'Sort: Butterflies & Moths', href: '/activities/sort-butterfly-moth-y12' },
+      { label: 'Sort: Frogs & Toads', href: '/activities/sort-frog-toad-y12' },
+      { label: 'Sort: Slugs & Snails', href: '/activities/sort-slug-snail-y12' },
+      { label: 'Parts of a Butterfly', href: '/activities/label-parts-butterfly-y34' },
+      { label: 'Parts of a Flower', href: '/activities/label-parts-flower-y34' },
+      { label: 'Parts of a Snail', href: '/activities/label-parts-snail-y34' },
     ],
   },
   {
@@ -178,6 +185,28 @@ export interface SiblingPages {
  * sibling leaf pages within the same top-level section.
  * Returns nulls when not found or at the boundary.
  */
+export function getActivitySiblings(activityId: string): SiblingPages {
+  const href = `/activities/${activityId}`
+
+  const activitiesSection = navigation.find(
+    (entry): entry is NavSection => isSection(entry) && entry.href === '/activities'
+  )
+
+  if (!activitiesSection) {
+    return { prev: null, next: null, sectionLabel: 'Interactive Activities', sectionHref: '/activities' }
+  }
+
+  const leaves = flattenLeaves(activitiesSection.children)
+  const idx = leaves.findIndex((l) => l.href === href)
+
+  return {
+    prev: idx > 0 ? leaves[idx - 1] : null,
+    next: idx < leaves.length - 1 ? leaves[idx + 1] : null,
+    sectionLabel: 'Interactive Activities',
+    sectionHref: '/activities',
+  }
+}
+
 export function getSiblingPages(slug: string): SiblingPages {
   const href = `/wiki/${slug}`;
 

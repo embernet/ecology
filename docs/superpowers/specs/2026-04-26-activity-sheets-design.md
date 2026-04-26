@@ -5,7 +5,7 @@
 
 ## Overview
 
-Add a new Activity Sheets section to the ecology curriculum website, positioned after the existing Handouts section. For each of the 9 handouts, create a corresponding A4 printable activity sheet — simpler than the handout, image-based, with black lozenge answer boxes for students to fill in. Link the section from the sidebar, hamburger menu, and home page.
+Add a new Activity Sheets section to the ecology curriculum website, positioned after the existing Handouts section. For each of the 9 handouts, create a corresponding A4 printable activity sheet — simpler than the handout, image-based, with black outlined lozenge answer boxes for students to fill in. Link the section from the sidebar, hamburger menu, and home page.
 
 ---
 

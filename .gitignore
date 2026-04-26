@@ -45,3 +45,7 @@ next-env.d.ts
 
 # claude
 .claude/
+
+# superpowers / worktrees
+.worktrees/
+.superpowers/

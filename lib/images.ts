@@ -2,6 +2,8 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 import { imageId } from '@/lib/image-id';
+import { ACTIVITY_IMAGES } from '@/data/activity-images';
+import { ACTIVITIES, type ActivityDefinition } from '@/data/activities';
 
 export { imageId };
 
@@ -11,7 +13,7 @@ export interface ImageEntry {
     alt: string;
     caption?: string;
     credit?: string;
-    pages: { slug: string; title: string }[];
+    pages: { slug: string; title: string; href?: string }[];
     src: string;
     thumbnailSrc: string;
 }
@@ -59,7 +61,7 @@ function extractWikiImages(content: string): { filename: string; alt: string; ca
     return images;
 }
 
-export function getAllImages(): ImageEntry[] {
+function getWikiImages(): ImageEntry[] {
     if (!fs.existsSync(contentDirectory)) return [];
 
     const files = fs.readdirSync(contentDirectory).filter(f => f.endsWith('.md'));
@@ -79,7 +81,6 @@ export function getAllImages(): ImageEntry[] {
 
             if (imageMap.has(key)) {
                 const existing = imageMap.get(key)!;
-                // Add page reference if not already there
                 if (!existing.pages.some(p => p.slug === slug)) {
                     existing.pages.push({ slug, title });
                 }
@@ -98,8 +99,61 @@ export function getAllImages(): ImageEntry[] {
         }
     }
 
-    // Sort alphabetically by filename
-    return Array.from(imageMap.values()).sort((a, b) =>
-        a.filename.toLowerCase().localeCompare(b.filename.toLowerCase())
-    );
+    return Array.from(imageMap.values());
+}
+
+function getAllImageIdsFromActivity(activity: ActivityDefinition): Set<string> {
+    const ids = new Set<string>();
+    for (const s of activity.subjects) ids.add(s.image_id);
+    for (const id of (activity.correct_order ?? [])) ids.add(id);
+    for (const cat of (activity.categories ?? [])) {
+        for (const id of cat.image_ids) ids.add(id);
+    }
+    return ids;
+}
+
+const YEAR_GROUP_LABELS: Record<string, string> = {
+    y12: 'Year 1/2',
+    y34: 'Year 3/4',
+    y56: 'Year 5/6',
+}
+
+function getActivityImages(): ImageEntry[] {
+    // Build map: image_id → activities that use it
+    const imageToActivities = new Map<string, ActivityDefinition[]>();
+    for (const activity of ACTIVITIES) {
+        for (const imgId of getAllImageIdsFromActivity(activity)) {
+            const existing = imageToActivities.get(imgId) ?? [];
+            existing.push(activity);
+            imageToActivities.set(imgId, existing);
+        }
+    }
+
+    return ACTIVITY_IMAGES.map((img) => {
+        const activities = imageToActivities.get(img.id) ?? [];
+        const pages = activities.map((a) => {
+            const yearLabel = a.year_groups.map((y) => YEAR_GROUP_LABELS[y] ?? y).join('/');
+            return {
+                slug: a.id,
+                title: `${a.title} (${yearLabel})`,
+                href: `/activities/${a.id}`,
+            };
+        });
+
+        return {
+            id: imageId(img.id),
+            filename: img.filename,
+            alt: `${img.common_name} (${img.latin_name})`,
+            caption: img.description,
+            credit: 'AI-generated illustration',
+            pages,
+            src: `/activity-images/${img.filename}`,
+            thumbnailSrc: `/activity-images/${img.filename}`,
+        };
+    });
+}
+
+export function getAllImages(): ImageEntry[] {
+    const all = [...getWikiImages(), ...getActivityImages()];
+    return all.sort((a, b) => a.alt.toLowerCase().localeCompare(b.alt.toLowerCase()));
 }

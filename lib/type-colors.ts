@@ -78,4 +78,14 @@ export const typeColorConfig: Record<string, {
     badgeBorder: 'border-amber-300/50',
     badgeText: 'text-amber-800',
   },
+  InteractiveActivity: {
+    barBg: 'bg-teal-100',
+    barBorder: 'border-teal-200',
+    barText: 'text-teal-900',
+    lozengeActive: 'bg-teal-600 border-teal-600 text-white shadow-sm',
+    lozengeInactive: 'bg-teal-50 border-teal-200 text-teal-700 hover:bg-teal-100',
+    badgeBg: 'bg-teal-200/50',
+    badgeBorder: 'border-teal-300/50',
+    badgeText: 'text-teal-800',
+  },
 };

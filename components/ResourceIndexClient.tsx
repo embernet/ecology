@@ -2,15 +2,23 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import { RegistryResource } from '@/lib/resource-registry-api';
+import ImageScrubber from './ImageScrubber';
 
 import { useResourcePack } from '@/contexts/ResourcePackContext';
 import { makeResourceLookupKey } from '@/lib/resource-pack-types';
 import { typeColorConfig } from '@/lib/type-colors';
 
+// Extends the base registry type to support activity resources
+interface IndexResource extends Omit<RegistryResource, 'data'> {
+  id: string;
+  exploreSlug: string;
+  activityHref?: string;
+  data: RegistryResource['data'] & { activityImages?: string[] };
+}
+
 interface Props {
-  resources: (RegistryResource & { id: string, exploreSlug: string })[];
+  resources: IndexResource[];
 }
 
 export default function ResourceIndexClient({ resources }: Props) {
@@ -165,33 +173,15 @@ export default function ResourceIndexClient({ resources }: Props) {
   );
 }
 
-function ResourceCard({ resource }: { resource: RegistryResource & { id: string, exploreSlug: string } }) {
-  const [activeImageIndex, setActiveImageIndex] = useState(0);
-
+function ResourceCard({ resource }: { resource: IndexResource }) {
   const images = useMemo(() => {
+    if (resource.data.activityImages?.length) return resource.data.activityImages;
     if (!resource.data.wikiImages) return [];
     return resource.data.wikiImages.map(img => {
       const cleanFilename = img.filename.trim().split(' ').join('_');
       return `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(cleanFilename)}`;
     });
-  }, [resource.data.wikiImages]);
-
-  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
-    if (images.length <= 1) return;
-    const rect = e.currentTarget.getBoundingClientRect();
-    const x = e.clientX - rect.left;
-    const width = rect.width;
-    const percentage = Math.max(0, Math.min(1, x / width));
-    const index = Math.min(
-      Math.floor(percentage * images.length),
-      images.length - 1
-    );
-    setActiveImageIndex(index);
-  };
-
-  const handleMouseLeave = () => {
-    setActiveImageIndex(0);
-  };
+  }, [resource.data]);
 
   const { addItem, removeItem, isInPack } = useResourcePack();
   const typeLabel = resource.type.replace(/([A-Z])/g, ' $1').trim();
@@ -225,11 +215,12 @@ function ResourceCard({ resource }: { resource: RegistryResource & { id: string,
     }
   };
 
-  const currentImageSrc = images.length > 0 ? images[activeImageIndex] : null;
+  const cardHref = resource.activityHref ?? `/explore/${resource.exploreSlug}`;
+  const isActivity = resource.type === 'InteractiveActivity';
 
   return (
-    <Link 
-      href={`/explore/${resource.exploreSlug}`} 
+    <Link
+      href={cardHref}
       className="group flex flex-col bg-white rounded-2xl shadow-sm hover:shadow-lg border border-slate-200 overflow-hidden transition-all duration-300 hover:-translate-y-1"
     >
       {/* Full-width Type Bar */}
@@ -240,29 +231,7 @@ function ResourceCard({ resource }: { resource: RegistryResource & { id: string,
       </div>
 
       {/* Image Thumbnail Header with Scrubbing */}
-      {currentImageSrc && (
-        <div 
-          className="h-40 w-full bg-slate-100 relative overflow-hidden flex-shrink-0 border-b border-slate-100"
-          onMouseMove={handleMouseMove}
-          onMouseLeave={handleMouseLeave}
-        >
-          <img 
-            src={currentImageSrc} 
-            alt={title} 
-            className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-          />
-          {images.length > 1 && (
-            <div className="absolute bottom-2 left-0 right-0 flex justify-center gap-1 z-10">
-              {images.map((_, i) => (
-                <div 
-                  key={i} 
-                  className={`h-1 rounded-full transition-all duration-300 ${i === activeImageIndex ? 'w-4 bg-white' : 'w-1.5 bg-white/50'}`}
-                />
-              ))}
-            </div>
-          )}
-        </div>
-      )}
+      <ImageScrubber images={images} alt={title} className="border-b border-slate-100" />
       
       <div className="p-5 flex-grow pb-4">
         <h3 className="text-lg font-bold text-slate-800 mb-2 group-hover:text-emerald-700 transition-colors line-clamp-2">
@@ -280,41 +249,44 @@ function ResourceCard({ resource }: { resource: RegistryResource & { id: string,
             {resource.sourcePageTitle}
           </span>
           <span className="font-bold text-emerald-600 group-hover:text-emerald-700 transition-colors inline-flex items-center gap-1 group">
-            Explore <span className="group-hover:translate-x-1 transition-transform inline-block">&rarr;</span>
+            {isActivity ? 'View Activity' : 'Explore'}{' '}
+            <span className="group-hover:translate-x-1 transition-transform inline-block">&rarr;</span>
           </span>
         </div>
-        
-        <div className="flex justify-between items-center pt-3 border-t border-slate-200/60">
-          <button
-            onClick={handleTogglePack}
-            className={`group/tooltip relative flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
-              added 
-                ? 'bg-emerald-100 text-emerald-800 hover:bg-emerald-200 border border-emerald-200' 
-                : 'bg-white border border-slate-200 text-slate-600 hover:text-emerald-700 hover:border-emerald-300 hover:bg-emerald-50 shadow-sm'
-            }`}
-            aria-label={added ? `Remove ${title} from pack` : `Add ${title} to pack`}
-          >
-            <span className="pointer-events-none absolute left-1/2 top-full z-[100] mt-2 -translate-x-1/2 whitespace-nowrap rounded bg-slate-700 px-2.5 py-1 text-[11px] font-medium text-white opacity-0 transition-opacity delay-500 duration-200 group-hover/tooltip:opacity-100 group-focus-visible/tooltip:opacity-100 shadow-md">
-              {added ? 'Remove from resource pack' : 'Add to resource pack'}
-              <span className="absolute bottom-full left-1/2 -ml-1 border-4 border-transparent border-b-slate-700" />
-            </span>
-            {added ? (
-              <>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
-                </svg>
-                <span>Added</span>
-              </>
-            ) : (
-              <>
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
-                </svg>
-                <span>Add</span>
-              </>
-            )}
-          </button>
-        </div>
+
+        {!isActivity && (
+          <div className="flex justify-between items-center pt-3 border-t border-slate-200/60">
+            <button
+              onClick={handleTogglePack}
+              className={`group/tooltip relative flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all ${
+                added
+                  ? 'bg-emerald-100 text-emerald-800 hover:bg-emerald-200 border border-emerald-200'
+                  : 'bg-white border border-slate-200 text-slate-600 hover:text-emerald-700 hover:border-emerald-300 hover:bg-emerald-50 shadow-sm'
+              }`}
+              aria-label={added ? `Remove ${title} from pack` : `Add ${title} to pack`}
+            >
+              <span className="pointer-events-none absolute left-1/2 top-full z-[100] mt-2 -translate-x-1/2 whitespace-nowrap rounded bg-slate-700 px-2.5 py-1 text-[11px] font-medium text-white opacity-0 transition-opacity delay-500 duration-200 group-hover/tooltip:opacity-100 group-focus-visible/tooltip:opacity-100 shadow-md">
+                {added ? 'Remove from resource pack' : 'Add to resource pack'}
+                <span className="absolute bottom-full left-1/2 -ml-1 border-4 border-transparent border-b-slate-700" />
+              </span>
+              {added ? (
+                <>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M4.5 12.75l6 6 9-13.5" />
+                  </svg>
+                  <span>Added</span>
+                </>
+              ) : (
+                <>
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2.5} stroke="currentColor" className="w-4 h-4">
+                    <path strokeLinecap="round" strokeLinejoin="round" d="M12 4.5v15m7.5-7.5h-15" />
+                  </svg>
+                  <span>Add</span>
+                </>
+              )}
+            </button>
+          </div>
+        )}
       </div>
     </Link>
   );
