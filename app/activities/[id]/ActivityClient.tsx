@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { useSearchParams, useRouter } from 'next/navigation'
 import type { ActivityDefinition } from '@/data/activities'
@@ -125,6 +125,90 @@ function PrintModal({
   )
 }
 
+function MobilePrintPreview({
+  activity,
+  images,
+  onClose,
+}: {
+  activity: ActivityDefinition
+  images: Record<string, ActivityImage>
+  onClose: () => void
+}) {
+  const [withAnswers, setWithAnswers] = useState(false)
+  const containerRef = useRef<HTMLDivElement>(null)
+  const printPageRef = useRef<HTMLDivElement>(null)
+  const [scale, setScale] = useState(0)
+
+  useEffect(() => {
+    const el = containerRef.current
+    if (!el) return
+    const obs = new ResizeObserver(([entry]) => {
+      setScale(entry.contentRect.width / 794)
+    })
+    obs.observe(el)
+    return () => obs.disconnect()
+  }, [])
+
+  function copyLink() {
+    const url = `${window.location.origin}/activities/${activity.id}?view=print`
+    navigator.clipboard.writeText(url)
+  }
+
+  async function copyImage() {
+    const el = printPageRef.current
+    if (!el) return
+    const { toPng } = await import('html-to-image')
+    const dataUrl = await toPng(el, { cacheBust: true })
+    const blob = await (await fetch(dataUrl)).blob()
+    await navigator.clipboard.write([new ClipboardItem({ 'image/png': blob })])
+  }
+
+  const scaledHeight = scale > 0 ? Math.round(1123 * scale) : 0
+
+  return (
+    <div className="mobile-print-preview">
+      <div className="mobile-print-toolbar">
+        <button className="mobile-print-back" onClick={onClose}>← Back</button>
+        <div className="mobile-print-toggle" role="radiogroup" aria-label="Print version">
+          <label className={`mobile-print-radio${!withAnswers ? ' mobile-print-radio--active' : ''}`}>
+            <input type="radio" name="mob-answers" checked={!withAnswers} onChange={() => setWithAnswers(false)} />
+            Without answers
+          </label>
+          <label className={`mobile-print-radio${withAnswers ? ' mobile-print-radio--active' : ''}`}>
+            <input type="radio" name="mob-answers" checked={withAnswers} onChange={() => setWithAnswers(true)} />
+            With answers
+          </label>
+        </div>
+      </div>
+      <div className="mobile-print-actions">
+        <button className="mobile-action-btn" onClick={copyLink}>Copy Link</button>
+        <button className="mobile-action-btn" onClick={copyImage}>Copy Image</button>
+        <button className="mobile-action-btn mobile-action-btn--primary" onClick={() => window.print()}>Print</button>
+      </div>
+      <div className="mobile-print-body" ref={containerRef}>
+        {scale > 0 && (
+          <div style={{ position: 'relative', height: `${scaledHeight}px`, overflow: 'hidden' }}>
+            <div
+              ref={printPageRef}
+              style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                width: '794px',
+                height: '1123px',
+                transform: `scale(${scale})`,
+                transformOrigin: 'top left',
+              }}
+            >
+              <ActivityTemplate activity={activity} images={images} view={withAnswers ? 'print-answers' : 'print'} />
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  )
+}
+
 export default function ActivityClient({
   activity,
   images,
@@ -139,6 +223,7 @@ export default function ActivityClient({
 
   const [view, setView] = useState<'interactive' | 'answers'>('interactive')
   const [printOpen, setPrintOpen] = useState(false)
+  const [mobilePrintOpen, setMobilePrintOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
 
   useEffect(() => {
@@ -166,58 +251,87 @@ export default function ActivityClient({
   const navNext = next ? { ...next, href: `${next.href}${viewSuffix}` } : null
 
   return (
-    <article className="flex flex-col h-full w-full">
-      <div className="flex-shrink-0 z-10 bg-white border-b border-slate-200" style={{ padding: '0.8rem 2rem' }}>
-        <PrevNextNav
-          prev={navPrev}
-          next={navNext}
-          sectionLabel={sectionLabel}
-          sectionHref={sectionHref}
-          title={activity.title}
-        />
+    <>
+      <div className="md:hidden flex flex-col h-full">
+        {mobilePrintOpen ? (
+          <MobilePrintPreview
+            activity={activity}
+            images={images}
+            onClose={() => setMobilePrintOpen(false)}
+          />
+        ) : (
+          <div className="flex flex-col items-center justify-center h-full p-10 text-center gap-4">
+            <div className="text-4xl">💻</div>
+            <h2 className="text-xl font-bold text-slate-700">Designed for a larger screen</h2>
+            <p className="text-slate-500 max-w-xs">
+              Please open this activity on a tablet or laptop to use the drag-and-drop features.
+            </p>
+            <div className="flex gap-3 mt-2">
+              <button className="mobile-action-btn" onClick={() => router.back()}>← Back</button>
+              <button
+                className="mobile-action-btn mobile-action-btn--primary"
+                onClick={() => setMobilePrintOpen(true)}
+              >
+                Print Preview
+              </button>
+            </div>
+          </div>
+        )}
       </div>
 
-      <div className="activity-toolbar flex-shrink-0">
-        <div className="activity-toolbar__left">
-          <span className="activity-page__year-badge">{yearLabel}</span>
-          <span className="activity-page__template-badge">{TEMPLATE_LABELS[activity.template]}</span>
-          <span className="activity-toolbar__description">{activity.description}</span>
+      <article className="hidden md:flex flex-col h-full w-full">
+        <div className="flex-shrink-0 z-10 bg-white border-b border-slate-200" style={{ padding: '0.8rem 2rem' }}>
+          <PrevNextNav
+            prev={navPrev}
+            next={navNext}
+            sectionLabel={sectionLabel}
+            sectionHref={sectionHref}
+            title={activity.title}
+          />
         </div>
-        <div className="activity-toolbar__tabs">
-          <button
-            className={`activity-tab${view === 'interactive' ? ' activity-tab--active' : ''}`}
-            onClick={() => switchView('interactive')}
-          >
-            Interactive
-          </button>
-          <button
-            className={`activity-tab${view === 'answers' ? ' activity-tab--active' : ''}`}
-            onClick={() => switchView('answers')}
-          >
-            Answers
-          </button>
-          <button
-            className="activity-tab"
-            onClick={() => setPrintOpen(true)}
-          >
-            Print
-          </button>
-        </div>
-      </div>
 
-      <div className="main-scroll-area">
-        <div className="activity-page">
-          <ActivityTemplate activity={activity} images={images} view={view} />
+        <div className="activity-toolbar flex-shrink-0">
+          <div className="activity-toolbar__left">
+            <span className="activity-page__year-badge">{yearLabel}</span>
+            <span className="activity-page__template-badge">{TEMPLATE_LABELS[activity.template]}</span>
+            <span className="activity-toolbar__description">{activity.description}</span>
+          </div>
+          <div className="activity-toolbar__tabs">
+            <button
+              className={`activity-tab${view === 'interactive' ? ' activity-tab--active' : ''}`}
+              onClick={() => switchView('interactive')}
+            >
+              Interactive
+            </button>
+            <button
+              className={`activity-tab${view === 'answers' ? ' activity-tab--active' : ''}`}
+              onClick={() => switchView('answers')}
+            >
+              Answers
+            </button>
+            <button
+              className="activity-tab"
+              onClick={() => setPrintOpen(true)}
+            >
+              Print
+            </button>
+          </div>
         </div>
-      </div>
 
-      {mounted && printOpen && (
-        <PrintModal
-          activity={activity}
-          images={images}
-          onClose={() => setPrintOpen(false)}
-        />
-      )}
-    </article>
+        <div className="main-scroll-area">
+          <div className="activity-page">
+            <ActivityTemplate activity={activity} images={images} view={view} />
+          </div>
+        </div>
+
+        {mounted && printOpen && (
+          <PrintModal
+            activity={activity}
+            images={images}
+            onClose={() => setPrintOpen(false)}
+          />
+        )}
+      </article>
+    </>
   )
 }

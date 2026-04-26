@@ -447,6 +447,86 @@
 .activities-landing__header { margin-bottom: 2rem; }
 .activities-landing__title { font-size: 1.75rem; font-weight: 700; color: #1e293b; margin: 0 0 0.5rem; }
 .activities-landing__intro { font-size: 1rem; color: #475569; line-height: 1.7; max-width: 680px; }
+.activities-mobile-notice { font-size: 0.875rem; color: #92400e; background: #fef3c7; border: 1px solid #fcd34d; border-radius: 0.5rem; padding: 0.75rem 1rem; margin-bottom: 1.25rem; line-height: 1.5; }
+
+/* ── Mobile action buttons (warning screen + print preview) ── */
+.mobile-action-btn {
+  flex: 1;
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  border-radius: 0.375rem;
+  border: 1.5px solid #cbd5e1;
+  background: white;
+  color: #475569;
+  cursor: pointer;
+  text-align: center;
+  min-width: 0;
+}
+.mobile-action-btn--primary {
+  background: #0ea5e9;
+  color: white;
+  border-color: #0ea5e9;
+}
+
+/* ── Mobile print preview ── */
+.mobile-print-preview {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: white;
+}
+.mobile-print-toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+.mobile-print-back {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #0ea5e9;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.mobile-print-toggle {
+  display: flex;
+  gap: 0.375rem;
+  flex: 1;
+  justify-content: flex-end;
+}
+.mobile-print-radio {
+  font-size: 0.75rem;
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.25rem;
+  border: 1px solid #cbd5e1;
+  cursor: pointer;
+  color: #64748b;
+  background: #f8fafc;
+  line-height: 1.5;
+}
+.mobile-print-radio input[type="radio"] { display: none; }
+.mobile-print-radio--active { background: #0ea5e9; color: white; border-color: #0ea5e9; }
+.mobile-print-actions {
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  flex-shrink: 0;
+}
+.mobile-print-body {
+  flex: 1;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background: #f1f5f9;
+  padding: 1rem;
+}
 .activities-landing__groups { display: flex; flex-direction: column; gap: 2rem; }
 .activity-group__title { font-size: 1.1rem; font-weight: 700; color: #1e293b; margin: 0 0 0.75rem; padding-bottom: 0.375rem; border-bottom: 1.5px solid #e2e8f0; }
 .activity-group__cards { display: flex; gap: 0.5rem; flex-wrap: wrap; }

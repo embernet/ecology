@@ -21,7 +21,17 @@ interface SectionEntry {
   body?: string;
 }
 
-type SearchEntry = PageEntry | SectionEntry;
+interface ActivityEntry {
+  type: 'activity';
+  id: string;
+  title: string;
+  yearGroups: string;
+  template: string;
+  preview: string;
+  body?: string;
+}
+
+type SearchEntry = PageEntry | SectionEntry | ActivityEntry;
 
 // Module-level cache — fetched once per session
 let indexCache: SearchEntry[] | null = null;
@@ -42,12 +52,21 @@ function getSearchIndex(): Promise<SearchEntry[]> {
 }
 
 function scoreEntry(entry: SearchEntry, q: string): number {
+  if (entry.type === 'activity') {
+    const title = entry.title.toLowerCase();
+    const body = (entry.body ?? '').toLowerCase();
+    const preview = entry.preview.toLowerCase();
+    if (title === q) return 100;
+    if (title.startsWith(q)) return 60;
+    if (title.includes(q)) return 40;
+    if (body.includes(q)) return 10;
+    if (preview.includes(q)) return 5;
+    return 0;
+  }
   const title = (entry.type === 'page' ? entry.title : entry.sectionTitle).toLowerCase();
   const pageTitle = entry.type === 'section' ? entry.pageTitle.toLowerCase() : '';
   const preview = entry.preview.toLowerCase();
-
   const body = entry.type === 'section' && entry.body ? entry.body.toLowerCase() : '';
-
   if (title === q) return 100;
   if (title.startsWith(q)) return 60;
   if (title.includes(q)) return 40;
@@ -131,6 +150,10 @@ export function SearchBar() {
   }, []);
 
   function navigate(entry: SearchEntry) {
+    if (entry.type === 'activity') {
+      router.push(`/activities/${entry.id}`);
+      return;
+    }
     const href =
       entry.type === 'page'
         ? `/wiki/${entry.slug}`
@@ -156,10 +179,11 @@ export function SearchBar() {
     }
   }
 
-  const resultKey = (entry: SearchEntry) =>
-    entry.type === 'page'
-      ? `page-${entry.slug}`
-      : `section-${entry.slug}-${entry.sectionId}`;
+  const resultKey = (entry: SearchEntry) => {
+    if (entry.type === 'activity') return `activity-${entry.id}`;
+    if (entry.type === 'page') return `page-${entry.slug}`;
+    return `section-${entry.slug}-${entry.sectionId}`;
+  };
 
   return (
     <div className="search-bar-container" ref={containerRef}>
@@ -227,7 +251,19 @@ export function SearchBar() {
                 }}
                 onMouseEnter={() => setActiveIndex(i)}
               >
-                {entry.type === 'page' ? (
+                {entry.type === 'activity' ? (
+                  <>
+                    <span className="search-result-icon" aria-hidden="true">
+                      <svg viewBox="0 0 16 16" fill="currentColor" width="14" height="14">
+                        <path d="M8 1a7 7 0 1 0 0 14A7 7 0 0 0 8 1zM0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm5.854-2.646a.5.5 0 0 0-.708.708L7.293 8l-2.147 1.938a.5.5 0 0 0 .708.708L8 8.707l2.146 1.939a.5.5 0 0 0 .708-.708L8.707 8l2.147-1.938a.5.5 0 0 0-.708-.708L8 7.293 5.854 5.354z"/>
+                      </svg>
+                    </span>
+                    <span className="search-result-text">
+                      <span className="search-result-title">{entry.title}</span>
+                      <span className="search-result-page">{entry.yearGroups} — {entry.template}</span>
+                    </span>
+                  </>
+                ) : entry.type === 'page' ? (
                   <>
                     <span className="search-result-icon" aria-hidden="true">
                       <svg viewBox="0 0 16 16" fill="currentColor" width="14" height="14">

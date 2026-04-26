@@ -77,7 +77,7 @@ export function HeaderNav() {
               Handouts
             </Link>
             <Link href="/activities" className="header-dropdown-link" onClick={() => setIsOpen(false)}>
-              Activities
+              Interactive Activities
             </Link>
             <Link href="/wiki/teaching-principles-used-to-create-the-learning-resources" className="header-dropdown-link" onClick={() => setIsOpen(false)}>
               Teaching Resources

@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/build-resource-registry.mjs && node scripts/build-search-index.mjs",
+    "prebuild": "node scripts/build-resource-registry.mjs && npx tsx scripts/build-search-index.ts",
     "build": "next build",
     "build:registry": "node scripts/build-resource-registry.mjs",
     "generate:images": "tsx scripts/generate-activity-images.ts",

@@ -52,6 +52,9 @@ export default function ActivitiesPage() {
       <div className="activities-landing">
         <div className="activities-landing__header">
           <h1 className="activities-landing__title">Interactive Activities</h1>
+          <div className="md:hidden activities-mobile-notice">
+            💻 These activities are designed for a larger screen. Please use a tablet or laptop to access the drag-and-drop features.
+          </div>
           <p className="activities-landing__intro">
             Interactive and printable activities for nature and ecology. Each activity has three
             views: interactive drag-and-drop, answers, and a printable A4 worksheet.
