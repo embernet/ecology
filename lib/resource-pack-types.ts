@@ -5,7 +5,8 @@ export type ResourceType =
   | 'Requirement'
   | 'Note'
   | 'Guidance'
-  | 'Handout';
+  | 'Handout'
+  | 'ActivitySheet';
 
 export interface WikiImageData {
   filename: string;
