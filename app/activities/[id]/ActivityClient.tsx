@@ -267,7 +267,7 @@ export default function ActivityClient({
               Please open this activity on a tablet or laptop to use the drag-and-drop features.
             </p>
             <div className="flex gap-3 mt-2">
-              <button className="mobile-action-btn" onClick={() => router.back()}>← Back</button>
+              <button className="mobile-action-btn" onClick={() => router.push('/activities')}>← Back</button>
               <button
                 className="mobile-action-btn mobile-action-btn--primary"
                 onClick={() => setMobilePrintOpen(true)}
