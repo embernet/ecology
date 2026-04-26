@@ -111,6 +111,21 @@ export const navigation: NavEntry[] = [
     ],
   },
   {
+    label: 'Activity Sheets',
+    href: '/wiki/activity-sheets',
+    children: [
+      { label: 'Bees vs. Wasps', href: '/wiki/activity-sheet-bees-vs-wasps' },
+      { label: 'Bees vs. Wasps Nests', href: '/wiki/activity-sheet-wax-castles-vs-paper-palaces' },
+      { label: 'Butterflies vs. Moths', href: '/wiki/activity-sheet-butterflies-vs-moths' },
+      { label: 'Butterfly & Moth Life-Cycle', href: '/wiki/activity-sheet-butterfly-moth-life-cycle' },
+      { label: 'Centipedes vs. Millipedes', href: '/wiki/activity-sheet-centipedes-vs-millipedes' },
+      { label: 'Dragonflies vs. Damselflies', href: '/wiki/activity-sheet-dragonflies-vs-damselflies' },
+      { label: 'Frogs and Toads', href: '/wiki/activity-sheet-frogs-and-toads' },
+      { label: 'Grasshoppers vs. Crickets', href: '/wiki/activity-sheet-grasshoppers-vs-crickets' },
+      { label: 'Snails vs. Slugs', href: '/wiki/activity-sheet-snails-vs-slugs' },
+    ],
+  },
+  {
     label: 'Media Library',
     href: '/media',
     children: [

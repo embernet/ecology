@@ -16,6 +16,7 @@ Teaching resources are structured to match the UK National Curriculum Key Stages
 - [Science](/wiki/science) — Years 1–6, Key Stages 1 & 2
 - [Geography](/wiki/geography) — Key Stages 1 & 2
 - [Handouts](/wiki/handouts) — Printable classroom sheets comparing species and illustrating life cycles
+- [Activity Sheets](/wiki/activity-sheets) — Printable A4 worksheets for students to label, one for each handout
 - [Media Library](/media) — Images and live streams to enrich lessons
 - [Reference](/reference) — Dictionary and resource index for quick lookups
 - [Teaching Resources](/wiki/teaching-resources) — Teaching principles and links to useful external ecology websites
