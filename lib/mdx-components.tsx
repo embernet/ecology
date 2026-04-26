@@ -6,6 +6,9 @@ import { Note, Guidance } from '@/components/mdx/Micro';
 import { Handout } from '@/components/mdx/Handout';
 import { HandoutCard } from '@/components/mdx/HandoutCard';
 import { HandoutHeader } from '@/components/mdx/HandoutHeader';
+import { ActivitySheet } from '@/components/mdx/ActivitySheet';
+import { ActivitySheetCard } from '@/components/mdx/ActivitySheetCard';
+import { ActivitySheetHeader } from '@/components/mdx/ActivitySheetHeader';
 import { Gallery } from '@/components/mdx/Gallery';
 import { WikiImage } from '@/components/mdx/WikiImage';
 import { DictionaryParserProvider } from '@/components/DictionaryWrapper';
@@ -24,6 +27,9 @@ export function getMdxComponents(getId?: (text: string) => string) {
         Handout,
         HandoutCard,
         HandoutHeader,
+        ActivitySheet,
+        ActivitySheetCard,
+        ActivitySheetHeader,
         Gallery,
         WikiImage,
         Ref: ({ children }: any) => (
