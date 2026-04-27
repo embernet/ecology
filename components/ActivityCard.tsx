@@ -6,7 +6,8 @@ import type { YearGroup, TemplateType } from '@/data/activities'
 
 const TEMPLATE_LABELS: Record<TemplateType, string> = {
   'name-describe': 'Name & Describe',
-  sequence: 'Life Cycle',
+  sequence: 'Sequence',
+  lifecycle: 'Life Cycle',
   'sort-classify': 'Sort & Classify',
   'label-parts': 'Label the Parts',
 }
@@ -26,6 +27,7 @@ const YEAR_COLOURS: Record<YearGroup, string> = {
 const TEMPLATE_COLOURS: Record<TemplateType, string> = {
   'name-describe': 'activity-template-badge--name-describe',
   sequence: 'activity-template-badge--sequence',
+  lifecycle: 'activity-template-badge--sequence',
   'sort-classify': 'activity-template-badge--sort-classify',
   'label-parts': 'activity-template-badge--label-parts',
 }

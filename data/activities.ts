@@ -1,4 +1,4 @@
-export type TemplateType = 'name-describe' | 'sequence' | 'sort-classify' | 'label-parts'
+export type TemplateType = 'name-describe' | 'sequence' | 'sort-classify' | 'label-parts' | 'lifecycle'
 
 export type YearGroup = 'y12' | 'y34' | 'y56'
 
@@ -605,7 +605,7 @@ export const ACTIVITIES: ActivityDefinition[] = [
     id: 'sequence-frog-lifecycle-y12',
     title: 'Frog Life Cycle',
     description: 'Put the pictures in the correct order to show how a frog grows.',
-    template: 'sequence',
+    template: 'lifecycle',
     year_groups: ['y12'],
     subjects: [
       { image_id: 'frogspawn-01', role: 'stage-1' },
@@ -626,7 +626,7 @@ export const ACTIVITIES: ActivityDefinition[] = [
     id: 'sequence-frog-lifecycle-y34',
     title: 'Frog Life Cycle',
     description: 'Put the five stages in the correct order to show how a frog develops.',
-    template: 'sequence',
+    template: 'lifecycle',
     year_groups: ['y34'],
     subjects: [
       { image_id: 'frogspawn-01', role: 'stage-1' },
@@ -652,7 +652,7 @@ export const ACTIVITIES: ActivityDefinition[] = [
     id: 'sequence-frog-lifecycle-y56',
     title: 'Frog Life Cycle',
     description: "Arrange all six stages of the common frog's life cycle in the correct order.",
-    template: 'sequence',
+    template: 'lifecycle',
     year_groups: ['y56'],
     subjects: [
       { image_id: 'frogspawn-01', role: 'stage-1' },
@@ -683,7 +683,7 @@ export const ACTIVITIES: ActivityDefinition[] = [
     id: 'sequence-toad-lifecycle-y12',
     title: 'Toad Life Cycle',
     description: 'Put the pictures in the correct order to show how a toad grows.',
-    template: 'sequence',
+    template: 'lifecycle',
     year_groups: ['y12'],
     subjects: [
       { image_id: 'toadspawn-01', role: 'stage-1' },
@@ -704,7 +704,7 @@ export const ACTIVITIES: ActivityDefinition[] = [
     id: 'sequence-toad-lifecycle-y34',
     title: 'Toad Life Cycle',
     description: 'Put the five stages in order to show how a common toad develops.',
-    template: 'sequence',
+    template: 'lifecycle',
     year_groups: ['y34'],
     subjects: [
       { image_id: 'toadspawn-01', role: 'stage-1' },
@@ -727,7 +727,7 @@ export const ACTIVITIES: ActivityDefinition[] = [
     id: 'sequence-toad-lifecycle-y56',
     title: 'Toad Life Cycle',
     description: "Arrange all five stages of the common toad's life cycle in the correct order.",
-    template: 'sequence',
+    template: 'lifecycle',
     year_groups: ['y56'],
     subjects: [
       { image_id: 'toadspawn-01', role: 'stage-1' },
@@ -753,7 +753,7 @@ export const ACTIVITIES: ActivityDefinition[] = [
     id: 'sequence-butterfly-lifecycle-y12',
     title: 'Butterfly Life Cycle',
     description: 'Put the four stages in the correct order.',
-    template: 'sequence',
+    template: 'lifecycle',
     year_groups: ['y12'],
     subjects: [
       { image_id: 'butterfly-egg-01', role: 'stage-1' },
@@ -774,7 +774,7 @@ export const ACTIVITIES: ActivityDefinition[] = [
     id: 'sequence-butterfly-lifecycle-y34',
     title: 'Butterfly Life Cycle',
     description: "Arrange the four stages of a butterfly's life cycle in the correct order.",
-    template: 'sequence',
+    template: 'lifecycle',
     year_groups: ['y34'],
     subjects: [
       { image_id: 'butterfly-egg-01', role: 'stage-1' },
@@ -795,7 +795,7 @@ export const ACTIVITIES: ActivityDefinition[] = [
     id: 'sequence-butterfly-lifecycle-y56',
     title: 'Butterfly Life Cycle',
     description: "Arrange the four stages of a butterfly's life cycle and explain what happens at each stage.",
-    template: 'sequence',
+    template: 'lifecycle',
     year_groups: ['y56'],
     subjects: [
       { image_id: 'butterfly-egg-01', role: 'stage-1' },

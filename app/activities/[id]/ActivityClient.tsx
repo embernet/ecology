@@ -25,7 +25,8 @@ interface Props {
 
 const TEMPLATE_LABELS: Record<string, string> = {
   'name-describe': 'Name & Describe',
-  sequence: 'Life Cycle',
+  sequence: 'Sequence',
+  lifecycle: 'Life Cycle',
   'sort-classify': 'Sort & Classify',
   'label-parts': 'Label the Parts',
 }
@@ -43,6 +44,7 @@ function ActivityTemplate({
     case 'name-describe':
       return <NameDescribe activity={activity} images={images} view={view} />
     case 'sequence':
+    case 'lifecycle':
       return <Sequence activity={activity} images={images} view={view} />
     case 'sort-classify':
       return <SortClassify activity={activity} images={images} view={view} />
