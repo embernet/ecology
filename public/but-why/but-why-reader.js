@@ -104,11 +104,12 @@
     this._scrollToLatest();
   };
 
-  // Reveal every remaining turn at once.
+  // Reveal every remaining turn at once. Deliberately does not scroll: the
+  // reader should stay where they are and read on from their current place,
+  // rather than being thrown to the bottom of the conversation.
   ButWhyReader.prototype.revealAll = function () {
     this.revealed = this.conversation.turns.length;
     this._sync();
-    this._scrollToLatest();
   };
 
   // Collapse back to the opening scene.
