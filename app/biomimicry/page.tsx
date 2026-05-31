@@ -1,3 +1,5 @@
+import fs from 'fs';
+import path from 'path';
 import { BiomimicryBrowser } from '@/components/BiomimicryBrowser';
 
 export const metadata = {
@@ -7,6 +9,14 @@ export const metadata = {
 };
 
 export default function BiomimicryPage() {
+  const imgDir = path.join(process.cwd(), 'public', 'biomimicry-images');
+  const availableImages = fs.existsSync(imgDir)
+    ? fs
+        .readdirSync(imgDir)
+        .filter((f) => f.endsWith('.png'))
+        .map((f) => f.replace(/\.png$/, ''))
+    : [];
+
   return (
     <div className="main-scroll-area">
       <div className="max-w-6xl mx-auto px-4 py-8">
@@ -23,7 +33,7 @@ export default function BiomimicryPage() {
           </p>
         </header>
 
-        <BiomimicryBrowser />
+        <BiomimicryBrowser availableImages={availableImages} />
       </div>
     </div>
   );

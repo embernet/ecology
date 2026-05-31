@@ -11,12 +11,17 @@ import {
 } from '@/lib/biomimicry';
 import { CurriculumFilter } from '@/components/CurriculumFilter';
 
-export function BiomimicryBrowser() {
+export function BiomimicryBrowser({
+  availableImages = [],
+}: {
+  availableImages?: string[];
+}) {
   const [subject, setSubject] = useState<string | null>(null);
   const [year, setYear] = useState<string | null>(null);
 
   const subjects = useMemo(() => biomimicrySubjects(), []);
   const years = useMemo(() => biomimicryYearGroups(), []);
+  const imageSet = useMemo(() => new Set(availableImages), [availableImages]);
 
   const filtered = useMemo(() => {
     return BIOMIMICRY.filter((e) => {
@@ -57,9 +62,19 @@ export function BiomimicryBrowser() {
                 href={`/biomimicry/${e.id}`}
                 className="group flex flex-col rounded-2xl border border-slate-200 bg-white p-5 shadow-sm transition-all hover:-translate-y-0.5 hover:border-green-300 hover:shadow-md"
               >
-                <span className="text-4xl mb-3" aria-hidden="true">
-                  {e.emoji}
-                </span>
+                {imageSet.has(e.id) ? (
+                  // eslint-disable-next-line @next/next/no-img-element
+                  <img
+                    src={`/biomimicry-images/${e.id}.png`}
+                    alt=""
+                    aria-hidden="true"
+                    className="mb-3 aspect-[4/3] w-full rounded-xl border border-slate-100 object-cover"
+                  />
+                ) : (
+                  <span className="text-4xl mb-3" aria-hidden="true">
+                    {e.emoji}
+                  </span>
+                )}
                 <h3 className="text-lg font-bold text-green-800 leading-snug group-hover:underline">
                   {e.title}
                 </h3>

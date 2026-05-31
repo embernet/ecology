@@ -1,3 +1,5 @@
+import fs from 'fs';
+import path from 'path';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { BIOMIMICRY, getBiomimicryEntry } from '@/lib/biomimicry';
@@ -38,6 +40,10 @@ export default async function BiomimicryDetailPage({
   const entry = getBiomimicryEntry(id);
   if (!entry) notFound();
 
+  const hasImage = fs.existsSync(
+    path.join(process.cwd(), 'public', 'biomimicry-images', `${id}.png`),
+  );
+
   return (
     <div className="main-scroll-area">
       <div className="max-w-3xl mx-auto px-4 py-8">
@@ -65,6 +71,15 @@ export default async function BiomimicryDetailPage({
           </h1>
           <p className="mt-2 text-lg italic text-slate-500">{entry.creature}</p>
         </header>
+
+        {hasImage && (
+          // eslint-disable-next-line @next/next/no-img-element
+          <img
+            src={`/biomimicry-images/${id}.png`}
+            alt={entry.creature}
+            className="mb-8 w-full rounded-2xl border border-slate-200 bg-white"
+          />
+        )}
 
         <Section title="Where you might see it">{entry.where_you_might_see_it}</Section>
         <Section title="Nature's problem">{entry.natures_problem}</Section>
