@@ -1,0 +1,41 @@
+{
+  "id": "robin-stays-swallow-goes",
+  "title": "Where did the swallows go, and why did the robin stay?",
+  "type": "five-whys",
+  "summary": "An autumn sky empty of swallows leads to the question of why some birds fly thousands of miles to Africa while the robin stays for Christmas — and ends on the idea that each bird can only live the life its body is shaped for.",
+  "subjects": ["swallow", "Hirundo rustica", "robin", "Erithacus rubecula", "migration", "seasonal change", "birds", "adaptation"],
+  "curriculum": {
+    "key_stage": "KS1/KS2",
+    "year_groups": ["Y1", "Y2", "Y6"],
+    "topics": ["Animals including humans", "Seasonal changes", "Living things and their habitats", "Adaptation"]
+  },
+  "setting": "An autumn afternoon, looking up at telephone wires where the swallows used to gather but are now gone.",
+  "characters": { "child": "Maya", "adult": "Grandad" },
+  "turns": [
+    { "speaker": "child", "text": "Where have all the swallows gone? They sat on these wires all summer." },
+    { "speaker": "adult", "text": "They've flown south. All the way to Africa." },
+    { "speaker": "child", "text": "To AFRICA? Why would they go that far?" },
+    { "speaker": "adult", "text": "Because of what they eat. Swallows catch tiny insects in the air as they fly. When our winter comes, the flying insects vanish. So the swallows chase the summer — and when it's winter here, it's warm and full of insects down there." },
+    { "speaker": "child", "text": "But the robin's still here, Grandad. I can hear it. Why didn't the robin go to Africa as well?" },
+    { "speaker": "adult", "text": "The robin eats different food — worms, beetles, berries, whatever it can find down on the ground. There's still some of that around in our winter. The robin can stay and make do." },
+    { "speaker": "child", "text": "Is THAT why robins are on Christmas cards and swallows aren't?" },
+    { "speaker": "adult", "text": "That's exactly why. The robin is the little bird that keeps us company right through the cold." },
+    { "speaker": "child", "text": "But if staying works fine for the robin... why doesn't the swallow just learn to eat worms and stay too? Then it wouldn't have to fly so far." },
+    { "speaker": "adult", "text": "Ah. Look at how a swallow is built. Long, narrow wings made for swooping. A wide mouth for scooping insects out of the air. And feet so tiny it can barely shuffle along the ground." },
+    { "speaker": "child", "text": "So it couldn't dig up a worm even if it wanted to." },
+    { "speaker": "adult", "text": "It couldn't. Every bird can only really live the life its body is shaped for. The swallow's whole body says: follow the insects. So it does — across deserts, across a whole sea, across half the world — and then it finds its way back to the very same wire, next spring." }
+  ],
+  "the_heart_of_it": "Migration is driven by food, not simply by temperature: swallows leave because the flying insects they depend on disappear in a British winter, while robins, being ground-feeding generalists, can stay. The closing point — that a swallow can't simply choose to live like a robin because its body is specialised for aerial feeding — is an accessible first encounter with adaptation: form fits the way of life, which is why it foreshadows evolution (Y6) without naming it.",
+  "watch_for": "Keep the cause as 'the food disappears', not 'it gets cold' — that's the accurate and more interesting reason. Swallows are insectivores that feed on the wing; robins are opportunist ground feeders. The remarkable fidelity of swallows returning to the same nest site is true and worth keeping for wonder.",
+  "extend_it": [
+    "How does a young swallow, on its very first journey, know the way to Africa and back?",
+    "Which birds in our garden stay all winter, and which disappear? Keep a list across the year.",
+    "Compare the swallow's wings and feet with the robin's — draw both and label what each is good for."
+  ],
+  "links": {
+    "nature_examples": [],
+    "image_refs": [],
+    "related_conversations": ["deciduous-evergreen-winter"]
+  },
+  "added_date": "2026-05-30"
+}

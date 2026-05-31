@@ -1,0 +1,47 @@
+{
+  "id": "ornamental-cherry-no-fruit",
+  "title": "Why are there no cherries on that cherry tree?",
+  "type": "five-whys",
+  "summary": "A spring walk past a frothy, blossom-laden ornamental cherry unpicks why blossom doesn't always become fruit — and ends on the surprising fact that the showy petals are made from the very parts that would have made the cherries.",
+  "subjects": ["ornamental cherry", "Prunus", "flowers", "fruit", "pollination", "cuttings", "plant breeding"],
+  "curriculum": {
+    "key_stage": "KS1/KS2",
+    "year_groups": ["Y1", "Y2", "Y3"],
+    "topics": ["Plants", "Flowers and fruit", "Pollination", "How plants reproduce"]
+  },
+  "setting": "A spring walk down a street planted with ornamental cherries in full, frothy blossom.",
+  "characters": { "child": "Maya", "adult": "Grandad" },
+  "turns": [
+    { "speaker": "child", "text": "Why are there no cherries on that cherry tree?" },
+    { "speaker": "adult", "text": "Because it's an ornamental cherry. People grow it for its flowers, not for its fruit." },
+    { "speaker": "child", "text": "But where do cherries come from?" },
+    { "speaker": "adult", "text": "From the flowers. Every cherry you've ever eaten started out as a blossom in spring." },
+    { "speaker": "child", "text": "But Grandad, this tree is COVERED in flowers. So why don't those flowers make cherries?" },
+    { "speaker": "adult", "text": "Good question, Maya. Pick one flower off the path and look at it very closely. Count the petals." },
+    { "speaker": "child", "text": "Loads. Way more than the cherry tree in Grandma's garden." },
+    { "speaker": "adult", "text": "That's the secret. A wild cherry flower has just five petals, and in the very middle, the tiny parts that turn into a cherry. This one has dozens of petals instead." },
+    { "speaker": "child", "text": "But how do you get a flower with that many petals?" },
+    { "speaker": "adult", "text": "Here's the strange part. The extra petals aren't really new. They ARE the cherry-making parts — changed into petals." },
+    { "speaker": "child", "text": "So the flower used up its cherry bits... to make more petals?" },
+    { "speaker": "adult", "text": "Exactly. It traded its cherries for frills. That's why it's so beautiful in spring, and why it stays bare all summer." },
+    { "speaker": "child", "text": "That seems like a bad swap." },
+    { "speaker": "adult", "text": "For a wild tree it would be a terrible swap — a wild cherry needs fruit to hold its seeds, and seeds to grow new trees. But this tree never grows from a seed. Gardeners make new ones by snipping a twig off this very tree and rooting it." },
+    { "speaker": "child", "text": "So all the cherry trees down this whole street are... the same tree?" },
+    { "speaker": "adult", "text": "In a way, yes. Copies of one. A whole avenue of blossom can be a single tree, planted again and again." },
+    { "speaker": "child", "text": "Then why does it even bother making flowers, if there are never any cherries and never any seeds for it to grow from?" },
+    { "speaker": "adult", "text": "Now that is the best question of all. It can't help it. The flowering is written all the way through it. Long, long ago its ancestors made blossom to make cherries to make seeds — that's what a cherry tree is FOR. We've taken away the cherries. But we couldn't take away the wanting-to-flower. So every single spring, it still tries." }
+  ],
+  "the_heart_of_it": "A flower is a plant's way of making seeds, and fruit is the case it builds around them. Ornamental ('double') cherries have been bred so that the flower's reproductive organs are turned into extra petals — which is why the blossom is so showy AND why no fruit forms. Because they can't set seed, they are propagated as clones from cuttings. The closing idea — that the tree still flowers even though it can no longer make seed — is a gentle first encounter with inheritance: an organism does what its ancestry shaped it to do.",
+  "watch_for": "Some ornamental cherries DO set a little inedible fruit; 'ornamental cherry' covers many varieties. The double-flowered, fruitless kind (e.g. Prunus 'Kanzan') is the one this conversation describes. Keep 'changed into petals' as the accessible idea rather than the term 'petaloid stamens'.",
+  "extend_it": [
+    "Same shape of question for conkers and the horse chestnut: a seed we can't eat, dispersed without us.",
+    "Compare with the cherry tree that DOES fruit — what is different about its flowers?",
+    "Where do the seeds for ornamental cherries... not come from? (Cuttings vs seeds — cloning.)"
+  ],
+  "links": {
+    "nature_examples": [],
+    "image_refs": [],
+    "related_conversations": ["deciduous-evergreen-winter"]
+  },
+  "added_date": "2026-05-30"
+}

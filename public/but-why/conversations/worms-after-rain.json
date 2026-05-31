@@ -1,0 +1,131 @@
+{
+  "id": "worms-after-rain",
+  "title": "Why do worms come up onto the path when it rains?",
+  "type": "five-whys",
+  "summary": "A wet garden path littered with earthworms becomes the starting point for discovering how worms breathe, how they move, and why the rain turns their underground world into a place they must leave — ending on the quiet fact that a creature so easy to overlook is one of the most important animals in the garden.",
+  "subjects": [
+    "earthworm",
+    "Lumbricus terrestris",
+    "soil",
+    "habitats",
+    "breathing",
+    "soil structure"
+  ],
+  "curriculum": {
+    "key_stage": "KS1/KS2",
+    "year_groups": [
+      "Y1",
+      "Y2",
+      "Y3",
+      "Y4"
+    ],
+    "topics": [
+      "Animals including humans",
+      "Living things and their habitats",
+      "Plants — soil and growth"
+    ]
+  },
+  "setting": "A garden path after heavy rain, scattered with earthworms lying in the wet.",
+  "characters": {
+    "child": "Maya",
+    "adult": "Grandad"
+  },
+  "turns": [
+    {
+      "speaker": "child",
+      "text": "Grandad! Why are there worms all over the path? There must be hundreds."
+    },
+    {
+      "speaker": "adult",
+      "text": "Have a look at the lawn — what's happened to it?"
+    },
+    {
+      "speaker": "child",
+      "text": "It's soaking. There are puddles all over it."
+    },
+    {
+      "speaker": "adult",
+      "text": "And what do you think is happening underneath, in the soil where the worms live?"
+    },
+    {
+      "speaker": "child",
+      "text": "It's... also wet? Like, full of water?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Exactly. The rain fills up all the little tunnels and air pockets in the soil. And worms need air to breathe — so when the air disappears and the water comes in, they head upwards."
+    },
+    {
+      "speaker": "child",
+      "text": "But worms don't have a nose. How do they breathe?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Through their skin. A worm's whole body is its nose, in a way — air passes straight through the surface. That only works if the skin stays moist. Feel one — go on, gently."
+    },
+    {
+      "speaker": "child",
+      "text": "It's slimy. Sort of slippery."
+    },
+    {
+      "speaker": "adult",
+      "text": "That's the moisture it needs. And that's why you'll only ever see worms come out when it's wet — in dry air, their skin dries out and they can't breathe. So rain is the one time they can safely travel on the surface."
+    },
+    {
+      "speaker": "child",
+      "text": "So they're not coming up because they're drowning — they're coming up to breathe?"
+    },
+    {
+      "speaker": "adult",
+      "text": "That's what many people used to think — that they were escaping drowning. But most worms are better at coping with waterlogged soil than we realised. The breathing is the main reason, Maya. Though some may also be taking the chance to travel further than they could underground."
+    },
+    {
+      "speaker": "child",
+      "text": "Travel? Where are they going?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Looking for new territory, maybe. Or a mate. Underground they can only move so far through the soil. Up here, the whole garden is open to them."
+    },
+    {
+      "speaker": "child",
+      "text": "But loads of them are going to dry out on the path and die."
+    },
+    {
+      "speaker": "adult",
+      "text": "Some will, yes. If the sun comes out and dries the path before they find their way back to the soil. That's why it's worth putting any you find on the path back onto the grass. Now — do you know what worms actually do in the soil when they're not wandering about in the rain?"
+    },
+    {
+      "speaker": "child",
+      "text": "Eat mud?"
+    },
+    {
+      "speaker": "adult",
+      "text": "They eat dead leaves and bits of plant — they pull them down into the soil and digest them. And as they move through the ground, they make tunnels that let air and water in to reach the roots. Charles Darwin spent years studying earthworms. He called them one of the most important creatures on earth."
+    },
+    {
+      "speaker": "child",
+      "text": "Darwin? The one who thought about evolution?"
+    },
+    {
+      "speaker": "adult",
+      "text": "The very same. His last book before he died was entirely about earthworms. Not finches, not barnacles — worms. He thought they'd been underestimated. Looking at this path, I think he had a point."
+    }
+  ],
+  "the_heart_of_it": "Earthworms (Lumbricus terrestris and relatives) are cutaneous breathers — gas exchange happens across the moist body wall rather than through lungs or gills. When heavy rain saturates the soil, oxygen levels in the soil water drop and the worms move to the surface. The popular idea that they are 'escaping drowning' is an oversimplification: earthworms can survive waterlogged conditions for some time, but the reduced oxygen and the opportunity to travel on the surface (normally impossible without fatal desiccation) are the key drivers. Darwin's 1881 book 'The Formation of Vegetable Mould through the Action of Worms' established worms as critical agents of soil fertility through leaf-litter burial, casting, and tunnelling.",
+  "watch_for": "The 'they come up to avoid drowning' explanation is widely repeated but oversimplified — the oxygen-depletion and skin-breathing explanation is more accurate. Worms do not breathe through their mouths; the cutaneous respiration point is worth making clearly. The skin must stay moist for breathing AND for movement (their circular and longitudinal muscles work against a hydrostatic skeleton). Be careful not to say worms 'need' to travel on the surface — it is an opportunity the rain provides, not a need met by rain.",
+  "extend_it": [
+    "After the next rain, count how many worms appear on a fixed length of path — does heavier rain bring more?",
+    "Dig a small patch of lawn and count the earthworms in a 30cm square: how many can you find?",
+    "Put a worm on damp soil and watch how it moves — can you see the rings of muscle pushing it along?",
+    "Why do blackbirds and robins come to the lawn after rain? Connect the worm's journey to the food chain."
+  ],
+  "links": {
+    "nature_examples": [],
+    "image_refs": [],
+    "related_conversations": [
+      "tadpoles-not-baby-frogs"
+    ]
+  },
+  "added_date": "2026-05-30"
+}

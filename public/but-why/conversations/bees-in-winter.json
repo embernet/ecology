@@ -1,0 +1,140 @@
+{
+  "id": "bees-in-winter",
+  "title": "Where do all the bees go in winter?",
+  "type": "socratic",
+  "summary": "A winter garden apparently empty of bees opens up into a conversation about three very different kinds of bee — honeybee, bumblebee, and solitary bee — each with its own winter strategy. It ends on the discovery that 'bees' is not one story but many, and that the garden is never quite as empty as it looks.",
+  "subjects": [
+    "honeybee",
+    "Apis mellifera",
+    "bumblebee",
+    "Bombus",
+    "solitary bee",
+    "hibernation",
+    "life cycles",
+    "overwintering"
+  ],
+  "curriculum": {
+    "key_stage": "KS1/KS2",
+    "year_groups": [
+      "Y2",
+      "Y3",
+      "Y4"
+    ],
+    "topics": [
+      "Living things and their habitats",
+      "Animals including humans — life cycles",
+      "Seasonal changes"
+    ]
+  },
+  "setting": "A garden in late autumn or winter. The flowers are mostly gone; there is no humming from the beds.",
+  "characters": {
+    "child": "Maya",
+    "adult": "Grandad"
+  },
+  "turns": [
+    {
+      "speaker": "child",
+      "text": "Where have all the bees gone? There were loads in the summer and now there aren't any."
+    },
+    {
+      "speaker": "adult",
+      "text": "What do you think bees eat?"
+    },
+    {
+      "speaker": "child",
+      "text": "Honey? And... the yellow stuff on flowers."
+    },
+    {
+      "speaker": "adult",
+      "text": "Pollen and nectar — yes. So look around the garden. What's happened to the flowers?"
+    },
+    {
+      "speaker": "child",
+      "text": "They've all gone. Most of them, anyway."
+    },
+    {
+      "speaker": "adult",
+      "text": "So if a bee flew out today, what would it find?"
+    },
+    {
+      "speaker": "child",
+      "text": "Not much. Hardly anything to eat."
+    },
+    {
+      "speaker": "adult",
+      "text": "Exactly. But here's the thing — not all bees solve that problem the same way. Can you think of three kinds of bee?"
+    },
+    {
+      "speaker": "child",
+      "text": "Bumblebees. And honeybees — the ones in hives. Are there others?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Hundreds of others — we call them solitary bees. Little ones that nest in tiny holes in walls or in the ground, each female on her own. Now, the honeybee colony in a hive — what do you think they do?"
+    },
+    {
+      "speaker": "child",
+      "text": "Stay in the hive and eat the honey?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Yes, Maya — that's exactly it. All summer they collect nectar and store it as honey, and when winter comes the whole colony huddles together and lives off those stores. They don't sleep through winter — they stay alive, keeping warm by clustering and shivering their wing muscles to make heat."
+    },
+    {
+      "speaker": "child",
+      "text": "So honeybees aren't really gone — they're just inside?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Inside, and eating last summer's sunshine. Bumblebees are different. The whole colony — the workers, the old queen — they all die in autumn. Every single one of them."
+    },
+    {
+      "speaker": "child",
+      "text": "All of them? Then where do the bumblebees come from in spring?"
+    },
+    {
+      "speaker": "adult",
+      "text": "From the new queens. One young queen from each colony — fat with food, full of eggs — finds a spot in the soil or under a log and hibernates alone all winter. She is the whole future of her colony. In spring she wakes up, finds the first flowers, and starts a new nest from scratch, all by herself."
+    },
+    {
+      "speaker": "child",
+      "text": "She has to do everything on her own?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Everything. She builds the first wax cells herself, lays the first eggs herself, and feeds the first workers. Once those workers hatch, they take over. But until they do, it's just her."
+    },
+    {
+      "speaker": "child",
+      "text": "What about the solitary bees?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Different again. Most of them aren't alive at all, right now — as adults. They spent the summer laying eggs in little tubes or holes, each egg sealed in with a package of pollen to eat. Those eggs have hatched into grubs, and the grubs are sleeping through winter in their cells. In spring they'll turn into bees and chew their way out."
+    },
+    {
+      "speaker": "child",
+      "text": "So the garden has got hidden sleeping bees in the walls and under the ground?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Hundreds of them. The garden isn't empty at all — it just looks it. The bees are here; they've just put themselves away until the flowers come back."
+    }
+  ],
+  "the_heart_of_it": "The three main groups of British bees have distinct overwintering strategies. Honeybees (Apis mellifera) are unique among British bees in maintaining an active colony through winter, living off honey stores; the cluster generates heat metabolically. Bumblebees (Bombus species) are annual colonies: the entire colony dies in autumn except newly-mated queens, which hibernate singly. Solitary bees (e.g. red mason bee Osmia bicornis, leafcutter bees) overwinter largely as larvae or pupae sealed inside nest cells with pollen provisions, emerging as adults in spring. Understanding that 'bees' is not one strategy but many is the key biological insight here.",
+  "watch_for": "Avoid saying bumblebees 'hibernate as a colony' — only the new queen hibernates; the rest of the colony dies. Honeybees do NOT hibernate — they remain active at low levels and maintain hive temperature through metabolic heat. The word 'hibernation' technically fits the bumblebee queen (dormancy through winter) and some solitary bees (as adults in sealed cells) but does NOT fit honeybees. Saying 'all bees hibernate' is the most common error. Also note: there are around 250 species of bee in Britain, the vast majority solitary.",
+  "extend_it": [
+    "In February, watch for the first bumblebee queens — large, often buff-tailed (Bombus terrestris) — visiting early crocuses or hellebores.",
+    "Put up a solitary bee hotel and check it in late summer: can you see which tubes have been sealed with mud or leaves?",
+    "Compare with butterflies in winter — which British species hibernate as adults, which as chrysalis, which as eggs?",
+    "Find out which plants flower earliest in the garden — which bees need them most, and why?"
+  ],
+  "links": {
+    "nature_examples": [],
+    "image_refs": [],
+    "related_conversations": [
+      "caterpillar-to-butterfly"
+    ]
+  },
+  "added_date": "2026-05-30"
+}

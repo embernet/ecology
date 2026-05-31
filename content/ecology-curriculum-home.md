@@ -17,6 +17,8 @@ Teaching resources are structured to match the UK National Curriculum Key Stages
 - [Geography](/wiki/geography) — Key Stages 1 & 2
 - [Handouts](/wiki/handouts) — Printable classroom sheets comparing species and illustrating life cycles
 - [Interactive Activities](/activities) — Activities for use online or printing as worksheets for students to label
+- [Biomimicry](/biomimicry) — How nature solved a problem first, and the inventions people copied from it, linked to curriculum topics
+- [But Why?](/but-why) — Short conversations about nature, revealed one question at a time, for sparking curiosity in class or at home
 - [Media Library](/media) — Images and live streams to enrich lessons
 - [Reference](/reference) — Dictionary and resource index for quick lookups
 - [Teaching Resources](/wiki/teaching-resources) — Teaching principles and links to useful external ecology websites

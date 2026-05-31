@@ -1,0 +1,120 @@
+{
+  "id": "peppered-moth-bark",
+  "title": "Why do some moths look exactly like the tree bark they sit on?",
+  "type": "dialogue",
+  "summary": "Finding a pale, bark-patterned moth resting on a lichen-covered wall, Maya asks how it got to look so exactly like the surface behind it. The conversation introduces natural selection through the peppered moth's famous story — how a population shifted from pale to dark during the Industrial Revolution, and back again as the air cleared — and lands on the idea that colour is not decoration but survival, shaped by countless generations of being seen or not being seen.",
+  "subjects": [
+    "peppered moth",
+    "Biston betularia",
+    "camouflage",
+    "natural selection",
+    "adaptation",
+    "industrial melanism"
+  ],
+  "curriculum": {
+    "key_stage": "KS2",
+    "year_groups": [
+      "Y6"
+    ],
+    "topics": [
+      "Evolution and inheritance",
+      "Adaptation",
+      "Living things and their habitats"
+    ]
+  },
+  "setting": "A garden wall covered in grey-green lichen. A peppered moth rests on it, nearly invisible.",
+  "characters": {
+    "child": "Maya",
+    "adult": "Grandad"
+  },
+  "turns": [
+    {
+      "speaker": "child",
+      "text": "Grandad, look — there's a moth on the wall. It looks exactly like the lichen. How did it get to look like that?"
+    },
+    {
+      "speaker": "adult",
+      "text": "What do you think would happen to a moth that didn't look like the wall — one that was, say, bright white?"
+    },
+    {
+      "speaker": "child",
+      "text": "A bird would eat it."
+    },
+    {
+      "speaker": "adult",
+      "text": "Probably very quickly. So what kind of moth survives long enough to lay eggs?"
+    },
+    {
+      "speaker": "child",
+      "text": "The ones that match. The ones that are hard to see."
+    },
+    {
+      "speaker": "adult",
+      "text": "And if a moth that matches well lays eggs, what might its young look like?"
+    },
+    {
+      "speaker": "child",
+      "text": "Like their mum? So... also matching?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Usually, yes — young tend to resemble their parents. The ones that match a little better survive a little longer, lay a few more eggs. The ones that stand out get eaten before they can lay any. Over many, many generations — not one lifetime, but hundreds of years — the whole population gradually changes. Not because any single moth decided to change. Just because the ones that happen to match, survive."
+    },
+    {
+      "speaker": "child",
+      "text": "Does that mean moths on dark trees look different from moths on pale trees?"
+    },
+    {
+      "speaker": "adult",
+      "text": "That's a brilliant question — and there's a real story about exactly that. This moth, the peppered moth, used to be almost entirely pale and speckled, like the one on that wall. Then, about 160 years ago, Britain's air filled with coal smoke. Trees in industrial cities got coated in black soot. The pale moths suddenly stood out against dark, dirty bark."
+    },
+    {
+      "speaker": "child",
+      "text": "And birds ate them?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Yes. But there were always a few darker moths — very rare before, because they stood out on pale trees. Suddenly the dark ones were the ones that were hard to see. Within a few decades, in smoky cities, almost all the peppered moths had turned dark. The same moth, the same species, but a different colour — shaped by the soot."
+    },
+    {
+      "speaker": "child",
+      "text": "What happened when the smoke went away?"
+    },
+    {
+      "speaker": "adult",
+      "text": "When the Clean Air Acts came in, the smoke cleared and the lichen grew back on the trees. The dark moths on pale, lichen-covered bark became easy to spot again. Slowly — over decades — the population shifted back towards pale. Today, pale peppered moths are common again in most of Britain."
+    },
+    {
+      "speaker": "child",
+      "text": "So the moths changed because the trees changed?"
+    },
+    {
+      "speaker": "adult",
+      "text": "The trees changed what it meant to be visible. And visibility meant life or death. The moths didn't choose to change, Maya — no individual moth changed colour in its lifetime. It was the population that changed, because different moths survived in different eras. That's natural selection. Charles Darwin's great idea."
+    },
+    {
+      "speaker": "child",
+      "text": "So every single moth on a wall right now — it's there because all its ancestors were also hard to see?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Every single one. Every moth you've ever seen that is still alive is the end of an unbroken line of moths that were never caught. The ones that were caught didn't have young. This moth on the wall — it's here because for hundreds of generations, not one of its ancestors was seen. That's what you're looking at."
+    }
+  ],
+  "the_heart_of_it": "The peppered moth (Biston betularia) is the classic textbook example of observable natural selection in action. The pale speckled form (typica) is camouflaged on lichen-covered tree bark; a dark melanic form (carbonaria) is camouflaged on soot-covered bark. During the Industrial Revolution, the carbonaria form rose from very rare to near-dominant in polluted urban areas (a phenomenon called industrial melanism). Following clean air legislation from the 1950s onwards, lichen returned and the typica form increased again. The mechanism is straightforward: birds eat moths resting on bark by sight; moths that rest in matching colours have higher survival and therefore produce more offspring; over generations the population composition shifts. This is directional natural selection, and the peppered moth story remains one of the best-documented examples, though some details of the original Kettlewell studies have been debated and later confirmed by Michael Majerus's more rigorous experiments. The broader principle — that inherited variation, differential survival, and reproduction lead to population change over time — is the core of Darwin's theory.",
+  "watch_for": "The peppered moth story has been misrepresented in some older textbooks (e.g. photos of moths pinned to bark in unrealistic positions in Kettlewell's original work). The underlying evolution is real and well-supported — Majerus's large-scale experiments (published 2012) confirmed bird predation as the selective agent — but note the caveat if using the story in detail. The key conceptual clarification: individual moths do NOT change colour in their lifetime — it is the population that changes over generations as better-camouflaged individuals survive and reproduce more. Avoid saying moths 'adapted' in a way that implies deliberate or within-lifetime change. Also: moths rest on bark and in crevices, not always in the open on tree trunks — the visibility to birds is not always on an exposed surface.",
+  "extend_it": [
+    "Look for pale peppered moths in summer (they fly May-August) on walls, fences, or near light-traps by lichen-covered surfaces.",
+    "Use a 'bird's eye view' camouflage activity: cut pale and dark moth shapes and place them on varied backgrounds — which are found first?",
+    "Find out about other examples of industrial melanism in other moth species — the peppered moth is not the only one.",
+    "Discuss: what would happen to peppered moths if Britain's air became smoky again? What does this tell us about evolution — is it a direction, or just a response?"
+  ],
+  "links": {
+    "nature_examples": [],
+    "image_refs": [],
+    "related_conversations": [
+      "caterpillar-to-butterfly"
+    ]
+  },
+  "added_date": "2026-05-30"
+}

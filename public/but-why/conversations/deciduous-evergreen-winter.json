@@ -1,0 +1,43 @@
+{
+  "id": "deciduous-evergreen-winter",
+  "title": "Why is the oak bare but the holly still green?",
+  "type": "socratic",
+  "summary": "Standing between a leafless oak and a glossy holly in winter, a child works out — by feeling the leaves — that dropping leaves and keeping leaves are two different answers to the same cold, and neither one is wrong.",
+  "subjects": ["oak", "Quercus", "holly", "Ilex aquifolium", "deciduous", "evergreen", "leaves", "winter", "seasonal change"],
+  "curriculum": {
+    "key_stage": "KS1",
+    "year_groups": ["Y1", "Y2"],
+    "topics": ["Plants", "Deciduous and evergreen trees", "Seasonal changes"]
+  },
+  "setting": "A cold, clear winter walk, stopping between a bare oak and a holly bush still in full leaf.",
+  "characters": { "child": "Maya", "adult": "Grandad" },
+  "turns": [
+    { "speaker": "child", "text": "Why has this tree dropped all its leaves but the holly over there still has every single one?" },
+    { "speaker": "adult", "text": "Because they've made different plans for winter. The oak lets its leaves go. The holly keeps hold of them." },
+    { "speaker": "child", "text": "Why would a tree throw away all its leaves? That's like taking your coat OFF in winter." },
+    { "speaker": "adult", "text": "It does look that way. But a leaf isn't really the tree's coat — it's more like its kitchen. Leaves catch sunlight and use it to cook the tree's food." },
+    { "speaker": "child", "text": "So in winter there isn't much sun to cook with..." },
+    { "speaker": "adult", "text": "And the ground freezes hard, so the roots can barely drink. A big, thin leaf keeps losing water it can't replace, and it can freeze and tear in the wind. For the oak, hanging on costs more than it's worth. So it pulls the goodness back out of each leaf, seals the join, and lets it fall." },
+    { "speaker": "child", "text": "But the holly keeps ALL of its leaves. Doesn't the holly get cold too?" },
+    { "speaker": "adult", "text": "Feel a holly leaf, Maya — careful of the spikes. What's it like compared to one of the oak leaves on the ground?" },
+    { "speaker": "child", "text": "Hard. And shiny. And really tough." },
+    { "speaker": "adult", "text": "That shine is like a little waxy raincoat. It stops the leaf drying out and freezing through. Thick, tough, waterproof — expensive for the tree to build, but it lasts for years." },
+    { "speaker": "child", "text": "So the oak makes cheap leaves and the holly makes expensive ones?" },
+    { "speaker": "adult", "text": "That's exactly it. The oak makes thousands of thin, cheap leaves and starts again every spring. The holly makes a few tough, costly ones and keeps them through winter after winter." },
+    { "speaker": "child", "text": "So which one is doing it the right way?" },
+    { "speaker": "adult", "text": "Neither. They're two different answers to the very same winter. And both trees are still standing here, hundreds of years old, so both answers must be good ones." }
+  ],
+  "the_heart_of_it": "Deciduous trees (oak) drop their leaves to avoid the cost of keeping thin, water-hungry leaves through a season of little light and frozen ground; before the leaf falls the tree withdraws useful nutrients. Evergreens (holly) instead invest in thick, waxy, long-lived leaves that survive winter, spreading that cost over several years. The closing point — that two opposite strategies can both succeed — is a quietly important ecological idea: there is rarely one 'right' way to live.",
+  "watch_for": "Avoid implying leaves fall because they 'die' first — the tree actively sheds them (abscission) and reclaims nutrients first, which is why autumn leaves change colour. 'Kitchen' is the accessible stand-in for photosynthesis; the word itself can come later (Y3).",
+  "extend_it": [
+    "Why do the leaves turn red and gold BEFORE they fall? (The tree taking its goodness back.)",
+    "Conifers (pine, fir) are evergreen too — what shape are their leaves, and why might needles survive winter?",
+    "Which trees in our school grounds are bare right now, and which are still green? Make a map."
+  ],
+  "links": {
+    "nature_examples": [],
+    "image_refs": [],
+    "related_conversations": ["ornamental-cherry-no-fruit"]
+  },
+  "added_date": "2026-05-30"
+}

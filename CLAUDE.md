@@ -16,6 +16,17 @@ All text on the site must be written in **British English** — spellings, vocab
 
 Examples: *colour* not *color*, *centre* not *center*, *recognise* not *recognize*, *autumn* not *fall*, *grey* not *gray*.
 
+## Writing for everyone
+
+The site serves teachers, parents, and children — but **every piece of text must read as if it is for whoever happens to be reading it, whatever their role.** Everyone is welcome everywhere on the site.
+
+- **Never address the reader by role** and never imply a page or feature belongs to one group. Do not write "you are teaching", "for your class", "your pupils", "the children you teach", or similar. A child or parent reading that may feel the page is not for them — when in fact it is.
+- **Describe tools neutrally.** "Filter by school subject and year group" — not "filter by the year group you are teaching." The year-group and subject filters and the curriculum links are useful to teachers, but they are there for anyone who wants them.
+- **Keep teaching-oriented reference material** (curriculum links, classroom activities) — just frame it as information available to all, never as an instruction aimed at a teacher.
+- **Write open invitations:** "Pick one to explore", "Choose a question to begin" — addressed to everyone.
+
+This applies to all body copy. (Clearly-labelled resource areas such as a "Teaching resources" page are fine — the rule is about not addressing or excluding the reader by role within the content itself.)
+
 ## Nature Examples
 
 **Primary focus: UK species and habitats.** Choose examples that children could plausibly encounter in their own garden, local park, or countryside — things they might recognise and be inspired to look for.

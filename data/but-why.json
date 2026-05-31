@@ -1,0 +1,254 @@
+[
+  {
+    "id": "bees-in-winter",
+    "title": "Where do all the bees go in winter?",
+    "type": "socratic",
+    "summary": "A winter garden apparently empty of bees opens up into a conversation about three very different kinds of bee — honeybee, bumblebee, and solitary bee — each with its own winter strategy. It ends on the discovery that 'bees' is not one story but many, and that the garden is never quite as empty as it looks.",
+    "subjects": [
+      "honeybee",
+      "Apis mellifera",
+      "bumblebee",
+      "Bombus",
+      "solitary bee"
+    ],
+    "curriculum": {
+      "key_stage": "KS1/KS2",
+      "year_groups": [
+        "Y2",
+        "Y3",
+        "Y4"
+      ],
+      "topics": [
+        "Living things and their habitats",
+        "Animals including humans — life cycles",
+        "Seasonal changes"
+      ]
+    },
+    "added_date": "2026-05-30",
+    "url": "/but-why/conversations/bees-in-winter.json"
+  },
+  {
+    "id": "caterpillar-to-butterfly",
+    "title": "Why does a caterpillar turn into a butterfly instead of just growing bigger?",
+    "type": "dialogue",
+    "summary": "Watching a caterpillar on a nettle leaf, Maya asks why it has to go through the strange, costly process of becoming a chrysalis at all. The conversation unpicks the idea that a caterpillar and a butterfly are two completely different tools for two completely different jobs — and that the transformation, strange as it is, is one of the most successful inventions in the history of life.",
+    "subjects": [
+      "small tortoiseshell butterfly",
+      "Aglais urticae",
+      "caterpillar",
+      "metamorphosis",
+      "life cycles"
+    ],
+    "curriculum": {
+      "key_stage": "KS1/KS2",
+      "year_groups": [
+        "Y2",
+        "Y3",
+        "Y4"
+      ],
+      "topics": [
+        "Living things and their habitats",
+        "Animals including humans — life cycles",
+        "Evolution and adaptation (Y6 link)"
+      ]
+    },
+    "added_date": "2026-05-30",
+    "url": "/but-why/conversations/caterpillar-to-butterfly.json"
+  },
+  {
+    "id": "deciduous-evergreen-winter",
+    "title": "Why is the oak bare but the holly still green?",
+    "type": "socratic",
+    "summary": "Standing between a leafless oak and a glossy holly in winter, a child works out — by feeling the leaves — that dropping leaves and keeping leaves are two different answers to the same cold, and neither one is wrong.",
+    "subjects": [
+      "oak",
+      "Quercus",
+      "holly",
+      "Ilex aquifolium",
+      "deciduous"
+    ],
+    "curriculum": {
+      "key_stage": "KS1",
+      "year_groups": [
+        "Y1",
+        "Y2"
+      ],
+      "topics": [
+        "Plants",
+        "Deciduous and evergreen trees",
+        "Seasonal changes"
+      ]
+    },
+    "added_date": "2026-05-30",
+    "url": "/but-why/conversations/deciduous-evergreen-winter.json"
+  },
+  {
+    "id": "ornamental-cherry-no-fruit",
+    "title": "Why are there no cherries on that cherry tree?",
+    "type": "five-whys",
+    "summary": "A spring walk past a frothy, blossom-laden ornamental cherry unpicks why blossom doesn't always become fruit — and ends on the surprising fact that the showy petals are made from the very parts that would have made the cherries.",
+    "subjects": [
+      "ornamental cherry",
+      "Prunus",
+      "flowers",
+      "fruit",
+      "pollination"
+    ],
+    "curriculum": {
+      "key_stage": "KS1/KS2",
+      "year_groups": [
+        "Y1",
+        "Y2",
+        "Y3"
+      ],
+      "topics": [
+        "Plants",
+        "Flowers and fruit",
+        "Pollination",
+        "How plants reproduce"
+      ]
+    },
+    "added_date": "2026-05-30",
+    "url": "/but-why/conversations/ornamental-cherry-no-fruit.json"
+  },
+  {
+    "id": "peppered-moth-bark",
+    "title": "Why do some moths look exactly like the tree bark they sit on?",
+    "type": "dialogue",
+    "summary": "Finding a pale, bark-patterned moth resting on a lichen-covered wall, Maya asks how it got to look so exactly like the surface behind it. The conversation introduces natural selection through the peppered moth's famous story — how a population shifted from pale to dark during the Industrial Revolution, and back again as the air cleared — and lands on the idea that colour is not decoration but survival, shaped by countless generations of being seen or not being seen.",
+    "subjects": [
+      "peppered moth",
+      "Biston betularia",
+      "camouflage",
+      "natural selection",
+      "adaptation"
+    ],
+    "curriculum": {
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y6"
+      ],
+      "topics": [
+        "Evolution and inheritance",
+        "Adaptation",
+        "Living things and their habitats"
+      ]
+    },
+    "added_date": "2026-05-30",
+    "url": "/but-why/conversations/peppered-moth-bark.json"
+  },
+  {
+    "id": "robin-stays-swallow-goes",
+    "title": "Where did the swallows go, and why did the robin stay?",
+    "type": "five-whys",
+    "summary": "An autumn sky empty of swallows leads to the question of why some birds fly thousands of miles to Africa while the robin stays for Christmas — and ends on the idea that each bird can only live the life its body is shaped for.",
+    "subjects": [
+      "swallow",
+      "Hirundo rustica",
+      "robin",
+      "Erithacus rubecula",
+      "migration"
+    ],
+    "curriculum": {
+      "key_stage": "KS1/KS2",
+      "year_groups": [
+        "Y1",
+        "Y2",
+        "Y6"
+      ],
+      "topics": [
+        "Animals including humans",
+        "Seasonal changes",
+        "Living things and their habitats",
+        "Adaptation"
+      ]
+    },
+    "added_date": "2026-05-30",
+    "url": "/but-why/conversations/robin-stays-swallow-goes.json"
+  },
+  {
+    "id": "tadpoles-not-baby-frogs",
+    "title": "Why are there tadpoles in the pond but never any baby frogs — only tadpoles?",
+    "type": "five-whys",
+    "summary": "A pondside visit in spring reveals that the pond is full of tadpoles but there are no tiny frogs to be seen. Following the question leads through the complete frog life cycle, the slow business of growing legs, and the dramatic moment when a tadpole becomes a froglet and leaves the water — ending on the realisation that the 'baby frog' stage happens so fast and at such a precise moment that it's easy to miss entirely.",
+    "subjects": [
+      "common frog",
+      "Rana temporaria",
+      "tadpole",
+      "froglet",
+      "metamorphosis"
+    ],
+    "curriculum": {
+      "key_stage": "KS1/KS2",
+      "year_groups": [
+        "Y2",
+        "Y3",
+        "Y4"
+      ],
+      "topics": [
+        "Living things and their habitats",
+        "Animals including humans — life cycles",
+        "Amphibians"
+      ]
+    },
+    "added_date": "2026-05-30",
+    "url": "/but-why/conversations/tadpoles-not-baby-frogs.json"
+  },
+  {
+    "id": "why-is-grass-green",
+    "title": "Why is the grass green and not blue or red?",
+    "type": "socratic",
+    "summary": "Lying on the lawn, Maya asks why everything around her is green. Grandad guides her through the idea that leaves use sunlight to make food — but only certain colours of light — and that green is the colour the leaf doesn't need, bounced back for our eyes to see. It ends on the strange and true idea that a green plant is wearing the one colour of sunlight it throws away.",
+    "subjects": [
+      "grass",
+      "chlorophyll",
+      "photosynthesis",
+      "light",
+      "plants"
+    ],
+    "curriculum": {
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y3",
+        "Y4",
+        "Y5"
+      ],
+      "topics": [
+        "Plants — requirements for growth",
+        "Plants — photosynthesis (Y5/6 link)",
+        "Light (Y3 — what we see is reflected light)"
+      ]
+    },
+    "added_date": "2026-05-30",
+    "url": "/but-why/conversations/why-is-grass-green.json"
+  },
+  {
+    "id": "worms-after-rain",
+    "title": "Why do worms come up onto the path when it rains?",
+    "type": "five-whys",
+    "summary": "A wet garden path littered with earthworms becomes the starting point for discovering how worms breathe, how they move, and why the rain turns their underground world into a place they must leave — ending on the quiet fact that a creature so easy to overlook is one of the most important animals in the garden.",
+    "subjects": [
+      "earthworm",
+      "Lumbricus terrestris",
+      "soil",
+      "habitats",
+      "breathing"
+    ],
+    "curriculum": {
+      "key_stage": "KS1/KS2",
+      "year_groups": [
+        "Y1",
+        "Y2",
+        "Y3",
+        "Y4"
+      ],
+      "topics": [
+        "Animals including humans",
+        "Living things and their habitats",
+        "Plants — soil and growth"
+      ]
+    },
+    "added_date": "2026-05-30",
+    "url": "/but-why/conversations/worms-after-rain.json"
+  }
+]

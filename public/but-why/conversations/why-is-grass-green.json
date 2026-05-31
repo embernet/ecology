@@ -1,0 +1,113 @@
+{
+  "id": "why-is-grass-green",
+  "title": "Why is the grass green and not blue or red?",
+  "type": "socratic",
+  "summary": "Lying on the lawn, Maya asks why everything around her is green. Grandad guides her through the idea that leaves use sunlight to make food — but only certain colours of light — and that green is the colour the leaf doesn't need, bounced back for our eyes to see. It ends on the strange and true idea that a green plant is wearing the one colour of sunlight it throws away.",
+  "subjects": [
+    "grass",
+    "chlorophyll",
+    "photosynthesis",
+    "light",
+    "plants"
+  ],
+  "curriculum": {
+    "key_stage": "KS2",
+    "year_groups": [
+      "Y3",
+      "Y4",
+      "Y5"
+    ],
+    "topics": [
+      "Plants — requirements for growth",
+      "Plants — photosynthesis (Y5/6 link)",
+      "Light (Y3 — what we see is reflected light)"
+    ]
+  },
+  "setting": "A sunny day in the garden. Maya is lying on the lawn, looking up at the sky.",
+  "characters": {
+    "child": "Maya",
+    "adult": "Grandad"
+  },
+  "turns": [
+    {
+      "speaker": "child",
+      "text": "Grandad, why is the grass green? It could be any colour. Why not blue?"
+    },
+    {
+      "speaker": "adult",
+      "text": "What does grass need to live?"
+    },
+    {
+      "speaker": "child",
+      "text": "Water. And... sunshine?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Sunshine, yes. Now — sunlight looks white to us, or yellow. But it's actually made up of lots of different colours mixed together. Do you remember what happens when light goes through a glass of water or a prism?"
+    },
+    {
+      "speaker": "child",
+      "text": "You get a rainbow. All the colours come out."
+    },
+    {
+      "speaker": "adult",
+      "text": "Red, orange, yellow, green, blue, violet — all there in white sunlight, all the time. Now, the grass uses sunlight to make its food. But it can't use all the colours equally well. It's especially good at using the red light, and the blue-violet light."
+    },
+    {
+      "speaker": "child",
+      "text": "So what does it do with the green light?"
+    },
+    {
+      "speaker": "adult",
+      "text": "It can't use it very well — so it bounces it away. Reflected light is what we see. The grass absorbs the colours it needs and throws the rest back. And the colour it throws back most... is green."
+    },
+    {
+      "speaker": "child",
+      "text": "So grass is green because green is the colour it DOESN'T want?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Exactly, Maya. You've got it. The green is the leftover. The bit it can't use."
+    },
+    {
+      "speaker": "child",
+      "text": "That's really weird. So it's wearing the colour it threw away?"
+    },
+    {
+      "speaker": "adult",
+      "text": "In a way, yes. The stuff in plants that does all this — catches the useful colours, bounces back the green — it's called chlorophyll. Almost every green thing in the garden has chlorophyll in it. Grass, nettles, the leaves on the apple tree. All the same trick."
+    },
+    {
+      "speaker": "child",
+      "text": "Why does it have to be green light that gets thrown away? Why not red, so everything would look red?"
+    },
+    {
+      "speaker": "adult",
+      "text": "That's a deep question — scientists still think about it. Red light and blue light have the right amount of energy to help split water inside the leaf, which is how plants start making food. Green light has slightly less energy and doesn't fit as neatly into the machinery. But you're right — if things had evolved differently, a red or blue world was possible. On some planets around different stars, we might expect to find red or black plants, if there's life there at all."
+    },
+    {
+      "speaker": "child",
+      "text": "So on another planet the grass might be red?"
+    },
+    {
+      "speaker": "adult",
+      "text": "If the star gives off mostly red light, a plant might absorb red and throw back blue, or absorb everything and look black. Life uses what's available. On Earth, green was the solution that worked — and it worked so well that it's taken over everything."
+    }
+  ],
+  "the_heart_of_it": "Chlorophyll — the primary photosynthetic pigment in plants — absorbs red (roughly 640-680 nm) and blue/violet (roughly 430-450 nm) wavelengths of light most strongly, and reflects green wavelengths (~500-560 nm). It is this reflected green light that gives plants their colour. Photosynthesis uses light energy to split water molecules and convert carbon dioxide into glucose. The reason chlorophyll absorbs these particular wavelengths relates to the molecular structure of the porphyrin ring and magnesium ion at its centre; this is well beyond primary level but the core idea — that what we see is reflected, not absorbed — is fully accurate and within KS3 physics. The aside about red plants on other worlds connects to real astrobiology research on photosynthetic pigments around M-dwarf stars.",
+  "watch_for": "Plants also contain accessory pigments (carotenoids — yellows and oranges, visible in autumn leaves when chlorophyll breaks down; anthocyanins — reds and purples). Not all plants are green: some have so much purple-red pigment that their leaves look dark, e.g. copper beech. Keep the conversation on the main chlorophyll point without opening the pigment complexity. The statement that green light is 'thrown away' or 'not used' is a simplification — plants do absorb some green light, but far less efficiently. Do not say chlorophyll 'cannot absorb' green light; say it absorbs it poorly. The photosynthesis equation is Y5/6 level; do not introduce it here.",
+  "extend_it": [
+    "Use a prism or a CD to split white light into a rainbow — find the red, green, and blue bands.",
+    "Autumn leaf chromatography: crush autumn leaves in surgical spirit and dip a strip of coffee filter paper to separate the pigments — you'll see the hidden yellows and oranges.",
+    "What colour are plants in the dark? (No light = no reflected light = no colour visible. Also, no photosynthesis.)",
+    "Look up 'purple Earth hypothesis' — some scientists think early Earth was purple rather than green, dominated by archaea with a different pigment."
+  ],
+  "links": {
+    "nature_examples": [],
+    "image_refs": [],
+    "related_conversations": [
+      "ornamental-cherry-no-fruit"
+    ]
+  },
+  "added_date": "2026-05-30"
+}

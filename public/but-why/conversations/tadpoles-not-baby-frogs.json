@@ -1,0 +1,133 @@
+{
+  "id": "tadpoles-not-baby-frogs",
+  "title": "Why are there tadpoles in the pond but never any baby frogs — only tadpoles?",
+  "type": "five-whys",
+  "summary": "A pondside visit in spring reveals that the pond is full of tadpoles but there are no tiny frogs to be seen. Following the question leads through the complete frog life cycle, the slow business of growing legs, and the dramatic moment when a tadpole becomes a froglet and leaves the water — ending on the realisation that the 'baby frog' stage happens so fast and at such a precise moment that it's easy to miss entirely.",
+  "subjects": [
+    "common frog",
+    "Rana temporaria",
+    "tadpole",
+    "froglet",
+    "metamorphosis",
+    "amphibian",
+    "life cycles",
+    "pond habitats"
+  ],
+  "curriculum": {
+    "key_stage": "KS1/KS2",
+    "year_groups": [
+      "Y2",
+      "Y3",
+      "Y4"
+    ],
+    "topics": [
+      "Living things and their habitats",
+      "Animals including humans — life cycles",
+      "Amphibians"
+    ]
+  },
+  "setting": "A garden pond in late spring. The frogspawn has hatched; the water is full of tadpoles.",
+  "characters": {
+    "child": "Maya",
+    "adult": "Grandad"
+  },
+  "turns": [
+    {
+      "speaker": "child",
+      "text": "Grandad, if there are loads of tadpoles in the pond, why are there never any tiny little frogs? Where do baby frogs come from?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Look at the tadpoles. What shape are they?"
+    },
+    {
+      "speaker": "child",
+      "text": "Round heads and a long wiggly tail. No legs at all."
+    },
+    {
+      "speaker": "adult",
+      "text": "And what does a frog look like?"
+    },
+    {
+      "speaker": "child",
+      "text": "No tail. Four legs. Flat, sort of."
+    },
+    {
+      "speaker": "adult",
+      "text": "So which one is the baby — the tadpole or the frog?"
+    },
+    {
+      "speaker": "child",
+      "text": "The tadpole? But it looks nothing like a frog."
+    },
+    {
+      "speaker": "adult",
+      "text": "That's the strange part. They ARE the same creature. A tadpole is a baby frog — just at a stage that looks completely different. Somewhere between now and August, every one of those tadpoles will grow legs, lose its tail, and crawl out of this pond as a tiny froglet."
+    },
+    {
+      "speaker": "child",
+      "text": "So the baby frogs DO exist — I just haven't seen them?"
+    },
+    {
+      "speaker": "adult",
+      "text": "They exist for about a week — the window when they've just left the water and are still tiny. Look closely at the grass around the pond's edge in July. On a damp morning, they might be everywhere — little frogs the size of your thumbnail, all heading off into the garden."
+    },
+    {
+      "speaker": "child",
+      "text": "But why does the tadpole have to be so different? Why doesn't it just look like a tiny frog from the start?"
+    },
+    {
+      "speaker": "adult",
+      "text": "What does a tadpole eat?"
+    },
+    {
+      "speaker": "child",
+      "text": "Algae? The green stuff on the pond?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Mostly, yes — and decaying pond plants. Now what does an adult frog eat?"
+    },
+    {
+      "speaker": "child",
+      "text": "Flies. Slugs. I've seen them catch things with their tongue."
+    },
+    {
+      "speaker": "adult",
+      "text": "So the tadpole and the frog eat completely different things and live completely differently — one in water, browsing plants; one on land, hunting. It's a bit like the caterpillar and the butterfly. Same creature, two completely different lives, built for different jobs. If tiny frogs had to compete with tadpoles in the same pond for the same food, things would get very crowded."
+    },
+    {
+      "speaker": "child",
+      "text": "So the tail disappears when it grows legs?"
+    },
+    {
+      "speaker": "adult",
+      "text": "The body actually absorbs it — uses it as fuel. First the back legs appear, then the front legs push through, and as the legs grow, the tail shrinks. The tadpole slowly becomes a froglet, still in the water, before it's ready to leave. Watch for ones with legs and a stump of tail — that's the moment in between."
+    },
+    {
+      "speaker": "child",
+      "text": "So there ARE baby frogs. I just need to look at the right time."
+    },
+    {
+      "speaker": "adult",
+      "text": "The right time is a damp morning in July, down on your hands and knees at the pond's edge. They may only be there for a few days before they disappear into the long grass. Most people never see them — which is why so many people think frogs just appear from nowhere."
+    }
+  ],
+  "the_heart_of_it": "The common frog (Rana temporaria) undergoes complete metamorphosis: frogspawn → tadpole → froglet → adult frog. Tadpoles hatch in spring and take roughly 12-16 weeks to metamorphose (varies with temperature and food supply). The tail is reabsorbed (not shed) as legs develop. The froglet stage — a fully formed but tiny frog, still with a residual tail stub, emerging from the water — is brief and coincides with a narrow window in July; froglets are roughly 1-1.5 cm. The ecological logic of metamorphosis is that larval and adult stages exploit different food sources and habitats, reducing intraspecific competition. This is also a good moment to contrast with toads (Bufo bufo), which have a similar lifecycle and whose toadlets emerge from ponds slightly later and in huge numbers.",
+  "watch_for": "Tadpoles are not 'fish' — they are amphibian larvae. They breathe through external gills initially, then internal gills, then lungs as metamorphosis progresses; mature tadpoles must come to the surface to breathe. The tail is absorbed, not lost. The word 'metamorphosis' can be introduced here — it is a genuine technical term worth learning, and connects to the caterpillar conversation. Note: common frog tadpoles are dark/mottled; toad tadpoles are very similar but tend to be blacker. Newt larvae (also in garden ponds) retain feathery external gills and keep all four limbs throughout — they are not the same as frog tadpoles.",
+  "extend_it": [
+    "Scoop a small water sample from the pond each week from March onwards and observe the tadpoles' development — draw what changes you notice (legs appearing, tail shrinking).",
+    "Compare frog spawn (large clumps) with toad spawn (strings wrapped around pond plants) — both common in British garden ponds.",
+    "In late July, visit the pond at dawn on a damp day and look for froglets at the margins.",
+    "Find out how many eggs a female frog lays (typically 1,000-2,000) and consider how many survive to adulthood — explore what eats tadpoles and froglets."
+  ],
+  "links": {
+    "nature_examples": [],
+    "image_refs": [],
+    "related_conversations": [
+      "caterpillar-to-butterfly",
+      "worms-after-rain"
+    ]
+  },
+  "added_date": "2026-05-30"
+}

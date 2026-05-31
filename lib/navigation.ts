@@ -1,3 +1,6 @@
+import { BIOMIMICRY } from '@/lib/biomimicry';
+import { CONVERSATIONS } from '@/lib/but-why';
+
 export interface NavItem {
   label: string;
   href: string;
@@ -131,6 +134,16 @@ export const navigation: NavEntry[] = [
       { label: 'Parts of a Flower', href: '/activities/label-parts-flower-y34' },
       { label: 'Parts of a Snail', href: '/activities/label-parts-snail-y34' },
     ],
+  },
+  {
+    label: 'Biomimicry',
+    href: '/biomimicry',
+    children: BIOMIMICRY.map((e) => ({ label: e.title, href: `/biomimicry/${e.id}` })),
+  },
+  {
+    label: 'But Why?',
+    href: '/but-why',
+    children: CONVERSATIONS.map((c) => ({ label: c.title, href: `/but-why/${c.id}` })),
   },
   {
     label: 'Media Library',
