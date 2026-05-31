@@ -15,10 +15,11 @@ export default function ButWhyPage() {
             But Why?
           </h1>
           <p className="max-w-3xl text-lg text-slate-700 leading-relaxed">
-            Real questions children ask about the natural world, answered in short
-            conversations between Maya and her Grandad. Each one is revealed a turn at
-            a time, so a child — or a whole class on the whiteboard — can guess what
-            comes next before the answer appears. Choose a question to begin, or
+            Questions children, and adults that remain curious, ask about the natural
+            world, answered in short conversations between Maya and her Grandad. Each
+            one is revealed a turn at a time, so you or the reader can go at their own
+            pace and maybe even &lsquo;take part&rsquo; in the conversation by thinking
+            about what the other person might say. Choose a question to begin, or
             filter them by school year group.
           </p>
         </header>
