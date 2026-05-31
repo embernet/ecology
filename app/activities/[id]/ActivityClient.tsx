@@ -3,6 +3,7 @@
 import { useState, useEffect, useRef } from 'react'
 import { createPortal } from 'react-dom'
 import { useSearchParams, useRouter } from 'next/navigation'
+import { useResourcePack } from '@/contexts/ResourcePackContext'
 import type { ActivityDefinition } from '@/data/activities'
 import type { ActivityImage } from '@/data/activity-images'
 import type { NavItem } from '@/lib/navigation'
@@ -222,11 +223,20 @@ export default function ActivityClient({
 }: Props) {
   const searchParams = useSearchParams()
   const router = useRouter()
+  const {
+    setSidebarDesktopOpen,
+    setPanelDesktopOpen,
+    setSidebarOpen,
+    setResourcePanelOpen,
+  } = useResourcePack()
 
   const [view, setView] = useState<'interactive' | 'answers'>('interactive')
   const [printOpen, setPrintOpen] = useState(false)
   const [mobilePrintOpen, setMobilePrintOpen] = useState(false)
   const [mounted, setMounted] = useState(false)
+
+  const scrollAreaRef = useRef<HTMLDivElement>(null)
+  const contentRef = useRef<HTMLDivElement>(null)
 
   useEffect(() => {
     setMounted(true)
@@ -237,6 +247,54 @@ export default function ActivityClient({
       router.replace(`/activities/${activity.id}`, { scroll: false })
     }
   }, [])
+
+  // Interactive activities are drag-and-drop games: everything must be visible at
+  // once. On opening one, if the activity doesn't fully fit, collapse the
+  // navigation bar and resource pack to give it the full width. We adjust once
+  // during a short settling window (as images load in) then leave the panels
+  // alone, so we never fight the reader if they reopen a panel deliberately.
+  useEffect(() => {
+    if (!mounted || view !== 'interactive') return
+    if (typeof window === 'undefined' || !window.matchMedia('(min-width: 768px)').matches) return
+
+    const scrollEl = scrollAreaRef.current
+    const contentEl = contentRef.current
+    if (!scrollEl || !contentEl) return
+
+    let done = false
+    let timer: ReturnType<typeof setTimeout>
+
+    const obs = new ResizeObserver(() => checkFit())
+
+    const stop = () => {
+      done = true
+      obs.disconnect()
+      clearTimeout(timer)
+    }
+
+    const checkFit = () => {
+      if (done) return
+      const overflows =
+        scrollEl.scrollWidth > scrollEl.clientWidth + 1 ||
+        scrollEl.scrollHeight > scrollEl.clientHeight + 1
+      if (overflows) {
+        setSidebarDesktopOpen(false)
+        setPanelDesktopOpen(false)
+        setSidebarOpen(false)
+        setResourcePanelOpen(false)
+        stop()
+      }
+    }
+
+    obs.observe(contentEl)
+    timer = setTimeout(stop, 2000)
+    checkFit()
+
+    return () => {
+      obs.disconnect()
+      clearTimeout(timer)
+    }
+  }, [mounted, view, activity.id, setSidebarDesktopOpen, setPanelDesktopOpen, setSidebarOpen, setResourcePanelOpen])
 
   function switchView(v: 'interactive' | 'answers') {
     setView(v)
@@ -320,8 +378,8 @@ export default function ActivityClient({
           </div>
         </div>
 
-        <div className="main-scroll-area">
-          <div className="activity-page">
+        <div className="main-scroll-area" ref={scrollAreaRef}>
+          <div className="activity-page" ref={contentRef}>
             <ActivityTemplate activity={activity} images={images} view={view} />
           </div>
         </div>
