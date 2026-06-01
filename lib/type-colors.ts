@@ -88,4 +88,39 @@ export const typeColorConfig: Record<string, {
     badgeBorder: 'border-teal-300/50',
     badgeText: 'text-teal-800',
   },
+  Biomimicry: {
+    barBg: 'bg-lime-100',
+    barBorder: 'border-lime-200',
+    barText: 'text-lime-900',
+    lozengeActive: 'bg-lime-600 border-lime-600 text-white shadow-sm',
+    lozengeInactive: 'bg-lime-50 border-lime-200 text-lime-700 hover:bg-lime-100',
+    badgeBg: 'bg-lime-200/50',
+    badgeBorder: 'border-lime-300/50',
+    badgeText: 'text-lime-800',
+  },
+  ButWhy: {
+    barBg: 'bg-rose-100',
+    barBorder: 'border-rose-200',
+    barText: 'text-rose-900',
+    lozengeActive: 'bg-rose-500 border-rose-500 text-white shadow-sm',
+    lozengeInactive: 'bg-rose-50 border-rose-200 text-rose-700 hover:bg-rose-100',
+    badgeBg: 'bg-rose-200/50',
+    badgeBorder: 'border-rose-300/50',
+    badgeText: 'text-rose-800',
+  },
 };
+
+/**
+ * Human-facing label for a resource type. Most types read fine when their
+ * PascalCase name is space-split, but a few need an explicit override (e.g.
+ * "ButWhy" → "But Why?").
+ */
+const TYPE_LABEL_OVERRIDES: Record<string, string> = {
+  ButWhy: 'But Why?',
+  InteractiveActivity: 'Interactive Activity',
+};
+
+export function formatTypeLabel(type: string): string {
+  if (type === 'All') return type;
+  return TYPE_LABEL_OVERRIDES[type] ?? type.replace(/([A-Z])/g, ' $1').trim();
+}

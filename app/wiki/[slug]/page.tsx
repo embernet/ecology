@@ -5,6 +5,8 @@ import { MDXRemote } from 'next-mdx-remote/rsc';
 import { MdxPageWrapper } from '@/components/MdxPageWrapper';
 import { PrevNextNav } from '@/components/PrevNextNav';
 import { getMdxComponents } from '@/lib/mdx-components';
+import { relatedForPage } from '@/lib/curriculum-links';
+import { RelatedExplorations } from '@/components/RelatedExplorations';
 
 interface PageProps {
     params: Promise<{ slug: string }>;
@@ -31,6 +33,7 @@ export default async function Page({ params }: PageProps) {
     const getId = makeHeadingIdCounter();
     const components = getMdxComponents(getId);
     const content = resolveEmbedResources(post.content);
+    const related = relatedForPage(slug);
 
     return (
         <article className="flex flex-col h-full w-full">
@@ -45,6 +48,7 @@ export default async function Page({ params }: PageProps) {
                                 source={content}
                                 components={components}
                             />
+                            <RelatedExplorations related={related} />
                         </div>
                     </MdxPageWrapper>
                 </div>

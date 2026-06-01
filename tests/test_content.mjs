@@ -126,6 +126,49 @@ test('reader assets are shipped in public/but-why/', () => {
   }
 });
 
+// --- Search-index coverage -------------------------------------------------
+// Guards the regression where a whole content section is invisible to site
+// search because it was never wired into scripts/build-search-index.ts.
+// Run `npx tsx scripts/build-search-index.ts` first (run_all.sh does this).
+test('search index covers every biomimicry example and But Why? conversation', () => {
+  const indexPath = join(ROOT, 'public', 'search-index.json');
+  assert(existsSync(indexPath),
+    'public/search-index.json missing — run `npx tsx scripts/build-search-index.ts` first');
+  const index = readJson('public/search-index.json');
+
+  const indexedBiomimicry = new Set(
+    index.filter((e) => e.type === 'biomimicry').map((e) => e.id),
+  );
+  for (const e of biomimicry) {
+    assert(indexedBiomimicry.has(e.id),
+      `biomimicry "${e.id}" is missing from the search index — wire it into build-search-index.ts`);
+  }
+
+  const indexedButWhy = new Set(
+    index.filter((e) => e.type === 'butwhy').map((e) => e.id),
+  );
+  for (const c of butWhy) {
+    assert(indexedButWhy.has(c.id),
+      `but-why "${c.id}" is missing from the search index — wire it into build-search-index.ts`);
+  }
+});
+
+// --- Resource-index wiring -------------------------------------------------
+// Cheap structural guard: the Resource Index page must compose every section
+// adapter, so each section's items appear as reusable resources. If a new
+// section is added without an adapter spread here, this fails.
+test('resource index page composes every content-section adapter', () => {
+  const page = readFileSync(join(ROOT, 'app', 'resources', 'page.tsx'), 'utf8');
+  for (const fn of [
+    'getActivitiesForResourceIndex',
+    'getBiomimicryForResourceIndex',
+    'getButWhyForResourceIndex',
+  ]) {
+    assert(page.includes(fn),
+      `app/resources/page.tsx does not call ${fn}() — that section is absent from the Resource Index`);
+  }
+});
+
 console.log('');
 console.log(`Results: ${pass} passed, ${fail} failed`);
 process.exit(fail === 0 ? 0 : 1);

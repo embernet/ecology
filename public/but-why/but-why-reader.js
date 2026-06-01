@@ -268,9 +268,15 @@
   };
 
   ButWhyReader.prototype._scrollToLatest = function () {
-    var last = this._bubbles[this._bubbles.length - 1];
-    if (last && typeof last.scrollIntoView === 'function') {
-      last.scrollIntoView({
+    // Scroll the reveal button — not just the newest bubble — into view. The
+    // button sits directly below the latest bubble, so bringing it on screen
+    // keeps the "tap to reveal" affordance always reachable while the new
+    // bubble lands just above it. 'nearest' moves the minimum needed and won't
+    // jump when the button is already visible. (scroll-margin-bottom on
+    // .bwr-reveal leaves a little breathing room beneath it.)
+    var target = this._revealBtn || this._bubbles[this._bubbles.length - 1];
+    if (target && typeof target.scrollIntoView === 'function') {
+      target.scrollIntoView({
         behavior: this.reduceMotion ? 'auto' : 'smooth',
         block: 'nearest'
       });

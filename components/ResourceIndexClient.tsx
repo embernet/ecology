@@ -7,7 +7,7 @@ import ImageScrubber from './ImageScrubber';
 
 import { useResourcePack } from '@/contexts/ResourcePackContext';
 import { makeResourceLookupKey } from '@/lib/resource-pack-types';
-import { typeColorConfig } from '@/lib/type-colors';
+import { typeColorConfig, formatTypeLabel } from '@/lib/type-colors';
 
 // Extends the base registry type to support activity resources
 interface IndexResource extends Omit<RegistryResource, 'data'> {
@@ -141,7 +141,7 @@ export default function ResourceIndexClient({ resources }: Props) {
                       : (typeColorConfig[type]?.lozengeInactive ?? 'bg-slate-50 border-slate-200 text-slate-700 hover:bg-slate-100')
                   }`}
                 >
-                  {type === 'All' ? type : type.replace(/([A-Z])/g, ' $1').trim()}
+                  {formatTypeLabel(type)}
                 </button>
               ))}
             </div>
@@ -184,7 +184,7 @@ function ResourceCard({ resource }: { resource: IndexResource }) {
   }, [resource.data]);
 
   const { addItem, removeItem, isInPack } = useResourcePack();
-  const typeLabel = resource.type.replace(/([A-Z])/g, ' $1').trim();
+  const typeLabel = formatTypeLabel(resource.type);
   const title = resource.data.title || resource.title;
   const previewText = resource.data.text || resource.data.facts || resource.data.description || 'View resource to see content details.';
 
@@ -216,7 +216,16 @@ function ResourceCard({ resource }: { resource: IndexResource }) {
   };
 
   const cardHref = resource.activityHref ?? `/explore/${resource.exploreSlug}`;
-  const isActivity = resource.type === 'InteractiveActivity';
+  // Resources with their own dedicated page (activities, biomimicry examples,
+  // "But Why?" conversations) link straight out rather than into the generic
+  // /explore permalink, and aren't added to resource packs from here.
+  const linksOut = Boolean(resource.activityHref);
+  const ctaLabel =
+    resource.type === 'InteractiveActivity'
+      ? 'View Activity'
+      : resource.type === 'ButWhy'
+        ? 'Read'
+        : 'Explore';
 
   return (
     <Link
@@ -249,12 +258,12 @@ function ResourceCard({ resource }: { resource: IndexResource }) {
             {resource.sourcePageTitle}
           </span>
           <span className="font-bold text-emerald-600 group-hover:text-emerald-700 transition-colors inline-flex items-center gap-1 group">
-            {isActivity ? 'View Activity' : 'Explore'}{' '}
+            {ctaLabel}{' '}
             <span className="group-hover:translate-x-1 transition-transform inline-block">&rarr;</span>
           </span>
         </div>
 
-        {!isActivity && (
+        {!linksOut && (
           <div className="flex justify-between items-center pt-3 border-t border-slate-200/60">
             <button
               onClick={handleTogglePack}

@@ -1,12 +1,19 @@
 #!/usr/bin/env node
 // @ts-nocheck
 /**
- * Build script: generates a client-side search index from all content markdown files.
+ * Build script: generates a client-side search index from all site content.
  * Output: /public/search-index.json
  *
  * Each entry is one of:
  *   { type: 'page', slug, title, preview }
  *   { type: 'section', slug, pageTitle, sectionTitle, sectionId, level, preview }
+ *   { type: 'activity', id, title, yearGroups, template, preview, body }
+ *   { type: 'biomimicry', id, title, creature, preview, body }
+ *   { type: 'butwhy', id, title, preview, body }
+ *
+ * NOTE: every browsable content section MUST be represented here, or it will be
+ * invisible to site search. When adding a new section (new data source + pages),
+ * add a loop below AND a coverage check in tests/test_content.mjs.
  */
 
 import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 'fs';
@@ -267,6 +274,55 @@ function buildIndex() {
       template,
       preview,
       body,
+    });
+  }
+
+  // Biomimicry entries — one searchable record per example.
+  const biomimicry = JSON.parse(
+    readFileSync(join(__dirname, '..', 'data', 'biomimicry.json'), 'utf8'),
+  );
+  for (const e of biomimicry) {
+    const links = e.curriculum_links ?? [];
+    const topics = links.map((l: { topic: string }) => l.topic);
+    const subjects = [...new Set(links.map((l: { subject: string }) => l.subject))];
+    const bodyParts = [
+      e.creature,
+      e.where_you_might_see_it,
+      e.natures_problem,
+      e.natures_solution,
+      e.what_people_made,
+      e.try_this,
+      ...topics,
+      ...subjects,
+    ].filter(Boolean);
+
+    entries.push({
+      type: 'biomimicry',
+      id: e.id,
+      title: e.title,
+      creature: e.creature,
+      preview: (e.natures_solution ?? '').slice(0, 200),
+      body: bodyParts.join(' '),
+    });
+  }
+
+  // "But Why?" conversations — one searchable record per dialogue.
+  const conversations = JSON.parse(
+    readFileSync(join(__dirname, '..', 'data', 'but-why.json'), 'utf8'),
+  );
+  for (const c of conversations) {
+    const bodyParts = [
+      c.summary,
+      ...(c.subjects ?? []),
+      ...((c.curriculum && c.curriculum.topics) ?? []),
+    ].filter(Boolean);
+
+    entries.push({
+      type: 'butwhy',
+      id: c.id,
+      title: c.title,
+      preview: (c.summary ?? '').slice(0, 200),
+      body: bodyParts.join(' '),
     });
   }
 

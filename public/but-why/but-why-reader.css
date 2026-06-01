@@ -92,28 +92,33 @@
   border-bottom-right-radius: 6px;
 }
 
-/* Little speech-bubble tail. */
+/* Little speech-bubble tail — a small pointer below the speaker's corner.
+   It sits BEHIND the bubble (z-index:-1) so the bubble's own bottom edge stays
+   flush; only the tip pokes out beneath. The two visible borders form the tip. */
 .bwr-bubble--child::after,
 .bwr-bubble--adult::after {
   content: "";
   position: absolute;
-  bottom: -2px;
-  width: 14px;
-  height: 14px;
+  z-index: -1;
+  bottom: -5px;
+  width: 12px;
+  height: 12px;
 }
 .bwr-bubble--child::after {
-  left: -7px;
+  left: 14px;
   border-left: 2px solid color-mix(in srgb, var(--bwr-child) 35%, transparent);
   border-bottom: 2px solid color-mix(in srgb, var(--bwr-child) 35%, transparent);
   background: var(--bwr-child-bg);
-  border-bottom-left-radius: 12px;
+  border-bottom-left-radius: 3px;
+  transform: rotate(-45deg);
 }
 .bwr-bubble--adult::after {
-  right: -7px;
+  right: 14px;
   border-right: 2px solid color-mix(in srgb, var(--bwr-adult) 35%, transparent);
   border-bottom: 2px solid color-mix(in srgb, var(--bwr-adult) 35%, transparent);
   background: var(--bwr-adult-bg);
-  border-bottom-right-radius: 12px;
+  border-bottom-right-radius: 3px;
+  transform: rotate(45deg);
 }
 
 .bwr-speaker {
@@ -137,6 +142,9 @@
   gap: 0.5rem;
   width: 100%;
   margin-top: var(--bwr-gap);
+  /* Breathing room when scrolled into view so the button never sits flush
+     against the bottom of the screen (see _scrollToLatest). */
+  scroll-margin-bottom: 1.25rem;
   padding: 1rem 1.2rem;
   font: inherit;
   font-weight: 700;

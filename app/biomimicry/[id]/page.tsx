@@ -3,6 +3,7 @@ import path from 'path';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { BIOMIMICRY, getBiomimicryEntry } from '@/lib/biomimicry';
+import { targetsForBiomimicryLink } from '@/lib/curriculum-links';
 
 export function generateStaticParams() {
   return BIOMIMICRY.map((e) => ({ id: e.id }));
@@ -96,31 +97,52 @@ export default async function BiomimicryDetailPage({
         <section>
           <h2 className="text-xl font-bold text-green-800 mb-4">Curriculum links</h2>
           <div className="space-y-4">
-            {entry.curriculum_links.map((l, i) => (
-              <div
-                key={i}
-                className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm"
-              >
-                <div className="flex flex-wrap items-center gap-1.5 mb-2">
-                  <span className="rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-semibold text-green-800">
-                    {l.subject}
-                  </span>
-                  <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-semibold text-slate-700">
-                    {l.key_stage}
-                  </span>
-                  {l.year_groups.map((y) => (
-                    <span
-                      key={y}
-                      className="rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-semibold text-amber-800"
-                    >
-                      {y}
+            {entry.curriculum_links.map((l, i) => {
+              const targets = targetsForBiomimicryLink(l);
+              return (
+                <div
+                  key={i}
+                  className="rounded-xl border border-slate-200 bg-white p-5 shadow-sm"
+                >
+                  <div className="flex flex-wrap items-center gap-1.5 mb-2">
+                    <span className="rounded-full bg-green-100 px-2.5 py-0.5 text-xs font-semibold text-green-800">
+                      {l.subject}
                     </span>
-                  ))}
+                    <span className="rounded-full bg-slate-100 px-2.5 py-0.5 text-xs font-semibold text-slate-700">
+                      {l.key_stage}
+                    </span>
+                    {l.year_groups.map((y) => (
+                      <span
+                        key={y}
+                        className="rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-semibold text-amber-800"
+                      >
+                        {y}
+                      </span>
+                    ))}
+                  </div>
+                  <p className="font-semibold text-slate-800">{l.topic}</p>
+                  <p className="mt-1 text-slate-600 leading-relaxed">{l.how}</p>
+                  {targets.length > 0 && (
+                    <p className="mt-3 text-sm text-slate-600">
+                      <span className="font-semibold text-green-700">
+                        Explore this on the site:{' '}
+                      </span>
+                      {targets.map((t, j) => (
+                        <span key={t.slug}>
+                          {j > 0 && ', '}
+                          <Link
+                            href={`/wiki/${t.slug}`}
+                            className="font-medium text-green-700 underline decoration-green-300 underline-offset-2 hover:text-green-900 hover:decoration-green-500"
+                          >
+                            {t.title}
+                          </Link>
+                        </span>
+                      ))}
+                    </p>
+                  )}
                 </div>
-                <p className="font-semibold text-slate-800">{l.topic}</p>
-                <p className="mt-1 text-slate-600 leading-relaxed">{l.how}</p>
-              </div>
-            ))}
+              );
+            })}
           </div>
         </section>
       </div>
