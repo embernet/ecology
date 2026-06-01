@@ -4,6 +4,7 @@
     "title": "The kingfisher and the bullet train",
     "emoji": "🐦",
     "creature": "Common kingfisher (Alcedo atthis)",
+    "provenance": "copied",
     "where_you_might_see_it": "A sudden flash of electric blue darting low over a river or canal — kingfishers live all across the UK wherever the water is slow and clean. Look for them on riverbanks and canal towpaths, especially in autumn and winter.",
     "natures_problem": "To catch a fish, a kingfisher has to dive straight from the air into the water. But hitting water usually makes a big splash — and a splash warns the fish, which darts away.",
     "natures_solution": "The kingfisher's long, pointed beak is shaped so that it slips from the air into the water almost without a splash. The fish never sees it coming.",
@@ -57,6 +58,7 @@
     "title": "The lotus leaf that never gets dirty",
     "emoji": "🌸",
     "creature": "Sacred lotus (Nelumbo nucifera)",
+    "provenance": "copied",
     "where_you_might_see_it": "Lotus flowers grow in ponds and water gardens — you might spot them in a botanical garden or garden centre. They rise out of muddy water yet their leaves always look perfectly clean. You can also see a similar trick on the leaves of your garden nasturtiums or a cabbage — watch how water rolls off in perfect silver balls.",
     "natures_problem": "The lotus plant lives in muddy ponds. Its leaves ought to be permanently covered in dirt, which would block sunlight and stop the plant making food. Getting dirty could slowly kill it.",
     "natures_solution": "Look very closely at a lotus leaf and you'll see it's covered in tiny, tiny bumps — too small to see without a microscope. These bumps are coated in wax. When a water droplet lands, it can only rest on the very tips of the bumps, so it rolls off instantly, taking any dust and mud with it. The leaf cleans itself every time it rains, without the plant doing a thing.",
@@ -108,6 +110,7 @@
     "title": "The gecko that walks up walls",
     "emoji": "🦎",
     "creature": "Tokay gecko (Gekko gecko)",
+    "provenance": "copied",
     "where_you_might_see_it": "Tokay geckos live in tropical forests and warm buildings across South-East Asia — not in the UK. But if you've ever seen a spider walk up a wall, or watched a fly land on a window, you've seen a smaller version of the same mystery: how does an animal stick to a smooth surface without glue? Imagine a lizard the size of your hand doing the same thing.",
     "natures_problem": "A gecko needs to chase insects across smooth walls and ceilings. If it slips, it falls. And it can't use sticky glue — it needs to pick up its feet and move them again in an instant.",
     "natures_solution": "Each of the gecko's toes is covered in millions of hair-like bristles, so tiny you'd need a microscope to see them. At the very tip of each bristle are even tinier paddle shapes. There are so many of them that together they create a very gentle invisible pull — like the force that makes two pieces of glass stick together when they're wet. The gecko just peels its toes away to let go, instantly and cleanly, leaving no sticky mess behind.",
@@ -160,6 +163,7 @@
     "title": "The whale that improved the wind turbine",
     "emoji": "🐋",
     "creature": "Humpback whale (Megaptera novaeangliae)",
+    "provenance": "copied",
     "where_you_might_see_it": "Humpback whales live in all the world's oceans and migrate past the coasts of Britain — whale-watching trips from Cornwall, Wales, and Scotland sometimes spot them. They're the size of a bus and famous for their spectacular leaping and singing. Despite being enormous, they can spin and twist in tight circles to herd fish — and their fins are why.",
     "natures_problem": "A humpback whale is huge and heavy, yet it needs to make sharp, quick turns to herd fish into a ball before rushing through them with its mouth open. How can something that massive turn so neatly?",
     "natures_solution": "The humpback's front fins have a row of bumps along the leading edge, a bit like knuckles. These bumps break up the water flowing over the fin in a way that stops it from suddenly 'stalling' and losing grip. Instead of sliding sideways when it tries to turn sharply, the fin holds on — letting the whale carve tight circles that would be impossible with a smooth fin.",
@@ -213,6 +217,7 @@
     "title": "The termite mound that inspired a building with no air conditioning",
     "emoji": "🐜",
     "creature": "African termite (Macrotermes michaelseni)",
+    "provenance": "copied",
     "where_you_might_see_it": "Termites are not found in the UK, but you'll find their extraordinary towers all across Africa — some more than three metres tall and built by insects smaller than your little finger. Think of how remarkable that is: millions of tiny creatures, none of them in charge, building something as tall as a room and cleverer than most modern buildings.",
     "natures_problem": "Termites need to keep their underground nest at almost exactly 31 degrees Celsius at all times — not too hot, not too cold — to keep their fungus gardens and their queen healthy. But in Zimbabwe, where these termites live, the outside temperature swings from near freezing at night to scorching hot in the afternoon.",
     "natures_solution": "The mound is riddled with a network of tunnels and chimneys. As the termites' bodies warm the air inside, that warm air rises and escapes through vents at the top, drawing in cooler fresh air from below. The thick earthen walls soak up heat during the day and release it slowly at night, acting like a giant storage heater in reverse. The result is a near-constant temperature inside — no fans, no electricity, no air conditioning needed.",
@@ -265,6 +270,7 @@
     "title": "The shark skin that stops germs spreading",
     "emoji": "🦈",
     "creature": "Shortfin mako shark (Isurus oxyrinchus) and related species",
+    "provenance": "copied",
     "where_you_might_see_it": "Sharks are not found in UK rivers, but several species — including blue sharks and basking sharks — swim in British coastal waters. You're most likely to see a basking shark off the coasts of Cornwall, Scotland, or the Isle of Man in summer. If you've ever stroked a dried piece of sharkskin, you'll have felt that it's rough like sandpaper in one direction, because of thousands of tiny tooth-like scales all pointing the same way.",
     "natures_problem": "A shark needs to slip through the water as quickly and efficiently as possible to catch prey — but it also lives in an ocean full of bacteria that could cause infections. How does it stay both fast and healthy?",
     "natures_solution": "Shark skin is covered in thousands of tiny ridged scales, each shaped a bit like a small tooth. These ridges run along the direction the shark swims, which helps reduce the drag of the water. But here's the clever extra trick: the ridges also make it very hard for bacteria to find a flat place to grip onto and settle. The germs simply can't get a foothold — no chemicals needed, just the shape of the surface.",
@@ -315,6 +321,7 @@
     "title": "The beetle that drinks the fog",
     "emoji": "🪲",
     "creature": "Namib desert beetle (Stenocara gracilipes) and several desert plants",
+    "provenance": "copied",
     "where_you_might_see_it": "The Namib is one of the world's oldest and driest deserts, running along the Atlantic coast of southern Africa. Almost no rain falls there — yet every morning, a cold sea fog rolls in from the ocean. The beetle that lives there has found a way to drink that fog. In Britain, you might notice something similar on a cold morning: tiny water droplets forming on a spider's web or on a car windscreen. That's the same process — water from the air condensing onto a cold surface.",
     "natures_problem": "There is almost no rain in the Namib Desert. But there is fog — a thin, misty cloud that drifts in from the cold Atlantic Ocean most mornings. How can a beetle drink something as wispy as fog?",
     "natures_solution": "The beetle stands on top of a sand dune with its back tilted into the wind. Its back is covered in a pattern of tiny bumps and smooth channels. The bumps attract water — fog droplets land on them and stick. The channels are waxy and water-repelling, so once a droplet grows big enough, it rolls quickly along the channel all the way down to the beetle's mouth. It's like the beetle has its own tiny water-collecting machine built into its skin.",
@@ -367,6 +374,7 @@
     "title": "The mussel's miracle glue",
     "emoji": "🦪",
     "creature": "Common mussel (Mytilus edulis) and related species",
+    "provenance": "copied",
     "where_you_might_see_it": "Common mussels are found all around the British coastline — clustered on rocks, harbour walls, and piers wherever the tide comes and goes. Next time you're at the seaside, look for dark blue-black shells in bunches on exposed rocks. Tug gently at one: you'll feel the tough, hair-like threads anchoring it firmly to the rock, even as waves crash over it. Those threads are one of the strongest natural glues in the world — and they work underwater.",
     "natures_problem": "A mussel lives in one of the toughest places imaginable: on a rock being battered by powerful waves, all day and all night, in cold salty seawater. If it lets go, it will be dashed to pieces. But ordinary glue dissolves in water — it can't do the job.",
     "natures_solution": "The mussel makes its own special glue from proteins produced in its foot. It presses its foot against the rock and secretes these proteins, which seep into the tiniest gaps in the rock surface and grip tight. The special ingredient in the proteins first clears away the thin film of water on the rock — creating a brief dry patch — and then bonds powerfully to the rock itself. No manufactured glue has managed to do this as well as a mussel.",
@@ -418,6 +426,7 @@
     "title": "The shrimp with the world's most powerful punch",
     "emoji": "🦐",
     "creature": "Peacock mantis shrimp (Odontodactylus scyllarus)",
+    "provenance": "copied",
     "where_you_might_see_it": "Mantis shrimps live in warm tropical oceans — they're not found in UK waters. But they are some of the most extraordinary-looking animals on Earth: their bodies are covered in vivid blues, greens, and oranges, a bit like a living jewel. If you ever visit an aquarium you might see one — look out for tanks with special thick glass, because a mantis shrimp can smash a normal aquarium pane with a single strike.",
     "natures_problem": "The peacock mantis shrimp hunts crabs and snails by smashing their shells open. To do that it needs to deliver an incredibly powerful punch — far faster and harder than anything a creature its size should be able to manage. But if it punched that hard with an ordinary limb, it would shatter its own club in the process.",
     "natures_solution": "The mantis shrimp's clubbing limb is built like a carefully engineered shield. Inside, it has layers of mineralised fibres arranged in a spiral — like a very tightly wound spring or the layers in a croissant, but twisted round and round. When a crack tries to form from an impact, it has to follow the spiral, twisting and turning instead of going straight through. By the time it's finished twisting, the energy of the impact has been used up. The club can strike thousands of times and never crack.",
@@ -469,6 +478,7 @@
     "title": "The owl that flies in silence",
     "emoji": "🦉",
     "creature": "Barn owl (Tyto alba) and related species",
+    "provenance": "copied",
     "where_you_might_see_it": "Barn owls live all across Britain and can be seen quartering over fields and meadows at dusk, their white heart-shaped faces ghostly in the fading light. Unlike most birds, a flying barn owl makes almost no sound at all — you can sometimes watch one pass just a few metres away without hearing a single wingbeat. That silence is not an accident.",
     "natures_problem": "Owls hunt small mammals — mice and voles — by sound. They can hear a mouse rustling in the grass from thirty metres away. But if the owl's wings made a whooshing noise when it flew, the sound of its own flight would drown out the tiny sounds of its prey below. The owl needs to fly in complete silence.",
     "natures_solution": "Barn owl feathers have three clever features working together. The leading edge of each large feather is fringed with tiny comb-like serrations, like the teeth of a very fine comb. These break up the rush of air into smaller, quieter swirls. The upper surface of the feathers is covered in soft, velvety hairs that muffle any remaining sound. And the trailing edge of each feather is ragged and wispy, smoothing the turbulent wake behind the wing. Together, these three things cut the sound of flight to almost nothing.",
@@ -521,6 +531,7 @@
     "title": "The burr that invented Velcro",
     "emoji": "🌿",
     "creature": "Greater burdock / lesser burdock (Arctium lappa / Arctium minus)",
+    "provenance": "copied",
     "where_you_might_see_it": "Burdock is a common British plant found along footpaths, hedgerows, and the edges of woods — especially on disturbed ground. In late summer and autumn, its round, spiky seed heads ripen into burrs that catch on clothing and animal fur. If you've ever come home from a walk with a dog covered in prickly brown balls, you've already met burdock. The burrs are a nuisance — but they're also one of the most important ideas in the history of invention.",
     "natures_problem": "Burdock is a plant, and plants can't walk. So how does burdock spread its seeds away from the parent plant to find new places to grow?",
     "natures_solution": "Each burdock burr is covered in hundreds of tiny hooks, each one curving over at the tip like a very small shepherd's crook. When an animal brushes past, these hooks catch on loops of fur or fabric and the burr hitches a ride — sometimes for miles — before eventually falling off. The plant uses passing animals as its transport system, and the hooks are its ticket.",
@@ -575,6 +586,7 @@
     "title": "The boxy fish and the low-drag car",
     "emoji": "🐡",
     "creature": "Yellow boxfish (Ostracion cubicus)",
+    "provenance": "copied",
     "where_you_might_see_it": "Yellow boxfish live in tropical coral reefs in the Indo-Pacific — the warm, shallow oceans around the Philippines, Indonesia, and Australia. They're not UK animals, but you might see one in a public aquarium. Young ones are bright yellow with black spots and almost perfectly cube-shaped — it looks as though nature made a mistake and forgot to give this fish a streamlined body. But watch it move through the water and you'll see it's surprisingly nimble.",
     "natures_problem": "The boxfish lives in a coral reef, where it needs to twist and turn through tight gaps without bumping into things. Its bony box-shaped shell protects it from predators, but that same shape seems like it should make swimming very difficult.",
     "natures_solution": "The boxfish moves remarkably well despite its shape. Engineers at Mercedes-Benz measured how much resistance the boxfish body created in a wind tunnel and found the number was very low for a shape that boxy. The rounded curves of its carapace — its bony outer shell — seem to guide the water around it smoothly. Scientists are still debating exactly why it works so well: it turns out that rather than being naturally stable like a boat, the boxfish is actually quite wobbly, and uses its fins constantly to keep course. It may be that the real secret is the fins, not the shell — and the full story isn't settled yet. Science often works this way: a first idea turns out to be more complicated than it seemed.",
@@ -627,6 +639,7 @@
     "title": "The spider's thread stronger than steel",
     "emoji": "🕷️",
     "creature": "Orb-weaver spiders, principally golden silk orb-weaver (Nephila spp.) and garden cross spider (Araneus diadematus)",
+    "provenance": "copied",
     "where_you_might_see_it": "The garden cross spider is one of Britain's most familiar spiders — large, with a distinctive white cross on its abdomen, spinning beautiful orb webs in hedges and garden shrubs every autumn. On a dewy morning, look for the spiral of sticky threads glistening with droplets. The radial threads running out from the centre — the 'spokes' — are made of a different silk: dry, incredibly strong, and not sticky at all. Those threads are some of the toughest natural fibres on Earth.",
     "natures_problem": "A spider needs to spin a web that will catch flying insects without breaking. But the web has to be light enough for the spider to carry, flexible enough not to shatter when an insect hits it, and strong enough to hold a struggling creature until the spider can reach it.",
     "natures_solution": "The radial threads of an orb web are made of a silk that is stronger than steel wire of the same thickness and can stretch by a third of its length before snapping. That combination — very strong AND very stretchy — is extraordinarily rare in nature or in manufacturing. The spider produces two different silk proteins and spins them together into a single thread inside its body, pulling the thread through a tiny tube that arranges the proteins into a structure that gives both stiffness and springiness at once. No factory has yet managed to copy this spinning process precisely.",
@@ -672,5 +685,210 @@
       }
     ],
     "image_idea": "A garden cross spider in the centre of its dewy orb web on an autumn morning, with a close-up inset of the radial silk thread under magnification — beside a spool of manufactured spider-silk fibre from a fermentation laboratory."
+  },
+  {
+    "id": "bee-static-electrostatic-spraying",
+    "title": "The bee that pulls pollen with static",
+    "emoji": "🐝",
+    "creature": "Honeybee (Apis mellifera) and bumblebees (Bombus species)",
+    "provenance": "parallel",
+    "where_you_might_see_it": "Any sunny British garden in summer. Watch a bee bumble from flower to flower over the lavender, the foxgloves or the bramble blossom, and look at how it lands already dusted with yellow pollen. By the time it flies home, its furry body and the little baskets on its back legs are heavy with it.",
+    "natures_problem": "A flower's pollen is a fine, light dust. A bee needs to gather as much of it as possible, as fast as possible — but loose dust blows away on the breeze and is hard to collect from a flower you are only just landing on.",
+    "natures_solution": "As a bee flies, its tiny hairs rub against the air and build up a small positive charge of static electricity — the very same kind you make by rubbing a balloon on a woolly jumper. Flowers, rooted to the damp ground, carry a slightly negative charge. Because opposite charges pull towards each other, the pollen actually leaps up through the air onto the bee before it has even touched the flower, and clings to its hairy body. Cleverer still, a flower's charge changes for a little while after a bee has visited — so the next bee can sense it has just been emptied and not waste time landing.",
+    "what_people_made": "People use exactly the same trick to paint things — but we worked it out entirely on our own, long before anyone knew bees did it. In an electrostatic sprayer, the paint droplets are given an electric charge and the object being painted is given the opposite charge. The paint is pulled towards the object and even wraps around to the back, with almost none wasted. Factories paint cars and bicycles this way, and farmers use charged sprays so the droplets cling to every side of a leaf. Nobody copied the bee: engineers invented electric spray-painting in the 1940s, and scientists only discovered the bee's static-pollen trick in 2013. The bee simply got there about a hundred million years first.",
+    "try_this": "Rub a balloon on a woolly jumper for a few seconds, then hold it just above some tiny scraps of torn-up tissue paper or a sprinkle of dried herbs. Watch the little bits jump UP onto the balloon without being touched. That leap is the same invisible pull a bee uses to lift pollen off a flower.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y4"
+        ],
+        "topic": "Electricity — static electricity and how charges attract",
+        "how": "A living, watchable example of static attraction: the bee builds a charge like a rubbed balloon and the opposite-charged pollen jumps to it, bringing the idea of charges off the page and into the garden."
+      },
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y3"
+        ],
+        "topic": "Plants — the role of flowers in the life cycle, including pollination",
+        "how": "Shows pollination from the bee's side: how a bee gathers and carries pollen between flowers, and why flowers and bees fit together so well."
+      }
+    ],
+    "image_idea": "A honeybee covered in golden pollen, hovering just above a purple foxglove flower, the fine hairs on its body visible, with a few grains of pollen lifting up from the flower towards it.",
+    "added_date": "2026-06-01"
+  },
+  {
+    "id": "reflex-arc-automatic-safety",
+    "title": "The body's shortcut that acts before you think",
+    "emoji": "⚡",
+    "creature": "Human (Homo sapiens) — and every animal with a backbone",
+    "provenance": "parallel",
+    "where_you_might_see_it": "In your own body, every day. The hand you snatch back from a hot pan before it even hurts. The blink when something flies towards your eye. The way your leg kicks when a doctor taps just below your kneecap — a kick you cannot stop even if you try.",
+    "natures_problem": "Some dangers happen far too fast to think about. A message takes time to travel all the way up to the brain, wait for it to decide 'what shall I do?', and travel all the way back. In that time, you could already be burned.",
+    "natures_solution": "For the most urgent jobs, the body takes a shortcut called a reflex. The 'danger!' signal races only as far as the spinal cord — the thick bundle of nerves running up your back — which fires the order 'pull away!' straight back to the muscle, skipping the brain altogether. It saves a fraction of a second, and that fraction is enough to save you from a burn. You feel the pain a moment later, once the slower message reaches your brain.",
+    "what_people_made": "Engineers build this very same shortcut into machines — though they worked it out for themselves, not by studying our nerves. A circuit breaker snaps the electricity off the instant too much flows, without waiting for a person to decide. A car's airbag fires by itself in a crash, and many cars can brake on their own if something darts in front. All of them skip the slow 'thinking' part and act at once, exactly as a reflex does. For the fastest, most important jobs, 'act now, think later' is simply the best design — whether you are a body or a machine.",
+    "try_this": "Ask someone to hold a ruler straight up and let go without warning, while you hold your finger and thumb ready at the bottom. Try to pinch it as it falls. The distance it drops before you catch it is your reaction time — the time a signal needs to go up to your brain and back. A true reflex would be even quicker, because it never bothers the brain at all.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y4"
+        ],
+        "topic": "Electricity — the body's electrical signals and automatic switches",
+        "how": "Links the idea of electrical signals and switches to the body: a reflex is a tiny circuit that switches on a muscle automatically, just like a switch closing in a circuit."
+      },
+      {
+        "subject": "Design & Technology",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y5",
+          "Y6"
+        ],
+        "topic": "Electrical systems and control — automatic responses",
+        "how": "A real-world way in to control and sensing: machines, like bodies, can be built to respond to danger automatically without a person deciding each time."
+      }
+    ],
+    "image_idea": "A child's hand pulling quickly back from the orange flame of a candle, with a few small curved motion lines showing the fast movement. Friendly, simple, not frightening.",
+    "added_date": "2026-06-01"
+  },
+  {
+    "id": "firefly-cold-light-glow-sticks",
+    "title": "The beetle that makes light without heat",
+    "emoji": "✨",
+    "creature": "Glow-worm (Lampyris noctiluca) — which is really a beetle, not a worm",
+    "provenance": "parallel",
+    "where_you_might_see_it": "On warm, still nights in June and July, on grassy banks and hedge bottoms in southern England. Low to the ground, a female glow-worm shines a steady greenish light from the tip of her tail to call a flying male down to her. You need a really dark spot and a few minutes for your eyes to adjust — no torch.",
+    "natures_problem": "An ordinary light, like an old-fashioned bulb, throws away most of its energy as heat — touch one and it is hot. A tiny beetle could never make light that way: the heat would harm her, and she has nowhere near enough energy to spare.",
+    "natures_solution": "The glow-worm makes 'cold light'. Inside the tip of her body, a chemical called luciferin reacts with oxygen and gives off light with almost no heat at all — nearly every scrap of energy becomes light instead of warmth. It is one of the most efficient lights anywhere in nature.",
+    "what_people_made": "People make cold light too, in the glow sticks you bend and snap at fairs and on bonfire night. Snapping the stick mixes two chemicals that react and shine — no battery, no heat, just like the glow-worm. We did not copy the beetle to invent them; chemists found their own glowing chemicals. But nature had been lighting up summer hedgerows with cold light for millions of years before the very first glow stick was ever cracked.",
+    "try_this": "On a warm, dark night in July, look along grassy banks and hedge bottoms in the south of England for a tiny green light close to the ground — a female glow-worm. Hold a snapped glow stick beside a warm yellow torch or lamp: feel how the glow stick stays cool while a bulb gets hot. That is the glow-worm's trick.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y3"
+        ],
+        "topic": "Light — sources that make their own light",
+        "how": "A living light source: the glow-worm makes her own light rather than reflecting it, a vivid example when sorting things that give out light from things that only reflect it."
+      },
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y5"
+        ],
+        "topic": "Living things and their habitats — life cycles and reproduction",
+        "how": "The female's glow is a signal to attract a mate, connecting a striking adaptation to how living things find each other and reproduce."
+      }
+    ],
+    "image_idea": "A female glow-worm (Lampyris noctiluca), a small soft-brown beetle-like insect, on a green grass stem, the tip of her tail glowing with a soft green light.",
+    "added_date": "2026-06-01"
+  },
+  {
+    "id": "electric-eel-battery",
+    "title": "The fish that powered the very first battery",
+    "emoji": "🔋",
+    "creature": "Electric eel (Electrophorus electricus)",
+    "provenance": "copied",
+    "where_you_might_see_it": "Not in Britain — the electric eel lives in the slow, muddy rivers and swamps of South America, where the water is too murky to see far. You can meet one, though, in the tanks of many large aquariums.",
+    "natures_problem": "In dark, muddy water you cannot rely on your eyes to find a meal or fight off an attacker. The electric eel needed another way to reach out and touch the world around it.",
+    "natures_solution": "Most of the eel's long body is packed with special cells stacked in their thousands, one on top of another, like a tall pile of tiny flat batteries. Each cell makes only a feeble amount of electricity, but stacked together and fired at once they add up to a powerful shock — enough to stun a fish or warn off a much bigger animal.",
+    "what_people_made": "This one really was copied from nature, on purpose. Around the year 1800, the Italian scientist Alessandro Volta was puzzling over how electric fish made their shock. He built a tall stack of metal discs separated by damp cardboard — deliberately copying the stacked layers inside the fish — and it gave out a steady flow of electricity. It was the world's first battery, and he even called it an 'artificial electric organ'. Every battery since, in your torch, your toys and your phone, is a grandchild of that fishy idea.",
+    "try_this": "Make a battery from a lemon. Push a copper coin into one side and a galvanised (zinc-coated) nail into the other, then touch both to a small bulb or a tongue-tingle. Now join two or three lemons in a row — more 'cells' stacked together make more power, exactly the way the eel stacks its cells.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y4"
+        ],
+        "topic": "Electricity — cells, batteries and simple circuits",
+        "how": "Brings the cell or battery in a circuit to life: the eel is a living stack of cells, a memorable way in to where the electricity in a circuit comes from."
+      },
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y6"
+        ],
+        "topic": "Electricity — voltage and the number of cells",
+        "how": "The eel adds many small cells together to make a bigger shock — exactly the Year 6 idea that more cells, or higher voltage, give a stronger effect such as a brighter lamp."
+      }
+    ],
+    "image_idea": "An electric eel (Electrophorus electricus), a long, dark olive-green eel-shaped fish with a rounded head, swimming gently, with a faint soft glow around its body to suggest electricity.",
+    "added_date": "2026-06-01"
+  },
+  {
+    "id": "glasswing-anti-reflective-glass",
+    "title": "The butterfly with invisible wings",
+    "emoji": "🦋",
+    "creature": "Glasswing butterfly (Greta oto)",
+    "provenance": "copied",
+    "where_you_might_see_it": "Not in Britain — the glasswing lives in the rainforests of Central and South America. You can sometimes spot one in a tropical butterfly house at a zoo or garden. Its wings are see-through, like tiny panes of glass with a dark frame.",
+    "natures_problem": "See-through wings should be the perfect way to hide. But ordinary clear surfaces, like glass or water, catch the light and flash with bright reflections — and a flash of glare would give the butterfly away to a hungry bird in an instant.",
+    "natures_solution": "Looked at under a microscope, the clear part of the wing is covered in millions of tiny bumps, far too small to see, all spaced very evenly. These bumps let the light pass straight through instead of bouncing back, so the wing hardly reflects at all. With no tell-tale glare, the butterfly stays truly hard to see.",
+    "what_people_made": "Scientists studied those tiny bumps and copied them on purpose to make 'anti-reflective' surfaces — glass and screens that do not bounce light back at you. The same idea helps phone and tablet screens you can still read in bright sunshine, camera lenses that flare less, and solar panels that soak up more light instead of wasting it as glare. This one was deliberately copied from the butterfly's wing.",
+    "try_this": "Tilt a phone or tablet screen under a bright light or near a window and watch it flash with reflections. That glare is exactly what the glasswing's wing avoids — and it is why a shiny screen is so hard to read in sunshine. Look for screens or glasses that are described as 'anti-glare' and see how much less they shine back.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y3"
+        ],
+        "topic": "Light — how light reflects off surfaces",
+        "how": "A surprising twist on reflection: most surfaces bounce light back, but the glasswing's wing is built to stop reflections, sharpening pupils' idea of what reflected light is."
+      },
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y6"
+        ],
+        "topic": "Evolution and inheritance — adaptation and camouflage",
+        "how": "Transparency as camouflage: see-through wings are an adaptation that helps the butterfly avoid being seen, a vivid example of a body suited to its surroundings."
+      }
+    ],
+    "image_idea": "A glasswing butterfly (Greta oto) resting on a green leaf, its wings clear and see-through like glass, edged with a dark brown border tinged with orange-red.",
+    "added_date": "2026-06-01"
+  },
+  {
+    "id": "bombardier-beetle-spray",
+    "title": "The beetle with a built-in spray gun",
+    "emoji": "🪲",
+    "creature": "Bombardier beetle (Brachinus crepitans)",
+    "provenance": "copied",
+    "where_you_might_see_it": "A small ground beetle found on chalky grassland in southern England, often hiding under stones by day. You are unlikely to catch it in the act, but when something threatens it, it fires a hot, stinging spray from its tail end with a sharp popping sound.",
+    "natures_problem": "A small beetle is an easy meal for frogs, birds and spiders, and it cannot outrun most of them. It needs a way to startle and sting an attacker far bigger than itself, and buy enough time to escape.",
+    "natures_solution": "The beetle keeps two harmless liquids in separate stores inside its body. When it is attacked, it squirts them together into a tiny chamber where they react, heat up to almost boiling, and burst out as a fast spray — fired in rapid pulses, like a string of tiny pops, and aimed with surprising accuracy at whatever is bothering it.",
+    "what_people_made": "Engineers studied how the beetle fires its spray in quick pulses and copied the idea to design better sprays and engines. Copying the beetle's pulsing chamber helped make finer mist from medicine inhalers and fire extinguishers, and cleaner bursts of fuel inside car engines — sprays that travel further and waste less. This one was studied and copied on purpose, the beetle showing the way.",
+    "try_this": "Hold your thumb half over the end of a squeezy water bottle and squeeze in short, sharp bursts instead of one long squirt. Notice how the pulsing spray throws the water further and finer. That pulsing is the beetle's trick — lots of small bursts beat one weak dribble.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y4"
+        ],
+        "topic": "States of matter — mixing liquids, heating and gases",
+        "how": "Two liquids mix, react and heat up to make a hot gassy spray — a dramatic example of materials changing when they are mixed and heated."
+      },
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y6"
+        ],
+        "topic": "Evolution and inheritance — adaptation for defence",
+        "how": "An extraordinary defence adaptation: the beetle's chemical spray is a body feature shaped to help it survive, fitting the Year 6 idea of adaptation to an environment and its dangers."
+      }
+    ],
+    "image_idea": "A bombardier beetle (Brachinus crepitans) standing on a small grey stone, with glossy blue-black wing cases and an orange-red head and legs, a tiny puff of vapour shown coming from its tail end.",
+    "added_date": "2026-06-01"
   }
 ]

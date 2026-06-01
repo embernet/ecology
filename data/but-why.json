@@ -250,5 +250,168 @@
     },
     "added_date": "2026-05-30",
     "url": "/but-why/conversations/worms-after-rain.json"
+  },
+  {
+    "id": "leaves-autumn-colour",
+    "title": "Why do leaves go gold and red in autumn?",
+    "type": "five-whys",
+    "summary": "Kicking through fallen leaves, Maya wants to know where all the gold and red came from, when the tree was green all summer. The conversation uncovers the surprising truth that the gold was hiding inside the leaf the whole time — and that the tree is quietly packing up and taking its green back before letting the leaf go.",
+    "subjects": [
+      "oak",
+      "Quercus",
+      "horse chestnut",
+      "Aesculus hippocastanum",
+      "chlorophyll",
+      "autumn"
+    ],
+    "curriculum": {
+      "key_stage": "KS1/KS2",
+      "year_groups": [
+        "Y1",
+        "Y2",
+        "Y3"
+      ],
+      "topics": [
+        "Plants",
+        "Seasonal changes",
+        "Deciduous and evergreen trees"
+      ]
+    },
+    "added_date": "2026-06-01",
+    "url": "/but-why/conversations/leaves-autumn-colour.json"
+  },
+  {
+    "id": "morning-dew",
+    "title": "Why is the grass wet in the morning when it didn't rain?",
+    "type": "socratic",
+    "summary": "On a clear early morning the lawn is soaking, though not a drop of rain has fallen. Grandad helps Maya work out that the water didn't come from the sky or the ground at all — it was hiding in the air the whole time, invisible, until the cold grass pulled it out.",
+    "subjects": [
+      "dew",
+      "condensation",
+      "water vapour",
+      "water cycle",
+      "evaporation"
+    ],
+    "curriculum": {
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y4",
+        "Y5"
+      ],
+      "topics": [
+        "States of matter",
+        "Evaporation and condensation",
+        "The water cycle"
+      ]
+    },
+    "added_date": "2026-06-01",
+    "url": "/but-why/conversations/morning-dew.json"
+  },
+  {
+    "id": "birds-on-wires",
+    "title": "Why don't birds get hurt sitting on electric wires?",
+    "type": "socratic",
+    "summary": "A row of starlings sits happily on a power line that could hurt a person. Grandad leads Maya to see that the birds aren't safe because electricity can't hurt them — they're safe because, sitting on one wire, they never give the electricity any reason to leave it.",
+    "subjects": [
+      "starling",
+      "Sturnus vulgaris",
+      "electricity",
+      "circuits",
+      "conductors"
+    ],
+    "curriculum": {
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y4",
+        "Y6"
+      ],
+      "topics": [
+        "Electricity",
+        "Electrical circuits and conductors"
+      ]
+    },
+    "added_date": "2026-06-01",
+    "url": "/but-why/conversations/birds-on-wires.json"
+  },
+  {
+    "id": "hot-stove-reflex",
+    "title": "Why do you snatch your hand back from something hot before it even hurts?",
+    "type": "five-whys",
+    "summary": "Maya notices she pulled her hand off a hot mug before she felt the pain. Following the question, she discovers that her body has a shortcut that decides to move without asking her brain first — and that feeling the 'ow' a moment later is the slow part catching up.",
+    "subjects": [
+      "human",
+      "Homo sapiens",
+      "reflex",
+      "nervous system",
+      "spinal cord"
+    ],
+    "curriculum": {
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y4",
+        "Y6"
+      ],
+      "topics": [
+        "Animals, including humans",
+        "Electricity",
+        "The nervous system"
+      ]
+    },
+    "added_date": "2026-06-01",
+    "url": "/but-why/conversations/hot-stove-reflex.json"
+  },
+  {
+    "id": "slug-snail-trail",
+    "title": "Why do slugs and snails leave a silvery trail?",
+    "type": "socratic",
+    "summary": "A silver squiggle across the morning patio leads Maya and Grandad to the slug that made it. Watching it glide, she discovers that the slime is no accident — it is at once the slug's road, its shoes, its shield and its way of leaving messages for other slugs.",
+    "subjects": [
+      "garden snail",
+      "Cornu aspersum",
+      "slug",
+      "mollusc",
+      "invertebrate"
+    ],
+    "curriculum": {
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y4",
+        "Y6"
+      ],
+      "topics": [
+        "Living things and their habitats",
+        "Classification",
+        "Invertebrates"
+      ]
+    },
+    "added_date": "2026-06-01",
+    "url": "/but-why/conversations/slug-snail-trail.json"
+  },
+  {
+    "id": "ice-bigger-than-water",
+    "title": "Why is ice bigger than the water it froze from?",
+    "type": "socratic",
+    "summary": "A bottle of water left in the freezer comes out bulging, its lid pushed off. Grandad helps Maya see that the water hasn't gained anything — it has just spread itself into a roomier shape. And that one strange habit, he shows her, is exactly what lets the fish survive the winter.",
+    "subjects": [
+      "water",
+      "ice",
+      "freezing",
+      "states of matter",
+      "density"
+    ],
+    "curriculum": {
+      "key_stage": "KS2",
+      "year_groups": [
+        "Y4",
+        "Y5"
+      ],
+      "topics": [
+        "States of matter",
+        "Melting and freezing",
+        "Solids, liquids and gases"
+      ]
+    },
+    "added_date": "2026-06-01",
+    "url": "/but-why/conversations/ice-bigger-than-water.json"
   }
 ]

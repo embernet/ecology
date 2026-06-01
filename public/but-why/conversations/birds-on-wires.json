@@ -1,0 +1,101 @@
+{
+  "id": "birds-on-wires",
+  "title": "Why don't birds get hurt sitting on electric wires?",
+  "type": "socratic",
+  "summary": "A row of starlings sits happily on a power line that could hurt a person. Grandad leads Maya to see that the birds aren't safe because electricity can't hurt them — they're safe because, sitting on one wire, they never give the electricity any reason to leave it.",
+  "subjects": [
+    "starling",
+    "Sturnus vulgaris",
+    "electricity",
+    "circuits",
+    "conductors"
+  ],
+  "curriculum": {
+    "key_stage": "KS2",
+    "year_groups": [
+      "Y4",
+      "Y6"
+    ],
+    "topics": [
+      "Electricity",
+      "Electrical circuits and conductors"
+    ]
+  },
+  "setting": "A pavement under a row of power lines, where a dozen starlings are perched in a line against the sky.",
+  "characters": {
+    "child": "Maya",
+    "adult": "Grandad"
+  },
+  "turns": [
+    {
+      "speaker": "child",
+      "text": "Grandad, those birds are sitting right on the electric wire! If I touched that wire it could really hurt me. Why are they fine?"
+    },
+    {
+      "speaker": "adult",
+      "text": "It's a brilliant thing to notice. Let's work it out. First — why does electricity flow along that wire at all? What does it like to do?"
+    },
+    {
+      "speaker": "child",
+      "text": "Um. It goes round. Like in a circuit at school, with the battery and the bulb. It goes all the way round in a loop."
+    },
+    {
+      "speaker": "adult",
+      "text": "Exactly. Electricity only flows if it has a complete path — a way to go round and get somewhere. And it's lazy: it likes the easiest path. That metal wire is a lovely easy road for it, so it stays in the wire and zooms along."
+    },
+    {
+      "speaker": "child",
+      "text": "So why would it ever come out into me?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Only if you gave it a new path that was worth taking — a way down to the ground, say. Picture standing on the ground and grabbing the wire. Now there's a path from the wire, through you, down to the ground. The electricity rushes through you to get there. And that's what hurts."
+    },
+    {
+      "speaker": "child",
+      "text": "But the bird's not touching the ground. It's just on the wire."
+    },
+    {
+      "speaker": "adult",
+      "text": "There's the secret. Look — both its feet are on the very same wire, close together. To go through the bird, the electricity would have to leave the easy wire, go in one foot, out the other... and end up back on the same wire it just left. Why would it bother? It's like getting off the motorway only to drive straight back onto it."
+    },
+    {
+      "speaker": "child",
+      "text": "So it just stays in the wire because going through the bird doesn't take it anywhere new?"
+    },
+    {
+      "speaker": "adult",
+      "text": "That's it precisely. The bird hasn't given the electricity any reason to leave. No path down, nowhere better to go. So it sits there as snug as on a fence."
+    },
+    {
+      "speaker": "child",
+      "text": "So could a bird ever get hurt up there?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Sadly, yes — a big bird like a heron, with huge wings, can touch two different wires at once, or a wire and the metal pole. The moment it bridges two of them, it makes a path between them, and the electricity pours through. That's why people who look after birds put guards on the poles."
+    },
+    {
+      "speaker": "child",
+      "text": "So it was never that the wire can't hurt them. It's that one wire on its own isn't a path to anywhere."
+    },
+    {
+      "speaker": "adult",
+      "text": "You've got it, Maya. The starling is safe not because electricity is gentle, but because it's given it nowhere to go. And that's exactly why you must never, ever climb near these wires — standing on the ground, you'd be the path it's been waiting for."
+    }
+  ],
+  "the_heart_of_it": "Electric current flows only through a complete conducting path, and is driven by a difference in electrical 'push' (potential difference, or voltage) between two points. A bird perched with both feet on a single wire sits at almost exactly the same potential at both feet — there is only a tiny voltage difference across its body and no path to a region of different potential — so virtually no current flows through it. The wire, being an excellent conductor, carries essentially all the current. A person is endangered because they typically provide a path between the wire and the ground (a large potential difference): standing on the earth and touching a live wire completes a circuit through the body to ground. The bird would only be harmed if it simultaneously contacted two points at different potentials — two separate wires, or a wire and an earthed pole — which is why large-winged birds are at real risk and why utilities fit pole guards. The landing distinguishes 'safe from electricity' (false) from 'gives electricity no reason to leave the wire' (true).",
+  "watch_for": "The crucial correction to the common myth: birds are NOT immune, insulated by their feet, or protected by feathers. Safety comes from there being no potential difference across the bird and no completed path to ground or another conductor. Keep 'voltage' at the level of 'electrical push' or 'a path to somewhere different' for KS2; the full potential-difference idea is KS3. Do reinforce the genuine safety message strongly — children must never approach power lines, precisely because a person on the ground DOES complete a path. The classroom circuit (cell, wires, bulb, complete loop) is the right anchor. Avoid implying the current 'chooses' intelligently; 'easiest path / no reason to leave' is a fair simplification of current preferring the lowest-resistance route.",
+  "extend_it": [
+    "Build a simple circuit with a cell, wires and a bulb. Break the loop — the bulb goes out — and show that electricity needs a complete path to flow.",
+    "Test conductors and insulators: which materials, placed in the gap of the circuit, let the bulb light? (metal yes, plastic/wood no)",
+    "Talk through why a person standing on the ground is different from a bird on a wire — draw both and mark the path the electricity could take.",
+    "Find out what an earth wire is for in a house plug, and why it's a safety path to the ground."
+  ],
+  "links": {
+    "nature_examples": [],
+    "image_refs": [],
+    "related_conversations": []
+  },
+  "added_date": "2026-06-01"
+}

@@ -48,6 +48,12 @@ const IMAGES: { id: string; prompt: string }[] = [
   { id: 'velcro-burdock-burr', prompt: `A burdock (Arctium) seed head: a single round bur densely covered in many tiny hooked spines, on a short green stem with one or two leaves. ${STYLE}` },
   { id: 'boxfish-mercedes-bionic', prompt: `A yellow boxfish (Ostracion cubicus), a small bright-yellow almost cube-shaped fish covered in evenly spaced black spots, seen from the side, small fins. ${STYLE}` },
   { id: 'spider-silk-synthetic-fibres', prompt: `A garden cross spider (Araneus diadematus) sitting at the centre of its round orb web, brown abdomen marked with a pale cross, fine radiating and spiral web threads visible. ${STYLE}` },
+  { id: 'bee-static-electrostatic-spraying', prompt: `A honeybee (Apis mellifera) covered in golden pollen, hovering just above a purple foxglove flower, the fine hairs on its body clearly visible, with a few tiny grains of pollen lifting up from the flower towards the bee. ${STYLE}` },
+  { id: 'reflex-arc-automatic-safety', prompt: `A child's hand pulling quickly back from the small orange flame of a candle, with a few gentle curved motion lines showing the fast movement away. Warm and friendly, not frightening. ${STYLE}` },
+  { id: 'firefly-cold-light-glow-sticks', prompt: `A female glow-worm (Lampyris noctiluca), a small soft-brown beetle-like insect with a pale segmented body, resting on a single green blade of grass, the tip of her tail glowing with a soft green light. ${STYLE}` },
+  { id: 'electric-eel-battery', prompt: `An electric eel (Electrophorus electricus), a long dark olive-green and grey eel-shaped fish with a yellow-orange underside, a rounded blunt head with small eyes, and a long continuous fin running along its underside, curving gracefully through dark water. Bright blue-white sparks and crackling electric arcs glow and ripple along the length of its body, lighting up the water around it. ${STYLE}` },
+  { id: 'glasswing-anti-reflective-glass', prompt: `A glasswing butterfly (Greta oto) resting on a green leaf, wings spread, the wing panels clear and see-through like glass, edged with a dark brown border tinged with orange-red. ${STYLE}` },
+  { id: 'bombardier-beetle-spray', prompt: `A bombardier beetle (Brachinus crepitans) standing on a small grey stone, with glossy blue-black wing cases and an orange-red head, legs and thorax, a tiny faint puff of vapour shown coming from its tail end. ${STYLE}` },
 ]
 
 const args = process.argv.slice(2)

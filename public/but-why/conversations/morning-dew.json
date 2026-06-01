@@ -1,0 +1,112 @@
+{
+  "id": "morning-dew",
+  "title": "Why is the grass wet in the morning when it didn't rain?",
+  "type": "socratic",
+  "summary": "On a clear early morning the lawn is soaking, though not a drop of rain has fallen. Grandad helps Maya work out that the water didn't come from the sky or the ground at all — it was hiding in the air the whole time, invisible, until the cold grass pulled it out.",
+  "subjects": [
+    "dew",
+    "condensation",
+    "water vapour",
+    "water cycle",
+    "evaporation"
+  ],
+  "curriculum": {
+    "key_stage": "KS2",
+    "year_groups": [
+      "Y4",
+      "Y5"
+    ],
+    "topics": [
+      "States of matter",
+      "Evaporation and condensation",
+      "The water cycle"
+    ]
+  },
+  "setting": "The back garden, very early on a clear, still morning in late summer. The lawn is silver with wet, and Maya's shoes are soaked.",
+  "characters": {
+    "child": "Maya",
+    "adult": "Grandad"
+  },
+  "turns": [
+    {
+      "speaker": "child",
+      "text": "Grandad, my shoes are all wet! But it didn't even rain in the night. Where did the water come from?"
+    },
+    {
+      "speaker": "adult",
+      "text": "It's a puzzle, isn't it? No rain, but the whole lawn is soaking. Let me ask you something. When Granny hangs the wet washing out, where does the water go as it dries?"
+    },
+    {
+      "speaker": "child",
+      "text": "Into the air. It just... goes."
+    },
+    {
+      "speaker": "adult",
+      "text": "Right. It turns into a kind of invisible water in the air — we call it water vapour. You can't see it, but it's there all around us, all the time. The air is full of it."
+    },
+    {
+      "speaker": "child",
+      "text": "So there's water in the air right now? Even though it looks like nothing?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Always. Now, here's the next part. Take a cold can of pop out of the fridge on a warm day and leave it on the table. What happens to the outside of the can?"
+    },
+    {
+      "speaker": "child",
+      "text": "It goes all wet and drippy. Mum says it's sweating."
+    },
+    {
+      "speaker": "adult",
+      "text": "It looks like sweat, but the water isn't coming from inside the can. It's the invisible water in the air touching something cold and turning back into proper liquid water. That's called condensation. Cold turns the invisible water into drops you can see."
+    },
+    {
+      "speaker": "child",
+      "text": "So the grass is like the cold can?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Exactly that. On a clear, still night with no clouds like a blanket to keep the warmth in, the grass gets very cold — colder than the air above it. And when the air's invisible water touches that cold grass..."
+    },
+    {
+      "speaker": "child",
+      "text": "...it turns into little drops! That's the dew!"
+    },
+    {
+      "speaker": "adult",
+      "text": "That's the dew. Every blade has its own tiny drops, thousands of them, and together they make the whole lawn shine silver."
+    },
+    {
+      "speaker": "child",
+      "text": "But why is it only wet in the morning? Where does it go in the day?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Once the sun comes up and warms everything, the drops do the washing-line trick in reverse — they turn back into invisible water and float off into the air. Ready to become dew again tomorrow night."
+    },
+    {
+      "speaker": "child",
+      "text": "So the water was in the air the whole time. The cold grass just caught it."
+    },
+    {
+      "speaker": "adult",
+      "text": "The cold grass just caught it. The sky didn't give you this water, Maya — the air did. It was there all along, waiting, invisible, until something cold enough came along to pull it out."
+    }
+  ],
+  "the_heart_of_it": "Air always contains some water vapour — water in its invisible gas state. Warm air can hold more vapour than cold air. On a clear, still night, surfaces like grass lose heat rapidly by radiating it to the open sky (clouds would trap that heat, which is why dew forms best on clear nights). The grass cools below the 'dew point' — the temperature at which the air can no longer hold all its vapour — and the vapour in the air immediately above the grass condenses onto it as liquid droplets. This is the same process as condensation on a cold drinks can. After sunrise, warming reverses it: the droplets evaporate back into vapour. Dew is therefore neither rain nor water rising from the soil — it is water that was already in the air, made visible by a cold surface. The whole cycle is a small, local demonstration of evaporation and condensation, the engine of the water cycle.",
+  "watch_for": "Key misconception: dew does NOT rise up out of the ground, nor is it leftover rain — it condenses from the air onto the cold surface. Also distinct from guttation, where some plants push out droplets at their leaf tips/edges from their roots overnight; that is a different process and can look similar, so keep the conversation on dew on the open lawn. The drinks-can 'sweating' analogy is exact and worth leaning on (the water is from the air, not from inside the can). Frost is dew that has formed below freezing (the vapour turns straight to ice) — mention only if asked, to avoid widening the topic. 'Invisible water in the air' is the right primary-level phrasing for water vapour; avoid 'steam', which is hot.",
+  "extend_it": [
+    "Take a cold can or glass straight from the fridge into a warm room and watch the outside mist and bead — then wipe it and prove the water keeps coming back from the air.",
+    "Compare two mornings: one clear and still, one cloudy or windy. Is there more dew after the clear night? (There should be.)",
+    "Lay a dry tea towel on the lawn overnight and weigh it dry vs. in the morning — where did the extra weight come from?",
+    "Breathe onto a cold window or a mirror and watch your own breath's water condense, then vanish again."
+  ],
+  "links": {
+    "nature_examples": [],
+    "image_refs": [],
+    "related_conversations": [
+      "why-is-grass-green"
+    ]
+  },
+  "added_date": "2026-06-01"
+}

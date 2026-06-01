@@ -1,0 +1,110 @@
+{
+  "id": "slug-snail-trail",
+  "title": "Why do slugs and snails leave a silvery trail?",
+  "type": "socratic",
+  "summary": "A silver squiggle across the morning patio leads Maya and Grandad to the slug that made it. Watching it glide, she discovers that the slime is no accident — it is at once the slug's road, its shoes, its shield and its way of leaving messages for other slugs.",
+  "subjects": [
+    "garden snail",
+    "Cornu aspersum",
+    "slug",
+    "mollusc",
+    "invertebrate"
+  ],
+  "curriculum": {
+    "key_stage": "KS2",
+    "year_groups": [
+      "Y4",
+      "Y6"
+    ],
+    "topics": [
+      "Living things and their habitats",
+      "Classification",
+      "Invertebrates"
+    ]
+  },
+  "setting": "The patio on a damp morning, where a silvery line wanders across the stone and ends at a snail near a plant pot.",
+  "characters": {
+    "child": "Maya",
+    "adult": "Grandad"
+  },
+  "turns": [
+    {
+      "speaker": "child",
+      "text": "Grandad, there's a silver line all across the patio — and it goes all the way to this snail! Why do they leave that shiny trail?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Let's watch him a minute and find out. Look underneath him — he hasn't got any legs. So how is he getting along?"
+    },
+    {
+      "speaker": "child",
+      "text": "He's just... sliding. On his tummy. There's no feet at all."
+    },
+    {
+      "speaker": "adult",
+      "text": "That whole underneath is really one long muscly foot. It ripples, like a little wave running along, and that pushes him forward. But here's the problem — the patio is rough and dry and scratchy. Would you like to slide along on your bare tummy over that?"
+    },
+    {
+      "speaker": "child",
+      "text": "No! It'd hurt. It'd scrape me."
+    },
+    {
+      "speaker": "adult",
+      "text": "So the snail lays down a carpet to slide on. He makes slime — that's the silvery stuff — and glides along on top of it. It's slippery, so he moves easily, and it's soft, so the rough ground never scratches him. Snails can even crawl right over the sharp edge of a knife without getting hurt, on a cushion of their own slime."
+    },
+    {
+      "speaker": "child",
+      "text": "But if it's slippery, how does he ever stop? Why doesn't he slide off the wall?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Now that's the really clever bit. The slime is magic stuff — when the snail pushes on it, it goes runny and slippery so he can move. But the moment he stops pushing, it turns firm and sticky, and holds him fast. Slippery when he wants to go; sticky when he wants to stay."
+    },
+    {
+      "speaker": "child",
+      "text": "So that's how snails hang upside down under leaves!"
+    },
+    {
+      "speaker": "adult",
+      "text": "Glued on by their own clever slime. And the slime does one more job — it stops the snail drying out. A snail is soft and damp, and a hot dry day would shrivel him up. The slime keeps him moist, which is why you mostly meet them after rain or in the cool of the morning, like now."
+    },
+    {
+      "speaker": "child",
+      "text": "So why leave the trail behind, though? Doesn't it waste his slime?"
+    },
+    {
+      "speaker": "adult",
+      "text": "It costs him something to make, true. But the trail isn't useless. Another snail or slug can find it and follow it — to a good feeding spot, or to find a mate. Some even follow their own trail home. The silver line is a little message left on the ground."
+    },
+    {
+      "speaker": "child",
+      "text": "Why is it silver, though? The slug isn't silver."
+    },
+    {
+      "speaker": "adult",
+      "text": "By morning the slime he left has dried to a thin, crinkly film, and that film catches the light and shines. Fresh slime is clear — it's the dried trail that goes silver in the sun."
+    },
+    {
+      "speaker": "child",
+      "text": "So the slime is his road AND his shoes AND his glue AND a note for his friends."
+    },
+    {
+      "speaker": "adult",
+      "text": "All of those at once, Maya. One clever stuff doing four jobs. Not bad for a little creature with no bones and no legs — just a foot and a marvellous trick."
+    }
+  ],
+  "the_heart_of_it": "Snails and slugs are gastropod molluscs — soft-bodied invertebrates (no backbone) that move on a single muscular 'foot'. Waves of muscular contraction ripple along the foot, propelling the animal forward over a layer of mucus it secretes from a gland near the front. The mucus is remarkable: it is a shear-thinning (thixotropic) gel — under the pressure of the moving foot it behaves like a slippery liquid, allowing movement; at rest it stiffens to a sticky solid, providing grip (enabling the animal to climb vertical surfaces and hang upside down). The mucus also lubricates against rough or sharp surfaces (the 'crawling over a blade' demonstration), and crucially keeps the moist-skinned animal from desiccating, which is why slugs and snails are most active in damp, cool conditions and after rain. Trails serve as chemical cues: other individuals can follow them to food or mates, and some species trail-follow to return to a home refuge. The visible silvery line is dried mucus, a thin film that scatters light; fresh mucus is transparent.",
+  "watch_for": "Classification accuracy: snails and slugs are molluscs and invertebrates — not insects, not worms. They have ONE foot, not many legs. The dual nature of the mucus (slippery when sheared, sticky at rest) is the key insight — don't reduce it to just 'slippery slime' or just 'glue'; it is genuinely both. The trail is dried mucus reflecting light, not literally silver or metallic. Keep 'shear-thinning' out of the child dialogue (it's in the teacher note) — 'runny when he pushes, firm when he stops' captures it correctly. A slug is essentially a snail without an external shell; both work the same way, so the conversation applies to both. Avoid framing slugs as 'pests' — keep the tone of wonder.",
+  "extend_it": [
+    "Watch a snail glide up the inside of a clear glass or jam jar from below — you can see the muscular waves rippling along its foot.",
+    "Find and gently follow a fresh slime trail with a torch held low at an angle — where did the snail come from and where did it go?",
+    "Sort garden minibeasts into groups: which have backbones and which don't? Where do snails, slugs, worms, woodlice and beetles belong?",
+    "Why are slugs and snails out after rain and hidden on hot dry days? (Links to keeping their soft, damp bodies from drying out.)"
+  ],
+  "links": {
+    "nature_examples": [],
+    "image_refs": [],
+    "related_conversations": []
+  },
+  "added_date": "2026-06-01"
+}

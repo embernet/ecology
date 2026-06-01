@@ -8,6 +8,7 @@ import {
   biomimicryYearGroups,
   entrySubjects,
   entryYearGroups,
+  provenanceLabel,
 } from '@/lib/biomimicry';
 import { CurriculumFilter } from '@/components/CurriculumFilter';
 
@@ -56,6 +57,8 @@ export function BiomimicryBrowser({
           {filtered.map((e) => {
             const ys = entryYearGroups(e);
             const subs = entrySubjects(e);
+            const prov = provenanceLabel(e.provenance);
+            const isCopied = (e.provenance ?? 'copied') === 'copied';
             return (
               <Link
                 key={e.id}
@@ -75,6 +78,16 @@ export function BiomimicryBrowser({
                     {e.emoji}
                   </span>
                 )}
+                <span
+                  className={`mb-2 inline-flex w-fit items-center gap-1 rounded-full px-2 py-0.5 text-xs font-semibold ${
+                    isCopied
+                      ? 'bg-sky-100 text-sky-800'
+                      : 'bg-teal-100 text-teal-800'
+                  }`}
+                >
+                  <span aria-hidden="true">{prov.emoji}</span>
+                  {prov.label}
+                </span>
                 <h3 className="text-lg font-bold text-green-800 leading-snug group-hover:underline">
                   {e.title}
                 </h3>

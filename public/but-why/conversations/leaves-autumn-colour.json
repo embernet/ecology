@@ -1,0 +1,115 @@
+{
+  "id": "leaves-autumn-colour",
+  "title": "Why do leaves go gold and red in autumn?",
+  "type": "five-whys",
+  "summary": "Kicking through fallen leaves, Maya wants to know where all the gold and red came from, when the tree was green all summer. The conversation uncovers the surprising truth that the gold was hiding inside the leaf the whole time — and that the tree is quietly packing up and taking its green back before letting the leaf go.",
+  "subjects": [
+    "oak",
+    "Quercus",
+    "horse chestnut",
+    "Aesculus hippocastanum",
+    "chlorophyll",
+    "autumn"
+  ],
+  "curriculum": {
+    "key_stage": "KS1/KS2",
+    "year_groups": [
+      "Y1",
+      "Y2",
+      "Y3"
+    ],
+    "topics": [
+      "Plants",
+      "Seasonal changes",
+      "Deciduous and evergreen trees"
+    ]
+  },
+  "setting": "A path through the park on a bright, cold October afternoon, ankle-deep in fallen leaves.",
+  "characters": {
+    "child": "Maya",
+    "adult": "Grandad"
+  },
+  "turns": [
+    {
+      "speaker": "child",
+      "text": "Grandad, look — they've gone all gold! Why do the leaves turn gold and red in autumn?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Good question. But let me ask you one first. What colour was this tree in the summer?"
+    },
+    {
+      "speaker": "child",
+      "text": "Green. All green."
+    },
+    {
+      "speaker": "adult",
+      "text": "So where do you think the gold has come from, all of a sudden?"
+    },
+    {
+      "speaker": "child",
+      "text": "I don't know. Did the tree paint them? Did the cold do it?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Here's the strange part. The gold was there all along — hiding underneath the green. Pick up that leaf. All summer it was packed full of a green stuff called chlorophyll. That's the bit that catches the sunlight and makes the tree's food. There's so much of it that the green covers up every other colour."
+    },
+    {
+      "speaker": "child",
+      "text": "So the gold was always inside it? Even when it looked green?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Even then. Now — in autumn the days get shorter and colder. There's not enough sunlight left for the leaves to be worth keeping. So the tree starts to pack up for winter. It pulls the precious green back into its branches to save and use again next year."
+    },
+    {
+      "speaker": "child",
+      "text": "And when the green goes..."
+    },
+    {
+      "speaker": "adult",
+      "text": "...the gold and orange that were hiding underneath finally show. Like taking a green blanket off a yellow chair. The red ones are a little different — some trees make a fresh red colour as a last act, almost like suncream for the leaf while it finishes packing up. But the golds and oranges? Those were waiting there the whole summer."
+    },
+    {
+      "speaker": "child",
+      "text": "But why does the leaf have to fall off at all?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Because a broad flat leaf is no use to the tree in winter — it would only lose water and get torn by the frost and wind. So once the tree has taken back everything worth keeping, it grows a little line of weakness where the leaf joins the twig, and lets it drop. The leaf has done its summer's work. Its last gift is to lie down here and rot into food for the soil."
+    },
+    {
+      "speaker": "child",
+      "text": "So the gold isn't the leaf dying. It's the green leaving."
+    },
+    {
+      "speaker": "adult",
+      "text": "That's it exactly, Maya. The gold is what was always there. We just never saw it until the tree took its green away."
+    },
+    {
+      "speaker": "child",
+      "text": "Can I take this one home? It's the goldest."
+    },
+    {
+      "speaker": "adult",
+      "text": "Take a few. And next summer, when this tree is green again, you'll know the gold is still in there — just waiting."
+    }
+  ],
+  "the_heart_of_it": "Leaves contain several pigments. Chlorophyll (green) is the dominant one through spring and summer and masks the others; it absorbs light to drive photosynthesis. Carotenoids (yellows and oranges) are present in the leaf all season but hidden by the abundant green. In autumn, shortening day length and falling temperatures trigger deciduous trees to break down and reabsorb chlorophyll (recovering valuable nitrogen and magnesium back into the tree). As the green is withdrawn, the carotenoids are revealed — so the gold and orange were genuinely there all along. The reds and purples are different: anthocyanins are newly manufactured in autumn in some species (from sugars trapped in the leaf as the leaf-stalk seals off), and may help protect the leaf while it completes nutrient recovery. The tree then forms an abscission layer at the base of the leaf stalk and sheds the leaf, conserving water and avoiding frost and wind damage over winter. The landing — 'the gold is the green leaving, not the leaf dying' — is accurate and resonant.",
+  "watch_for": "The most important accuracy point: the yellow/orange pigments are UNMASKED, not created — avoid saying the leaf 'turns into' gold as if making a new colour. The reds (anthocyanins) ARE largely newly made, so the dialogue treats them separately and lightly; don't merge the two mechanisms. This is a different idea from 'why is the grass green' (which is about reflected light) — here the point is hidden pigments revealed. Keep the chlorophyll-reabsorption simple ('the tree takes its green back') rather than discussing nitrogen recovery. Evergreens keep their leaves because their tough, narrow, waxy leaves can survive winter — link to the deciduous/evergreen conversation rather than opening it here.",
+  "extend_it": [
+    "Leaf chromatography: tear up green summer leaves, soak in a little surgical spirit, and dip a strip of filter paper in — the hidden yellows and oranges separate out and show themselves.",
+    "Collect leaves from several trees (oak, horse chestnut, maple, beech) and sort them from greenest to reddest — which trees make red, and which only go gold?",
+    "Look closely at a single tree over two weeks in October and watch the green retreat from the edges of each leaf inwards.",
+    "Why do evergreens like holly and pine NOT change colour or drop their leaves? (Links to 'Why is the oak bare but the holly still green?')"
+  ],
+  "links": {
+    "nature_examples": [],
+    "image_refs": [],
+    "related_conversations": [
+      "deciduous-evergreen-winter",
+      "why-is-grass-green"
+    ]
+  },
+  "added_date": "2026-06-01"
+}

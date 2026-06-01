@@ -1,0 +1,112 @@
+{
+  "id": "ice-bigger-than-water",
+  "title": "Why is ice bigger than the water it froze from?",
+  "type": "socratic",
+  "summary": "A bottle of water left in the freezer comes out bulging, its lid pushed off. Grandad helps Maya see that the water hasn't gained anything — it has just spread itself into a roomier shape. And that one strange habit, he shows her, is exactly what lets the fish survive the winter.",
+  "subjects": [
+    "water",
+    "ice",
+    "freezing",
+    "states of matter",
+    "density"
+  ],
+  "curriculum": {
+    "key_stage": "KS2",
+    "year_groups": [
+      "Y4",
+      "Y5"
+    ],
+    "topics": [
+      "States of matter",
+      "Melting and freezing",
+      "Solids, liquids and gases"
+    ]
+  },
+  "setting": "The kitchen, holding a plastic water bottle just out of the freezer — swollen tight, its lid popped off and a dome of ice pushing out the top.",
+  "characters": {
+    "child": "Maya",
+    "adult": "Grandad"
+  },
+  "turns": [
+    {
+      "speaker": "child",
+      "text": "Grandad, look at this bottle! It was only half full of water and now the ice has pushed the lid right off. Did the water grow?"
+    },
+    {
+      "speaker": "adult",
+      "text": "It does look like it grew, doesn't it? But let me ask you — did we add any more water to the bottle while it was in the freezer?"
+    },
+    {
+      "speaker": "child",
+      "text": "No. It was shut. Nothing went in."
+    },
+    {
+      "speaker": "adult",
+      "text": "So it's exactly the same amount of water. Same water, same weight — it hasn't grown at all. But it's taking up more room. That's the mystery. How can the same water need more space just because it got cold?"
+    },
+    {
+      "speaker": "child",
+      "text": "I don't know. Doesn't cold make things get smaller and shrink up?"
+    },
+    {
+      "speaker": "adult",
+      "text": "For almost everything in the world, you'd be exactly right — cold makes things shrink. But water is the great rule-breaker. Picture the tiny bits that water is made of, far too small to see. In the liquid, they're all jumbled close together, sliding past each other, packed in tight."
+    },
+    {
+      "speaker": "child",
+      "text": "And when it freezes?"
+    },
+    {
+      "speaker": "adult",
+      "text": "When it freezes, those tiny bits all link hands and lock into a neat, tidy pattern. And here's the funny thing — that tidy pattern holds them further apart than when they were jumbled. They build themselves an open, roomy frame, with little gaps inside."
+    },
+    {
+      "speaker": "child",
+      "text": "So the ice isn't more water — it's the same water just... spread out more?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Spread out into a roomier shape. Same amount, more space. That's why it bulged the bottle. And because that same lump of water is now spread thinner, ice is actually a little lighter for its size than water. Which is why..."
+    },
+    {
+      "speaker": "child",
+      "text": "...ice cubes float! They bob on top of my drink!"
+    },
+    {
+      "speaker": "adult",
+      "text": "They float. And now think bigger. When the pond at the park freezes in winter, where does the ice form — top or bottom?"
+    },
+    {
+      "speaker": "child",
+      "text": "The top. It's always a lid of ice on top."
+    },
+    {
+      "speaker": "adult",
+      "text": "Because the ice is lighter for its size, it floats up and freezes as a lid. And that lid acts like a cold blanket, keeping the water underneath from freezing solid. So the fish and the frogs and the pond snails all carry on, alive, in the unfrozen water below."
+    },
+    {
+      "speaker": "child",
+      "text": "So if water were normal — if the ice sank — the pond would freeze from the bottom up?"
+    },
+    {
+      "speaker": "adult",
+      "text": "It would freeze solid, top to bottom, and nothing could live through the winter in it. So this one strange habit of water, the thing that just popped the lid off our bottle, is the very thing that keeps a whole pond alive. The rule-breaker turns out to be a lifesaver."
+    }
+  ],
+  "the_heart_of_it": "Water is anomalous: unlike almost all other substances, it expands when it freezes. In liquid water, molecules are close-packed and disordered. On freezing, hydrogen bonds lock the molecules into an open, hexagonal crystal lattice that holds them slightly further apart than in the liquid, so a given mass of ice occupies about 9% more volume than the same mass of water. The amount of water (mass) is unchanged — only the volume increases — so ice is less dense than liquid water, which is why ice floats. This expansion bursts sealed bottles and pipes and splits rocks in frost. Ecologically it is profound: because ice floats, ponds and lakes freeze from the surface down, and the floating ice layer insulates the water beneath, allowing fish, amphibians and invertebrates to survive winter in the liquid water below. Had water behaved 'normally' (contracting and sinking on freezing), water bodies would freeze solid from the bottom up, devastating aquatic life.",
+  "watch_for": "Central correction: the water does not gain mass or 'grow' — mass is conserved; only volume increases, so it is less DENSE. Be careful with 'lighter': the same lump of ice does weigh slightly less than... no — it weighs the SAME as the water it froze from; what is true is that ice is lighter for its size (lower density), which is why a given volume of ice weighs less than the same volume of water, so ice floats. The dialogue phrases this as 'lighter for its size' deliberately — keep that qualifier. Water is the exception, not the rule: most substances contract on freezing, so don't generalise 'freezing makes things expand'. Keep molecular detail at 'tiny bits link into a tidy, roomy pattern' for KS2; hydrogen bonding and crystal lattices are KS3+. Use a plastic (not glass) bottle for any demonstration, and don't overfill or fully seal in a way that could shatter.",
+  "extend_it": [
+    "Mark the water level on a plastic bottle or cup, freeze it, and see how far above the line the ice rises.",
+    "Drop ice cubes into a glass of water and confirm they float — then talk about why (less dense than the water).",
+    "Watch where ice first forms on a tray of water in the freezer (the top and edges) and link it to how a pond freezes.",
+    "Compare with other liquids/foods: does a frozen ice lolly or a block of butter expand or shrink? Water is unusual."
+  ],
+  "links": {
+    "nature_examples": [],
+    "image_refs": [],
+    "related_conversations": [
+      "morning-dew"
+    ]
+  },
+  "added_date": "2026-06-01"
+}

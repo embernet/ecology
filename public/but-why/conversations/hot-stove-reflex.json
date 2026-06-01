@@ -1,0 +1,110 @@
+{
+  "id": "hot-stove-reflex",
+  "title": "Why do you snatch your hand back from something hot before it even hurts?",
+  "type": "five-whys",
+  "summary": "Maya notices she pulled her hand off a hot mug before she felt the pain. Following the question, she discovers that her body has a shortcut that decides to move without asking her brain first — and that feeling the 'ow' a moment later is the slow part catching up.",
+  "subjects": [
+    "human",
+    "Homo sapiens",
+    "reflex",
+    "nervous system",
+    "spinal cord"
+  ],
+  "curriculum": {
+    "key_stage": "KS2",
+    "year_groups": [
+      "Y4",
+      "Y6"
+    ],
+    "topics": [
+      "Animals, including humans",
+      "Electricity",
+      "The nervous system"
+    ]
+  },
+  "setting": "The kitchen. Maya has just touched the side of a mug of hot chocolate and whipped her hand away.",
+  "characters": {
+    "child": "Maya",
+    "adult": "Grandad"
+  },
+  "turns": [
+    {
+      "speaker": "child",
+      "text": "Ow! That mug's hot. Grandad — that's weird. My hand jumped away before it even hurt. How did it know?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Now that is one of the cleverest things your body does. Tell me — when you decide to wave at someone, what tells your arm to move?"
+    },
+    {
+      "speaker": "child",
+      "text": "My brain. I think it, and my arm does it."
+    },
+    {
+      "speaker": "adult",
+      "text": "Right. Your brain sends a message down to your arm, like a little signal racing along your nerves. Your nerves are like tiny wires carrying messages all over your body. But messages take a moment to travel. How far is it from your hand all the way up to your brain?"
+    },
+    {
+      "speaker": "child",
+      "text": "Quite far. Up my arm, up my neck, all the way to my head."
+    },
+    {
+      "speaker": "adult",
+      "text": "Quite far. Now think about a hot mug. If your hand had to send 'this is hot!' all the way up to your brain, wait for your brain to think 'ooh, I'd better move that', and send the order all the way back down... what would have happened to your hand by then?"
+    },
+    {
+      "speaker": "child",
+      "text": "It'd be burnt! That's too slow."
+    },
+    {
+      "speaker": "adult",
+      "text": "Far too slow. So your body has a shortcut for emergencies. The 'hot!' message only races as far as your spinal cord — that's the thick rope of nerves running up the inside of your back. And your spinal cord doesn't bother asking your brain. It fires the order straight back: 'pull away — NOW.'"
+    },
+    {
+      "speaker": "child",
+      "text": "So my brain didn't even decide it?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Your brain wasn't in charge of that one at all. We call it a reflex — an automatic action your body does without thinking. Your hand was already moving while your brain was still catching up."
+    },
+    {
+      "speaker": "child",
+      "text": "But I did feel the 'ow'. When was that?"
+    },
+    {
+      "speaker": "adult",
+      "text": "A tiny moment later — that's the slow message finally reaching your brain. By the time you felt the pain and thought 'that was hot', your hand had already been safe for a heartbeat. The feeling is the part that arrives late."
+    },
+    {
+      "speaker": "child",
+      "text": "So my body looked after me before I even knew there was a problem."
+    },
+    {
+      "speaker": "adult",
+      "text": "Before you knew a thing. And you can't switch it off, either — try as you might, you'd still snatch back. That's the point of a reflex: for the most dangerous things, your body would rather act first and let you find out afterwards."
+    },
+    {
+      "speaker": "child",
+      "text": "Can we test it? Is blinking one too?"
+    },
+    {
+      "speaker": "adult",
+      "text": "Blinking when something flies near your eye — that's a reflex. So is your leg kicking when the doctor taps your knee. Lots of little shortcuts, all so your slow, thinking brain never has to handle the fastest jobs."
+    }
+  ],
+  "the_heart_of_it": "Pulling away from a painful stimulus before consciously feeling pain is the withdrawal reflex, a classic reflex arc. Sensory neurons detect the heat/pain and carry the signal to the spinal cord; there, the signal passes through connecting neurons directly to motor neurons that drive the muscles to contract — all without first travelling to the brain. This shortcut saves crucial milliseconds. The conscious sensation of pain arrives slightly later, when the signal does reach the brain via separate ascending pathways — which is why the hand is already moving (or has moved) before it 'hurts'. Reflexes are involuntary and cannot be suppressed by will. This pairs directly with the biomimicry example 'The body's shortcut that acts before you think', where engineers independently build the same act-first design into machines (circuit breakers, airbags). Nerve signals are electrochemical, but 'an electrical signal racing along a wire' is an acceptable primary-level simplification.",
+  "watch_for": "Avoid saying the brain is completely uninvolved forever — it receives the pain signal a moment later (that delayed arrival IS the 'ow'); the spinal cord simply handles the fast protective action first. Don't describe nerves as literally electrical wires carrying mains-style electricity; they carry tiny electrochemical signals — 'like tiny wires carrying messages' is fine for KS2. A reflex is innate and involuntary, not a learned or chosen response. The nervous system is not heavily specified in the primary National Curriculum, so this sits as enrichment around Year 4 (electricity/signals) and Year 6 (animals including humans); frame it as a wonder rather than a tested topic. Keep it reassuring, not frightening — the mug is warm, not a serious burn.",
+  "extend_it": [
+    "The ruler-drop reaction test: a partner releases a ruler without warning and you catch it — the distance it falls measures reaction time (signal up to the brain and back). A reflex would be faster because it skips the brain.",
+    "Spot the reflexes: blinking, the knee-jerk, the way your pupils shrink in bright light, a baby gripping a finger — which can you stop, and which can't you?",
+    "Compare a reflex (instant, automatic) with a decision (slower, chosen) — sort everyday actions into the two groups.",
+    "Link to the biomimicry example 'The body's shortcut that acts before you think' — find the machines that copy this act-first idea."
+  ],
+  "links": {
+    "nature_examples": [],
+    "image_refs": [],
+    "related_conversations": []
+  },
+  "added_date": "2026-06-01"
+}

@@ -2,7 +2,7 @@ import fs from 'fs';
 import path from 'path';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { BIOMIMICRY, getBiomimicryEntry } from '@/lib/biomimicry';
+import { BIOMIMICRY, getBiomimicryEntry, provenanceLabel } from '@/lib/biomimicry';
 import { targetsForBiomimicryLink } from '@/lib/curriculum-links';
 
 export function generateStaticParams() {
@@ -45,6 +45,9 @@ export default async function BiomimicryDetailPage({
     path.join(process.cwd(), 'public', 'biomimicry-images', `${id}.png`),
   );
 
+  const prov = provenanceLabel(entry.provenance);
+  const isCopied = (entry.provenance ?? 'copied') === 'copied';
+
   return (
     <div className="main-scroll-area">
       <div className="max-w-3xl mx-auto px-4 py-8">
@@ -71,6 +74,34 @@ export default async function BiomimicryDetailPage({
             {entry.title}
           </h1>
           <p className="mt-2 text-lg italic text-slate-500">{entry.creature}</p>
+
+          <div
+            className={`mt-4 flex items-start gap-3 rounded-xl border p-3 ${
+              isCopied
+                ? 'border-sky-200 bg-sky-50'
+                : 'border-teal-200 bg-teal-50'
+            }`}
+          >
+            <span className="text-2xl leading-none" aria-hidden="true">
+              {prov.emoji}
+            </span>
+            <span>
+              <span
+                className={`block text-sm font-bold ${
+                  isCopied ? 'text-sky-900' : 'text-teal-900'
+                }`}
+              >
+                {prov.label}
+              </span>
+              <span
+                className={`block text-sm leading-snug ${
+                  isCopied ? 'text-sky-800' : 'text-teal-800'
+                }`}
+              >
+                {prov.blurb}
+              </span>
+            </span>
+          </div>
         </header>
 
         {hasImage && (
