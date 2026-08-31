@@ -29,7 +29,7 @@ Pupils might work scientifically by: observing, through video or first-hand obse
 ### Animal Life Cycles
 
 
-<NatureExample id={`n101`} 
+<Creature id={`n101`} 
   title={`Chicken`} 
   emoji={`🐔`} 
   facts={`- A hen can lay about one egg every day.
@@ -40,12 +40,12 @@ A chicken's life starts inside a hard-shelled egg.
 <Gallery images={[{"src":"File:Brown chicken eggs.jpg","caption":"Eggs"},{"src":"File:Day old chick black background.jpg","caption":"A day old chick"},{"src":"File:Chicken on the grounds of Melville Castle.jpg","caption":"Chicken"}]} />
 **The stages are:**<br />
 A mother hen lays an **egg** and keeps it warm by sitting on it. A baby **chick** hatches out by pecking a hole in the shell. The chick grows bigger, loses its fluffy yellow feathers, and grows adult feathers to become a **chicken**.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n102`} 
+<Creature id={`n102`} 
   title={`Sheep`} 
   emoji={`🐑`} 
   facts={`- Lambs can stand up and walk just a few minutes after they are born.
@@ -56,12 +56,12 @@ As mammals, sheep have a simple life cycle where the baby looks like a small ver
 <Gallery images={[{"src":"File:Loafing Lamb - geograph.org.uk - 2850291.jpg","caption":"Lamb"},{"src":"File:Lamb drinking.jpg","caption":"Lamb suckling on Ewe"},{"src":"File:Sheep (23284238202).jpg","caption":"Sheep"}]} />
 **The stages are:**<br />
 A baby sheep, called a **lamb**, is born. The mother sheep (a ewe) feeds it milk. The lamb grows bigger and its woolly coat gets thicker until it becomes an adult **sheep**.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n103`} 
+<Creature id={`n103`} 
   title={`Frog`} 
   emoji={`🐸`} 
   facts={`- Tadpoles look more like little fish than frogs when they first hatch.
@@ -72,12 +72,12 @@ A frog's life cycle is a big change, called a metamorphosis!
 <Gallery images={[{"src":"File:Frog spawn - geograph.org.uk - 5687315.jpg","caption":"Frog Spawn"},{"src":"File:Tadpole (22437957).jpeg","caption":"Tadpole"},{"src":"File:Marsh frog (Pelophylax ridibundus).jpg","caption":"Adult Frog"}]} />
 **The stages are:**<br />
 It starts as a tiny egg in a big jelly-like clump called **frogspawn**. A **tadpole** hatches from the egg and lives in water, breathing with gills. It then grows legs and its tail gets shorter – this is a **froglet**. Finally, it becomes an adult **frog** that can live on land.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n104`} 
+<Creature id={`n104`} 
   title={`Human`} 
   emoji={`👶`} 
   facts={`- Babies have about 100 more bones than adults! The small bones join together as we grow.
@@ -88,7 +88,7 @@ Humans grow and change too, but we don't change our shape as much as a frog or b
 <Gallery images={[{"src":"File:Baby.jpg","caption":"Baby"},{"src":"File:Toddler in Wildflowers (19358844513).jpg","caption":"Toddler"},{"src":"File:Schoolchild with a PCB.jpg","caption":"Child"},{"src":"File:Hou Yifan (29762728494) (cropped).jpg","caption":"Adult (Hou Yifan, Chess Olympiad)"}]} />
 **Our stages are:**<br />
 We start as a **baby**, then learn to walk and talk as a **toddler**. We go to school as a **child**. Later, we become a **teenager** and finally an **adult**.
-</NatureExample>
+</Creature>
 
 
 

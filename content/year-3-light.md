@@ -141,7 +141,7 @@ So, night-time animals have to pay attention to the dark and how much light the 
 
 
 
-<NatureExample id={`n142`} 
+<Creature id={`n142`} 
   title={`Hedgehog`} 
   emoji={`🦔`} 
   facts={`- A hedgehog is a gardener's friend because it loves to eat slugs, snails, and insects that might damage plants.
@@ -153,12 +153,12 @@ A familiar spiny mammal that is nocturnal, meaning it sleeps all day and comes o
 
 **How to spot them:**<br />
 Listen for snuffling and rustling sounds in bushes or undergrowth in your garden after the sun has gone down.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n143`} 
+<Creature id={`n143`} 
   title={`Beaver`} 
   emoji={`🦫`} 
   facts={`- Beavers were hunted to extinction in the UK over 400 years ago, but are now being carefully reintroduced to some rivers.
@@ -171,12 +171,12 @@ Beavers are mostly nocturnal and are famous 'eco-engineers'. They spend their ni
 
 **Why they are important:**<br />
 Their dams create new ponds and wetlands, which become amazing habitats for other wildlife like frogs, dragonflies, and water birds.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n144`} 
+<Creature id={`n144`} 
   title={`Otter`} 
   emoji={`🦦`} 
   facts={`- Otters have the densest fur of any animal in the world, with up to a million hairs per square inch to keep them warm in cold water.
@@ -189,12 +189,12 @@ Otters are playful and secretive mammals that live along our rivers and coastlin
 
 **How to spot signs:**<br />
 Look for their five-toed footprints in muddy riverbanks and for their poo, called 'spraint', which is full of fish bones and has a surprisingly sweet smell, a bit like jasmine tea!
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n145`} 
+<Creature id={`n145`} 
   title={`Fox`} 
   emoji={`🦊`} 
   facts={`- A fox's hearing is so good it can hear a mouse squeak from 100 metres away, helping it to hunt in the dark.
@@ -209,7 +209,7 @@ The Red Fox is a common night-time hunter that is very clever and adaptable, liv
 **How to spot signs:**
 
 At night, listen for their strange, high-pitched scream or bark. In mud or snow, look for their footprints – they look like a small dog's, but are narrower and more oval-shaped.
-</NatureExample>
+</Creature>
 
 
 

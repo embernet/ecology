@@ -55,7 +55,7 @@ Store chemical energy and turn it into electrical energy.
 
 
 
-<NatureExample id={`n164`} 
+<Creature id={`n164`} 
   title={`Nature's Battery: The Electric Eel`} 
   emoji={`🐟`} 
   facts={`- An electric eel's shock can be over 600 volts, which is more than twice as powerful as the electricity in our homes!
@@ -67,7 +67,7 @@ A cell stores energy and releases it as electricity. Nature has its own version!
 
 **Nature's Equivalent:**<br />
 The **Electric Eel** has special organs in its body that act like thousands of tiny batteries stacked together. It can release a powerful electric shock to stun its prey or defend itself.
-</NatureExample>
+</Creature>
 
 
 
@@ -125,7 +125,7 @@ Change electrical energy into another type of energy, like light, sound, or move
 
 
 
-<NatureExample id={`n168`} 
+<Creature id={`n168`} 
   title={`Nature's Bulb: The Firefly`} 
   emoji={`🐞`} 
   facts={`- Fireflies are super efficient! Unlike a light bulb, which wastes lots of energy as heat, a firefly's light is 'cold light' and wastes almost no energy.
@@ -136,7 +136,7 @@ A bulb turns electrical energy into light. Some creatures can make their own lig
 
 **Nature's Equivalent:**<br />
 A **firefly** or **glow-worm** uses a special chemical reaction inside its body to produce light. This is called 'bioluminescence' (which means 'living light'). They use it to talk to each other and attract a mate.
-</NatureExample>
+</Creature>
 
 
 
@@ -242,7 +242,7 @@ Electricity needs a complete loop to flow. As long as the bird is only touching 
 ## Examples of how Nature uses Electricity
 
 
-<NatureExample id={`n174`} 
+<Creature id={`n174`} 
   title={`The Bee's Electric-KISS!`} 
   emoji={`🐝`} 
   facts={`- A flower's electrical charge changes for a short time after a bee has visited. Other bees can sense this change and know not to waste time visiting an empty flower!
@@ -254,7 +254,7 @@ Have you ever rubbed a balloon on your jumper and made your hair stand on end? T
 
 **Nature's Example:**<br />
 As a bee flies through the air, its furry body rubs against tiny air particles, building up a positive static charge. Flowers on the ground have a weak negative charge. When the positively charged bee gets close to the flower, the lighter pollen (which is also negatively charged) is pulled towards the bee. It *jumps* from the flower onto the bee's furry body, sticking to it like a magnet!
-</NatureExample>
+</Creature>
 
 
 
@@ -312,7 +312,7 @@ Inside a storm cloud, tiny ice and water particles rub together, building up a h
 
 
 
-<NatureExample id={`n178`} 
+<Creature id={`n178`} 
   title={`Nature's Spiderman: The Gecko!`} 
   emoji={`🦎`} 
   facts={`- Scientists are copying this idea (called 'biomimicry') to make super-strong 'gecko tape' that can stick things to a wall without glue.
@@ -323,7 +323,7 @@ How does a gecko walk up a glass wall? It's not glue, it's a kind of static elec
 
 **Nature's Example:**<br />
 The bottom of a gecko's foot is covered in millions of tiny, tiny hairs. These hairs get so close to the wall that they create a tiny electrical attraction (like static cling) between the foot and the wall. This is enough to hold the gecko's whole body weight.
-</NatureExample>
+</Creature>
 
 
 

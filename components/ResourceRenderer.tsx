@@ -16,6 +16,21 @@ export function ResourceRenderer({ item }: ResourceRendererProps) {
   );
 
   switch (data.type) {
+    case 'Creature':
+      return (
+        <div className="my-6 rounded-2xl shadow-lg border border-amber-100 bg-white overflow-hidden">
+          {data.childrenHtml && (
+            <div
+              className="print-creature-content"
+              dangerouslySetInnerHTML={{ __html: data.childrenHtml }}
+            />
+          )}
+          <div className="p-4 border-t border-amber-50 bg-amber-50/30">
+            {sourceTag}
+          </div>
+        </div>
+      );
+
     case 'NatureExample':
       return (
         <div className="my-6 rounded-2xl shadow-lg border border-green-100 bg-white overflow-hidden">

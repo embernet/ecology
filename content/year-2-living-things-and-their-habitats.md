@@ -13,7 +13,7 @@ slug: "year-2-living-things-and-their-habitats"
 *Living things need to move, breathe, grow, and take in food (nutrition) to get energy.*
 
 
-<NatureExample id={`n115`} 
+<Creature id={`n115`} 
   title={`Bee`} 
   emoji={`🐝`} 
   facts={`- A bee is alive because it moves, breathes, and needs nectar (food) from flowers to survive.
@@ -21,7 +21,7 @@ slug: "year-2-living-things-and-their-habitats"
 - Bees communicate the location of good flowers to each other by performing a special 'waggle dance'.`}
 >
 A flying insect that is vital for pollinating flowers.<br />**How to identify:** Look for its fuzzy, black and yellow striped body, four wings, and the buzzing sound it makes.
-</NatureExample>
+</Creature>
 
 
 
@@ -326,7 +326,7 @@ A small, colourful bird that eats insects.<br />**How to identify:** Look for it
 
 
 
-<NatureExample id={`n130`} 
+<Creature id={`n130`} 
   title={`Sparrowhawk (Tertiary Consumer)`} 
   emoji={``} 
   facts={`- A sparrowhawk has incredible eyesight that's up to eight times sharper than a human's, allowing it to spot small prey from high in the sky.
@@ -334,7 +334,7 @@ A small, colourful bird that eats insects.<br />**How to identify:** Look for it
 - Female sparrowhawks are much larger than the males.`}
 >
 A powerful bird of prey that hunts smaller birds.<br />**How to identify:** Look for its broad wings, long tail, and fierce yellow eyes. It flies with a distinctive 'flap-flap-glide' pattern.
-</NatureExample>
+</Creature>
 
 
 

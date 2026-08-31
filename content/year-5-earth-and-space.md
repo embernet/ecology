@@ -161,7 +161,7 @@ The planets are all spherical bodies that orbit the Sun.
 ### Creatures of the Sun & Day/Night
 
 
-<NatureExample id={`n208`} 
+<Creature id={`n208`} 
   title={`The Swallow's Sun Compass`} 
   emoji={`🧭`} 
   facts={`- Swallows are "chasing the summer"! They make an incredible 6,000-mile journey (migration) from the UK all the way to southern Africa every single autumn to escape the cold winter. When our spring arrives, they fly all the way back!
@@ -177,12 +177,12 @@ You've probably seen these amazing little birds zipping through the sky in summe
 
 **How they use space:**<br />
 They have a built-in "sat-nav"! Swallows use the **Sun's apparent movement** as a compass to navigate thousands of miles.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n209`} 
+<Creature id={`n209`} 
   title={`The Badger's Night Life`} 
   emoji={`🦡`} 
   facts={`- Badgers sleep all day in their underground homes, called setts, and only come out at dusk to forage for food.
@@ -194,14 +194,14 @@ The badger is a mammal whose whole life is ruled by the Earth's rotation.
 
 **How they use space:**<br />
 They are **nocturnal**, which means they have adapted to be active during the night, which is caused by the **Earth's rotation**.
-</NatureExample>
+</Creature>
 
 
 
 ### Creatures of the Moon
 
 
-<NatureExample id={`n210`} 
+<Creature id={`n210`} 
   title={`The Limpet's Moon Clock`} 
   emoji={`🐚`} 
   facts={`- Limpets live in the "intertidal zone"—the area that is underwater at high tide and exposed to the air at low tide.
@@ -213,12 +213,12 @@ Limpets are small, cone-shelled creatures that live on rocks by the sea.
 
 **How they use space:**<br />
 Their survival depends on the ocean's tides, which are caused by the **Moon's movement** and its gravity pulling on the Earth.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n211`} 
+<Creature id={`n211`} 
   title={`The Turtle's Moonlit Dash`} 
   emoji={`🐢`} 
   facts={`- Hatching at night, especially under a bright Moon, helps keep them safe. It's too dark for many sea birds to hunt them, and the sand is much cooler than in the blazing hot daytime sun.
@@ -234,7 +234,7 @@ Imagine being buried under the sand! After weeks of growing, tiny baby sea turtl
 
 **How they use space:**<br />
 They use the light of the **Moon**, our planet's natural satellite, as their very first guiding light!
-</NatureExample>
+</Creature>
 
 
 

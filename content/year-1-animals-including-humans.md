@@ -24,7 +24,7 @@ Pupils might work scientifically by: using their observations to compare and con
 #### Nature Examples
 
 
-<NatureExample id={`n32`} 
+<Creature id={`n32`} 
   title={`Stickleback`} 
   emoji={`🐟`} 
   facts={`- The male stickleback builds a nest out of weeds which he glues together with a special substance from his kidneys.
@@ -36,12 +36,12 @@ A small, hardy fish found in ponds, lakes, and slow-moving rivers across the UK.
 
 **How to identify:**<br />
 Look for a small, slender, greyish-green fish with two to four sharp spines visible on its back.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n33`} 
+<Creature id={`n33`} 
   title={`Minnow`} 
   emoji={`🐟`} 
   facts={`- Minnows have an excellent sense of smell and can detect chemical alarm signals released from the skin of another minnow that has been attacked.
@@ -53,12 +53,12 @@ A tiny, sociable fish that often swims in large groups called shoals in streams 
 
 **How to identify:**<br />
 Look for a very small, silvery fish with a dark stripe along its side, usually seen swimming in a large group.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n34`} 
+<Creature id={`n34`} 
   title={`Perch`} 
   emoji={`🐟`} 
   facts={`- The perch's spiny front dorsal fin is a very effective defence, making it difficult for predators like pike or herons to swallow it.
@@ -70,7 +70,7 @@ A common predatory fish with a humped back, spiny dorsal fin, and distinctive ve
 
 **How to identify:**<br />
 Look for a greenish, deep-bodied fish with bold, dark vertical stripes, a spiky fin on its back, and reddish-orange pelvic and tail fins.
-</NatureExample>
+</Creature>
 
 
 
@@ -79,7 +79,7 @@ Look for a greenish, deep-bodied fish with bold, dark vertical stripes, a spiky 
 #### Nature Examples
 
 
-<NatureExample id={`n35`} 
+<Creature id={`n35`} 
   title={`Common Frog`} 
   emoji={`🐸`} 
   facts={`- Doesn't drink with its mouth but soaks up all the water it needs through its skin.
@@ -87,12 +87,12 @@ Look for a greenish, deep-bodied fish with bold, dark vertical stripes, a spiky 
 >
 <WikiImage filename="Rana esculenta on Nymphaea edit.JPG" alt="Frog" />
 A familiar amphibian with smooth skin and long hind legs for jumping.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n36`} 
+<Creature id={`n36`} 
   title={`Newt`} 
   emoji={``} 
   facts={`- Can regrow lost limbs, such as its tail or even a leg.
@@ -100,12 +100,12 @@ A familiar amphibian with smooth skin and long hind legs for jumping.
 >
 <WikiImage filename="Triturus cristatus Sinarp 8.JPG" alt="Triturus cristatus Sinarp - Newt" />
 A lizard-like amphibian that divides its time between water and land.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n37`} 
+<Creature id={`n37`} 
   title={`Common Toad`} 
   emoji={``} 
   facts={`- Has glands behind its eyes that produce a mild poison to put off predators.
@@ -113,7 +113,7 @@ A lizard-like amphibian that divides its time between water and land.
 >
 <WikiImage filename="Bufo bufo 2 (2005 07 11).jpg" alt="Common Toad" />
 An amphibian with warty skin that prefers to crawl rather than hop.
-</NatureExample>
+</Creature>
 
 
 
@@ -124,7 +124,7 @@ An amphibian with warty skin that prefers to crawl rather than hop.
 #### Nature Examples
 
 
-<NatureExample id={`n38`} 
+<Creature id={`n38`} 
   title={`Common Lizard`} 
   emoji={`🦎`} 
   facts={`Can shed its tail if caught by a predator. The tail continues to wriggle, distracting the attacker while the lizard escapes.
@@ -135,12 +135,12 @@ They hibernate through the winter, often in groups inside log piles or under roc
 >
 <WikiImage filename="Zootoca vivipara 224965721.jpg" alt="Zootoca vivipara - Common Lizard" />
 The UK's most common and widespread reptile, often seen basking in sunny spots on logs or rocks.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n39`} 
+<Creature id={`n39`} 
   title={`Slow Worm`} 
   emoji={`🦎`} 
   facts={`Despite its appearance, the slow worm is a lizard, not a worm or a snake. You can tell because it has eyelids and can blink, which snakes cannot do.
@@ -151,12 +151,12 @@ They love to eat slugs, making them a very welcome visitor in a garden.`}
 >
 <WikiImage filename="Slow Worm - geograph.org.uk - 7153627.jpg" alt="Slow Worm" />
 A smooth, shiny, legless lizard that looks like a small snake and is often found in gardens.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n40`} 
+<Creature id={`n40`} 
   title={`Grass Snake`} 
   emoji={`🐍`} 
   facts={`The grass snake is an excellent swimmer and often hunts for frogs and newts in the water.
@@ -167,7 +167,7 @@ It is not venomous and has a distinctive yellow and black collar behind its head
 >
 <WikiImage filename="Grass Snake - geograph.org.uk - 3115461.jpg" alt="Grass Snake" />
 The UK's largest native snake, found in lowland areas, particularly near water where it hunts for amphibians.
-</NatureExample>
+</Creature>
 
 
 
@@ -176,7 +176,7 @@ The UK's largest native snake, found in lowland areas, particularly near water w
 #### Nature Examples
 
 
-<NatureExample id={`n41`} 
+<Creature id={`n41`} 
   title={`Robin`} 
   emoji={`🐦`} 
   facts={`- Is famous for singing all year round, often under streetlights at night.
@@ -184,12 +184,12 @@ The UK's largest native snake, found in lowland areas, particularly near water w
 >
 <WikiImage filename="European robin on a rock.jpg" alt="European robin on a rock" />
 A familiar garden bird with a bright red breast, known for its territorial nature.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n42`} 
+<Creature id={`n42`} 
   title={`Blue Tit`} 
   emoji={``} 
   facts={`- Parents may have to find up to 1,000 caterpillars a day to feed their hungry chicks.
@@ -197,12 +197,12 @@ A familiar garden bird with a bright red breast, known for its territorial natur
 >
 <WikiImage filename="Eurasian blue tit Lancashire.jpg" alt="Eurasian blue tit" />
 A small, colourful bird often seen on garden bird feeders.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n43`} 
+<Creature id={`n43`} 
   title={`Woodpigeon`} 
   emoji={``} 
   facts={`- Feeds its young (squabs) a special "milk" made in a pouch in its throat.
@@ -210,7 +210,7 @@ A small, colourful bird often seen on garden bird feeders.
 >
 <WikiImage filename="Wood Pigeon - geograph.org.uk - 1944312.jpg" alt="Wood Pigeon" />
 The UK's largest and most common pigeon, often found in woods, parks, and gardens.
-</NatureExample>
+</Creature>
 
 
 
@@ -219,7 +219,7 @@ The UK's largest and most common pigeon, often found in woods, parks, and garden
 #### Nature Examples
 
 
-<NatureExample id={`n44`} 
+<Creature id={`n44`} 
   title={`Fox`} 
   emoji={`🦊`} 
   facts={`- Has whiskers on its legs as well as its face to help it feel its way around in the dark.
@@ -227,12 +227,12 @@ The UK's largest and most common pigeon, often found in woods, parks, and garden
 >
 <WikiImage filename="Portrait of 'Frodo' (5142661255).jpg" alt="Fox" />
 A cunning omnivore, often found in both countryside and urban areas.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n45`} 
+<Creature id={`n45`} 
   title={`Badger`} 
   emoji={`🦡`} 
   facts={`- Lives in a large underground home called a sett, which can have many rooms and be hundreds of years old.
@@ -240,12 +240,12 @@ A cunning omnivore, often found in both countryside and urban areas.
 >
 <WikiImage filename="European Badger - Meles meles (51212303460).jpg" alt="European Badger" />
 A powerful, social mammal that lives in large underground burrows.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n46`} 
+<Creature id={`n46`} 
   title={`Squirrel`} 
   emoji={`🐿️`} 
   facts={`- Can forget where it buried hundreds of nuts, meaning it accidentally plants lots of new trees!
@@ -264,7 +264,7 @@ An agile rodent, commonly seen in parks and woodlands.
 </tr>
 </tbody>
 </table>
-</NatureExample>
+</Creature>
 
 
 
@@ -333,7 +333,7 @@ Use these prompts to help pupils consolidate their learning about the different 
 ### Herbivores (Plant-eaters)
 
 
-<NatureExample id={`n47`} 
+<Creature id={`n47`} 
   title={`Rabbit`} 
   emoji={`🐇`} 
   facts={`- A rabbit's teeth grow continuously throughout its life, so it must chew on grass and tough plants to wear them down.
@@ -345,12 +345,12 @@ A common mammal with long ears, powerful hind legs, and teeth that never stop gr
 
 **How to identify:**<br />
 Look for long ears, a twitching nose, a fluffy white tail (scut), and its hopping movement.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n48`} 
+<Creature id={`n48`} 
   title={`Snail`} 
   emoji={`🐌`} 
   facts={`- A snail's tongue (radula) is like a ribbon covered in thousands of tiny teeth, perfect for scraping up leaves.
@@ -362,12 +362,12 @@ A slow-moving mollusc that carries its spiral shell on its back.
 
 **How to identify:**<br />
 Look for its coiled, hard shell and the silvery slime trail it leaves behind as it moves.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n49`} 
+<Creature id={`n49`} 
   title={`Vole`} 
   emoji={``} 
   facts={`- Voles create a network of tiny tunnels and runways through long grass to hide from predators like kestrels and owls.
@@ -379,14 +379,14 @@ A small rodent with a stout body, short tail, and small ears, often mistaken for
 
 **How to identify:**<br />
 Look for a mouse-like creature, but with a rounder face, less prominent ears, and a much shorter tail.
-</NatureExample>
+</Creature>
 
 
 
 ### Carnivores (Meat-eaters)
 
 
-<NatureExample id={`n50`} 
+<Creature id={`n50`} 
   title={`Ladybird`} 
   emoji={`🐞`} 
   facts={`- A single ladybird can eat over 5,000 aphids (greenfly) in its lifetime, making it a gardener's best friend.
@@ -398,12 +398,12 @@ A small, brightly coloured beetle famous for its spots.
 
 **How to identify:**<br />
 Usually identified by its small, dome-shaped body, which is often red or yellow with black spots.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n51`} 
+<Creature id={`n51`} 
   title={`Fox`} 
   emoji={`🦊`} 
   facts={`- Foxes have amazing hearing and can hear a mouse squeak from 100 metres away.
@@ -415,12 +415,12 @@ A cunning, dog-like mammal with a bushy tail, common in both rural and urban are
 
 **How to identify:**<br />
 Look for its reddish-brown fur, long bushy tail (brush) with a white tip, and pointed muzzle.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n52`} 
+<Creature id={`n52`} 
   title={`Spider`} 
   emoji={`🕷️`} 
   facts={`- Not all spiders build webs to catch food; some, like the wolf spider, are speedy hunters that chase down their prey.
@@ -432,14 +432,14 @@ An eight-legged arachnid that produces silk.
 
 **How to identify:**<br />
 Look for an animal with two main body parts and eight legs (insects have three body parts and six legs).
-</NatureExample>
+</Creature>
 
 
 
 ### Omnivores (Eat plants and meat)
 
 
-<NatureExample id={`n53`} 
+<Creature id={`n53`} 
   title={`Badger`} 
   emoji={`🦡`} 
   facts={`- Earthworms are a badger's favourite food, and they can eat hundreds in a single night!
@@ -451,12 +451,12 @@ A powerful, nocturnal mammal with a distinctive black and white striped face.
 
 **How to identify:**<br />
 Unmistakeable due to its stocky, grey body and the bold black and white stripes on its head.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n54`} 
+<Creature id={`n54`} 
   title={`Blue Tit`} 
   emoji={``} 
   facts={`- In winter, blue tits team up with other tit species to form big flocks, making it easier to find food and spot danger.
@@ -469,12 +469,12 @@ A small, colourful garden bird with a blue cap.
 
 **How to identify:**<br />
 Look for its bright blue, yellow, and white feathers, small size, and acrobatic behaviour on bird feeders.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n55`} 
+<Creature id={`n55`} 
   title={`Wood Mouse`} 
   emoji={``} 
   facts={`- A wood mouse can jump almost a metre in the air to escape from danger.
@@ -486,7 +486,7 @@ A small, nocturnal rodent with large eyes and ears, common in woods and gardens.
 
 **How to identify:**<br />
 Look for its sandy-brown fur, large black eyes, prominent ears, and a long tail that is usually the same length as its body.
-</NatureExample>
+</Creature>
 
 
 
@@ -554,7 +554,7 @@ Use these prompts to help children consolidate their understanding of feeding ty
 ### Nature Examples
 
 
-<NatureExample id={`n56`} 
+<Creature id={`n56`} 
   title={`Fish 🐠`} 
   emoji={``} 
   facts={`- **Gills:** Gills are made of feathery filaments full of blood vessels. As water flows over them, they pull oxygen out, a bit like lungs in reverse. 
@@ -565,12 +565,12 @@ Use these prompts to help children consolidate their understanding of feeding ty
 <WikiImage filename="Skeletal anatomy of tilapia.png" alt="Skeletal anatomy of tilapia" />
 
 - **Structure:** A streamlined body covered in **scales** for protection, **fins** for steering and movement, and **gills** for breathing oxygen directly from the water.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n57`} 
+<Creature id={`n57`} 
   title={`Amphibians 🐸`} 
   emoji={``} 
   facts={`- **Skin:** An amphibian's skin is permeable, meaning it can absorb water and oxygen directly through it. This is why they must live in damp environments to avoid drying out.
@@ -581,12 +581,12 @@ Use these prompts to help children consolidate their understanding of feeding ty
 <WikiImage filename="Skeleton of a frog 001.jpg" alt="Skeleton of a frog" />
 
 - **Structure:** They have smooth, moist **skin** with no scales, fur, or feathers. They typically start life with **gills** and later develop **lungs**. Many, like frogs, have powerful hind legs for jumping.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n58`} 
+<Creature id={`n58`} 
   title={`Reptiles 🦎`} 
   emoji={``} 
   facts={`- **Scaly Skin:** Unlike an amphibian's moist skin, a reptile's scaly skin is waterproof. This key adaptation allows reptiles to live in very dry environments, like deserts, without losing water.
@@ -597,12 +597,12 @@ Use these prompts to help children consolidate their understanding of feeding ty
 <WikiImage filename="Pogona vitticeps close-up 2009 G3.jpg" alt="A Bearded Dragon" />
 
 - **Structure:** Their bodies are covered in dry, waterproof **scales**. They breathe air with **lungs** from birth and are cold-blooded (ectothermic).
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n59`} 
+<Creature id={`n59`} 
   title={`Birds 🐦`} 
   emoji={``} 
   facts={`- **Feathers:** Feathers are an amazing structure unique to birds. They provide lift for flight, insulation to keep the bird warm, and are used for display to attract mates.
@@ -612,12 +612,12 @@ Use these prompts to help children consolidate their understanding of feeding ty
 <WikiImage filename="A goose preening its feathers - geograph.org.uk - 2024335.jpg" alt="A Goose preening its feathers to keep them healthy and waterproof" />
 
 - **Structure:** Their bodies are covered in **feathers**, they have wings for flight (in most species), lightweight and **hollow bones**, and a **beak** instead of teeth.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n60`} 
+<Creature id={`n60`} 
   title={`Mammals 🐕`} 
   emoji={``} 
   facts={`- **Hair/Fur:** All mammals have hair at some point in their life. For whales and dolphins, it's just a few whiskers when they are born. Hair provides insulation, camouflage, and can be used for sensing (like a cat's whiskers).
@@ -626,7 +626,7 @@ Use these prompts to help children consolidate their understanding of feeding ty
 >
 <WikiImage filename="French Bulldog with puppies.jpg" alt="French Bulldog puppies feeding on their mother's milk" />
 - **Structure:** They have **hair or fur** on their bodies, breathe with **lungs**, and are warm-blooded (endothermic). Mothers produce **milk** for their young.
-</NatureExample>
+</Creature>
 
 
 

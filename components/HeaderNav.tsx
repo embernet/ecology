@@ -85,6 +85,9 @@ export function HeaderNav() {
             <Link href="/habitats" className="header-dropdown-link" onClick={() => setIsOpen(false)}>
               Habitats
             </Link>
+            <Link href="/creatures" className="header-dropdown-link" onClick={() => setIsOpen(false)}>
+              Creature Directory
+            </Link>
           <Link href="/but-why" className="header-dropdown-link" onClick={() => setIsOpen(false)}>
               But Why?
             </Link>

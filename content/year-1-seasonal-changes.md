@@ -54,7 +54,7 @@ Spring is the season of new beginnings. It comes after winter and before summer.
 
 
 
-<NatureExample id={`n86`} 
+<Creature id={`n86`} 
   title={`Frogspawn`} 
   emoji={`🥚`} 
   facts={`- One big clump of spawn comes from one female frog and can have thousands of eggs in it.
@@ -66,12 +66,12 @@ This is the name for the eggs laid by frogs.
 
 **Seasonal Behaviour:**<br />
 In spring, frogs wake up from their winter hibernation and head straight to a pond. The female frogs lay their eggs in big, jelly-like clumps called frogspawn. Each little black dot inside the jelly will grow into a tadpole.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n87`} 
+<Creature id={`n87`} 
   title={`Blue Tit`} 
   emoji={`🐦`} 
   facts={`- Blue tits can lay up to 12 eggs at once, which is a lot for such a tiny bird!
@@ -83,12 +83,12 @@ A small, colourful bird with blue, yellow, and green feathers.
 
 **Seasonal Behaviour:**<br />
 Spring is nest-building time! Blue tits look for a small hole, like a bird box or a crack in a tree, and fill it with soft materials like moss, wool, and feathers. They get it ready for the female to lay her eggs and raise her chicks.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n88`} 
+<Creature id={`n88`} 
   title={`Brown Hare`} 
   emoji={`🥊`} 
   facts={`- Hares are one of the fastest animals in the UK and can run at speeds of up to 45 miles per hour.
@@ -100,7 +100,7 @@ A fast-running mammal, much bigger than a rabbit, with long, black-tipped ears.
 
 **Seasonal Behaviour:**<br />
 If you are very lucky in spring, you might see hares 'boxing' in a field. They stand up on their back legs and hit each other with their front paws. It looks like they are having a fight, but it is usually a female hare telling a male hare to leave her alone!
-</NatureExample>
+</Creature>
 
 
 
@@ -133,7 +133,7 @@ Summer is the warmest season of the year. It comes after spring and before autum
 
 
 
-<NatureExample id={`n90`} 
+<Creature id={`n90`} 
   title={`Swift`} 
   emoji={`💨`} 
   facts={`- Swifts spend almost their whole lives in the air. They eat, drink, and even sleep while flying!
@@ -145,12 +145,12 @@ A dark, 'boomerang'-shaped bird that arrives in the UK in late spring and leaves
 
 **Seasonal Behaviour:**<br />
 On warm summer evenings, you might hear loud 'screaming' sounds from high in the sky. This is a group of swifts chasing each other very fast, known as a 'screaming party'. They are very fast, noisy flyers.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n91`} 
+<Creature id={`n91`} 
   title={`Grasshopper`} 
   emoji={`🦗`} 
   facts={`- This special way of making sound is called 'stridulating'.
@@ -162,12 +162,12 @@ A brown or green insect that lives in long grass and is known for its amazing ju
 
 **Seasonal Behaviour:**<br />
 On a warm, sunny summer's day, you can often hear a 'chirping' sound coming from the grass. This is the sound of male grasshoppers 'singing' to attract a female. They don't use their mouths to sing; they rub their long back legs against their wings, like playing a violin!
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n92`} 
+<Creature id={`n92`} 
   title={`Pipistrelle Bat`} 
   emoji={`🦇`} 
   facts={`- Bats are not birds! They are the only mammals in the world that can truly fly.
@@ -179,7 +179,7 @@ The most common type of bat in the UK. They are tiny, furry mammals that fly at 
 
 **Seasonal Behaviour:**<br />
 In summer, mother bats all join together in one place (like a warm attic or an old tree) to have their babies. This is called a 'maternity roost'. They keep their babies (called 'pups') warm and fly out at dusk to hunt for insects.
-</NatureExample>
+</Creature>
 
 
 
@@ -212,7 +212,7 @@ Autumn is the season when things start to cool down. It comes after summer and b
 
 
 
-<NatureExample id={`n94`} 
+<Creature id={`n94`} 
   title={`Grey Squirrel`} 
   emoji={`🐿️`} 
   facts={`- Grey squirrels have a great memory, but they don't remember where they buried every single nut. The nuts they forget often grow into new oak trees!
@@ -224,12 +224,12 @@ You often see these furry-tailed animals in parks and woods, especially in autum
 
 **Seasonal Behaviour:**<br />
 In autumn, squirrels are busy 'caching'. This means they bury hundreds of nuts and acorns all over the place. They do this to save food for the winter when the trees are bare.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n95`} 
+<Creature id={`n95`} 
   title={`Hedgehog`} 
   emoji={`🦔`} 
   facts={`- A baby hedgehog is called a 'hoglet'.
@@ -241,12 +241,12 @@ These small, spiky mammals are often found in gardens.
 
 **Seasonal Behaviour:**<br />
 Autumn is all about eating! Hedgehogs must eat as many slugs, beetles, and worms as they can to get nice and fat. When they are fat enough, they build a cosy nest of leaves (called a 'hibernaculum') and go into a deep sleep, called hibernation, to save energy all winter.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n96`} 
+<Creature id={`n96`} 
   title={`Swallow`} 
   emoji={`✈️`} 
   facts={`- Swallows fly all the way to South Africa, which can be 6,000 miles away.
@@ -258,7 +258,7 @@ A small, fast bird with a long, forked tail. You see them sitting on telephone w
 
 **Seasonal Behaviour:**<br />
 In autumn, you won't see any swallows. They have all left the UK to fly thousands of miles to Africa! This journey is called migration. They leave because it gets too cold in the UK and all the flying insects they eat disappear.
-</NatureExample>
+</Creature>
 
 
 
@@ -291,7 +291,7 @@ Winter is the coldest season of the year. It comes after autumn and before sprin
 
 
 
-<NatureExample id={`n98`} 
+<Creature id={`n98`} 
   title={`Robin Singing`} 
   emoji={`🎵`} 
   facts={`- Both male and female robins have a red breast, and both sing in winter.
@@ -303,12 +303,12 @@ This is one of the most famous British birds, known for its bright red chest.
 
 **Seasonal Behaviour:**<br />
 Robins are one of the few birds you can hear singing all through the winter. They are singing a song that means, "This is my garden, stay away!" to other robins. They also puff up their feathers to trap air and keep themselves warm, like wearing a fluffy coat.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n99`} 
+<Creature id={`n99`} 
   title={`Common Frog`} 
   emoji={`🐸`} 
   facts={`- When a frog hibernates at the bottom of a pond, it doesn't need to come up for air. It breathes through its skin instead!
@@ -320,12 +320,12 @@ These amphibians live in ponds and damp, grassy places.
 
 **Seasonal Behaviour:**<br />
 Frogs get very, very sleepy in winter. They hibernate (go into a deep sleep) to save energy. Most frogs will hide in a log pile or a compost heap, but some will even sleep at the very bottom of a pond, hiding in the mud!
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n100`} 
+<Creature id={`n100`} 
   title={`Ladybird`} 
   emoji={`🐞`} 
   facts={`- A group of ladybirds is sometimes called a 'loveliness'.
@@ -341,7 +341,7 @@ A small, spotty beetle that is very helpful in the garden because it eats aphids
 
 **Seasonal Behaviour:**<br />
 In winter, you won't find many ladybirds crawling on plants. They are all hibernating! They often huddle together in a big group, called a 'cluster', to keep warm. They will hide in sheds, under tree bark, or in tiny gaps in your window frames.
-</NatureExample>
+</Creature>
 
 
 

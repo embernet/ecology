@@ -105,7 +105,7 @@ It has no fixed shape or volume. It spreads out to fill any container it is in.
 ### Heating and Cooling
 
 
-<NatureExample id={`n194`} 
+<Creature id={`n194`} 
   title={`The Exploding Beetle!`} 
   emoji={`💥`} 
   facts={`- The spray is not just hot; it's also very stinky!
@@ -118,7 +118,7 @@ The Bombardier Beetle has a super-powered defence. When a predator (like an ant 
 
 **How it works:**<br />
 It stores two special liquids in its body. When it gets scared, it mixes them together. The mix gets hotter than boiling water (100°C) almost instantly! This heat forces the liquid to **evaporate** into a hot, steamy gas. This gas explodes out with a 'POP!' and scares the attacker away.
-</NatureExample>
+</Creature>
 
 
 
@@ -155,7 +155,7 @@ Different solids have different **melting points**. An ice cube melts at 0°C, b
 
 
 
-<NatureExample id={`n196`} 
+<Creature id={`n196`} 
   title={`The Frozen Frog`} 
   emoji={`🐸`} 
   facts={`- The frog's body can be more than 60% frozen solid.
@@ -167,7 +167,7 @@ Some frogs, like the Wood Frog in North America, can survive being frozen solid 
 
 **How it works:**<br />
 When winter comes, the frog's body starts to **freeze**. Its heart stops beating, and it stops breathing. The water (liquid) in its body turns into ice (solid). It becomes a "frog-sicle"! It has special sugar in its blood that protects its important bits from being damaged by the ice. When spring arrives, the frog thaws out (the ice **melts** back into liquid), its heart starts again, and it hops away!
-</NatureExample>
+</Creature>
 
 
 
@@ -226,7 +226,7 @@ cold surfaces, it cools down and **condenses**. It turns from a gas back into li
 
 
 
-<NatureExample id={`n200`} 
+<Creature id={`n200`} 
   title={`The Desert Beetle's Drink`} 
   emoji={`🐞`} 
   facts={`- The beetle's back has special waxy parts that the water slides off easily.
@@ -238,7 +238,7 @@ The Namib Desert beetle lives in one of the driest places on Earth. So, how does
 
 **How it works:**<br />
 In the early morning, a cool fog blows in from the sea. The beetle climbs a sand dune and does a 'headstand'. Its back is bumpy and cool. The water vapour (gas) in the air hits its cool back and **condenses** into liquid water droplets. The droplets get bigger and bigger until they roll down the beetle's back, right into its mouth.
-</NatureExample>
+</Creature>
 
 
 

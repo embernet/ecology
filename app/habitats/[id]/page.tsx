@@ -10,6 +10,7 @@ import type { NavItem } from '@/lib/navigation';
 
 import { resolvePageSlugs } from '@/lib/curriculum-links';
 import { getPostBySlug } from '@/lib/content';
+import { getResourceRegistry } from '@/lib/resource-registry-api';
 
 export function generateStaticParams() {
   return HABITATS.map((h) => ({ id: h.id }));
@@ -24,6 +25,8 @@ export default async function HabitatDetail({ params }: { params: Promise<{ id: 
   const resolvedParams = await params;
   const h = getHabitatEntry(resolvedParams.id);
   if (!h) notFound();
+
+  const registry = getResourceRegistry();
 
   const currentIndex = HABITATS.findIndex(x => x.id === resolvedParams.id);
   const prevHabitat = currentIndex > 0 ? HABITATS[currentIndex - 1] : null;
@@ -104,8 +107,12 @@ export default async function HabitatDetail({ params }: { params: Promise<{ id: 
                     const animalSlug = animal.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
                     const animalImagePath = `/habitat-images/animals/${resolvedParams.id}-${animalSlug}.jpg`;
                     const hasAnimalImage = fs.existsSync(path.join(process.cwd(), 'public', animalImagePath));
-                    return (
-                      <div key={idx} className="bg-green-50 rounded-xl p-6">
+                    
+                    const cleanName = animal.name.split('(')[0].trim();
+                    const creatureId = Object.keys(registry).find(k => registry[k].type === 'Creature' && registry[k].title === cleanName);
+
+                    const card = (
+                      <div className={`bg-green-50 rounded-xl p-6 h-full border ${creatureId ? 'border-green-100 hover:border-green-300 hover:shadow-md transition-all' : 'border-transparent'}`}>
                         <h3 className="text-lg font-bold text-green-900 mb-2">{animal.name}</h3>
                         {hasAnimalImage && (
                           <img 
@@ -116,6 +123,17 @@ export default async function HabitatDetail({ params }: { params: Promise<{ id: 
                         )}
                         <h4 className="font-semibold text-green-800 mb-1 text-sm">How it survives here:</h4>
                         <p className="text-slate-700 leading-relaxed">{animal.how_it_survives}</p>
+                        {creatureId && (
+                           <div className="mt-4 text-green-700 font-semibold text-sm flex items-center gap-1 group-hover:text-green-800">
+                             📖 View in Creature Directory <span aria-hidden="true">&rarr;</span>
+                           </div>
+                        )}
+                      </div>
+                    );
+
+                    return (
+                      <div key={idx} className="block group">
+                        {creatureId ? <Link href={`/creatures/${creatureId}`}>{card}</Link> : card}
                       </div>
                     );
                   })}

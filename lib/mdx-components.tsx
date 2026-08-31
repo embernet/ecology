@@ -9,6 +9,7 @@ import { HandoutCard } from '@/components/mdx/HandoutCard';
 import { HandoutHeader } from '@/components/mdx/HandoutHeader';
 import { Gallery } from '@/components/mdx/Gallery';
 import { WikiImage } from '@/components/mdx/WikiImage';
+import { Creature } from '@/components/mdx/Creature';
 import { DictionaryParserProvider } from '@/components/DictionaryWrapper';
 import { makeHeadingIdCounter } from '@/lib/content';
 
@@ -18,6 +19,7 @@ export function getMdxComponents(getId?: (text: string) => string) {
     return {
         NatureExample,
         Habitat,
+        Creature,
         Requirement,
         Activity,
         Reflection,

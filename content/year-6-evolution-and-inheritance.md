@@ -12,7 +12,7 @@ slug: "year-6-evolution-and-inheritance"
 ### Nature Examples
 
 
-<NatureExample id={`n216`} 
+<Creature id={`n216`} 
   title={`Arctic Fox`} 
   emoji={`❄️`} 
   facts={`- **Coat:** The Arctic fox is a master of disguise. Its coat is brilliant white in winter to blend in with snow, but it changes to a brownish-grey in summer to match the tundra rocks.
@@ -22,7 +22,7 @@ slug: "year-6-evolution-and-inheritance"
 A small fox found in the Arctic, perfectly suited to its frozen environment.
 
 **Adaptations:** Has a thick white coat for camouflage and warmth, and small ears to reduce heat loss.
-</NatureExample>
+</Creature>
 
 
 
@@ -42,7 +42,7 @@ A succulent plant that thrives in dry, desert climates.
 
 
 
-<NatureExample id={`n218`} 
+<Creature id={`n218`} 
   title={`Giraffe`} 
   emoji={`🦒`} 
   facts={`- **Neck:** A giraffe has the same number of neck bones as a human—just seven! Each vertebra, however, is extremely long, measuring up to 25 cm (10 inches).
@@ -52,12 +52,12 @@ A succulent plant that thrives in dry, desert climates.
 The world's tallest mammal, native to the African savanna.
 
 **Adaptations:** A very long neck allows it to browse on leaves high up on acacia trees, a food source other animals can't reach.
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n219`} 
+<Creature id={`n219`} 
   title={`Peppered Moth`} 
   emoji={``} 
   facts={`- **Camouflage:** Before pollution, the light, speckled form of the peppered moth was most common because it blended in perfectly with lichen on tree bark. The rare dark form was easily spotted and eaten by birds.
@@ -69,7 +69,7 @@ A common moth from Britain, famous for changing its colour to stay hidden as its
 **Adaptations:** A famous example of natural selection, where the darker form of the moth became more common on soot-covered trees during the Industrial Revolution because it was better camouflaged.
 
 <WikiImage filename="Biston betularia couple.JPG" alt="The light (typica) and dark (carbonaria) forms of the peppered moth side by side" />
-</NatureExample>
+</Creature>
 
 
 

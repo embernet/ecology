@@ -35,7 +35,7 @@ slug: "year-4-living-things-and-their-habitats"
 
 ### Examples of Invertebrates
 
-<NatureExample id={`n180`} 
+<Creature id={`n180`} 
   title={`Snail`} 
   emoji={`🐌`} 
   facts={`- A snail can sleep for up to three years if the conditions are not right for it.
@@ -43,12 +43,12 @@ slug: "year-4-living-things-and-their-habitats"
 - Its blood is blue, not red.`}
 >
 A slow-moving mollusc that carries its spiral shell on its back.<br />**Key Question:** Does it have a shell? **Yes.**
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n181`} 
+<Creature id={`n181`} 
   title={`Slug`} 
   emoji={``} 
   facts={`- A slug's body is mostly water, which is why they must stay in damp places to avoid drying out.
@@ -56,12 +56,12 @@ A slow-moving mollusc that carries its spiral shell on its back.<br />**Key Ques
 - Some slugs can stretch to 20 times their resting length to squeeze through tiny gaps.`}
 >
 A mollusc similar to a snail but without a visible shell.<br />**Key Question:** Does it have a shell? **No.**
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n182`} 
+<Creature id={`n182`} 
   title={`Spider`} 
   emoji={`🕷️`} 
   facts={`- Most spiders have eight eyes, but many have poor vision and use vibrations in their web to "see" what they've caught.
@@ -69,12 +69,12 @@ A mollusc similar to a snail but without a visible shell.<br />**Key Question:**
 - Spider silk is, weight for weight, stronger than steel.`}
 >
 An eight-legged arachnid that produces silk.<br />**Key Question:** Does it have eight legs? **Yes.**
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n183`} 
+<Creature id={`n183`} 
   title={`Beetle`} 
   emoji={`🐞`} 
   facts={`- Beetles make up almost a quarter of all known animal species on Earth, with over 400,000 different types.
@@ -82,7 +82,7 @@ An eight-legged arachnid that produces silk.<br />**Key Question:** Does it have
 - Glow-worms, often seen in the British countryside, are actually a type of beetle.`}
 >
 An insect with a hard, protective wing case.<br />**Key Question:** Does it have six legs and a hard wing case? **Yes.**
-</NatureExample>
+</Creature>
 
 
 

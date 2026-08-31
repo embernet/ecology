@@ -23,6 +23,7 @@ const OUTPUT_FILE = join(__dirname, '..', 'public', 'resource-registry.json');
 const TYPE_PREFIXES = {
   NatureExample: 'n',
   Habitat: 'n',
+  Creature: 'n',
   Activity: 'a',
   Reflection: 'r',
   Requirement: 'q',
@@ -190,6 +191,7 @@ function extractResources(content, slug, pageTitle, fileName) {
   const componentTypes = {
     NatureExample: { hasChildren: true, titleProp: 'title' },
     Habitat: { hasChildren: true, titleProp: 'title' },
+    Creature: { hasChildren: true, titleProp: 'title' },
     Activity: { hasChildren: false, titleProp: 'title' },
     Reflection: { hasChildren: false, titleProp: 'title' },
     Note: { hasChildren: false, titleProp: 'title', defaultTitle: 'Note' },

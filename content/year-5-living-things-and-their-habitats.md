@@ -12,7 +12,7 @@ slug: "year-5-living-things-and-their-habitats"
 ### Nature Examples
 
 
-<NatureExample id={`n212`} 
+<Creature id={`n212`} 
   title={`Mammal Life Cycle (Fox)`} 
   emoji={`🦊`} 
   facts={`- Fox cubs are born blind, deaf, and without teeth. Their eyes and ears don't open until they are about two weeks old.
@@ -21,12 +21,12 @@ slug: "year-5-living-things-and-their-habitats"
 >
 Mammals give birth to live young that are dependent on their mother for milk.<br />**Key Stages:** Live birth → infant (cub) → adolescent → adult.
 <Gallery images={[{"src":"File:Fox cubs - geograph.org.uk - 419827.jpg","caption":"Fox Cubs"},{"src":"File:Red Fox Cub (52042943121).jpg","caption":"Fox Cub"},{"src":"File:Fox cub (5969636298).jpg","caption":"Fox Adolescent"},{"src":"File:Rød ræv (Vulpes vulpes).jpg","caption":"Fox Adult"}]} />
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n213`} 
+<Creature id={`n213`} 
   title={`Amphibian Life Cycle (Frog)`} 
   emoji={`🐸`} 
   facts={`- A single frog can lay thousands of eggs in a jelly-like clump called frogspawn.
@@ -35,12 +35,12 @@ Mammals give birth to live young that are dependent on their mother for milk.<br
 >
 Amphibians undergo a complete change called metamorphosis, transforming from a water-dwelling larva to a land-dwelling adult.<br />**Key Stages:** Egg (spawn) → larva (tadpole) → froglet → adult frog.
 <Gallery images={[{"src":"File:Greenfrog life stages.svg","caption":"Different stages in the life of a frog"},{"src":"File:Frog spawn - geograph.org.uk - 5687315.jpg","caption":"Frog Spawn"},{"src":"File:Tadpole (22437957).jpeg","caption":"Tadpole"},{"src":"File:Marsh frog (Pelophylax ridibundus).jpg","caption":"Adult Frog"}]} />
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n214`} 
+<Creature id={`n214`} 
   title={`Insect Life Cycle (Butterfly)`} 
   emoji={`🦋`} 
   facts={`- A caterpillar is an eating machine! Its main job is to eat, and it can grow to be more than 1,000 times its original size.
@@ -49,12 +49,12 @@ Amphibians undergo a complete change called metamorphosis, transforming from a w
 >
 Many insects go through complete metamorphosis, with four very distinct stages.<br />**Key Stages:** Egg → larva (caterpillar) → pupa (chrysalis) → adult.
 <Gallery images={[{"src":"File:Freshly laid Egg of Papilio bianor Cramer, 1777 - Common Peacock WLB IMG 8597.jpg","caption":"Stage 1: Egg"},{"src":"File:Peacock (Aglais io) caterpillar Ruggeller Riet.jpg","caption":"Stage 2: Larva (caterpillar)"},{"src":"File:A pupa of Junonia almana (Linnaeus, 1758) - Peacock Pansy WLB.jpg","caption":"Stage 3: Pupa (chrysalis)"},{"src":"File:Peacock butterfly (Aglais io) 2.jpg","caption":"Stage 4: Adult butterfly"}]} />
-</NatureExample>
+</Creature>
 
 
 
 
-<NatureExample id={`n215`} 
+<Creature id={`n215`} 
   title={`Bird Life Cycle (Robin)`} 
   emoji={`🐦`} 
   facts={`- A robin's eggshell has thousands of tiny pores (holes) to let oxygen in for the growing chick to breathe.
@@ -63,7 +63,7 @@ Many insects go through complete metamorphosis, with four very distinct stages.<
 >
 Birds hatch from hard-shelled eggs and are cared for by their parents in a nest.<br />**Key Stages:** Egg → hatchling → fledgling → adult bird.
 <Gallery images={[{"src":"File:Robin nest with eggs (8721696992).jpg","caption":"Stage 1: Egg"},{"src":"File:Robins' Nest (51249875038).jpg","caption":"Stage 2: Hatchling"},{"src":"File:Robin fledgling, Leighton Moss Reserve - geograph.org.uk - 4468465.jpg","caption":"Stage 3: Fledgling"},{"src":"File:Erithacus rubecula with cocked head.jpg","caption":"Stage 4: Adult Bird"}]} />
-</NatureExample>
+</Creature>
 
 
 

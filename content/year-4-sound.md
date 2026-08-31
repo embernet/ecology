@@ -64,7 +64,7 @@ A bittern is a large, chunky bird that hides in reed beds. To make its call, it 
 
 
 
-<NatureExample id={`n189`} 
+<Creature id={`n189`} 
   title={`The Roaring Stag vs. The Rustling Mouse`} 
   emoji={`🔊`} 
   facts={`- A red deer's roar can be as loud as a motorbike (around 100 decibels)!
@@ -79,7 +79,7 @@ In autumn, male (stag) red deer try to impress female (hind) deer. They do this 
 
 **The Wood Mouse:**<br />
 A tiny wood mouse rustling in the leaves makes very small, weak vibrations. This quiet sound is very hard to hear, which is useful for hiding from predators like owls (who, by the way, have amazing hearing!).
-</NatureExample>
+</Creature>
 
 
 
@@ -93,7 +93,7 @@ A tiny wood mouse rustling in the leaves makes very small, weak vibrations. This
 
 
 
-<NatureExample id={`n190`} 
+<Creature id={`n190`} 
   title={`Dolphins in UK Waters`} 
   emoji={`🌊`} 
   facts={`- Sound travels more than four times faster through water than through air. This allows dolphins to communicate over huge distances.
@@ -104,7 +104,7 @@ A tiny wood mouse rustling in the leaves makes very small, weak vibrations. This
 Bottlenose dolphins, which you can see in places like the Moray Firth in Scotland or Cardigan Bay in Wales, live in a world of sound.
 
 They 'click' and 'whistle' to each other. These vibrations travel through the water, which is a liquid medium.
-</NatureExample>
+</Creature>
 
 
 
