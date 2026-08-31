@@ -48,7 +48,16 @@ interface ButWhyEntry {
   body?: string;
 }
 
-type SearchEntry = PageEntry | SectionEntry | ActivityEntry | BiomimicryEntry | ButWhyEntry;
+interface HabitatEntry {
+  type: 'habitat';
+  id: string;
+  title: string;
+  category: string;
+  preview: string;
+  body?: string;
+}
+
+type SearchEntry = PageEntry | SectionEntry | ActivityEntry | BiomimicryEntry | ButWhyEntry | HabitatEntry;
 
 // Module-level cache — fetched once per session
 let indexCache: SearchEntry[] | null = null;
@@ -69,7 +78,7 @@ function getSearchIndex(): Promise<SearchEntry[]> {
 }
 
 function scoreEntry(entry: SearchEntry, q: string): number {
-  if (entry.type === 'activity' || entry.type === 'biomimicry' || entry.type === 'butwhy') {
+  if (entry.type === 'activity' || entry.type === 'biomimicry' || entry.type === 'butwhy' || entry.type === 'habitat') {
     const title = entry.title.toLowerCase();
     const body = (entry.body ?? '').toLowerCase();
     const preview = entry.preview.toLowerCase();
@@ -179,6 +188,10 @@ export function SearchBar() {
       router.push(`/but-why/${entry.id}`);
       return;
     }
+    if (entry.type === 'habitat') {
+      router.push(`/habitats/${entry.id}`);
+      return;
+    }
     const href =
       entry.type === 'page'
         ? `/wiki/${entry.slug}`
@@ -208,6 +221,7 @@ export function SearchBar() {
     if (entry.type === 'activity') return `activity-${entry.id}`;
     if (entry.type === 'biomimicry') return `biomimicry-${entry.id}`;
     if (entry.type === 'butwhy') return `butwhy-${entry.id}`;
+    if (entry.type === 'habitat') return `habitat-${entry.id}`;
     if (entry.type === 'page') return `page-${entry.slug}`;
     return `section-${entry.slug}-${entry.sectionId}`;
   };
@@ -300,6 +314,21 @@ export function SearchBar() {
                     <span className="search-result-text">
                       <span className="search-result-title">{entry.title}</span>
                       <span className="search-result-page">Biomimicry — {entry.creature}</span>
+                      {entry.preview && (
+                        <span className="search-result-preview">{entry.preview}</span>
+                      )}
+                    </span>
+                  </>
+                ) : entry.type === 'habitat' ? (
+                  <>
+                    <span className="search-result-icon" aria-hidden="true">
+                      <svg viewBox="0 0 16 16" fill="currentColor" width="14" height="14">
+                        <path d="M8 12.5a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9zM8 2a6 6 0 1 1 0 12A6 6 0 0 1 8 2z"/>
+                      </svg>
+                    </span>
+                    <span className="search-result-text">
+                      <span className="search-result-title">{entry.title}</span>
+                      <span className="search-result-page">Habitat — {entry.category}</span>
                       {entry.preview && (
                         <span className="search-result-preview">{entry.preview}</span>
                       )}

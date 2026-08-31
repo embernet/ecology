@@ -153,7 +153,52 @@ function getActivityImages(): ImageEntry[] {
     });
 }
 
+import { HABITATS } from '@/lib/habitats';
+import { BIOMIMICRY } from '@/lib/biomimicry';
+
+function getHabitatImages(): ImageEntry[] {
+    const images: ImageEntry[] = [];
+    for (const h of HABITATS) {
+        const filename = `${h.id}.jpg`;
+        const p = path.join(process.cwd(), 'public', 'habitat-images', filename);
+        if (fs.existsSync(p)) {
+            images.push({
+                id: imageId(`habitat-${h.id}`),
+                filename: filename,
+                alt: h.title,
+                caption: h.image_caption || `A ${h.animals[0].name} in its natural habitat: ${h.title}.`,
+                credit: 'Credit: Mark Burnett, created with AI',
+                pages: [{ slug: h.id, title: h.title, href: `/habitats/${h.id}` }],
+                src: `/habitat-images/${filename}`,
+                thumbnailSrc: `/habitat-images/${filename}`,
+            });
+        }
+    }
+    return images;
+}
+
+function getBiomimicryImages(): ImageEntry[] {
+    const images: ImageEntry[] = [];
+    for (const b of BIOMIMICRY) {
+        const filename = `${b.id}.jpg`;
+        const p = path.join(process.cwd(), 'public', 'biomimicry-images', filename);
+        if (fs.existsSync(p)) {
+            images.push({
+                id: imageId(`biomimicry-${b.id}`),
+                filename: filename,
+                alt: b.title,
+                caption: (b as any).image_caption || `A close-up of the ${b.creature}.`,
+                credit: 'Credit: Mark Burnett, created with AI',
+                pages: [{ slug: b.id, title: b.title, href: `/biomimicry/${b.id}` }],
+                src: `/biomimicry-images/${filename}`,
+                thumbnailSrc: `/biomimicry-images/${filename}`,
+            });
+        }
+    }
+    return images;
+}
+
 export function getAllImages(): ImageEntry[] {
-    const all = [...getWikiImages(), ...getActivityImages()];
+    const all = [...getWikiImages(), ...getActivityImages(), ...getHabitatImages(), ...getBiomimicryImages()];
     return all.sort((a, b) => a.alt.toLowerCase().localeCompare(b.alt.toLowerCase()));
 }

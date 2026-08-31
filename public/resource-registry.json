@@ -3881,6 +3881,54 @@
       "wikiImages": []
     }
   },
+  "a150": {
+    "type": "Activity",
+    "title": "Close Your Eyes: The Deep Sea",
+    "sourcePage": "year-2-living-things-and-their-habitats",
+    "sourcePageTitle": "Year 2: Living things and their habitats",
+    "data": {
+      "type": "Activity",
+      "description": "Have pupils close their eyes and imagine being at the bottom of the deep sea trench. Ask them: 'What can you see?' (Nothing, it's pitch black!) 'What can you feel?' (Freezing cold water and heavy pressure). Then, ask them to imagine a tiny, glowing light appearing in the dark (an anglerfish lure).",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a151": {
+    "type": "Activity",
+    "title": "Rainforest Soundscape",
+    "sourcePage": "year-2-living-things-and-their-habitats",
+    "sourcePageTitle": "Year 2: Living things and their habitats",
+    "data": {
+      "type": "Activity",
+      "description": "Play a recording of a tropical rainforest canopy. Ask the children to close their eyes and identify all the different sounds they hear (rain hitting leaves, monkeys howling, birds calling, insects buzzing). Discuss why the rainforest is so much noisier than a desert or tundra.",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a152": {
+    "type": "Activity",
+    "title": "Sensory Box: The Desert",
+    "sourcePage": "year-2-living-things-and-their-habitats",
+    "sourcePageTitle": "Year 2: Living things and their habitats",
+    "data": {
+      "type": "Activity",
+      "description": "Create a sensory box filled with dry, warm sand and a few smooth stones. Have children bury their hands in it and imagine being a Sidewinder snake or a Fennec Fox. Discuss why having fur on the bottom of your paws would be helpful here, or why staying in a cool underground burrow during the day is important.",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a153": {
+    "type": "Activity",
+    "title": "Touch the Tundra",
+    "sourcePage": "year-2-living-things-and-their-habitats",
+    "sourcePageTitle": "Year 2: Living things and their habitats",
+    "data": {
+      "type": "Activity",
+      "description": "Bring in a tray of ice cubes covered slightly with soil or moss (to simulate permafrost). Let pupils touch it and discuss why trees can't grow deep roots here, and why the Arctic Fox needs such a thick coat and short ears compared to a woodland fox.",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
   "r48": {
     "type": "Reflection",
     "title": "Self-Reflection (Exit Ticket)",

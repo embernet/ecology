@@ -381,3 +381,25 @@ A powerful bird of prey that hunts smaller birds.<br />**How to identify:** Look
       title={`Whole Class Share-Out`} 
       description={`Ask the class a challenging question to foster curiosity: *All food chains seem to start with a plant or algae. Why can't a food chain start with an animal?*`} 
     />
+
+## Sensory Habitat Activities
+
+<Activity id={`a150`} 
+      title={`Close Your Eyes: The Deep Sea`} 
+      description={`Have pupils close their eyes and imagine being at the bottom of the deep sea trench. Ask them: 'What can you see?' (Nothing, it's pitch black!) 'What can you feel?' (Freezing cold water and heavy pressure). Then, ask them to imagine a tiny, glowing light appearing in the dark (an anglerfish lure).`} 
+    />
+
+<Activity id={`a151`} 
+      title={`Rainforest Soundscape`} 
+      description={`Play a recording of a tropical rainforest canopy. Ask the children to close their eyes and identify all the different sounds they hear (rain hitting leaves, monkeys howling, birds calling, insects buzzing). Discuss why the rainforest is so much noisier than a desert or tundra.`} 
+    />
+
+<Activity id={`a152`} 
+      title={`Sensory Box: The Desert`} 
+      description={`Create a sensory box filled with dry, warm sand and a few smooth stones. Have children bury their hands in it and imagine being a Sidewinder snake or a Fennec Fox. Discuss why having fur on the bottom of your paws would be helpful here, or why staying in a cool underground burrow during the day is important.`} 
+    />
+
+<Activity id={`a153`} 
+      title={`Touch the Tundra`} 
+      description={`Bring in a tray of ice cubes covered slightly with soil or moss (to simulate permafrost). Let pupils touch it and discuss why trees can't grow deep roots here, and why the Arctic Fox needs such a thick coat and short ears compared to a woodland fox.`} 
+    />

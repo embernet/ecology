@@ -102,10 +102,12 @@ drift.
 ### Checklist — adding a new browsable section
 
 - [ ] Data file under `data/` + `lib/<section>.ts` types/helpers
+- [ ] Images: generate a photo-realistic (or scientific illustration) image to go with it, and render it with the standard AI license (Credit: Mark Burnett, created with AI) linking to `/wiki/ai-image-license`.
 - [ ] Pages (`app/<section>/page.tsx` + detail route with `generateStaticParams`)
 - [ ] Search: loop in `build-search-index.ts` + handling in `SearchBar.tsx`
 - [ ] Resource Index: `lib/<section>-for-index.ts` adapter spread into
       `app/resources/page.tsx`, colours in `lib/type-colors.ts`
+      *(Note: Adding to `type-colors.ts` now automatically registers the type for Resource Packs, and `ResourceRenderer` will automatically use a generic fallback for printing if a custom design isn't added!)*
 - [ ] Nav: `lib/navigation.ts` (sidebar) + `components/HeaderNav.tsx` + home links
 - [ ] Cross-links (if curriculum-linked): extend `lib/curriculum-links.ts` so the
       section joins the bidirectional "Related" graph

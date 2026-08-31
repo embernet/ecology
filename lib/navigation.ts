@@ -1,3 +1,4 @@
+import { HABITATS } from '@/lib/habitats';
 import { BIOMIMICRY } from '@/lib/biomimicry';
 import { CONVERSATIONS } from '@/lib/but-why';
 
@@ -134,6 +135,11 @@ export const navigation: NavEntry[] = [
       { label: 'Parts of a Flower', href: '/activities/label-parts-flower-y34' },
       { label: 'Parts of a Snail', href: '/activities/label-parts-snail-y34' },
     ],
+  },
+  {
+    label: 'Habitats',
+    href: '/habitats',
+    children: HABITATS.map((h) => ({ label: h.title, href: `/habitats/${h.id}` })),
   },
   {
     label: 'Biomimicry',

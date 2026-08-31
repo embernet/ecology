@@ -51,7 +51,8 @@
         "how": "The kingfisher-to-bullet-train story is a compelling narrative for writing an explanatory or persuasive text about biomimicry, giving pupils a real cause-and-effect example to explain and argue from."
       }
     ],
-    "image_idea": "A kingfisher mid-dive, beak-first, shown side by side with the pointed nose of a bullet train — the same shape twice."
+    "image_idea": "A kingfisher mid-dive, beak-first, shown side by side with the pointed nose of a bullet train — the same shape twice.",
+    "image_caption": "A close-up of the Common kingfisher (Alcedo atthis), showcasing its natural adaptations."
   },
   {
     "id": "lotus-self-cleaning-surfaces",
@@ -103,7 +104,8 @@
         "how": "The lotus leaf's self-cleaning surface is an adaptation that keeps the leaf free of fungi and dirt in muddy water, helping pupils see how plant structures can be shaped by natural selection for survival."
       }
     ],
-    "image_idea": "A close-up of a lotus leaf with a perfect silver bead of water sitting on its surface, alongside a diagram showing the tiny waxy bumps underneath — magnified so children can see the structure."
+    "image_idea": "A close-up of a lotus leaf with a perfect silver bead of water sitting on its surface, alongside a diagram showing the tiny waxy bumps underneath — magnified so children can see the structure.",
+    "image_caption": "A close-up of the Sacred lotus (Nelumbo nucifera), showcasing its natural adaptations."
   },
   {
     "id": "gecko-dry-adhesive",
@@ -156,7 +158,8 @@
         "how": "The gecko's microscopic toe hairs are an evolutionary adaptation allowing survival in habitats inaccessible to competitors — an excellent example of how structures at a scale we cannot see with the naked eye underpin an animal's survival strategy."
       }
     ],
-    "image_idea": "A tokay gecko climbing a vertical glass surface, with an inset circle showing a hugely magnified view of the toe bristles — thousands of tiny hairs branching into even tinier paddles."
+    "image_idea": "A tokay gecko climbing a vertical glass surface, with an inset circle showing a hugely magnified view of the toe bristles — thousands of tiny hairs branching into even tinier paddles.",
+    "image_caption": "A close-up of the Tokay gecko (Gekko gecko), showcasing its natural adaptations."
   },
   {
     "id": "humpback-whale-tubercles-turbine",
@@ -210,7 +213,8 @@
         "how": "The tubercle-inspired wind turbine is a clear real-world link between geographical understanding of the need for renewable energy and the role that nature-inspired design plays in making that energy more efficient."
       }
     ],
-    "image_idea": "A humpback whale's front fin showing the row of bumps along the leading edge, placed side by side with a wind turbine blade with the same knobbly profile along its front edge."
+    "image_idea": "A humpback whale's front fin showing the row of bumps along the leading edge, placed side by side with a wind turbine blade with the same knobbly profile along its front edge.",
+    "image_caption": "A close-up of the Humpback whale (Megaptera novaeangliae), showcasing its natural adaptations."
   },
   {
     "id": "termite-mound-eastgate-ventilation",
@@ -263,7 +267,8 @@
         "how": "The Eastgate Centre's passive cooling system — no air conditioning, lower energy use — gives pupils a clear, real-world example of how copying a natural structure produces a sustainable and innovative building design."
       }
     ],
-    "image_idea": "A tall African termite mound with arrows showing warm air rising and cool air flowing in at the base, placed beside the Eastgate Centre building in Harare with the same arrows showing how air moves through its walls and roof."
+    "image_idea": "A tall African termite mound with arrows showing warm air rising and cool air flowing in at the base, placed beside the Eastgate Centre building in Harare with the same arrows showing how air moves through its walls and roof.",
+    "image_caption": "A close-up of the African termite (Macrotermes michaelseni), showcasing its natural adaptations."
   },
   {
     "id": "shark-skin-sharklet-antibacterial",
@@ -314,7 +319,8 @@
         "how": "The dermal denticles of sharks serve two purposes simultaneously — reducing drag and preventing bacteria from anchoring — illustrating how a single evolved structure can confer multiple survival advantages."
       }
     ],
-    "image_idea": "A highly magnified view of shark skin showing the tiny ridged tooth-like scales, placed beside a close-up of the Sharklet pattern — the diamond-shaped ridges that copy those scales."
+    "image_idea": "A highly magnified view of shark skin showing the tiny ridged tooth-like scales, placed beside a close-up of the Sharklet pattern — the diamond-shaped ridges that copy those scales.",
+    "image_caption": "A close-up of the Shortfin mako shark (Isurus oxyrinchus) and related species, showcasing its natural adaptations."
   },
   {
     "id": "namib-beetle-fog-harvesting",
@@ -367,7 +373,8 @@
         "how": "Beetle-inspired fog-harvesting nets are being used to provide clean water in arid regions of Africa and South America without any power source, connecting geographical knowledge of water scarcity to real humanitarian innovation."
       }
     ],
-    "image_idea": "The Namib beetle on a sand dune, back tilted into the fog, with a close-up inset showing water droplets forming on the tiny bumps of its back and running down channels — beside a photograph of a large fog-collecting net strung between poles in a misty mountain landscape."
+    "image_idea": "The Namib beetle on a sand dune, back tilted into the fog, with a close-up inset showing water droplets forming on the tiny bumps of its back and running down channels — beside a photograph of a large fog-collecting net strung between poles in a misty mountain landscape.",
+    "image_caption": "A close-up of the Namib desert beetle (Stenocara gracilipes) and several desert plants, showcasing its natural adaptations."
   },
   {
     "id": "mussel-adhesive-wet-glue",
@@ -419,7 +426,8 @@
         "how": "Mussel-inspired surgical glues that seal wounds in saltwater conditions show pupils a direct line from observing how a common UK shore animal clings to rock, to a medical invention that saves lives."
       }
     ],
-    "image_idea": "A cluster of mussels on a wave-splashed rock, with a close-up of the tough, golden-brown threads anchoring one shell to the stone — beside a diagram showing how the threads grip at the molecular scale."
+    "image_idea": "A cluster of mussels on a wave-splashed rock, with a close-up of the tough, golden-brown threads anchoring one shell to the stone — beside a diagram showing how the threads grip at the molecular scale.",
+    "image_caption": "A close-up of the Common mussel (Mytilus edulis) and related species, showcasing its natural adaptations."
   },
   {
     "id": "mantis-shrimp-impact-composites",
@@ -471,7 +479,8 @@
         "how": "Aerospace engineers have copied the mantis shrimp's layered structure to make lighter, tougher helmets and aircraft panels, showing pupils how a deep understanding of a material's internal arrangement leads to better-designed products."
       }
     ],
-    "image_idea": "A vivid close-up of a peacock mantis shrimp mid-strike, beside a cross-section diagram of its club showing the spiral layers — and next to that, a cross-section of a carbon fibre panel built with the same spiral arrangement."
+    "image_idea": "A vivid close-up of a peacock mantis shrimp mid-strike, beside a cross-section diagram of its club showing the spiral layers — and next to that, a cross-section of a carbon fibre panel built with the same spiral arrangement.",
+    "image_caption": "A close-up of the Peacock mantis shrimp (Odontodactylus scyllarus), showcasing its natural adaptations."
   },
   {
     "id": "owl-wing-silent-turbine-blades",
@@ -524,7 +533,8 @@
         "how": "Quieter turbine blades made possible by copying the barn owl can be sited closer to villages, directly connecting pupils' geographical understanding of energy supply and land use decisions to a nature-inspired design solution."
       }
     ],
-    "image_idea": "A barn owl in low flight over a field, wings fully spread, with a close-up inset of the comb-like serrations on the leading edge of a feather — beside a wind turbine blade showing the same serrated profile along its edge."
+    "image_idea": "A barn owl in low flight over a field, wings fully spread, with a close-up inset of the comb-like serrations on the leading edge of a feather — beside a wind turbine blade showing the same serrated profile along its edge.",
+    "image_caption": "A close-up of the Barn owl (Tyto alba) and related species, showcasing its natural adaptations."
   },
   {
     "id": "velcro-burdock-burr",
@@ -579,7 +589,8 @@
         "how": "The Velcro origin story is an ideal subject for biographical or narrative writing — a short walk in the Alps, a curious observation, ten years of work — giving younger KS2 pupils a real, true story of invention to retell or dramatise."
       }
     ],
-    "image_idea": "A close-up of a burdock burr caught on a woollen jumper, beside a hugely magnified image of a single hook from the burr, beside the surface of Velcro showing the matching hook-and-loop structure — three images, one idea."
+    "image_idea": "A close-up of a burdock burr caught on a woollen jumper, beside a hugely magnified image of a single hook from the burr, beside the surface of Velcro showing the matching hook-and-loop structure — three images, one idea.",
+    "image_caption": "A close-up of the Greater burdock / lesser burdock (Arctium lappa / Arctium minus), showcasing its natural adaptations."
   },
   {
     "id": "boxfish-mercedes-bionic",
@@ -632,7 +643,8 @@
         "how": "A car designed around a fish shape that uses significantly less fuel than conventional designs connects DT thinking to geographical concepts of resource use, transport, and the environmental impact of how things are made."
       }
     ],
-    "image_idea": "A bright yellow boxfish in a coral reef beside the sleek, rounded profile of the Mercedes Bionic concept car — two shapes that look very different yet share the same underlying curves."
+    "image_idea": "A bright yellow boxfish in a coral reef beside the sleek, rounded profile of the Mercedes Bionic concept car — two shapes that look very different yet share the same underlying curves.",
+    "image_caption": "A close-up of the Yellow boxfish (Ostracion cubicus), showcasing its natural adaptations."
   },
   {
     "id": "spider-silk-synthetic-fibres",
@@ -684,7 +696,8 @@
         "how": "Synthetic spider-silk fibres are being used in biodegradable trainers and medical sutures, showing pupils that copying how nature makes materials — rather than just what they look like — can lead to products that are both high-performing and environmentally responsible."
       }
     ],
-    "image_idea": "A garden cross spider in the centre of its dewy orb web on an autumn morning, with a close-up inset of the radial silk thread under magnification — beside a spool of manufactured spider-silk fibre from a fermentation laboratory."
+    "image_idea": "A garden cross spider in the centre of its dewy orb web on an autumn morning, with a close-up inset of the radial silk thread under magnification — beside a spool of manufactured spider-silk fibre from a fermentation laboratory.",
+    "image_caption": "A close-up of the Orb-weaver spiders, principally golden silk orb-weaver (Nephila spp.) and garden cross spider (Araneus diadematus), showcasing its natural adaptations."
   },
   {
     "id": "bee-static-electrostatic-spraying",
@@ -718,7 +731,8 @@
       }
     ],
     "image_idea": "A honeybee covered in golden pollen, hovering just above a purple foxglove flower, the fine hairs on its body visible, with a few grains of pollen lifting up from the flower towards it.",
-    "added_date": "2026-06-01"
+    "added_date": "2026-06-01",
+    "image_caption": "A close-up of the Honeybee (Apis mellifera) and bumblebees (Bombus species), showcasing its natural adaptations."
   },
   {
     "id": "reflex-arc-automatic-safety",
@@ -753,7 +767,8 @@
       }
     ],
     "image_idea": "A child's hand pulling quickly back from the orange flame of a candle, with a few small curved motion lines showing the fast movement. Friendly, simple, not frightening.",
-    "added_date": "2026-06-01"
+    "added_date": "2026-06-01",
+    "image_caption": "A close-up of the Human (Homo sapiens) — and every animal with a backbone, showcasing its natural adaptations."
   },
   {
     "id": "firefly-cold-light-glow-sticks",
@@ -787,7 +802,8 @@
       }
     ],
     "image_idea": "A female glow-worm (Lampyris noctiluca), a small soft-brown beetle-like insect, on a green grass stem, the tip of her tail glowing with a soft green light.",
-    "added_date": "2026-06-01"
+    "added_date": "2026-06-01",
+    "image_caption": "A close-up of the Glow-worm (Lampyris noctiluca) — which is really a beetle, not a worm, showcasing its natural adaptations."
   },
   {
     "id": "electric-eel-battery",
@@ -821,7 +837,8 @@
       }
     ],
     "image_idea": "An electric eel (Electrophorus electricus), a long, dark olive-green eel-shaped fish with a rounded head, swimming gently, with a faint soft glow around its body to suggest electricity.",
-    "added_date": "2026-06-01"
+    "added_date": "2026-06-01",
+    "image_caption": "A close-up of the Electric eel (Electrophorus electricus), showcasing its natural adaptations."
   },
   {
     "id": "glasswing-anti-reflective-glass",
@@ -855,7 +872,8 @@
       }
     ],
     "image_idea": "A glasswing butterfly (Greta oto) resting on a green leaf, its wings clear and see-through like glass, edged with a dark brown border tinged with orange-red.",
-    "added_date": "2026-06-01"
+    "added_date": "2026-06-01",
+    "image_caption": "A close-up of the Glasswing butterfly (Greta oto), showcasing its natural adaptations."
   },
   {
     "id": "bombardier-beetle-spray",
@@ -889,6 +907,7 @@
       }
     ],
     "image_idea": "A bombardier beetle (Brachinus crepitans) standing on a small grey stone, with glossy blue-black wing cases and an orange-red head and legs, a tiny puff of vapour shown coming from its tail end.",
-    "added_date": "2026-06-01"
+    "added_date": "2026-06-01",
+    "image_caption": "A close-up of the Bombardier beetle (Brachinus crepitans), showcasing its natural adaptations."
   }
 ]

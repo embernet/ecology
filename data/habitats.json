@@ -1,0 +1,769 @@
+[
+  {
+    "id": "pond",
+    "title": "Pond",
+    "emoji": "🐸",
+    "category": "UK Local",
+    "description": "A small body of freshwater that provides a home for a huge variety of life.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS1",
+        "year_groups": [
+          "Y2"
+        ],
+        "topic": "Living things and their habitats"
+      }
+    ],
+    "climate": "Temperate, experiencing four distinct seasons. Ponds create their own microclimate (a tiny, specific climate zone) that can freeze in winter and become very warm in summer.",
+    "plants": "Water lilies, duckweed, reeds, and bulrushes which provide oxygen and shelter. They also rely on phytoplankton (microscopic floating plants) to feed tiny creatures.",
+    "fun_facts": [
+      "A single pond can support over 1,000 different species of animals!",
+      "Unlike a fast-moving river, a pond's still water allows delicate insects like pond skaters to literally walk on the water's surface."
+    ],
+    "image_caption": "A Common frog (Rana temporaria) in its natural habitat: Pond.",
+    "animals": [
+      {
+        "name": "Common frog (Rana temporaria)",
+        "how_it_survives": "Frogs lay their jelly-like eggs (spawn) in the still water. The tadpoles grow underwater before developing legs to hop onto land."
+      },
+      {
+        "name": "Great diving beetle",
+        "how_it_survives": "Breathes underwater by trapping a bubble of air under its wing cases."
+      },
+      {
+        "name": "Smooth newt",
+        "how_it_survives": "Can absorb oxygen directly through its moist skin while underwater."
+      }
+    ]
+  },
+  {
+    "id": "woodland",
+    "title": "Woodland",
+    "emoji": "🌳",
+    "category": "UK Local",
+    "description": "An area of land covered with trees, providing a rich and varied environment for wildlife with multiple layers (canopy to floor).",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS1",
+        "year_groups": [
+          "Y2"
+        ],
+        "topic": "Living things and their habitats"
+      }
+    ],
+    "climate": "Temperate with moderate rainfall. The tree canopy provides shade, keeping the forest floor cool, damp, and protected from harsh sun.",
+    "plants": "Oak, ash, and beech trees, alongside bluebells, ferns, and mosses.",
+    "fun_facts": [
+      "Trees in a woodland communicate and share nutrients through a vast underground fungal network known as the 'Wood Wide Web'.",
+      "Woodlands change completely depending on the season: in spring they are bursting with wildflowers, but in winter they look entirely asleep as deciduous trees drop their leaves."
+    ],
+    "image_caption": "A Woodpecker in its natural habitat: Woodland.",
+    "animals": [
+      {
+        "name": "Woodpecker",
+        "how_it_survives": "Uses its long, sticky tongue to pull insects out of holes it drills in tree bark. Nests safely high up in tree trunks."
+      },
+      {
+        "name": "Eurasian badger",
+        "how_it_survives": "Digs complex underground tunnel systems called setts to stay safe and warm."
+      },
+      {
+        "name": "Tawny owl",
+        "how_it_survives": "Has specialized feathers with soft edges for completely silent flight to catch prey in the dark."
+      }
+    ]
+  },
+  {
+    "id": "hedgerow",
+    "title": "Hedgerow",
+    "emoji": "🌿",
+    "category": "UK Local",
+    "description": "A line of bushes and trees that acts as a boundary for a field, creating a safe wildlife corridor.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS1",
+        "year_groups": [
+          "Y2"
+        ],
+        "topic": "Living things and their habitats"
+      }
+    ],
+    "climate": "Temperate. Hedgerows create microclimates (small pockets of unique weather), acting as windbreaks and retaining moisture in the soil.",
+    "plants": "Hawthorn, blackthorn, brambles, and wild roses.",
+    "fun_facts": [
+      "Hedgerows in the UK are often hundreds of years old and act as vital 'highways' for wildlife to travel safely between habitats.",
+      "A single thick hedgerow can be home to nesting birds, hibernating hedgehogs, and thousands of insects all at the same time."
+    ],
+    "image_caption": "A Hazel dormouse (Muscardinus avellanarius) in its natural habitat: Hedgerow.",
+    "animals": [
+      {
+        "name": "Hazel dormouse (Muscardinus avellanarius)",
+        "how_it_survives": "Uses the continuous line of branches to travel safely above ground, finding berries and nuts without being seen by predators."
+      },
+      {
+        "name": "European hedgehog",
+        "how_it_survives": "Rolls into a tight ball of sharp spines to protect itself from predators."
+      },
+      {
+        "name": "Yellowhammer",
+        "how_it_survives": "Builds well-hidden cup nests deep within the thorny brambles to keep its chicks safe."
+      }
+    ]
+  },
+  {
+    "id": "dead-log",
+    "title": "Dead Log",
+    "emoji": "🪵",
+    "category": "Micro-habitat",
+    "description": "A fallen tree trunk or branch that is slowly rotting away on the woodland floor.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS1",
+        "year_groups": [
+          "Y2"
+        ],
+        "topic": "Living things and their habitats"
+      }
+    ],
+    "climate": "Damp and shaded microclimate (a tiny localized climate), insulated from extreme temperature changes.",
+    "plants": "Fungi, lichens, and mosses that thrive on decaying wood.",
+    "fun_facts": [
+      "A dead log is teeming with more life than a living tree, hosting thousands of detritivores (creatures that eat dead matter) that recycle nutrients back into the soil.",
+      "Woodlice and millipedes love the dark, damp conditions under the bark, where they are protected from birds and the drying sun."
+    ],
+    "image_caption": "A Stag beetle (Lucanus cervus) in its natural habitat: Dead Log.",
+    "animals": [
+      {
+        "name": "Stag beetle (Lucanus cervus)",
+        "how_it_survives": "The larvae spend several years living inside the dead wood, eating the rotting timber until they are ready to emerge as adult beetles."
+      },
+      {
+        "name": "Woodlouse",
+        "how_it_survives": "Has a tough segmented exoskeleton and thrives in the damp, dark microclimate of rotting wood."
+      },
+      {
+        "name": "Centipede",
+        "how_it_survives": "A fast predator that hunts smaller insects and grubs hiding in the crevices of the dead log."
+      }
+    ]
+  },
+  {
+    "id": "oak-tree",
+    "title": "Oak Tree",
+    "emoji": "🍂",
+    "category": "Micro-habitat",
+    "description": "A single large tree that acts as a massive high-rise home for over 500 different species.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS1",
+        "year_groups": [
+          "Y2"
+        ],
+        "topic": "Living things and their habitats"
+      }
+    ],
+    "climate": "Temperate. The tree itself creates various microclimates (tiny climate zones) from its sunny, breezy canopy down to its shaded, damp roots.",
+    "plants": "The oak tree itself, plus epiphytes (plants that grow on other plants) like moss and lichens growing on its bark.",
+    "fun_facts": [
+      "A mature oak tree can support over 280 species of insects, making it a crucial hub of biodiversity.",
+      "Squirrels and jays bury acorns from oak trees to eat later, but they often forget them, which is exactly how new oak forests are planted!"
+    ],
+    "image_caption": "A Purple hairstreak butterfly (Favonius quercus) in its natural habitat: Oak Tree.",
+    "animals": [
+      {
+        "name": "Purple hairstreak butterfly (Favonius quercus)",
+        "how_it_survives": "Spends almost its entire life high in the oak canopy. The caterpillars feed exclusively on oak leaves."
+      },
+      {
+        "name": "Eurasian jay",
+        "how_it_survives": "Caches (buries) thousands of acorns in the ground for winter food, helping plant new oak trees."
+      },
+      {
+        "name": "Gall wasp",
+        "how_it_survives": "Lays eggs in oak leaves, causing the tree to grow protective round 'galls' that shelter the growing larvae."
+      }
+    ]
+  },
+  {
+    "id": "arctic-sea-ice",
+    "title": "Arctic Sea Ice",
+    "emoji": "🧊",
+    "category": "Arctic",
+    "description": "The frozen surface of the Arctic Ocean, which expands in winter and shrinks in summer.",
+    "curriculum_links": [
+      {
+        "subject": "Geography",
+        "key_stage": "KS1",
+        "year_groups": [
+          "Y1",
+          "Y2"
+        ],
+        "topic": "Hot and cold areas of the world"
+      }
+    ],
+    "climate": "Extreme polar climate, with temperatures dropping well below -30°C in winter and experiencing months of total darkness.",
+    "plants": "Ice algae that grow on the underside of the sea ice, forming the base of the food web.",
+    "fun_facts": [
+      "Arctic sea ice shrinks in the summer and expands in the winter, acting like a giant, pulsing white mirror that reflects sunlight and cools the Earth.",
+      "Unlike a penguin (which lives in the Antarctic), a polar bear's fur is actually hollow and transparent—it only looks white because it reflects the snow!"
+    ],
+    "image_caption": "A Polar Bear (Ursus maritimus) in its natural habitat: Arctic Sea Ice.",
+    "animals": [
+      {
+        "name": "Polar Bear (Ursus maritimus)",
+        "how_it_survives": "Uses the vast ice floes as a platform to hunt seals when they surface to breathe. Thick blubber and hollow hair keep it warm."
+      },
+      {
+        "name": "Ringed seal",
+        "how_it_survives": "Uses strong claws to scratch and keep breathing holes open in the thick ice all winter."
+      },
+      {
+        "name": "Arctic fox",
+        "how_it_survives": "Often follows polar bears out onto the sea ice to scavenge leftover food during the harsh winter."
+      }
+    ]
+  },
+  {
+    "id": "arctic-tundra",
+    "title": "Arctic Tundra",
+    "emoji": "❄️",
+    "category": "Arctic",
+    "description": "A vast, flat, treeless region where the subsoil is permanently frozen (permafrost).",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y4",
+          "Y6"
+        ],
+        "topic": "Living things and their habitats"
+      }
+    ],
+    "climate": "Extremely cold, dry, and windy. It features a layer of permanently frozen soil called permafrost (ground that never thaws).",
+    "plants": "Dwarf shrubs, sedges, grasses, mosses, and lichens. Trees cannot grow here because the permafrost prevents deep roots.",
+    "fun_facts": [
+      "During the short Arctic summer, the tundra bursts into life with millions of migratory birds and blooming wildflowers.",
+      "Compared to an urban red fox in England, the Arctic Fox has much shorter ears and a rounder body to prevent heat from escaping into the freezing air."
+    ],
+    "image_caption": "A Arctic Fox (Vulpes lagopus) in its natural habitat: Arctic Tundra.",
+    "animals": [
+      {
+        "name": "Arctic Fox (Vulpes lagopus)",
+        "how_it_survives": "Changes its coat colour from brown in summer to thick white in winter for camouflage. Has a compact body to retain heat."
+      },
+      {
+        "name": "Reindeer (Caribou)",
+        "how_it_survives": "Has wide, scoop-like hooves to walk easily on snow and dig down to eat buried lichen."
+      },
+      {
+        "name": "Snowy owl",
+        "how_it_survives": "Its thick white feathers provide perfect camouflage against the snow and keep it warm in freezing winds."
+      }
+    ]
+  },
+  {
+    "id": "subnivian-snow-caves",
+    "title": "Subnivian Snow Caves",
+    "emoji": "🏔️",
+    "category": "Arctic",
+    "description": "Small, hidden caves carved out within deep snow drifts resting on top of the sea ice.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y6"
+        ],
+        "topic": "Evolution and inheritance"
+      }
+    ],
+    "climate": "Insulated microclimate (a small, unique climate zone). While the air outside may be -40°C, inside the snow cave it stays close to 0°C.",
+    "plants": "None inside the cave, but the surrounding ecosystem relies on phytoplankton (tiny aquatic plants) beneath the ice.",
+    "fun_facts": [
+      "Ringed seals carve out these caves using the sharp claws on their front flippers, keeping their pups hidden from polar bears.",
+      "Snow is actually an excellent blanket. Because it traps lots of air, it stops the freezing winter wind from reaching the animals huddled inside."
+    ],
+    "image_caption": "A Ringed Seal (Pusa hispida) in its natural habitat: Subnivian Snow Caves.",
+    "animals": [
+      {
+        "name": "Ringed Seal (Pusa hispida)",
+        "how_it_survives": "Uses strong claws on its front flippers to hollow out a den (lair) inside the snowdrift to safely hide its pup from polar bears."
+      },
+      {
+        "name": "Stoat (Ermine)",
+        "how_it_survives": "Changes its brown summer coat to pure white in winter for camouflage while hunting in the snow."
+      },
+      {
+        "name": "Snow vole",
+        "how_it_survives": "Builds extensive tunnel networks under the snowpack to find roots and stay hidden from owls."
+      }
+    ]
+  },
+  {
+    "id": "arctic-ocean",
+    "title": "Arctic Ocean Pack Ice",
+    "emoji": "🌊",
+    "category": "Arctic",
+    "description": "The freezing, ice-choked waters beneath the surface of the Arctic.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y4"
+        ],
+        "topic": "Living things and their habitats"
+      }
+    ],
+    "climate": "Frigid waters that are often covered by sea ice. Water temperatures hover around -1.8°C (the freezing point of saltwater).",
+    "plants": "Phytoplankton (microscopic floating plants) and kelp forests in shallower, ice-free zones.",
+    "fun_facts": [
+      "The Arctic Ocean is the smallest and shallowest of the world's oceans, but it holds a massive amount of the world's fresh water in the form of ice.",
+      "The narwhal's famous 'tusk' is actually a giant, spiraled tooth that has millions of nerve endings to help it sense the ocean water."
+    ],
+    "image_caption": "A Narwhal (Monodon monoceros) in its natural habitat: Arctic Ocean Pack Ice.",
+    "animals": [
+      {
+        "name": "Narwhal (Monodon monoceros)",
+        "how_it_survives": "Has no dorsal fin on its back, allowing it to swim smoothly just below the thick ice without getting stuck."
+      },
+      {
+        "name": "Narwhal",
+        "how_it_survives": "Uses its long tusk as a highly sensitive sensory organ to navigate and find food in freezing, dark waters."
+      },
+      {
+        "name": "Beluga whale",
+        "how_it_survives": "Lacks a dorsal fin on its back, allowing it to swim smoothly right up against the underside of the ice sheets."
+      }
+    ]
+  },
+  {
+    "id": "arctic-mounds",
+    "title": "Open Tundra Mounds",
+    "emoji": "🦉",
+    "category": "Arctic",
+    "description": "Slightly raised bumps on the flat tundra that get blown clear of snow by the harsh winds.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y6"
+        ],
+        "topic": "Evolution and inheritance"
+      }
+    ],
+    "climate": "Harsh, windswept, and exposed to extreme cold.",
+    "plants": "Hardy lichens, mosses, and low-lying arctic willow.",
+    "fun_facts": [
+      "These raised mounds offer a strategic vantage point for predators like the snowy owl to spot prey miles away across the flat tundra.",
+      "Because there are no tall trees in the Arctic, a mound just a few feet high is the equivalent of a skyscraper for an owl looking for its dinner."
+    ],
+    "image_caption": "A Snowy Owl (Bubo scandiacus) in its natural habitat: Open Tundra Mounds.",
+    "animals": [
+      {
+        "name": "Snowy Owl (Bubo scandiacus)",
+        "how_it_survives": "Nests on the bare ground of these raised mounds, giving it a clear 360-degree view to spot predators and hunt lemmings."
+      },
+      {
+        "name": "Arctic hare",
+        "how_it_survives": "Has heavily padded, large hind legs for running fast over snow to escape predators without sinking."
+      },
+      {
+        "name": "Ptarmigan",
+        "how_it_survives": "A hardy bird with heavily feathered feet that act exactly like snowshoes in deep winter snow."
+      }
+    ]
+  },
+  {
+    "id": "sandy-desert",
+    "title": "Sandy Desert",
+    "emoji": "🏜️",
+    "category": "Desert",
+    "description": "A hot, dry environment covered in shifting sand dunes with very little water.",
+    "curriculum_links": [
+      {
+        "subject": "Geography",
+        "key_stage": "KS1",
+        "year_groups": [
+          "Y1",
+          "Y2"
+        ],
+        "topic": "Hot and cold areas of the world"
+      }
+    ],
+    "climate": "Hyper-arid (extremely dry) with extreme temperature fluctuations. Scorching hot during the day and freezing cold at night.",
+    "plants": "Sparse, drought-resistant shrubs and grasses with deep taproots.",
+    "fun_facts": [
+      "The sand in these deserts can heat up to over 70°C (158°F) during the day, forcing animals to adapt unique ways to avoid burning their feet.",
+      "The Fennec Fox uses its giant ears not just for hearing insects underground, but like giant radiators to release body heat into the air."
+    ],
+    "image_caption": "A Fennec Fox (Vulpes zerda) in its natural habitat: Sandy Desert.",
+    "animals": [
+      {
+        "name": "Fennec Fox (Vulpes zerda)",
+        "how_it_survives": "Has enormous ears that act like radiators to let body heat escape, and fur on the bottom of its paws to protect them from scorching sand."
+      },
+      {
+        "name": "Fennec fox",
+        "how_it_survives": "Has huge ears that act like radiators to release body heat, and help it listen for prey moving underground."
+      },
+      {
+        "name": "Sandfish skink",
+        "how_it_survives": "A smooth lizard that can literally 'swim' through loose sand to escape the hot sun and hide."
+      }
+    ]
+  },
+  {
+    "id": "desert-dunes",
+    "title": "Deep Desert Dunes",
+    "emoji": "🐪",
+    "category": "Desert",
+    "description": "Vast oceans of sand where food and water might be days of travel apart.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y6"
+        ],
+        "topic": "Evolution and inheritance"
+      }
+    ],
+    "climate": "Extremely hot and dry, characterized by shifting sands driven by powerful winds.",
+    "plants": "Almost non-existent on the dunes themselves due to the constantly shifting sand.",
+    "fun_facts": [
+      "Some massive sand dunes can 'sing' or 'boom' as sand avalanches down their steep faces, creating a low, rumbling sound.",
+      "A camel can drink up to 40 gallons of water in one go, and its hump is full of fat, giving it energy for weeks when there is no food."
+    ],
+    "image_caption": "A Dromedary Camel (Camelus dromedarius) in its natural habitat: Deep Desert Dunes.",
+    "animals": [
+      {
+        "name": "Dromedary Camel (Camelus dromedarius)",
+        "how_it_survives": "Stores fat (not water) in its hump to survive long journeys. Has long eyelashes and closing nostrils to keep out blowing sand."
+      },
+      {
+        "name": "Namib Desert beetle",
+        "how_it_survives": "Stands on its head to collect morning fog on its bumpy back, which drips down to its mouth as drinking water."
+      },
+      {
+        "name": "Arabian oryx",
+        "how_it_survives": "Has a bright white coat to reflect the intense sun and wide hooves for walking on soft sand dunes."
+      }
+    ]
+  },
+  {
+    "id": "desert-scrub",
+    "title": "Australian Desert Scrub",
+    "emoji": "🦎",
+    "category": "Desert",
+    "description": "Dry, hot outback terrain with sparse, tough vegetation and red sandy soil.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y4"
+        ],
+        "topic": "Living things and their habitats"
+      }
+    ],
+    "climate": "Arid and hot, but with slightly more moisture than deep sand deserts, allowing for some vegetation.",
+    "plants": "Spinifex grass, mulga trees, and saltbush.",
+    "fun_facts": [
+      "Many plants in the desert scrub have silvery or pale leaves to reflect the intense sunlight and reduce water loss.",
+      "The Thorny Devil looks terrifying, but those spikes are actually used to channel tiny drops of morning dew straight into its mouth!"
+    ],
+    "image_caption": "A Thorny Devil (Moloch horridus) in its natural habitat: Australian Desert Scrub.",
+    "animals": [
+      {
+        "name": "Thorny Devil (Moloch horridus)",
+        "how_it_survives": "Covered in spikes that collect tiny drops of morning dew. The water then travels through microscopic grooves straight to its mouth."
+      },
+      {
+        "name": "Kangaroo rat",
+        "how_it_survives": "Never needs to drink liquid water; it gets all the moisture it needs to survive from dry seeds."
+      },
+      {
+        "name": "Roadrunner",
+        "how_it_survives": "A fast-running bird that is quick enough to hunt and eat venomous snakes and scorpions in the scrubland."
+      }
+    ]
+  },
+  {
+    "id": "sidewinder-sands",
+    "title": "Hot Desert Sands",
+    "emoji": "🐍",
+    "category": "Desert",
+    "description": "Loose sand that gets dangerously hot during the daytime.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y6"
+        ],
+        "topic": "Evolution and inheritance"
+      }
+    ],
+    "climate": "Hot desert climate with loose, wind-blown sand that makes movement difficult.",
+    "plants": "Creosote bush and brittlebush scattered sparsely.",
+    "fun_facts": [
+      "The unique 'sidewinding' motion of some desert snakes keeps only two points of their body touching the hot sand at any time, preventing burns.",
+      "Sidewinders can bury themselves in the sand with just their eyes poking out, perfectly camouflaged to ambush lizards."
+    ],
+    "image_caption": "A Sidewinder Rattlesnake (Crotalus cerastes) in its natural habitat: Hot Desert Sands.",
+    "animals": [
+      {
+        "name": "Sidewinder Rattlesnake (Crotalus cerastes)",
+        "how_it_survives": "Moves in a unique sideways motion (J-shape) so only two small points of its body touch the burning sand at any one time."
+      },
+      {
+        "name": "Fringe-toed lizard",
+        "how_it_survives": "Has scale 'fringes' on its toes that let it run quickly across loose, scorching sand without sinking in."
+      },
+      {
+        "name": "Antlion",
+        "how_it_survives": "Digs clever pitfall traps in the loose sand to catch unwary insects that slip down the sides."
+      }
+    ]
+  },
+  {
+    "id": "mojave-burrows",
+    "title": "Desert Burrows",
+    "emoji": "🐢",
+    "category": "Desert",
+    "description": "Deep underground tunnels dug into the desert soil where temperatures are cooler.",
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y4"
+        ],
+        "topic": "Living things and their habitats"
+      }
+    ],
+    "climate": "A microclimate that provides refuge from the extreme desert surface. It stays relatively cool during summer days and warm during winter nights.",
+    "plants": "Joshua trees, cacti, and desert wildflowers above ground.",
+    "fun_facts": [
+      "A single desert tortoise burrow can be shared by up to 25 other species, including owls, snakes, and lizards, acting as a vital desert oasis (commensalism).",
+      "Desert tortoises can feel when it's going to rain and will dig small catch-basins outside their burrows to collect drinking water."
+    ],
+    "image_caption": "A Desert Tortoise (Gopherus agassizii) in its natural habitat: Desert Burrows.",
+    "animals": [
+      {
+        "name": "Desert Tortoise (Gopherus agassizii)",
+        "how_it_survives": "Spends up to 95% of its life underground to escape extreme heat. Can store a large amount of water in its bladder for months."
+      },
+      {
+        "name": "Gila monster",
+        "how_it_survives": "Spends over 90% of its life hidden in cool underground burrows to escape the extreme desert heat."
+      },
+      {
+        "name": "Desert tarantula",
+        "how_it_survives": "Lines its deep burrow with silk to keep the walls stable and maintain a cool, humid microclimate."
+      }
+    ]
+  },
+  {
+    "id": "rainforest-canopy",
+    "title": "Rainforest Canopy",
+    "emoji": "🌴",
+    "category": "Tropical",
+    "description": "The dense, leafy roof of a tropical rainforest, towering up to 30 metres above the ground. It is bathed in sunlight and heavy rain.",
+    "climate": "Hot, very humid, and wet all year round. The canopy gets the most sunlight and the heaviest rainfall of the entire forest.",
+    "plants": "Towering trees with wide, umbrella-like branches, heavily draped in lianas (vines) and epiphytes (plants growing on branches) like orchids and bromeliads.",
+    "fun_facts": [
+      "The rainforest canopy is so crowded with life that over 50% of all plant and animal species on Earth live in this one layer!",
+      "Sloths are so adapted to hanging upside down in the canopy that their organs are attached to their rib cage so they don't crush their lungs."
+    ],
+    "curriculum_links": [
+      {
+        "subject": "Geography",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y3",
+          "Y4"
+        ],
+        "topic": "Climate zones and biomes"
+      }
+    ],
+    "image_caption": "A Three-toed Sloth (Bradypus) in its natural habitat: Rainforest Canopy.",
+    "animals": [
+      {
+        "name": "Three-toed Sloth (Bradypus)",
+        "how_it_survives": "Moves incredibly slowly to avoid being seen by eagles. Its fur even grows green algae, providing perfect camouflage among the leaves."
+      },
+      {
+        "name": "Scarlet macaw",
+        "how_it_survives": "Uses its incredibly powerful, curved beak to crack open hard rainforest nuts and seeds that other animals can't eat."
+      },
+      {
+        "name": "Spider monkey",
+        "how_it_survives": "Has a prehensile (gripping) tail that acts like a fifth hand for swinging safely through the high branches."
+      }
+    ]
+  },
+  {
+    "id": "coral-reef",
+    "title": "Tropical Coral Reef",
+    "emoji": "🪸",
+    "category": "Ocean",
+    "description": "Vibrant, bustling underwater cities made entirely of limestone skeletons secreted by tiny coral polyps over thousands of years.",
+    "climate": "Warm, shallow, clear, and sunlit waters, usually between 20°C and 28°C.",
+    "plants": "Zooxanthellae (microscopic algae living inside the corals) and seaweeds.",
+    "fun_facts": [
+      "Coral reefs cover less than 1% of the ocean floor, but they are home to 25% of all marine species!",
+      "Because corals need sunlight for their algae to make food, you will only ever find coral reefs in shallow, clear water."
+    ],
+    "curriculum_links": [
+      {
+        "subject": "Science",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y4"
+        ],
+        "topic": "Living things and their habitats"
+      }
+    ],
+    "image_caption": "A Clownfish (Amphiprioninae) in its natural habitat: Tropical Coral Reef.",
+    "animals": [
+      {
+        "name": "Clownfish (Amphiprioninae)",
+        "how_it_survives": "Develops a thick layer of mucus on its skin to protect it from the stinging tentacles of the sea anemone, giving it a safe, hidden home (commensalism)."
+      },
+      {
+        "name": "Parrotfish",
+        "how_it_survives": "Uses its beak-like teeth to scrape algae off coral. It digests the algae and poops out the coral as fine white sand!"
+      },
+      {
+        "name": "Moray eel",
+        "how_it_survives": "Hides its long body inside narrow coral crevices, waiting to ambush passing prey with its sharp teeth."
+      }
+    ]
+  },
+  {
+    "id": "deep-sea-trench",
+    "title": "Deep Sea Abyssal Zone",
+    "emoji": "🦑",
+    "category": "Ocean",
+    "description": "The pitch-black, freezing depths of the ocean floor, miles below the surface where the pressure is intense enough to crush a submarine.",
+    "climate": "Pitch black, freezing cold (around 2°C), and under immense, crushing water pressure.",
+    "plants": "No plants can grow here because there is absolutely zero sunlight for photosynthesis. Everything relies on 'marine snow' (dead things falling from above).",
+    "fun_facts": [
+      "The pressure at the bottom of the Mariana Trench is over 1,000 times the normal atmospheric pressure at sea level.",
+      "Because food is so incredibly rare in the deep sea, the anglerfish has an expandable stomach to swallow prey twice its own size!"
+    ],
+    "curriculum_links": [
+      {
+        "subject": "Geography",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y5",
+          "Y6"
+        ],
+        "topic": "The Five Oceans"
+      }
+    ],
+    "image_caption": "A Anglerfish (Lophiiformes) in its natural habitat: Deep Sea Abyssal Zone.",
+    "animals": [
+      {
+        "name": "Anglerfish (Lophiiformes)",
+        "how_it_survives": "Uses a glowing lure on its head (created by bioluminescent bacteria) to attract curious prey straight into its massive, sharp-toothed mouth in the dark."
+      },
+      {
+        "name": "Giant isopod",
+        "how_it_survives": "A deep-sea scavenger with a rigid, tough exoskeleton to survive the immense crushing pressure of the abyss."
+      },
+      {
+        "name": "Vampire squid",
+        "how_it_survives": "Can turn itself inside out to display frightening spines and release glowing mucus to confuse predators in the dark."
+      }
+    ]
+  },
+  {
+    "id": "african-savanna",
+    "title": "African Savanna",
+    "emoji": "🦓",
+    "category": "Grassland",
+    "description": "Vast, sweeping plains of tall grasses dotted with isolated trees and shrubs, experiencing dramatic wet and dry seasons.",
+    "climate": "Warm year-round, with a long, brutal dry season where waterholes dry up, followed by a short, intense rainy season.",
+    "plants": "Tough grasses (like Rhodes grass) and drought-resistant trees like the Baobab and Acacia.",
+    "fun_facts": [
+      "Savannas are shaped by giant herbivores! Elephants constantly knock down trees, which stops the savanna from turning into a dense forest.",
+      "During the dry season, millions of wildebeest, zebras, and gazelles travel hundreds of miles together in the 'Great Migration' just to find fresh grass."
+    ],
+    "curriculum_links": [
+      {
+        "subject": "Geography",
+        "key_stage": "KS1",
+        "year_groups": [
+          "Y1",
+          "Y2"
+        ],
+        "topic": "Hot and cold areas of the world"
+      }
+    ],
+    "image_caption": "A Cheetah (Acinonyx jubatus) in its natural habitat: African Savanna.",
+    "animals": [
+      {
+        "name": "Cheetah (Acinonyx jubatus)",
+        "how_it_survives": "Evolved a flexible spine and non-retractable claws (like football boots) for immense grip, making it the fastest land animal to sprint across the open plains."
+      },
+      {
+        "name": "Giraffe",
+        "how_it_survives": "Has a uniquely long neck to reach nutritious leaves on tall acacia trees that grazing animals below cannot reach."
+      },
+      {
+        "name": "African elephant",
+        "how_it_survives": "Flaps its giant ears to cool its blood, and uses its trunk to dig for water during the dry season."
+      }
+    ]
+  },
+  {
+    "id": "alpine-peaks",
+    "title": "High Alpine Peaks",
+    "emoji": "🏔️",
+    "category": "Mountain",
+    "description": "The rugged, rocky, and steep slopes of mountains above the 'tree line', where the air is thin and the weather is unpredictable.",
+    "climate": "Very cold and windy with thin air (less oxygen). It gets much colder the higher up the mountain you climb.",
+    "plants": "Alpine cushion plants, mosses, and tough grasses that grow low to the ground to avoid the fierce winds. No trees can survive up here.",
+    "fun_facts": [
+      "The paws of a snow leopard are extremely wide and act like natural snowshoes, stopping them from sinking into deep drifts.",
+      "Unlike most big cats, snow leopards cannot roar. Instead, they make a non-aggressive puffing sound called a 'chuff'."
+    ],
+    "curriculum_links": [
+      {
+        "subject": "Geography",
+        "key_stage": "KS2",
+        "year_groups": [
+          "Y3",
+          "Y4"
+        ],
+        "topic": "Mountains and Volcanoes"
+      }
+    ],
+    "image_caption": "A Snow Leopard (Panthera uncia) in its natural habitat: High Alpine Peaks.",
+    "animals": [
+      {
+        "name": "Snow Leopard (Panthera uncia)",
+        "how_it_survives": "Has a giant, thick tail nearly a metre long, which it wraps around its face like a scarf to stay warm while sleeping on freezing rocky ledges."
+      },
+      {
+        "name": "Alpine ibex",
+        "how_it_survives": "Has specialized cloven hooves with soft, rubbery pads that grip sheer, nearly vertical rock faces."
+      },
+      {
+        "name": "Himalayan monal",
+        "how_it_survives": "A hardy bird that uses its strong curved beak to dig through mountain snow to find buried roots and seeds."
+      }
+    ]
+  }
+]

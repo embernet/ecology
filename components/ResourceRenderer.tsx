@@ -140,7 +140,47 @@ export function ResourceRenderer({ item }: ResourceRendererProps) {
         </div>
       );
 
+
+    case 'Habitat':
+      return (
+        <div className="my-6 rounded-xl overflow-hidden shadow-lg border border-teal-100 bg-white">
+          <div className="bg-gradient-to-r from-teal-50 to-emerald-50 p-6 flex items-start gap-4 border-b border-teal-100">
+            {data.emoji && (
+              <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center text-4xl bg-white rounded-full shadow-sm border border-teal-100">
+                {data.emoji}
+              </div>
+            )}
+            <div className="flex-grow">
+              <h3 className="text-2xl font-bold text-teal-900 m-0">{item.title}</h3>
+              {data.description && (
+                <p className="mt-2 text-teal-800 text-lg leading-relaxed">
+                  {data.description}
+                </p>
+              )}
+            </div>
+          </div>
+          {data.childrenHtml && (
+            <div
+              className="p-6 prose prose-teal max-w-none print-habitat-content"
+              dangerouslySetInnerHTML={{ __html: data.childrenHtml }}
+            />
+          )}
+          {sourceTag}
+        </div>
+      );
+
     default:
-      return null;
+      return (
+        <div className="my-6 p-6 bg-white border border-slate-200 rounded-xl shadow-sm">
+          <h3 className="text-xl font-bold text-slate-800 m-0 mb-3">{item.title}</h3>
+          {data.childrenHtml && (
+            <div
+              className="prose prose-slate max-w-none"
+              dangerouslySetInnerHTML={{ __html: data.childrenHtml }}
+            />
+          )}
+          {sourceTag}
+        </div>
+      );
   }
 }

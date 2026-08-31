@@ -20,6 +20,7 @@
 import { navigation, isSection, type NavSection } from '@/lib/navigation';
 import { BIOMIMICRY, type CurriculumLink } from '@/lib/biomimicry';
 import { CONVERSATIONS } from '@/lib/but-why';
+import { HABITATS } from '@/lib/habitats';
 import { getPostBySlug } from '@/lib/content';
 
 function norm(s: string): string {
@@ -140,6 +141,7 @@ export function targetsForBiomimicryLink(link: CurriculumLink): ResolvedTarget[]
 export interface RelatedExplorations {
   biomimicry: { id: string; title: string; emoji: string }[];
   butWhy: { id: string; title: string }[];
+  habitats: { id: string; title: string; emoji: string }[];
 }
 
 /**
@@ -164,5 +166,11 @@ export function relatedForPage(slug: string): RelatedExplorations {
     ),
   ).map((c) => ({ id: c.id, title: c.title }));
 
-  return { biomimicry, butWhy };
+  const habitats = HABITATS.filter((h) =>
+    h.curriculum_links.some((l) =>
+      resolvePageSlugs(l.subject, l.key_stage, l.year_groups, l.topic).includes(slug),
+    ),
+  ).map((h) => ({ id: h.id, title: h.title, emoji: h.emoji }));
+
+  return { biomimicry, butWhy, habitats };
 }

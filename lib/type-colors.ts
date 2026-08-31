@@ -98,6 +98,17 @@ export const typeColorConfig: Record<string, {
     badgeBorder: 'border-lime-300/50',
     badgeText: 'text-lime-800',
   },
+
+  Habitat: {
+    barBg: 'bg-amber-100',
+    barBorder: 'border-amber-200',
+    barText: 'text-amber-900',
+    lozengeActive: 'bg-amber-500 border-amber-500 text-white shadow-sm',
+    lozengeInactive: 'bg-amber-50 border-amber-200 text-amber-700 hover:bg-amber-100',
+    badgeBg: 'bg-amber-200/50',
+    badgeBorder: 'border-amber-300/50',
+    badgeText: 'text-amber-800',
+  },
   ButWhy: {
     barBg: 'bg-rose-100',
     barBorder: 'border-rose-200',

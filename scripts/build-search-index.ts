@@ -326,6 +326,31 @@ function buildIndex() {
     });
   }
 
+  
+  // Habitats entries
+  const habitats = JSON.parse(
+    readFileSync(join(__dirname, '..', 'data', 'habitats.json'), 'utf8'),
+  );
+  for (const h of habitats) {
+    const links = h.curriculum_links ?? [];
+    const topics = links.map((l: { topic: string }) => l.topic);
+    const bodyParts = [
+      h.category,
+      h.description,
+      ...(h.animals?.map((a: any) => `${a.name} ${a.how_it_survives}`) || []),
+      ...topics,
+    ].filter(Boolean);
+
+    entries.push({
+      type: 'habitat',
+      id: h.id,
+      title: h.title,
+      category: h.category,
+      preview: (h.description ?? '').slice(0, 200),
+      body: bodyParts.join(' '),
+    });
+  }
+
   writeFileSync(OUTPUT_FILE, JSON.stringify(entries));
   console.log(`Search index: ${entries.length} entries → ${OUTPUT_FILE}`);
 }

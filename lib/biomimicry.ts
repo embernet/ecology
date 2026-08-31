@@ -48,6 +48,7 @@ export interface BiomimicryEntry {
   emoji: string;
   /** Common + Latin name, e.g. "Common kingfisher (Alcedo atthis)" */
   creature: string;
+  image_caption?: string;
   /** Whether the human invention was copied from nature or arrived in parallel. */
   provenance?: Provenance;
   where_you_might_see_it: string;

@@ -1,11 +1,6 @@
-export type ResourceType =
-  | 'NatureExample'
-  | 'Activity'
-  | 'Reflection'
-  | 'Requirement'
-  | 'Note'
-  | 'Guidance'
-  | 'Handout';
+import { typeColorConfig } from './type-colors';
+
+export type ResourceType = keyof typeof typeColorConfig;
 
 export interface WikiImageData {
   filename: string;

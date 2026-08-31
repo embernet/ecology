@@ -8,8 +8,8 @@ import type { RelatedExplorations as Related } from '@/lib/curriculum-links';
  * sync with the forward links on the detail pages from a single source of truth.
  */
 export function RelatedExplorations({ related }: { related: Related }) {
-  const { biomimicry, butWhy } = related;
-  if (biomimicry.length === 0 && butWhy.length === 0) return null;
+  const { biomimicry, butWhy, habitats } = related;
+  if (biomimicry.length === 0 && butWhy.length === 0 && (!habitats || habitats.length === 0)) return null;
 
   return (
     <aside className="not-prose mt-12 rounded-2xl border border-slate-200 bg-slate-50 p-6">
@@ -18,7 +18,7 @@ export function RelatedExplorations({ related }: { related: Related }) {
         Examples and conversations from around the site that connect to this topic.
       </p>
 
-      <div className="grid gap-6 sm:grid-cols-2">
+      <div className="grid gap-6 sm:grid-cols-3">
         {biomimicry.length > 0 && (
           <div>
             <h3 className="mb-2 text-xs font-bold uppercase tracking-widest text-lime-800">
@@ -61,6 +61,31 @@ export function RelatedExplorations({ related }: { related: Related }) {
                     </span>
                     <span className="font-medium underline decoration-rose-300 underline-offset-2 group-hover:decoration-rose-500">
                       {c.title}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        )}
+      
+        {habitats && habitats.length > 0 && (
+          <div>
+            <h3 className="mb-2 text-xs font-bold uppercase tracking-widest text-amber-800">
+              Where they live — Habitats
+            </h3>
+            <ul className="space-y-1.5">
+              {habitats.map((h) => (
+                <li key={h.id}>
+                  <Link
+                    href={`/habitats/${h.id}`}
+                    className="group flex items-start gap-2 text-slate-700 hover:text-amber-800"
+                  >
+                    <span aria-hidden="true" className="mt-0.5">
+                      {h.emoji}
+                    </span>
+                    <span className="font-medium underline decoration-amber-300 underline-offset-2 group-hover:decoration-amber-500">
+                      {h.title}
                     </span>
                   </Link>
                 </li>
