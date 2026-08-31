@@ -1,5 +1,5 @@
 ---
-title: "Teaching Resources"
+title: "Guides & Links"
 slug: "teaching-resources"
 ---
 

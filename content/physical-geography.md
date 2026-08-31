@@ -13,7 +13,7 @@ slug: "physical-geography"
 
 
 
-<NatureExample id={`n2`} 
+<Habitat id={`n2`} 
   title={`The Tropical Rainforest`} 
   emoji={`🐒`} 
   facts={`- Tropical rainforests like the Amazon cover only about 6% of Earth's surface but are home to more than half of all the world's plant and animal species!
@@ -21,12 +21,12 @@ slug: "physical-geography"
 - Many of the plants we use in our homes, for food and medicine, originally came from rainforests, including chocolate, bananas, and pineapples.`}
 >
 An incredibly wet and warm biome found near the Earth's equator.<br />**Key Features:** Tall, dense trees, huge biodiversity, and high rainfall all year round.
-</NatureExample>
+</Habitat>
 
 
 
 
-<NatureExample id={`n3`} 
+<Habitat id={`n3`} 
   title={`The Arctic Tundra`} 
   emoji={`❄️`} 
   facts={`- In the tundra, the ground beneath the surface, called permafrost, stays frozen all year round, sometimes to a depth of nearly a mile.
@@ -34,12 +34,12 @@ An incredibly wet and warm biome found near the Earth's equator.<br />**Key Feat
 - Animals like the Arctic fox and ptarmigan have coats that turn white in winter to camouflage them against the snow.`}
 >
 A vast, cold, and treeless biome found in the Arctic regions.<br />**Key Features:** Frozen ground (permafrost), low-growing plants like mosses and shrubs, and animals with thick, warm coats.
-</NatureExample>
+</Habitat>
 
 
 
 
-<NatureExample id={`n4`} 
+<Habitat id={`n4`} 
   title={`The African Savanna`} 
   emoji={`🦒`} 
   facts={`- The savanna is home to the largest land animals on Earth, including elephants, giraffes, and rhinos.
@@ -47,7 +47,7 @@ A vast, cold, and treeless biome found in the Arctic regions.<br />**Key Feature
 - Some trees, like the baobab, store water in their huge trunks to survive the long dry season.`}
 >
 A hot, grassy biome with widely spaced trees, found between rainforests and deserts.<br />**Key Features:** Large open grasslands, long dry seasons, and herds of large mammals.
-</NatureExample>
+</Habitat>
 
 
 

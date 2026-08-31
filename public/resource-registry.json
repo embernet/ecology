@@ -439,60 +439,6 @@
       ]
     }
   },
-  "n24": {
-    "type": "NatureExample",
-    "title": "The Tropical Rainforest",
-    "sourcePage": "key-stage-2-geography",
-    "sourcePageTitle": "Key Stage 2: Geography",
-    "data": {
-      "type": "NatureExample",
-      "emoji": "🐒",
-      "facts": "- Tropical rainforests like the Amazon cover only about 6% of Earth's surface but are home to more than half of all the world's plant and animal species!\n- The tall trees form a leafy 'canopy' high above the ground, which blocks out most of the sunlight from reaching the forest floor.\n- Many of the plants we use in our homes, for food and medicine, originally came from rainforests, including chocolate, bananas, and pineapples.",
-      "childrenHtml": "<figure data-wiki-filename=\"Tropical rainforest, Koh Chang, Thailand.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Tropical_rainforest%2C_Koh_Chang%2C_Thailand.jpg\" alt=\"A tropical rainforest in Thailand\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>A tropical rainforest in Thailand</figcaption></figure>\n<p>An incredibly wet and warm biome found near the Earth's equator.<br><strong>Key Features:</strong> Tall, dense trees, huge biodiversity, and high rainfall all year round.</p>",
-      "wikiImages": [
-        {
-          "filename": "Tropical rainforest, Koh Chang, Thailand.jpg",
-          "alt": "A tropical rainforest in Thailand"
-        }
-      ]
-    }
-  },
-  "n25": {
-    "type": "NatureExample",
-    "title": "The Arctic Tundra",
-    "sourcePage": "key-stage-2-geography",
-    "sourcePageTitle": "Key Stage 2: Geography",
-    "data": {
-      "type": "NatureExample",
-      "emoji": "❄️",
-      "facts": "- In the tundra, the ground beneath the surface, called permafrost, stays frozen all year round, sometimes to a depth of nearly a mile.\n- During the summer, the sun shines 24 hours a day, but it is not strong enough to melt the deep permafrost.\n- Animals like the Arctic fox and ptarmigan have coats that turn white in winter to camouflage them against the snow.",
-      "childrenHtml": "<figure data-wiki-filename=\"Adult Dunlin on the Alaskan arctic tundra (51357535068).jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Adult_Dunlin_on_the_Alaskan_arctic_tundra_(51357535068).jpg\" alt=\"An adult Dunlin on the Alaskan Arctic Tundra. It may be cold and hard but life still finds a way!\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>An adult Dunlin on the Alaskan Arctic Tundra. It may be cold and hard but life still finds a way!</figcaption></figure>\n<p>A vast, cold, and treeless biome found in the Arctic regions.<br><strong>Key Features:</strong> Frozen ground (permafrost), low-growing plants like mosses, small flowers, and shrubs, and animals with thick, warm coats.</p>",
-      "wikiImages": [
-        {
-          "filename": "Adult Dunlin on the Alaskan arctic tundra (51357535068).jpg",
-          "alt": "An adult Dunlin on the Alaskan Arctic Tundra. It may be cold and hard but life still finds a way!"
-        }
-      ]
-    }
-  },
-  "n26": {
-    "type": "NatureExample",
-    "title": "The African Savanna",
-    "sourcePage": "key-stage-2-geography",
-    "sourcePageTitle": "Key Stage 2: Geography",
-    "data": {
-      "type": "NatureExample",
-      "emoji": "🦒",
-      "facts": "- The savanna is home to the largest land animals on Earth, including elephants, giraffes, and rhinos.\n- Wildfires are a vital part of its life cycle, clearing away old, dry grass and helping new plants to grow.\n- Some trees, like the baobab, store water in their huge trunks to survive the long dry season.",
-      "childrenHtml": "<figure data-wiki-filename=\"African Elephants (Loxodonta africana) wallowing in the mud ... (46323861365).jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/African_Elephants_(Loxodonta_africana)_wallowing_in_the_mud_..._(46323861365).jpg\" alt=\"A herd of Elephants wallowing in the mud at a watering hole in the African Savanna\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>A herd of Elephants wallowing in the mud at a watering hole in the African Savanna</figcaption></figure>\n<p>A hot, grassy biome with widely spaced trees, found between rainforests and deserts.<br><strong>Key Features:</strong> Large open grasslands, long dry seasons, and herds of large mammals.</p>",
-      "wikiImages": [
-        {
-          "filename": "African Elephants (Loxodonta africana) wallowing in the mud ... (46323861365).jpg",
-          "alt": "A herd of Elephants wallowing in the mud at a watering hole in the African Savanna"
-        }
-      ]
-    }
-  },
   "n27": {
     "type": "NatureExample",
     "title": "The Water Cycle",
@@ -561,6 +507,60 @@
       "facts": "- Some water soaks deep into the ground and is stored there as 'groundwater'.\n- This collected water can then evaporate again, starting the entire cycle over.\n- The same water has been moving around our planet in this cycle for billions of years. The water in your drink could have once been drunk by a dinosaur!",
       "childrenHtml": "<p>The process where water from precipitation is collected in rivers, lakes, and oceans.<br><strong>Where it happens:</strong> In bodies of water or underground in the soil.</p>",
       "wikiImages": []
+    }
+  },
+  "n24": {
+    "type": "Habitat",
+    "title": "The Tropical Rainforest",
+    "sourcePage": "key-stage-2-geography",
+    "sourcePageTitle": "Key Stage 2: Geography",
+    "data": {
+      "type": "Habitat",
+      "emoji": "🐒",
+      "facts": "- Tropical rainforests like the Amazon cover only about 6% of Earth's surface but are home to more than half of all the world's plant and animal species!\n- The tall trees form a leafy 'canopy' high above the ground, which blocks out most of the sunlight from reaching the forest floor.\n- Many of the plants we use in our homes, for food and medicine, originally came from rainforests, including chocolate, bananas, and pineapples.",
+      "childrenHtml": "<figure data-wiki-filename=\"Tropical rainforest, Koh Chang, Thailand.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Tropical_rainforest%2C_Koh_Chang%2C_Thailand.jpg\" alt=\"A tropical rainforest in Thailand\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>A tropical rainforest in Thailand</figcaption></figure>\n<p>An incredibly wet and warm biome found near the Earth's equator.<br><strong>Key Features:</strong> Tall, dense trees, huge biodiversity, and high rainfall all year round.</p>",
+      "wikiImages": [
+        {
+          "filename": "Tropical rainforest, Koh Chang, Thailand.jpg",
+          "alt": "A tropical rainforest in Thailand"
+        }
+      ]
+    }
+  },
+  "n25": {
+    "type": "Habitat",
+    "title": "The Arctic Tundra",
+    "sourcePage": "key-stage-2-geography",
+    "sourcePageTitle": "Key Stage 2: Geography",
+    "data": {
+      "type": "Habitat",
+      "emoji": "❄️",
+      "facts": "- In the tundra, the ground beneath the surface, called permafrost, stays frozen all year round, sometimes to a depth of nearly a mile.\n- During the summer, the sun shines 24 hours a day, but it is not strong enough to melt the deep permafrost.\n- Animals like the Arctic fox and ptarmigan have coats that turn white in winter to camouflage them against the snow.",
+      "childrenHtml": "<figure data-wiki-filename=\"Adult Dunlin on the Alaskan arctic tundra (51357535068).jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Adult_Dunlin_on_the_Alaskan_arctic_tundra_(51357535068).jpg\" alt=\"An adult Dunlin on the Alaskan Arctic Tundra. It may be cold and hard but life still finds a way!\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>An adult Dunlin on the Alaskan Arctic Tundra. It may be cold and hard but life still finds a way!</figcaption></figure>\n<p>A vast, cold, and treeless biome found in the Arctic regions.<br><strong>Key Features:</strong> Frozen ground (permafrost), low-growing plants like mosses, small flowers, and shrubs, and animals with thick, warm coats.</p>",
+      "wikiImages": [
+        {
+          "filename": "Adult Dunlin on the Alaskan arctic tundra (51357535068).jpg",
+          "alt": "An adult Dunlin on the Alaskan Arctic Tundra. It may be cold and hard but life still finds a way!"
+        }
+      ]
+    }
+  },
+  "n26": {
+    "type": "Habitat",
+    "title": "The African Savanna",
+    "sourcePage": "key-stage-2-geography",
+    "sourcePageTitle": "Key Stage 2: Geography",
+    "data": {
+      "type": "Habitat",
+      "emoji": "🦒",
+      "facts": "- The savanna is home to the largest land animals on Earth, including elephants, giraffes, and rhinos.\n- Wildfires are a vital part of its life cycle, clearing away old, dry grass and helping new plants to grow.\n- Some trees, like the baobab, store water in their huge trunks to survive the long dry season.",
+      "childrenHtml": "<figure data-wiki-filename=\"African Elephants (Loxodonta africana) wallowing in the mud ... (46323861365).jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/African_Elephants_(Loxodonta_africana)_wallowing_in_the_mud_..._(46323861365).jpg\" alt=\"A herd of Elephants wallowing in the mud at a watering hole in the African Savanna\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>A herd of Elephants wallowing in the mud at a watering hole in the African Savanna</figcaption></figure>\n<p>A hot, grassy biome with widely spaced trees, found between rainforests and deserts.<br><strong>Key Features:</strong> Large open grasslands, long dry seasons, and herds of large mammals.</p>",
+      "wikiImages": [
+        {
+          "filename": "African Elephants (Loxodonta africana) wallowing in the mud ... (46323861365).jpg",
+          "alt": "A herd of Elephants wallowing in the mud at a watering hole in the African Savanna"
+        }
+      ]
     }
   },
   "a9": {
@@ -755,45 +755,6 @@
       "wikiImages": []
     }
   },
-  "n2": {
-    "type": "NatureExample",
-    "title": "The Tropical Rainforest",
-    "sourcePage": "physical-geography",
-    "sourcePageTitle": "Physical Geography",
-    "data": {
-      "type": "NatureExample",
-      "emoji": "🐒",
-      "facts": "- Tropical rainforests like the Amazon cover only about 6% of Earth's surface but are home to more than half of all the world's plant and animal species!\n- The tall trees form a leafy 'canopy' high above the ground, which blocks out most of the sunlight from reaching the forest floor.\n- Many of the plants we use in our homes, for food and medicine, originally came from rainforests, including chocolate, bananas, and pineapples.",
-      "childrenHtml": "<p>An incredibly wet and warm biome found near the Earth's equator.<br><strong>Key Features:</strong> Tall, dense trees, huge biodiversity, and high rainfall all year round.</p>",
-      "wikiImages": []
-    }
-  },
-  "n3": {
-    "type": "NatureExample",
-    "title": "The Arctic Tundra",
-    "sourcePage": "physical-geography",
-    "sourcePageTitle": "Physical Geography",
-    "data": {
-      "type": "NatureExample",
-      "emoji": "❄️",
-      "facts": "- In the tundra, the ground beneath the surface, called permafrost, stays frozen all year round, sometimes to a depth of nearly a mile.\n- During the summer, the sun shines 24 hours a day, but it is not strong enough to melt the deep permafrost.\n- Animals like the Arctic fox and ptarmigan have coats that turn white in winter to camouflage them against the snow.",
-      "childrenHtml": "<p>A vast, cold, and treeless biome found in the Arctic regions.<br><strong>Key Features:</strong> Frozen ground (permafrost), low-growing plants like mosses and shrubs, and animals with thick, warm coats.</p>",
-      "wikiImages": []
-    }
-  },
-  "n4": {
-    "type": "NatureExample",
-    "title": "The African Savanna",
-    "sourcePage": "physical-geography",
-    "sourcePageTitle": "Physical Geography",
-    "data": {
-      "type": "NatureExample",
-      "emoji": "🦒",
-      "facts": "- The savanna is home to the largest land animals on Earth, including elephants, giraffes, and rhinos.\n- Wildfires are a vital part of its life cycle, clearing away old, dry grass and helping new plants to grow.\n- Some trees, like the baobab, store water in their huge trunks to survive the long dry season.",
-      "childrenHtml": "<p>A hot, grassy biome with widely spaced trees, found between rainforests and deserts.<br><strong>Key Features:</strong> Large open grasslands, long dry seasons, and herds of large mammals.</p>",
-      "wikiImages": []
-    }
-  },
   "n5": {
     "type": "NatureExample",
     "title": "Evaporation",
@@ -843,6 +804,45 @@
       "emoji": "💧",
       "facts": "- Some water soaks deep into the ground and is stored there as 'groundwater'.\n- This collected water can then evaporate again, starting the entire cycle over.\n- The same water has been moving around our planet in this cycle for billions of years. The water in your drink could have once been drunk by a dinosaur!",
       "childrenHtml": "<p>The process where water from precipitation is collected in rivers, lakes, and oceans.<br><strong>Where it happens:</strong> In bodies of water or underground in the soil.</p>",
+      "wikiImages": []
+    }
+  },
+  "n2": {
+    "type": "Habitat",
+    "title": "The Tropical Rainforest",
+    "sourcePage": "physical-geography",
+    "sourcePageTitle": "Physical Geography",
+    "data": {
+      "type": "Habitat",
+      "emoji": "🐒",
+      "facts": "- Tropical rainforests like the Amazon cover only about 6% of Earth's surface but are home to more than half of all the world's plant and animal species!\n- The tall trees form a leafy 'canopy' high above the ground, which blocks out most of the sunlight from reaching the forest floor.\n- Many of the plants we use in our homes, for food and medicine, originally came from rainforests, including chocolate, bananas, and pineapples.",
+      "childrenHtml": "<p>An incredibly wet and warm biome found near the Earth's equator.<br><strong>Key Features:</strong> Tall, dense trees, huge biodiversity, and high rainfall all year round.</p>",
+      "wikiImages": []
+    }
+  },
+  "n3": {
+    "type": "Habitat",
+    "title": "The Arctic Tundra",
+    "sourcePage": "physical-geography",
+    "sourcePageTitle": "Physical Geography",
+    "data": {
+      "type": "Habitat",
+      "emoji": "❄️",
+      "facts": "- In the tundra, the ground beneath the surface, called permafrost, stays frozen all year round, sometimes to a depth of nearly a mile.\n- During the summer, the sun shines 24 hours a day, but it is not strong enough to melt the deep permafrost.\n- Animals like the Arctic fox and ptarmigan have coats that turn white in winter to camouflage them against the snow.",
+      "childrenHtml": "<p>A vast, cold, and treeless biome found in the Arctic regions.<br><strong>Key Features:</strong> Frozen ground (permafrost), low-growing plants like mosses and shrubs, and animals with thick, warm coats.</p>",
+      "wikiImages": []
+    }
+  },
+  "n4": {
+    "type": "Habitat",
+    "title": "The African Savanna",
+    "sourcePage": "physical-geography",
+    "sourcePageTitle": "Physical Geography",
+    "data": {
+      "type": "Habitat",
+      "emoji": "🦒",
+      "facts": "- The savanna is home to the largest land animals on Earth, including elephants, giraffes, and rhinos.\n- Wildfires are a vital part of its life cycle, clearing away old, dry grass and helping new plants to grow.\n- Some trees, like the baobab, store water in their huge trunks to survive the long dry season.",
+      "childrenHtml": "<p>A hot, grassy biome with widely spaced trees, found between rainforests and deserts.<br><strong>Key Features:</strong> Large open grasslands, long dry seasons, and herds of large mammals.</p>",
       "wikiImages": []
     }
   },
@@ -3584,19 +3584,6 @@
       "wikiImages": []
     }
   },
-  "n116": {
-    "type": "NatureExample",
-    "title": "Oak Tree",
-    "sourcePage": "year-2-living-things-and-their-habitats",
-    "sourcePageTitle": "Year 2: Living things and their habitats",
-    "data": {
-      "type": "NatureExample",
-      "emoji": "🌳",
-      "facts": "- An oak tree is living because it grows, makes its own food from sunlight (photosynthesis), and reproduces by creating acorns.\n- Some oak trees can live for over 1,000 years and provide a habitat for hundreds of other species.\n- Its roots can spread out for several times the width of its canopy, anchoring it and absorbing water.",
-      "childrenHtml": "<p>A large, long-living tree common in British woodlands.<br><strong>How to identify:</strong> Look for its lobed leaves and its distinctive fruit, the acorn.</p>",
-      "wikiImages": []
-    }
-  },
   "n117": {
     "type": "NatureExample",
     "title": "Grass",
@@ -3620,19 +3607,6 @@
       "emoji": "🍂",
       "facts": "- A fallen leaf is dead, but it's not wasted! Worms and bugs will eat it, turning it into new soil that helps other plants grow.\n- The colours of autumn leaves are actually in the leaf all year round, but they are hidden by the green chlorophyll until it breaks down.\n- A thick layer of dead leaves on the ground can provide a warm, safe place for insects and small mammals to hibernate over winter.",
       "childrenHtml": "<p>A leaf that was once part of a living plant.<br><strong>How to identify:</strong> Look for its dry, often brown and curled appearance on the ground, especially in autumn.</p>",
-      "wikiImages": []
-    }
-  },
-  "n119": {
-    "type": "NatureExample",
-    "title": "Log",
-    "sourcePage": "year-2-living-things-and-their-habitats",
-    "sourcePageTitle": "Year 2: Living things and their habitats",
-    "data": {
-      "type": "NatureExample",
-      "emoji": "🪵",
-      "facts": "- A log was once alive, but now that it's dead, it provides a vital habitat and food source for fungi, insects, and other minibeasts.\n- The rings you can see on the end of a log show how many years the tree was alive.\n- As a log rots down, it slowly releases its stored nutrients back into the soil for other plants to use.",
-      "childrenHtml": "<p>A piece of a tree trunk or branch that was once part of a living tree.<br><strong>How to identify:</strong> Look for a piece of wood on the ground, often with bark still attached and showing signs of decay.</p>",
       "wikiImages": []
     }
   },
@@ -3723,44 +3697,6 @@
       "wikiImages": []
     }
   },
-  "n127": {
-    "type": "NatureExample",
-    "title": "Oak Tree (Producer)",
-    "sourcePage": "year-2-living-things-and-their-habitats",
-    "sourcePageTitle": "Year 2: Living things and their habitats",
-    "data": {
-      "type": "NatureExample",
-      "emoji": "🌳",
-      "facts": "- A large, healthy oak tree can have around 200,000 leaves, all working to make food for the tree through photosynthesis.\n- It is a 'producer' because it is at the start of many food chains, producing the first energy.\n- A single oak tree can be a habitat for over 500 different species.",
-      "childrenHtml": "<p>A large, common tree that makes its own food using energy from the sun.<br><strong>How to identify:</strong> Look for its distinctive lobed leaves and acorns.</p>",
-      "wikiImages": []
-    }
-  },
-  "n128": {
-    "type": "NatureExample",
-    "title": "Caterpillar (Primary Consumer)",
-    "sourcePage": "year-2-living-things-and-their-habitats",
-    "sourcePageTitle": "Year 2: Living things and their habitats",
-    "data": {
-      "type": "NatureExample",
-      "emoji": "🐛",
-      "facts": "- A caterpillar's main job is to eat! In just a few weeks, it can increase its body mass by more than 1,000 times.\n- It is a 'primary consumer' and a 'herbivore' because it is the first animal in the chain to eat the producer.\n- The holes you see in leaves are often a sign that a caterpillar has been eating there.",
-      "childrenHtml": "<p>The larva of a moth or butterfly that eats plants to grow.<br><strong>How to identify:</strong> Look for its long, segmented body, many legs, and evidence of it chewing on leaves.</p>",
-      "wikiImages": []
-    }
-  },
-  "n129": {
-    "type": "NatureExample",
-    "title": "Blue Tit (Secondary Consumer)",
-    "sourcePage": "year-2-living-things-and-their-habitats",
-    "sourcePageTitle": "Year 2: Living things and their habitats",
-    "data": {
-      "type": "NatureExample",
-      "facts": "- This tiny bird is a skilled acrobat and can easily cling to the thinnest branches to find insects.\n- It is a 'secondary consumer' and a 'carnivore' (or insectivore) because it eats the primary consumer.\n- A pair of blue tits might need to find 1,000 caterpillars a day to feed their chicks.",
-      "childrenHtml": "<p>A small, colourful bird that eats insects.<br><strong>How to identify:</strong> Look for its bright blue, yellow, and white feathers and acrobatic behaviour.</p>",
-      "wikiImages": []
-    }
-  },
   "n130": {
     "type": "NatureExample",
     "title": "Sparrowhawk (Tertiary Consumer)",
@@ -3770,6 +3706,70 @@
       "type": "NatureExample",
       "facts": "- A sparrowhawk has incredible eyesight that's up to eight times sharper than a human's, allowing it to spot small prey from high in the sky.\n- It is a 'tertiary consumer' and a 'top predator' as it is at the top of this food chain.\n- Female sparrowhawks are much larger than the males.",
       "childrenHtml": "<p>A powerful bird of prey that hunts smaller birds.<br><strong>How to identify:</strong> Look for its broad wings, long tail, and fierce yellow eyes. It flies with a distinctive 'flap-flap-glide' pattern.</p>",
+      "wikiImages": []
+    }
+  },
+  "n116": {
+    "type": "Habitat",
+    "title": "Oak Tree",
+    "sourcePage": "year-2-living-things-and-their-habitats",
+    "sourcePageTitle": "Year 2: Living things and their habitats",
+    "data": {
+      "type": "Habitat",
+      "emoji": "🌳",
+      "facts": "- An oak tree is living because it grows, makes its own food from sunlight (photosynthesis), and reproduces by creating acorns.\n- Some oak trees can live for over 1,000 years and provide a habitat for hundreds of other species.\n- Its roots can spread out for several times the width of its canopy, anchoring it and absorbing water.",
+      "childrenHtml": "<p>A large, long-living tree common in British woodlands.<br><strong>How to identify:</strong> Look for its lobed leaves and its distinctive fruit, the acorn.</p>",
+      "wikiImages": []
+    }
+  },
+  "n119": {
+    "type": "Habitat",
+    "title": "Log",
+    "sourcePage": "year-2-living-things-and-their-habitats",
+    "sourcePageTitle": "Year 2: Living things and their habitats",
+    "data": {
+      "type": "Habitat",
+      "emoji": "🪵",
+      "facts": "- A log was once alive, but now that it's dead, it provides a vital habitat and food source for fungi, insects, and other minibeasts.\n- The rings you can see on the end of a log show how many years the tree was alive.\n- As a log rots down, it slowly releases its stored nutrients back into the soil for other plants to use.",
+      "childrenHtml": "<p>A piece of a tree trunk or branch that was once part of a living tree.<br><strong>How to identify:</strong> Look for a piece of wood on the ground, often with bark still attached and showing signs of decay.</p>",
+      "wikiImages": []
+    }
+  },
+  "n127": {
+    "type": "Habitat",
+    "title": "Oak Tree (Producer)",
+    "sourcePage": "year-2-living-things-and-their-habitats",
+    "sourcePageTitle": "Year 2: Living things and their habitats",
+    "data": {
+      "type": "Habitat",
+      "emoji": "🌳",
+      "facts": "- A large, healthy oak tree can have around 200,000 leaves, all working to make food for the tree through photosynthesis.\n- It is a 'producer' because it is at the start of many food chains, producing the first energy.\n- A single oak tree can be a habitat for over 500 different species.",
+      "childrenHtml": "<p>A large, common tree that makes its own food using energy from the sun.<br><strong>How to identify:</strong> Look for its distinctive lobed leaves and acorns.</p>",
+      "wikiImages": []
+    }
+  },
+  "n128": {
+    "type": "Habitat",
+    "title": "Caterpillar (Primary Consumer)",
+    "sourcePage": "year-2-living-things-and-their-habitats",
+    "sourcePageTitle": "Year 2: Living things and their habitats",
+    "data": {
+      "type": "Habitat",
+      "emoji": "🐛",
+      "facts": "- A caterpillar's main job is to eat! In just a few weeks, it can increase its body mass by more than 1,000 times.\n- It is a 'primary consumer' and a 'herbivore' because it is the first animal in the chain to eat the producer.\n- The holes you see in leaves are often a sign that a caterpillar has been eating there.",
+      "childrenHtml": "<p>The larva of a moth or butterfly that eats plants to grow.<br><strong>How to identify:</strong> Look for its long, segmented body, many legs, and evidence of it chewing on leaves.</p>",
+      "wikiImages": []
+    }
+  },
+  "n129": {
+    "type": "Habitat",
+    "title": "Blue Tit (Secondary Consumer)",
+    "sourcePage": "year-2-living-things-and-their-habitats",
+    "sourcePageTitle": "Year 2: Living things and their habitats",
+    "data": {
+      "type": "Habitat",
+      "facts": "- This tiny bird is a skilled acrobat and can easily cling to the thinnest branches to find insects.\n- It is a 'secondary consumer' and a 'carnivore' (or insectivore) because it eats the primary consumer.\n- A pair of blue tits might need to find 1,000 caterpillars a day to feed their chicks.",
+      "childrenHtml": "<p>A small, colourful bird that eats insects.<br><strong>How to identify:</strong> Look for its bright blue, yellow, and white feathers and acrobatic behaviour.</p>",
       "wikiImages": []
     }
   },

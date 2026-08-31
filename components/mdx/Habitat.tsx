@@ -5,8 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import { SelectableResource } from '../SelectableResource';
 import { dictionaryMarkdownComponents } from '../DictionaryWrapper';
 
-interface NatureExampleProps {
-    /** Unique resource ID (e.g. "n1", "n2"). Required for URL-based resource pack sharing. */
+interface HabitatProps {
     id: string;
     title: string;
     emoji?: string;
@@ -14,28 +13,28 @@ interface NatureExampleProps {
     children?: React.ReactNode;
 }
 
-export const NatureExample: React.FC<NatureExampleProps> = ({ id, title, emoji, facts, children }) => {
+export const Habitat: React.FC<HabitatProps> = ({ id, title, emoji, facts, children }) => {
     const captureRef = useRef<HTMLDivElement>(null);
 
     return (
         <SelectableResource
             resourceId={id}
-            type="NatureExample"
+            type="Habitat"
             title={title}
             data={{ emoji, facts }}
             captureRef={captureRef}
         >
-            <div ref={captureRef} className="my-8 rounded-xl overflow-hidden shadow-lg border border-green-100 bg-white">
-                <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 border-b border-green-100">
+            <div ref={captureRef} className="my-8 rounded-xl overflow-hidden shadow-lg border border-teal-100 bg-white">
+                <div className="bg-gradient-to-r from-teal-50 to-emerald-50 p-6 border-b border-teal-100">
                     <div className="flex items-center gap-4 mb-4">
                         {emoji && (
-                            <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center text-4xl bg-white rounded-full shadow-sm border border-green-100">
+                            <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center text-4xl bg-white rounded-full shadow-sm border border-teal-100">
                                 {emoji}
                             </div>
                         )}
-                        <h3 className="text-2xl font-bold text-green-800 m-0">{title}</h3>
+                        <h3 className="text-2xl font-bold text-teal-900 m-0">{title}</h3>
                     </div>
-                    <div className="prose prose-green max-w-none">
+                    <div className="prose prose-teal max-w-none">
                         {children}
                     </div>
                 </div>

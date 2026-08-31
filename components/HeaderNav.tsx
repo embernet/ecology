@@ -88,8 +88,8 @@ export function HeaderNav() {
           <Link href="/but-why" className="header-dropdown-link" onClick={() => setIsOpen(false)}>
               But Why?
             </Link>
-            <Link href="/wiki/teaching-principles-used-to-create-the-learning-resources" className="header-dropdown-link" onClick={() => setIsOpen(false)}>
-              Teaching Resources
+            <Link href="/wiki/teaching-resources" className="header-dropdown-link" onClick={() => setIsOpen(false)}>
+              Guides & Links
             </Link>
             <Link href="/media/images" className="header-dropdown-link" onClick={() => setIsOpen(false)}>
               Media Library

@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import { NatureExample } from '@/components/mdx/NatureExample';
+import { Habitat } from '@/components/mdx/Habitat';
 import { Requirement } from '@/components/mdx/Requirement';
 import { Activity, Reflection } from '@/components/mdx/Activities';
 import { Note, Guidance } from '@/components/mdx/Micro';
@@ -16,6 +17,7 @@ export function getMdxComponents(getId?: (text: string) => string) {
 
     return {
         NatureExample,
+        Habitat,
         Requirement,
         Activity,
         Reflection,

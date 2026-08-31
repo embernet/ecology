@@ -26,7 +26,7 @@ A flying insect that is vital for pollinating flowers.<br />**How to identify:**
 
 
 
-<NatureExample id={`n116`} 
+<Habitat id={`n116`} 
   title={`Oak Tree`} 
   emoji={`🌳`} 
   facts={`- An oak tree is living because it grows, makes its own food from sunlight (photosynthesis), and reproduces by creating acorns.
@@ -34,7 +34,7 @@ A flying insect that is vital for pollinating flowers.<br />**How to identify:**
 - Its roots can spread out for several times the width of its canopy, anchoring it and absorbing water.`}
 >
 A large, long-living tree common in British woodlands.<br />**How to identify:** Look for its lobed leaves and its distinctive fruit, the acorn.
-</NatureExample>
+</Habitat>
 
 
 
@@ -68,7 +68,7 @@ A leaf that was once part of a living plant.<br />**How to identify:** Look for 
 
 
 
-<NatureExample id={`n119`} 
+<Habitat id={`n119`} 
   title={`Log`} 
   emoji={`🪵`} 
   facts={`- A log was once alive, but now that it's dead, it provides a vital habitat and food source for fungi, insects, and other minibeasts.
@@ -76,7 +76,7 @@ A leaf that was once part of a living plant.<br />**How to identify:** Look for 
 - As a log rots down, it slowly releases its stored nutrients back into the soil for other plants to use.`}
 >
 A piece of a tree trunk or branch that was once part of a living tree.<br />**How to identify:** Look for a piece of wood on the ground, often with bark still attached and showing signs of decay.
-</NatureExample>
+</Habitat>
 
 
 
@@ -287,7 +287,7 @@ A line of bushes and trees that acts as a boundary for a field.<br />**What it p
 
 ### Woodland Food Chain
 
-<NatureExample id={`n127`} 
+<Habitat id={`n127`} 
   title={`Oak Tree (Producer)`} 
   emoji={`🌳`} 
   facts={`- A large, healthy oak tree can have around 200,000 leaves, all working to make food for the tree through photosynthesis.
@@ -295,12 +295,12 @@ A line of bushes and trees that acts as a boundary for a field.<br />**What it p
 - A single oak tree can be a habitat for over 500 different species.`}
 >
 A large, common tree that makes its own food using energy from the sun.<br />**How to identify:** Look for its distinctive lobed leaves and acorns.
-</NatureExample>
+</Habitat>
 
 
 
 
-<NatureExample id={`n128`} 
+<Habitat id={`n128`} 
   title={`Caterpillar (Primary Consumer)`} 
   emoji={`🐛`} 
   facts={`- A caterpillar's main job is to eat! In just a few weeks, it can increase its body mass by more than 1,000 times.
@@ -308,12 +308,12 @@ A large, common tree that makes its own food using energy from the sun.<br />**H
 - The holes you see in leaves are often a sign that a caterpillar has been eating there.`}
 >
 The larva of a moth or butterfly that eats plants to grow.<br />**How to identify:** Look for its long, segmented body, many legs, and evidence of it chewing on leaves.
-</NatureExample>
+</Habitat>
 
 
 
 
-<NatureExample id={`n129`} 
+<Habitat id={`n129`} 
   title={`Blue Tit (Secondary Consumer)`} 
   emoji={``} 
   facts={`- This tiny bird is a skilled acrobat and can easily cling to the thinnest branches to find insects.
@@ -321,7 +321,7 @@ The larva of a moth or butterfly that eats plants to grow.<br />**How to identif
 - A pair of blue tits might need to find 1,000 caterpillars a day to feed their chicks.`}
 >
 A small, colourful bird that eats insects.<br />**How to identify:** Look for its bright blue, yellow, and white feathers and acrobatic behaviour.
-</NatureExample>
+</Habitat>
 
 
 

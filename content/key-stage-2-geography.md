@@ -140,7 +140,7 @@ It is a large mountain with several ridges and 'cwms' (steep-sided valleys) carv
 
 
 
-<NatureExample id={`n24`} 
+<Habitat id={`n24`} 
   title={`The Tropical Rainforest`} 
   emoji={`🐒`} 
   facts={`- Tropical rainforests like the Amazon cover only about 6% of Earth's surface but are home to more than half of all the world's plant and animal species!
@@ -149,12 +149,12 @@ It is a large mountain with several ridges and 'cwms' (steep-sided valleys) carv
 >
 <WikiImage filename="Tropical rainforest, Koh Chang, Thailand.jpg" alt="A tropical rainforest in Thailand" />
 An incredibly wet and warm biome found near the Earth's equator.<br />**Key Features:** Tall, dense trees, huge biodiversity, and high rainfall all year round.
-</NatureExample>
+</Habitat>
 
 
 
 
-<NatureExample id={`n25`} 
+<Habitat id={`n25`} 
   title={`The Arctic Tundra`} 
   emoji={`❄️`} 
   facts={`- In the tundra, the ground beneath the surface, called permafrost, stays frozen all year round, sometimes to a depth of nearly a mile.
@@ -163,12 +163,12 @@ An incredibly wet and warm biome found near the Earth's equator.<br />**Key Feat
 >
 <WikiImage filename="Adult Dunlin on the Alaskan arctic tundra (51357535068).jpg" alt="An adult Dunlin on the Alaskan Arctic Tundra. It may be cold and hard but life still finds a way!" />
 A vast, cold, and treeless biome found in the Arctic regions.<br />**Key Features:** Frozen ground (permafrost), low-growing plants like mosses, small flowers, and shrubs, and animals with thick, warm coats.
-</NatureExample>
+</Habitat>
 
 
 
 
-<NatureExample id={`n26`} 
+<Habitat id={`n26`} 
   title={`The African Savanna`} 
   emoji={`🦒`} 
   facts={`- The savanna is home to the largest land animals on Earth, including elephants, giraffes, and rhinos.
@@ -177,7 +177,7 @@ A vast, cold, and treeless biome found in the Arctic regions.<br />**Key Feature
 >
 <WikiImage filename="African Elephants (Loxodonta africana) wallowing in the mud ... (46323861365).jpg" alt="A herd of Elephants wallowing in the mud at a watering hole in the African Savanna" />
 A hot, grassy biome with widely spaced trees, found between rainforests and deserts.<br />**Key Features:** Large open grasslands, long dry seasons, and herds of large mammals.
-</NatureExample>
+</Habitat>
 
 
 

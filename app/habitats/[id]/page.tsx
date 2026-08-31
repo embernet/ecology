@@ -43,18 +43,7 @@ export default async function HabitatDetail({ params }: { params: Promise<{ id: 
       </div>
       <div className="main-scroll-area bg-slate-50">
         <div className="max-w-3xl mx-auto px-4 py-10">
-          <HabitatResourceWrapper id={h.id} title={h.title} description={h.description} emoji={h.emoji}>
-          
-            <div className="text-sm font-bold text-green-700 uppercase tracking-widest mb-3">
-              {h.category} Habitat
-            </div>
-            <h1 className="text-4xl sm:text-5xl font-bold text-slate-900 mb-6 flex items-center gap-4">
-              {h.title} <span className="text-5xl">{h.emoji}</span>
-            </h1>
-            <p className="text-xl text-slate-700 leading-relaxed mb-10">
-              {h.description}
-            </p>
-
+          <HabitatResourceWrapper id={h.id} title={h.title} description={h.description} emoji={h.emoji} category={h.category}>
             {hasImage && (
               <figure className="mb-8">
                 <img
@@ -111,13 +100,25 @@ export default async function HabitatDetail({ params }: { params: Promise<{ id: 
                   Key Creatures
                 </h2>
                 <div className="space-y-4">
-                  {h.animals.map((animal, idx) => (
-                    <div key={idx} className="bg-green-50 rounded-xl p-6">
-                      <h3 className="text-lg font-bold text-green-900 mb-2">{animal.name}</h3>
-                      <h4 className="font-semibold text-green-800 mb-1 text-sm">How it survives here:</h4>
-                      <p className="text-slate-700 leading-relaxed">{animal.how_it_survives}</p>
-                    </div>
-                  ))}
+                  {h.animals.map((animal, idx) => {
+                    const animalSlug = animal.name.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '');
+                    const animalImagePath = `/habitat-images/animals/${resolvedParams.id}-${animalSlug}.jpg`;
+                    const hasAnimalImage = fs.existsSync(path.join(process.cwd(), 'public', animalImagePath));
+                    return (
+                      <div key={idx} className="bg-green-50 rounded-xl p-6">
+                        <h3 className="text-lg font-bold text-green-900 mb-2">{animal.name}</h3>
+                        {hasAnimalImage && (
+                          <img 
+                            src={animalImagePath} 
+                            alt={animal.name} 
+                            className="w-full object-cover rounded-lg mb-4 border border-green-200" 
+                          />
+                        )}
+                        <h4 className="font-semibold text-green-800 mb-1 text-sm">How it survives here:</h4>
+                        <p className="text-slate-700 leading-relaxed">{animal.how_it_survives}</p>
+                      </div>
+                    );
+                  })}
                 </div>
               </section>
 

@@ -22,6 +22,7 @@ const OUTPUT_FILE = join(__dirname, '..', 'public', 'resource-registry.json');
 
 const TYPE_PREFIXES = {
   NatureExample: 'n',
+  Habitat: 'n',
   Activity: 'a',
   Reflection: 'r',
   Requirement: 'q',
@@ -188,6 +189,7 @@ function extractResources(content, slug, pageTitle, fileName) {
   const errors = [];
   const componentTypes = {
     NatureExample: { hasChildren: true, titleProp: 'title' },
+    Habitat: { hasChildren: true, titleProp: 'title' },
     Activity: { hasChildren: false, titleProp: 'title' },
     Reflection: { hasChildren: false, titleProp: 'title' },
     Note: { hasChildren: false, titleProp: 'title', defaultTitle: 'Note' },
@@ -406,7 +408,7 @@ function main() {
     console.error('  - IDs must be globally unique across all content files');
     console.error('  - ID format: [type-prefix][number]');
     console.error('  - Type prefixes:');
-    console.error('      n = NatureExample  (e.g. n1, n2, n3)');
+    console.error('      n = NatureExample or Habitat (e.g. n1, n2)');
     console.error('      a = Activity       (e.g. a1, a2, a3)');
     console.error('      r = Reflection     (e.g. r1, r2, r3)');
     console.error('      q = Requirement    (e.g. q1, q2, q3)');

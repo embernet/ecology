@@ -159,16 +159,10 @@ export const navigation: NavEntry[] = [
       { label: 'Live Streams', href: '/media/live-streams' },
     ],
   },
+  { label: 'Resource Index', href: '/resources' },
+  { label: 'Dictionary', href: '/dictionary' },
   {
-    label: 'Reference',
-    href: '/reference',
-    children: [
-      { label: 'Dictionary', href: '/dictionary' },
-      { label: 'Resource Index', href: '/resources' },
-    ],
-  },
-  {
-    label: 'Teaching Resources',
+    label: 'Guides & Links',
     href: '/wiki/teaching-resources',
     children: [
       { label: 'Teaching Principles', href: '/wiki/teaching-principles-used-to-create-the-learning-resources' },

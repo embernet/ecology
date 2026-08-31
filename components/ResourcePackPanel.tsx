@@ -6,6 +6,7 @@ import { useResourcePack } from '@/contexts/ResourcePackContext';
 import { ResourcePackCard } from './ResourcePackCard';
 import { exportAsHtml, exportAsHtmlWithUrls } from '@/lib/export-html';
 
+import { SlideShow } from './SlideShow';
 
 export function ResourcePackPanel() {
   const { items, isPanelOpen, togglePanel, setResourcePanelOpen, itemCount, clearAll, showPrintView, togglePrintView, packName, setPackName, isPanelDesktopOpen } = useResourcePack();
@@ -13,6 +14,7 @@ export function ResourcePackPanel() {
   const [exporting, setExporting] = useState(false);
   const [linkCopied, setLinkCopied] = useState(false);
   const [showBookmarkModal, setShowBookmarkModal] = useState(false);
+  const [showSlideShow, setShowSlideShow] = useState(false);
   const [editingName, setEditingName] = useState(false);
   const [nameInput, setNameInput] = useState('');
   const nameInputRef = useRef<HTMLInputElement>(null);
@@ -227,6 +229,16 @@ export function ResourcePackPanel() {
               )}
             </button>
             <button
+              onClick={() => setShowSlideShow(true)}
+              className="resource-pack-btn resource-pack-btn-primary"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={2} stroke="currentColor" className="w-4 h-4">
+                <path strokeLinecap="round" strokeLinejoin="round" d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                <path strokeLinecap="round" strokeLinejoin="round" d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+              </svg>
+              Slide Show
+            </button>
+            <button
               onClick={() => exportAsHtmlWithUrls(items, packName)}
               className="resource-pack-btn resource-pack-btn-secondary"
             >
@@ -275,6 +287,11 @@ export function ResourcePackPanel() {
           onClose={() => setShowBookmarkModal(false)}
           onRename={setPackName}
         />
+      )}
+
+      {/* Slide Show */}
+      {showSlideShow && (
+        <SlideShow items={items} packName={packName} onClose={() => setShowSlideShow(false)} />
       )}
     </>
   );

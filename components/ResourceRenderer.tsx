@@ -18,34 +18,16 @@ export function ResourceRenderer({ item }: ResourceRendererProps) {
   switch (data.type) {
     case 'NatureExample':
       return (
-        <div className="my-6 rounded-xl overflow-hidden shadow-lg border border-green-100 bg-white">
-          <div className="bg-gradient-to-r from-green-50 to-emerald-50 p-6 flex items-start gap-4 border-b border-green-100">
-            {data.emoji && (
-              <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center text-4xl bg-white rounded-full shadow-sm border border-green-100">
-                {data.emoji}
-              </div>
-            )}
-            <div className="flex-grow">
-              <h3 className="text-2xl font-bold text-green-800 m-0">{item.title}</h3>
-              {data.childrenHtml && (
-                <div
-                  className="mt-4 prose prose-green max-w-none"
-                  dangerouslySetInnerHTML={{ __html: data.childrenHtml }}
-                />
-              )}
-            </div>
-          </div>
-          {data.facts && (
-            <div className="bg-yellow-50 p-6 border-t border-yellow-100">
-              <h4 className="flex items-center gap-2 text-lg font-bold text-yellow-800 mb-3 uppercase tracking-wide">
-                Fun Facts
-              </h4>
-              <div className="prose prose-yellow max-w-none text-slate-700">
-                <ReactMarkdown components={dictionaryMarkdownComponents}>{data.facts}</ReactMarkdown>
-              </div>
-            </div>
+        <div className="my-6 rounded-2xl shadow-lg border border-green-100 bg-white overflow-hidden">
+          {data.childrenHtml && (
+            <div
+              className="print-nature-example-content"
+              dangerouslySetInnerHTML={{ __html: data.childrenHtml }}
+            />
           )}
-          {sourceTag}
+          <div className="p-4 border-t border-green-50 bg-green-50/30">
+            {sourceTag}
+          </div>
         </div>
       );
 
@@ -143,29 +125,16 @@ export function ResourceRenderer({ item }: ResourceRendererProps) {
 
     case 'Habitat':
       return (
-        <div className="my-6 rounded-xl overflow-hidden shadow-lg border border-teal-100 bg-white">
-          <div className="bg-gradient-to-r from-teal-50 to-emerald-50 p-6 flex items-start gap-4 border-b border-teal-100">
-            {data.emoji && (
-              <div className="flex-shrink-0 w-16 h-16 flex items-center justify-center text-4xl bg-white rounded-full shadow-sm border border-teal-100">
-                {data.emoji}
-              </div>
-            )}
-            <div className="flex-grow">
-              <h3 className="text-2xl font-bold text-teal-900 m-0">{item.title}</h3>
-              {data.description && (
-                <p className="mt-2 text-teal-800 text-lg leading-relaxed">
-                  {data.description}
-                </p>
-              )}
-            </div>
-          </div>
+        <div className="my-6 rounded-2xl shadow-lg border border-teal-100 bg-white overflow-hidden">
           {data.childrenHtml && (
             <div
-              className="p-6 prose prose-teal max-w-none print-habitat-content"
+              className="print-habitat-content"
               dangerouslySetInnerHTML={{ __html: data.childrenHtml }}
             />
           )}
-          {sourceTag}
+          <div className="p-4 border-t border-teal-50 bg-teal-50/30">
+            {sourceTag}
+          </div>
         </div>
       );
 
