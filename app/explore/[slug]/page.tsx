@@ -5,6 +5,8 @@ import { typeColorConfig } from '@/lib/type-colors';
 
 // Import the actual MDX components
 import { NatureExample } from '@/components/mdx/NatureExample';
+import { Habitat } from '@/components/mdx/Habitat';
+import { Creature } from '@/components/mdx/Creature';
 import { Requirement } from '@/components/mdx/Requirement';
 import { Activity, Reflection } from '@/components/mdx/Activities';
 import { Note, Guidance } from '@/components/mdx/Micro';
@@ -81,6 +83,28 @@ export default async function ExplorePermalinkPage({ params }: PageProps) {
                     >
                         {childrenNode}
                     </NatureExample>
+                );
+            case 'Habitat':
+                return (
+                    <Habitat 
+                        id={resource.id} 
+                        title={resource.data.title || resource.title} 
+                        emoji={resource.data.emoji} 
+                        facts={resource.data.facts}
+                    >
+                        {childrenNode}
+                    </Habitat>
+                );
+            case 'Creature':
+                return (
+                    <Creature 
+                        id={resource.id} 
+                        title={resource.data.title || resource.title} 
+                        emoji={resource.data.emoji} 
+                        facts={resource.data.facts}
+                    >
+                        {childrenNode}
+                    </Creature>
                 );
             case 'Requirement':
                 return (
