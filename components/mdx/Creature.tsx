@@ -12,10 +12,11 @@ interface CreatureProps {
     title: string;
     emoji?: string;
     facts?: string;
+    hideProfileLink?: boolean;
     children?: React.ReactNode;
 }
 
-export const Creature: React.FC<CreatureProps> = ({ id, title, emoji, facts, children }) => {
+export const Creature: React.FC<CreatureProps> = ({ id, title, emoji, facts, hideProfileLink, children }) => {
     const captureRef = useRef<HTMLDivElement>(null);
 
     return (
@@ -52,11 +53,13 @@ export const Creature: React.FC<CreatureProps> = ({ id, title, emoji, facts, chi
                     </div>
                 )}
                 
-                <div className="bg-slate-50 p-4 border-t border-slate-100 text-center">
-                    <Link href={`/creatures/${id}`} className="text-amber-700 hover:text-amber-800 font-semibold text-sm inline-flex items-center gap-1 transition-colors">
-                        📖 View full profile in the Creature Directory <span aria-hidden="true">&rarr;</span>
-                    </Link>
-                </div>
+                {!hideProfileLink && (
+                    <div className="bg-slate-50 p-4 border-t border-slate-100 text-center">
+                        <Link href={`/creatures/${id}`} className="text-amber-700 hover:text-amber-800 font-semibold text-sm inline-flex items-center gap-1 transition-colors">
+                            📖 View full profile in the Creature Directory <span aria-hidden="true">&rarr;</span>
+                        </Link>
+                    </div>
+                )}
             </div>
         </SelectableResource>
     );

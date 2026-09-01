@@ -1,7 +1,7 @@
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getResourceRegistry } from '@/lib/resource-registry-api';
-import { ResourceRenderer } from '@/components/ResourceRenderer';
+import { ResourceComponents } from '@/lib/resource-components';
 
 export function generateStaticParams() {
   const registry = getResourceRegistry();
@@ -21,18 +21,12 @@ export default async function CreaturePage({ params }: { params: Promise<{ id: s
     notFound();
   }
 
-  const renderItem = {
-    id: `creature-${resolvedParams.id}`,
-    shortId: resolvedParams.id,
-    type: 'Creature' as const,
-    title: creature.title,
-    sourcePage: creature.sourcePage,
-    sourcePageTitle: creature.sourcePageTitle || 'Unknown Page',
-    data: creature.data,
-    addedAt: Date.now(),
-    order: 0
-  };
+  const Component = ResourceComponents['Creature'];
 
+  // Hydrate wiki images if necessary, though Creature usually has plain childrenHtml.
+  // Actually, wait, we can just pass dangerouslySetInnerHTML as children if it's from JSON.
+  // We'll wrap childrenHtml in a div just like we do in /explore.
+  
   return (
     <div className="main-scroll-area bg-slate-50">
       
@@ -48,17 +42,23 @@ export default async function CreaturePage({ params }: { params: Promise<{ id: s
       <div className="py-10">
         <div className="max-w-4xl mx-auto px-4">
           
-          <div className="mb-8">
-            <h1 className="text-4xl md:text-5xl font-bold text-amber-900 flex items-center gap-4">
-              {creature.title} {creature.data?.emoji && <span className="text-5xl">{creature.data.emoji}</span>}
-            </h1>
-            <p className="mt-4 text-lg text-slate-600">
+          <div className="mb-4">
+            <p className="text-lg text-slate-600">
               Featured in: <Link href={`/explore/${creature.sourcePage}`} className="text-amber-600 hover:underline font-semibold">{creature.sourcePageTitle}</Link>
             </p>
           </div>
 
-          <div className="mt-8">
-            <ResourceRenderer item={renderItem as any} />
+          <div className="mt-4">
+            <Component 
+                id={`creature-${resolvedParams.id}`} 
+                title={creature.title} 
+                hideProfileLink={true}
+                {...creature.data}
+            >
+                {creature.data.childrenHtml && (
+                    <div dangerouslySetInnerHTML={{ __html: creature.data.childrenHtml }} />
+                )}
+            </Component>
           </div>
 
         </div>
