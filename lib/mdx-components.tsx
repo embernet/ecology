@@ -1,15 +1,10 @@
 import Link from 'next/link';
-import { NatureExample } from '@/components/mdx/NatureExample';
-import { Habitat } from '@/components/mdx/Habitat';
-import { Requirement } from '@/components/mdx/Requirement';
-import { Activity, Reflection } from '@/components/mdx/Activities';
-import { Note, Guidance } from '@/components/mdx/Micro';
+import { ResourceComponents } from '@/lib/resource-components';
 import { Handout } from '@/components/mdx/Handout';
 import { HandoutCard } from '@/components/mdx/HandoutCard';
 import { HandoutHeader } from '@/components/mdx/HandoutHeader';
 import { Gallery } from '@/components/mdx/Gallery';
 import { WikiImage } from '@/components/mdx/WikiImage';
-import { Creature } from '@/components/mdx/Creature';
 import { DictionaryParserProvider } from '@/components/DictionaryWrapper';
 import { makeHeadingIdCounter } from '@/lib/content';
 
@@ -17,14 +12,7 @@ export function getMdxComponents(getId?: (text: string) => string) {
     const idGenerator = getId || makeHeadingIdCounter();
 
     return {
-        NatureExample,
-        Habitat,
-        Creature,
-        Requirement,
-        Activity,
-        Reflection,
-        Note,
-        Guidance,
+        ...ResourceComponents,
         Handout,
         HandoutCard,
         HandoutHeader,

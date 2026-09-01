@@ -3,13 +3,8 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { typeColorConfig } from '@/lib/type-colors';
 
-// Import the actual MDX components
-import { NatureExample } from '@/components/mdx/NatureExample';
-import { Habitat } from '@/components/mdx/Habitat';
-import { Creature } from '@/components/mdx/Creature';
-import { Requirement } from '@/components/mdx/Requirement';
-import { Activity, Reflection } from '@/components/mdx/Activities';
-import { Note, Guidance } from '@/components/mdx/Micro';
+// Import the Component Registry
+import { ResourceComponents } from '@/lib/resource-components';
 import { WikiImage } from '@/components/mdx/WikiImage';
 
 export async function generateStaticParams() {
@@ -67,92 +62,25 @@ export default async function ExplorePermalinkPage({ params }: PageProps) {
     }
     
     const renderComponent = () => {
+        const Component = ResourceComponents[resource.type];
+        if (!Component) {
+            return <div className="p-4 bg-red-50 text-red-800 rounded">Unknown resource type: {resource.type}</div>;
+        }
+
         // Hydrate WikiImages from the static HTML generated during build
         const childrenNode = resource.data.childrenHtml ? (
             <RenderHtmlWithWikiImages html={resource.data.childrenHtml} />
         ) : null;
         
-        switch (resource.type) {
-            case 'NatureExample':
-                return (
-                    <NatureExample 
-                        id={resource.id} 
-                        title={resource.data.title || resource.title} 
-                        emoji={resource.data.emoji} 
-                        facts={resource.data.facts}
-                    >
-                        {childrenNode}
-                    </NatureExample>
-                );
-            case 'Habitat':
-                return (
-                    <Habitat 
-                        id={resource.id} 
-                        title={resource.data.title || resource.title} 
-                        emoji={resource.data.emoji} 
-                        facts={resource.data.facts}
-                    >
-                        {childrenNode}
-                    </Habitat>
-                );
-            case 'Creature':
-                return (
-                    <Creature 
-                        id={resource.id} 
-                        title={resource.data.title || resource.title} 
-                        emoji={resource.data.emoji} 
-                        facts={resource.data.facts}
-                    >
-                        {childrenNode}
-                    </Creature>
-                );
-            case 'Requirement':
-                return (
-                    <Requirement 
-                        id={resource.id} 
-                        text={resource.data.text || ''}
-                    >
-                        {childrenNode}
-                    </Requirement>
-                );
-            case 'Activity':
-                return (
-                    <Activity 
-                        id={resource.id} 
-                        title={resource.data.title || resource.title} 
-                        description={resource.data.description || ''}
-                    />
-                );
-            case 'Reflection':
-                return (
-                    <Reflection 
-                        id={resource.id} 
-                        title={resource.data.title || resource.title} 
-                        description={resource.data.description || ''}
-                    />
-                );
-            case 'Note':
-                return (
-                    <Note 
-                        id={resource.id} 
-                        title={resource.data.title || resource.title} 
-                        text={resource.data.text || ''}
-                    >
-                        {childrenNode}
-                    </Note>
-                );
-            case 'Guidance':
-                return (
-                    <Guidance 
-                        id={resource.id} 
-                        text={resource.data.text || ''}
-                    >
-                        {childrenNode}
-                    </Guidance>
-                );
-            default:
-                return <div className="p-4 bg-red-50 text-red-800 rounded">Unknown resource type: {resource.type}</div>;
-        }
+        return (
+            <Component 
+                id={resource.id} 
+                title={resource.data.title || resource.title}
+                {...resource.data}
+            >
+                {childrenNode}
+            </Component>
+        );
     };
 
     const typeLabel = resource.type.replace(/([A-Z])/g, ' $1').trim();
