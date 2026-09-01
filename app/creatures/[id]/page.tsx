@@ -12,17 +12,18 @@ export function generateStaticParams() {
   }));
 }
 
-export default function CreaturePage({ params }: { params: { id: string } }) {
+export default async function CreaturePage({ params }: { params: Promise<{ id: string }> }) {
+  const resolvedParams = await params;
   const registry = getResourceRegistry();
-  const creature = registry[params.id];
+  const creature = registry[resolvedParams.id];
 
   if (!creature || creature.type !== 'Creature') {
     notFound();
   }
 
   const renderItem = {
-    id: `creature-${params.id}`,
-    shortId: params.id,
+    id: `creature-${resolvedParams.id}`,
+    shortId: resolvedParams.id,
     type: 'Creature' as const,
     title: creature.title,
     sourcePage: creature.sourcePage,
