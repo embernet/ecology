@@ -48,6 +48,13 @@ Activities are age-differentiated for Year 1/2, Year 3/4, and Year 5/6, using th
 
 All activity images are clean scientific illustrations — white background, no embedded text. The same image is reused across multiple activities and age groups. Image prompt metadata is stored in `data/activity-images.ts` and is never rendered on the site.
 
+## Cross-Linking Resources
+
+When creating or updating resources (such as Handouts, Habitats, Creatures, or Activities), always ensure they are strongly cross-linked to each other so users can navigate seamlessly:
+- A profile page (e.g., a Habitat or Creature page) should prominently link to any related educational Handouts or Activities (e.g., via an "Educational Handout Available" card).
+- A Handout or Activity page should always provide a reverse-link back to the relevant full profile (Habitat or Creature).
+- Use explicit mapping files (e.g., `lib/species-handouts.ts`) when necessary to securely connect generic resource slugs to specific, dynamically-generated profile IDs.
+
 ## Git
 
 Always run git commands from `projects/ecology/` — the team root folder (`teams/ecology/`) is not a git repository.
