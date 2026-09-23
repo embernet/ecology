@@ -4,6 +4,8 @@ import { Creature } from '@/components/mdx/Creature';
 import { Requirement } from '@/components/mdx/Requirement';
 import { Activity, Reflection } from '@/components/mdx/Activities';
 import { Note, Guidance } from '@/components/mdx/Micro';
+import { TaxonomicKey } from '@/components/mdx/TaxonomicKey';
+import { FieldNotebookTemplate } from '@/components/mdx/FieldNotebookTemplate';
 
 // A central registry for all dynamic resource components
 export const ResourceComponents: Record<string, React.FC<any>> = {
@@ -15,4 +17,6 @@ export const ResourceComponents: Record<string, React.FC<any>> = {
   Reflection,
   Note,
   Guidance,
+  TaxonomicKey,
+  FieldNotebookTemplate,
 };

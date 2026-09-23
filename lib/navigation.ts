@@ -174,6 +174,7 @@ export const navigation: NavEntry[] = [
     label: 'Guides & Links',
     href: '/wiki/teaching-resources',
     children: [
+      { label: 'Fieldwork Toolkit', href: '/wiki/fieldwork-toolkit' },
       { label: 'Teaching Principles', href: '/wiki/teaching-principles-used-to-create-the-learning-resources' },
       { label: 'Useful External Resources', href: '/wiki/other-websites-with-useful-ecology-resources' },
     ],
