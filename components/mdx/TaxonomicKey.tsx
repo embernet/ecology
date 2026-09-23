@@ -93,41 +93,42 @@ export const TaxonomicKey: React.FC<TaxonomicKeyProps> = ({ id, title }) => {
                     </div>
                 </div>
                 
-                <div className="p-6 sm:p-10 bg-white">
-                    <div className="mb-8 border-b-2 border-slate-200 pb-4">
-                        <h4 className="text-2xl font-black text-slate-800 uppercase tracking-wide">Dichotomous Key</h4>
-                        <p className="text-slate-500 mt-2">Follow the numbered steps to identify the minibeast you found!</p>
+                <div className="p-6 sm:p-8 bg-white">
+                    <div className="mb-6 border-b-2 border-slate-200 pb-3">
+                        <h4 className="text-xl font-black text-slate-800 uppercase tracking-wide">Dichotomous Key</h4>
+                        <p className="text-sm text-slate-500 mt-1">Follow the numbered steps to identify the minibeast you found!</p>
                     </div>
 
-                    <div className="space-y-4 mb-12">
+                    <div className="space-y-2 mb-8">
                         {KEY_STEPS.map((step) => (
-                            <div key={step.num} className="flex gap-4 items-start p-4 bg-slate-50 border border-slate-200 rounded-lg">
-                                <div className="flex-shrink-0 w-8 h-8 bg-emerald-600 text-white font-bold rounded-full flex items-center justify-center">
-                                    {step.num}
-                                </div>
-                                <div className="flex-1">
-                                    <div className="font-bold text-lg text-slate-800 mb-3">{step.question}</div>
-                                    <div className="space-y-2">
-                                        {step.options.map((opt, i) => (
-                                            <div key={i} className="flex justify-between items-center text-slate-700 border-b border-slate-200 border-dashed pb-1 last:border-0 last:pb-0">
-                                                <span className="font-medium">&#8226; {opt.text}</span>
-                                                <span className="font-bold text-emerald-700">{opt.destination}</span>
-                                            </div>
-                                        ))}
+                            <div key={step.num} className="flex flex-col sm:flex-row sm:items-center justify-between p-3 bg-slate-50 border border-slate-200 rounded-lg gap-2 sm:gap-4">
+                                <div className="flex items-center gap-3">
+                                    <div className="flex-shrink-0 w-6 h-6 text-sm bg-emerald-600 text-white font-bold rounded-full flex items-center justify-center">
+                                        {step.num}
                                     </div>
+                                    <div className="font-bold text-slate-800">{step.question}</div>
+                                </div>
+                                <div className="flex gap-2 sm:gap-4 items-center text-sm ml-9 sm:ml-0">
+                                    {step.options.map((opt, i) => (
+                                        <div key={i} className="flex items-center whitespace-nowrap">
+                                            <span className="font-semibold text-slate-600 mr-1.5">{opt.text}:</span>
+                                            <span className="font-bold text-emerald-700">{opt.destination}</span>
+                                            {i === 0 && <span className="text-slate-300 mx-3 hidden sm:inline">|</span>}
+                                        </div>
+                                    ))}
                                 </div>
                             </div>
                         ))}
                     </div>
 
-                    <div className="break-before-page">
-                        <h4 className="text-xl font-bold text-slate-800 border-b-2 border-slate-200 pb-3 mb-6">Identification Guide</h4>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                    <div>
+                        <h4 className="text-lg font-bold text-slate-800 border-b-2 border-slate-200 pb-2 mb-4">Identification Guide</h4>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
                             {RESULTS.map((res) => (
-                                <div key={res.name} className="border border-slate-200 rounded-lg p-4 text-center bg-white shadow-sm">
-                                    <div className="text-4xl mb-3">{res.emoji}</div>
-                                    <div className="font-bold text-slate-800 mb-2">{res.name}</div>
-                                    <div className="text-xs text-slate-500 leading-relaxed">{res.desc}</div>
+                                <div key={res.name} className="border border-slate-200 rounded-lg p-3 text-center bg-white shadow-sm flex flex-col items-center">
+                                    <div className="text-3xl mb-1">{res.emoji}</div>
+                                    <div className="font-bold text-slate-800 text-sm mb-1">{res.name}</div>
+                                    <div className="text-[11px] text-slate-500 leading-tight">{res.desc}</div>
                                 </div>
                             ))}
                         </div>
