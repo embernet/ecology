@@ -8,8 +8,9 @@ slug: "habitat-farmland"
 ## Key UK Species to Look For
 
 Here are some common species you can find in Farmland habitats across the UK:
-- **Species 1** (Look up a relevant UK species in our dictionary!)
-- **Species 2**
+- **[Hazel Dormouse](/creatures/hedgerow-dormouse)**: Rare, nocturnal climbers that rely on connected hedgerows.
+- **[Yellowhammer](/creatures/hedgerow-yellowhammer)**: Farmland birds famous for their 'little bit of bread and no cheese' song.
+- **[Bank Vole](/creatures/hedgerow-bank-vole)**: Agile climbers that forage along the bushy edges of fields.
 
 ## Identification Activity
 

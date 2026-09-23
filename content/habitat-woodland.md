@@ -8,8 +8,9 @@ slug: "habitat-woodland"
 ## Key UK Species to Look For
 
 Here are some common species you can find in Woodland habitats across the UK:
-- **Species 1** (Look up a relevant UK species in our dictionary!)
-- **Species 2**
+- **[Badger](/creatures/woodland-badger)**: Nocturnal mammals living in underground family sets.
+- **[Tawny Owl](/creatures/woodland-tawny-owl)**: The classic 'twit-twoo' calling owl of the deep woods.
+- **[Stag Beetle](/creatures/dead-log-stag-beetle)**: The UK's largest insect, relying on rotting wood.
 
 ## Identification Activity
 
