@@ -2,6 +2,7 @@ import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import { getResourceRegistry } from '@/lib/resource-registry-api';
 import { ResourceComponents } from '@/lib/resource-components';
+import { SPECIES_HANDOUT_LINKS } from '@/lib/species-handouts';
 
 export function generateStaticParams() {
   const registry = getResourceRegistry();
@@ -22,11 +23,9 @@ export default async function CreaturePage({ params }: { params: Promise<{ id: s
   }
 
   const Component = ResourceComponents['Creature'];
-
-  // Hydrate wiki images if necessary, though Creature usually has plain childrenHtml.
-  // Actually, wait, we can just pass dangerouslySetInnerHTML as children if it's from JSON.
-  // We'll wrap childrenHtml in a div just like we do in /explore.
   
+  const relatedHandouts = SPECIES_HANDOUT_LINKS.filter(h => h.creatures.some(c => c.id === resolvedParams.id));
+
   return (
     <div className="main-scroll-area bg-slate-50">
       
@@ -59,6 +58,24 @@ export default async function CreaturePage({ params }: { params: Promise<{ id: s
                     <div dangerouslySetInnerHTML={{ __html: creature.data.childrenHtml }} />
                 )}
             </Component>
+            
+            {relatedHandouts.length > 0 && (
+              <div className="mt-8 space-y-4">
+                {relatedHandouts.map(h => (
+                  <div key={h.handoutSlug} className="bg-amber-50 rounded-xl p-6 border border-amber-200 flex items-center justify-between shadow-sm">
+                    <div>
+                      <h3 className="font-bold text-amber-900 mb-1 flex items-center gap-2">
+                        <span className="text-xl">📄</span> Educational Handout Available
+                      </h3>
+                      <p className="text-amber-800 text-sm">Download the printable infographic: {h.handoutTitle}</p>
+                    </div>
+                    <Link href={`/wiki/${h.handoutSlug}`} className="px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white text-sm font-semibold rounded-lg shadow-sm transition-colors whitespace-nowrap">
+                      View Handout
+                    </Link>
+                  </div>
+                ))}
+              </div>
+            )}
           </div>
 
         </div>

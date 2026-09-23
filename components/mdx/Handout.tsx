@@ -3,6 +3,7 @@
 import React, { useRef } from 'react';
 import Link from 'next/link';
 import { SelectableResource } from '../SelectableResource';
+import { SPECIES_HANDOUT_LINKS } from '@/lib/species-handouts';
 
 interface HandoutProps {
     /** Unique resource ID (e.g. "h1", "h2"). Required for URL-based resource pack sharing. */
@@ -21,6 +22,16 @@ export const Handout: React.FC<HandoutProps> = ({ id, title, imageSrc, altText }
     let habitatIdMatch = imageSrc.match(/\/handouts\/handout-habitat-(.*)\.jpg$/);
     let habitatId = habitatIdMatch ? habitatIdMatch[1] : null;
 
+    // Detect if this is a species handout
+    const speciesHandoutSlug = imageSrc.match(/\/handouts\/(.*)\.png$/)?.[1];
+    const speciesLinkObj = SPECIES_HANDOUT_LINKS.find(s => s.handoutSlug === `handout-${speciesHandoutSlug}`);
+    
+    // In case the image is a .jpg instead of .png
+    const speciesHandoutSlugJpg = imageSrc.match(/\/handouts\/(.*)\.jpg$/)?.[1];
+    const speciesLinkObjFallback = SPECIES_HANDOUT_LINKS.find(s => s.handoutSlug === `handout-${speciesHandoutSlugJpg}`);
+    
+    const speciesLinks = speciesLinkObj || speciesLinkObjFallback;
+
     return (
         <SelectableResource
             resourceId={id}
@@ -38,6 +49,20 @@ export const Handout: React.FC<HandoutProps> = ({ id, title, imageSrc, altText }
                         style={{ maxWidth: '100%' }}
                     />
                 </div>
+                
+                {speciesLinks && speciesLinks.creatures.length > 0 && (
+                    <div className="bg-amber-100/50 px-6 py-4 border-t border-amber-100">
+                        <h4 className="text-amber-900 font-semibold text-sm mb-2">Related Creatures in the Directory:</h4>
+                        <div className="flex flex-wrap gap-2">
+                            {speciesLinks.creatures.map(c => (
+                                <Link key={c.id} href={`/creatures/${c.id}`} className="inline-flex items-center gap-1 px-3 py-1.5 bg-white border border-amber-200 hover:border-amber-400 hover:bg-amber-50 text-amber-800 text-xs font-medium rounded-full shadow-sm transition-colors">
+                                    🐞 {c.title}
+                                </Link>
+                            ))}
+                        </div>
+                    </div>
+                )}
+
                 <div className="handout-footer-bar bg-amber-50 px-6 py-4 border-t border-amber-100 flex flex-col sm:flex-row items-center justify-between gap-4">
                     {habitatId ? (
                         <Link href={`/habitats/${habitatId}`} className="text-amber-700 hover:text-amber-800 font-semibold text-sm inline-flex items-center gap-1 transition-colors">
