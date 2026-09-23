@@ -61,6 +61,8 @@ Always run git commands from `projects/ecology/` — the team root folder (`team
 
 Worktrees live in `projects/ecology/.worktrees/`.
 
+**CRITICAL DEPLOYMENT RULE:** Never run `git push` unless explicitly instructed to do so by the user. Pushing to this repository automatically triggers a deployment to production. Always commit your work locally, then stop and wait for the user to review and authorize the push.
+
 ## Tech Stack
 
 - Next.js with App Router, static export
