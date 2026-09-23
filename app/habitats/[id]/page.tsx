@@ -70,6 +70,20 @@ export default async function HabitatDetail({ params }: { params: Promise<{ id: 
 
             
             <div className="space-y-10">
+              
+              {fs.existsSync(path.join(process.cwd(), 'content', `handout-habitat-${resolvedParams.id}.md`)) && (
+                <div className="bg-amber-50 rounded-xl p-6 border border-amber-200 flex items-center justify-between">
+                  <div>
+                    <h3 className="font-bold text-amber-900 mb-1 flex items-center gap-2">
+                      <span className="text-xl">📄</span> Educational Handout Available
+                    </h3>
+                    <p className="text-amber-800 text-sm">Download the printable infographic for this habitat.</p>
+                  </div>
+                  <Link href={`/wiki/handout-habitat-${resolvedParams.id}`} className="px-4 py-2 bg-amber-600 hover:bg-amber-700 text-white text-sm font-semibold rounded-lg shadow-sm transition-colors whitespace-nowrap">
+                    View Handout
+                  </Link>
+                </div>
+              )}
 
               <section>
                 <h2 className="text-2xl font-bold text-slate-900 mb-4 border-b-2 border-slate-100 pb-2">
