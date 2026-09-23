@@ -22,7 +22,6 @@ export const FieldNotebookTemplate: React.FC<FieldNotebookTemplateProps> = ({ id
                         <h3 className="font-bold text-amber-900 flex items-center gap-2">
                             <span className="text-xl">📓</span> {title}
                         </h3>
-                        <p className="text-sm text-amber-700 mt-1">Add to your resource pack and print to use outdoors!</p>
                     </div>
                 </div>
                 
