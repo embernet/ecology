@@ -54,6 +54,9 @@ This page contains a list of external websites from UK organisations that provid
 - **[BBC Bitesize](https://www.bbc.co.uk/bitesize)**
 : The BBC's free online study support resource for school-age students. The **Key Stage 1** and **Key Stage 2** Science sections contain a comprehensive collection of videos, guides, and quizzes that directly cover the primary science curriculum for living things and their habitats.
 
+- **[Oak National Academy](https://www.thenational.academy)**
+: An independent public body providing high-quality, free video lessons and resources for teachers, parents, and pupils, including excellent coverage of the science and ecology curriculum.
+
 - **[The National Trust](https://www.nationaltrust.org.uk/)**
 : A charity caring for historic places and green spaces in England, Wales, and Northern Ireland. The 'Learning' section of their website provides resources and lesson plans on topics such as habitats, life cycles, and environmental change, often linked to their properties.
 
