@@ -10,3 +10,15 @@ Check back soon as we continue to build out this section with detailed curriculu
 ## Currently Available
 
 - [The Fieldwork & Recording Toolkit](/wiki/fieldwork-toolkit)
+
+## The 6 GCSE Core Habitats
+
+The GCSE focuses intensely on native UK wildlife across six core environments. We've built dedicated starter guides for each of them:
+- [Urban Habitats](/wiki/habitat-urban)
+- [Freshwater Habitats](/wiki/habitat-freshwater)
+- [Woodland Habitats](/wiki/habitat-woodland)
+- [Grassland Habitats](/wiki/habitat-grassland)
+- [Farmland Habitats](/wiki/habitat-farmland)
+- [Marine Habitats](/wiki/habitat-marine)
+
+You can also browse all the native UK habitats categorized for the GCSE over on our [Habitats Directory](/habitats).

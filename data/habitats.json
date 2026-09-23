@@ -35,7 +35,8 @@
         "name": "Smooth newt",
         "how_it_survives": "Can absorb oxygen directly through its moist skin while underwater."
       }
-    ]
+    ],
+    "gcse_category": "Freshwater"
   },
   {
     "id": "woodland",
@@ -73,7 +74,8 @@
         "name": "Tawny owl",
         "how_it_survives": "Has specialized feathers with soft edges for completely silent flight to catch prey in the dark."
       }
-    ]
+    ],
+    "gcse_category": "Woodland"
   },
   {
     "id": "hedgerow",
@@ -111,7 +113,8 @@
         "name": "Yellowhammer",
         "how_it_survives": "Builds well-hidden cup nests deep within the thorny brambles to keep its chicks safe."
       }
-    ]
+    ],
+    "gcse_category": "Farmland"
   },
   {
     "id": "dead-log",
@@ -149,7 +152,8 @@
         "name": "Centipede",
         "how_it_survives": "A fast predator that hunts smaller insects and grubs hiding in the crevices of the dead log."
       }
-    ]
+    ],
+    "gcse_category": "Woodland"
   },
   {
     "id": "oak-tree",
@@ -187,7 +191,8 @@
         "name": "Gall wasp",
         "how_it_survives": "Lays eggs in oak leaves, causing the tree to grow protective round 'galls' that shelter the growing larvae."
       }
-    ]
+    ],
+    "gcse_category": "Woodland"
   },
   {
     "id": "arctic-sea-ice",
@@ -811,7 +816,8 @@
         "name": "Atlantic Salmon",
         "how_it_survives": "Born in the river, swims out to the ocean to grow, and then uses a magnetic sense to find its exact birth river to lay its own eggs!"
       }
-    ]
+    ],
+    "gcse_category": "Freshwater"
   },
   {
     "id": "rock-pool",
@@ -849,7 +855,8 @@
         "name": "Beadlet Anemone",
         "how_it_survives": "Pulls its stinging tentacles inside its body when the tide goes out, looking like a harmless blob of red jelly to conserve moisture."
       }
-    ]
+    ],
+    "gcse_category": "Marine"
   },
   {
     "id": "taiga-forest",
@@ -927,7 +934,8 @@
         "name": "Garden Spider",
         "how_it_survives": "Spins large orb webs across gaps in fences or bushes to catch flying insects, rebuilding the web every single morning."
       }
-    ]
+    ],
+    "gcse_category": "Urban"
   },
   {
     "id": "wildflower-meadow",
@@ -965,7 +973,8 @@
         "name": "Field Vole",
         "how_it_survives": "Weaves intricate tunnel networks through the tall grass to safely hunt for seeds without being spotted by birds of prey above."
       }
-    ]
+    ],
+    "gcse_category": "Grassland"
   },
   {
     "id": "rainforest-floor",

@@ -12,6 +12,7 @@ export interface HabitatEntry {
   title: string;
   emoji: string;
   category: string;
+  gcse_category?: string;
   image_caption?: string;
   description: string;
   animals: { name: string; how_it_survives: string }[];
