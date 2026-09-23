@@ -103,15 +103,24 @@ export const navigation: NavEntry[] = [
     label: 'Handouts',
     href: '/wiki/handouts',
     children: [
-      { label: 'Bees vs. Wasps', href: '/wiki/handout-bees-vs-wasps' },
-      { label: 'Bees vs. Wasps Nests', href: '/wiki/handout-wax-castles-vs-paper-palaces' },
-      { label: 'Butterflies vs. Moths', href: '/wiki/handout-butterflies-vs-moths' },
-      { label: 'Butterfly & Moth Life-Cycle', href: '/wiki/handout-butterfly-moth-life-cycle' },
-      { label: 'Centipedes vs. Millipedes', href: '/wiki/handout-centipedes-vs-millipedes' },
-      { label: 'Dragonflies vs. Damselflies', href: '/wiki/handout-dragonflies-vs-damselflies' },
-      { label: 'Frogs and Toads', href: '/wiki/handout-frogs-and-toads' },
-      { label: 'Grasshoppers vs. Crickets', href: '/wiki/handout-grasshoppers-vs-crickets' },
-      { label: 'Snails vs. Slugs', href: '/wiki/handout-snails-vs-slugs' },
+      {
+        label: 'Species',
+        children: [
+          { label: 'Bees vs. Wasps', href: '/wiki/handout-bees-vs-wasps' },
+          { label: 'Bees vs. Wasps Nests', href: '/wiki/handout-wax-castles-vs-paper-palaces' },
+          { label: 'Butterflies vs. Moths', href: '/wiki/handout-butterflies-vs-moths' },
+          { label: 'Butterfly & Moth Life-Cycle', href: '/wiki/handout-butterfly-moth-life-cycle' },
+          { label: 'Centipedes vs. Millipedes', href: '/wiki/handout-centipedes-vs-millipedes' },
+          { label: 'Dragonflies vs. Damselflies', href: '/wiki/handout-dragonflies-vs-damselflies' },
+          { label: 'Frogs and Toads', href: '/wiki/handout-frogs-and-toads' },
+          { label: 'Grasshoppers vs. Crickets', href: '/wiki/handout-grasshoppers-vs-crickets' },
+          { label: 'Snails vs. Slugs', href: '/wiki/handout-snails-vs-slugs' },
+        ],
+      },
+      {
+        label: 'Habitats',
+        children: HABITATS.map((h) => ({ label: h.title, href: `/wiki/handout-habitat-${h.id}` })),
+      },
     ],
   },
   {
