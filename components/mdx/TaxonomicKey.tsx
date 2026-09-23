@@ -124,7 +124,7 @@ export const TaxonomicKey: React.FC<TaxonomicKeyProps> = ({ id, title }) => {
     return (
         <SelectableResource
             resourceId={id}
-            type="Activity"
+            type="TaxonomicKey"
             title={title}
             data={{}}
         >
@@ -134,13 +134,13 @@ export const TaxonomicKey: React.FC<TaxonomicKeyProps> = ({ id, title }) => {
                         <span className="text-xl">🔍</span> {title}
                     </h3>
                     {history.length > 0 && (
-                        <button onClick={handleReset} className="text-xs text-green-700 hover:text-green-900 font-semibold underline">
+                        <button onClick={handleReset} className="text-xs text-green-700 hover:text-green-900 font-semibold underline print:hidden">
                             Start Over
                         </button>
                     )}
                 </div>
                 
-                <div className="p-8 text-center min-h-[300px] flex flex-col justify-center items-center">
+                <div className="p-8 text-center min-h-[300px] flex flex-col justify-center items-center print:hidden">
                     {node.question ? (
                         <div className="max-w-md w-full">
                             <h4 className="text-2xl font-bold text-slate-800 mb-8">{node.question}</h4>
@@ -168,8 +168,25 @@ export const TaxonomicKey: React.FC<TaxonomicKeyProps> = ({ id, title }) => {
                     )}
                 </div>
                 
+                {/* Print-only static fallback */}
+                <div className="hidden print:block p-8 border-t border-green-200 bg-white">
+                    <h4 className="text-xl font-bold mb-4 text-green-900">How to use this key outdoors:</h4>
+                    <p className="mb-4 text-sm text-slate-700">Answer the questions below to identify what you found!</p>
+                    <div className="space-y-4">
+                        {Object.entries(INVERTEBRATE_KEY).filter(([_, n]) => n.question).map(([id, n]) => (
+                            <div key={id} className="p-3 bg-slate-50 border border-slate-200 rounded">
+                                <p className="font-bold text-slate-800">{n.question}</p>
+                                <div className="ml-4 mt-2 text-sm text-slate-600">
+                                    <p>&#8226; If YES: Go to <strong>{n.yesNode}</strong></p>
+                                    <p>&#8226; If NO: Go to <strong>{n.noNode}</strong></p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </div>
+
                 {history.length > 0 && (
-                    <div className="px-6 py-3 bg-slate-50 border-t border-slate-100 flex justify-start">
+                    <div className="px-6 py-3 bg-slate-50 border-t border-slate-100 flex justify-start print:hidden">
                         <button onClick={handleBack} className="text-sm text-slate-500 hover:text-slate-800 font-medium flex items-center gap-1">
                             <span aria-hidden="true">&larr;</span> Go Back
                         </button>

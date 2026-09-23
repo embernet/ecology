@@ -12,7 +12,7 @@ export const FieldNotebookTemplate: React.FC<FieldNotebookTemplateProps> = ({ id
     return (
         <SelectableResource
             resourceId={id}
-            type="Activity"
+            type="FieldNotebookTemplate"
             title={title}
             data={{}}
         >
