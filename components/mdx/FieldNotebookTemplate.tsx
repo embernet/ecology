@@ -22,7 +22,7 @@ export const FieldNotebookTemplate: React.FC<FieldNotebookTemplateProps> = ({ id
                         <h3 className="font-bold text-amber-900 flex items-center gap-2">
                             <span className="text-xl">📓</span> {title}
                         </h3>
-                        <p className="text-sm text-amber-700 mt-1">A template to print and take outdoors!</p>
+                        <p className="text-sm text-amber-700 mt-1">Add to your resource pack and print to use outdoors!</p>
                     </div>
                 </div>
                 
@@ -78,12 +78,10 @@ export const FieldNotebookTemplate: React.FC<FieldNotebookTemplateProps> = ({ id
                     </div>
                     
                     <div className="flex justify-between items-end border-t-2 border-slate-300 pt-4 mt-12">
-                        <div className="text-xs text-slate-400">Add to your resource pack and print to use outdoors!</div>
-                        <div className="flex gap-4">
-                            <span className="text-xs text-slate-500 font-bold uppercase block mb-1">Weather:</span>
-                            <div className="w-8 h-8 rounded-full border border-slate-300"></div>
-                            <div className="w-8 h-8 rounded-full border border-slate-300"></div>
-                            <div className="w-8 h-8 rounded-full border border-slate-300"></div>
+                        <div className="flex-1"></div>
+                        <div className="flex flex-col">
+                            <span className="text-xs text-slate-500 font-bold uppercase">Weather</span>
+                            <div className="border-b border-slate-300 w-48 h-6"></div>
                         </div>
                     </div>
                 </div>
