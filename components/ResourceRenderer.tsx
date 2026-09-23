@@ -3,6 +3,8 @@
 import ReactMarkdown from 'react-markdown';
 import type { ResourcePackItem } from '@/lib/resource-pack-types';
 import { dictionaryMarkdownComponents } from '@/components/DictionaryWrapper';
+import { FieldNotebookTemplate } from '@/components/mdx/FieldNotebookTemplate';
+import { TaxonomicKey } from '@/components/mdx/TaxonomicKey';
 
 interface ResourceRendererProps {
   item: ResourcePackItem;
@@ -151,6 +153,16 @@ export function ResourceRenderer({ item }: ResourceRendererProps) {
             {sourceTag}
           </div>
         </div>
+      );
+      
+    case 'FieldNotebookTemplate':
+      return (
+        <FieldNotebookTemplate id={item.shortId} title={item.title} />
+      );
+      
+    case 'TaxonomicKey':
+      return (
+        <TaxonomicKey id={item.shortId} title={item.title} />
       );
 
     default:

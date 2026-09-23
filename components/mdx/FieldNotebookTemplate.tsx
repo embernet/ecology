@@ -61,9 +61,8 @@ export const FieldNotebookTemplate: React.FC<FieldNotebookTemplateProps> = ({ id
                     <div className="grid grid-cols-2 gap-8 mb-8">
                         <div>
                             <span className="text-xs text-slate-500 font-bold uppercase block mb-2">Sketch or Rubbing</span>
-                            <div className="border border-slate-300 rounded-lg h-64 w-full bg-slate-50 flex items-center justify-center text-slate-400">
-                                Draw here
-                            </div>
+                            <div className="border border-slate-300 rounded-lg h-64 w-full bg-white"></div>
+                            <div className="text-center text-slate-400 text-sm mt-2 font-medium">Draw here</div>
                         </div>
                         <div>
                             <span className="text-xs text-slate-500 font-bold uppercase block mb-2">Notes & Observations</span>
