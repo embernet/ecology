@@ -101,19 +101,19 @@ export const TaxonomicKey: React.FC<TaxonomicKeyProps> = ({ id, title }) => {
 
                     <div className="space-y-2 mb-8">
                         {KEY_STEPS.map((step) => (
-                            <div key={step.num} className="flex flex-col sm:flex-row sm:items-center justify-between p-3 bg-slate-50 border border-slate-200 rounded-lg gap-2 sm:gap-4">
+                            <div key={step.num} className="flex flex-col sm:flex-row print:flex-row sm:items-center print:items-center justify-between p-3 bg-slate-50 border border-slate-200 rounded-lg gap-2 sm:gap-4 print:gap-4">
                                 <div className="flex items-center gap-3">
                                     <div className="flex-shrink-0 w-6 h-6 text-sm bg-emerald-600 text-white font-bold rounded-full flex items-center justify-center">
                                         {step.num}
                                     </div>
                                     <div className="font-bold text-slate-800">{step.question}</div>
                                 </div>
-                                <div className="flex gap-2 sm:gap-4 items-center text-sm ml-9 sm:ml-0">
+                                <div className="flex gap-2 sm:gap-4 print:gap-4 items-center text-sm ml-9 sm:ml-0 print:ml-0">
                                     {step.options.map((opt, i) => (
                                         <div key={i} className="flex items-center whitespace-nowrap">
                                             <span className="font-semibold text-slate-600 mr-1.5">{opt.text}:</span>
                                             <span className="font-bold text-emerald-700">{opt.destination}</span>
-                                            {i === 0 && <span className="text-slate-300 mx-3 hidden sm:inline">|</span>}
+                                            {i === 0 && <span className="text-slate-300 mx-3 hidden sm:inline print:inline">|</span>}
                                         </div>
                                     ))}
                                 </div>
@@ -123,7 +123,7 @@ export const TaxonomicKey: React.FC<TaxonomicKeyProps> = ({ id, title }) => {
 
                     <div>
                         <h4 className="text-lg font-bold text-slate-800 border-b-2 border-slate-200 pb-2 mb-4">Identification Guide</h4>
-                        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <div className="grid grid-cols-2 md:grid-cols-4 print:grid-cols-4 gap-3">
                             {RESULTS.map((res) => (
                                 <div key={res.name} className="border border-slate-200 rounded-lg p-3 text-center bg-white shadow-sm flex flex-col items-center">
                                     <div className="text-3xl mb-1">{res.emoji}</div>
