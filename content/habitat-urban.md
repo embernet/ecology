@@ -8,9 +8,9 @@ slug: "habitat-urban"
 ## Key UK Species to Look For
 
 Here are some common species you can find in Urban habitats across the UK:
-- **[Urban Fox](/creatures/urban-garden-urban-fox)**: Highly adaptable scavengers that thrive in cities.
-- **[Hedgehog](/creatures/urban-garden-hedgehog)**: Prickly nocturnal mammals that visit gardens to eat slugs.
-- **[Garden Spider](/creatures/urban-garden-garden-spider)**: Master web-weavers found in almost every backyard.
+- **[Urban Fox](/creatures/n369)**: Highly adaptable scavengers that thrive in cities.
+- **[Hedgehog](/creatures/n370)**: Prickly nocturnal mammals that visit gardens to eat slugs.
+- **[Garden Spider](/creatures/n371)**: Master web-weavers found in almost every garden.
 
 ## Identification Activity
 

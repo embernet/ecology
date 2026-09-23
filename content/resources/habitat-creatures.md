@@ -374,7 +374,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   <img src="/habitat-images/animals/urban-garden-garden-spider.jpg" alt="Garden Spider" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
   <figcaption>Garden Spider</figcaption>
 </figure>
-<p>A master web-weaver found in almost every backyard.</p>
+<p>A master web-weaver found in almost every garden.</p>
 </Creature>
 
 <Creature id={`n372`} 
