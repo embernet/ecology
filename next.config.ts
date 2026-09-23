@@ -5,6 +5,11 @@ const nextConfig: NextConfig = {
   images: {
     unoptimized: true,
   },
+  allowedDevOrigins: [
+    'hewie:3000',
+    'http://hewie:3000',
+    'hewie',
+  ],
 };
 
 export default nextConfig;
