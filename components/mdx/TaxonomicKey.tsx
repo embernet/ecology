@@ -1,6 +1,4 @@
-'use client';
-
-import React, { useState } from 'react';
+import React from 'react';
 import { SelectableResource } from '../SelectableResource';
 
 interface TaxonomicKeyProps {
@@ -8,119 +6,77 @@ interface TaxonomicKeyProps {
     title: string;
 }
 
-type NodeId = string;
-
-interface KeyNode {
-    question?: string;
-    yesNode?: NodeId;
-    noNode?: NodeId;
-    resultTitle?: string;
-    resultEmoji?: string;
-    resultDesc?: string;
-}
-
-const INVERTEBRATE_KEY: Record<NodeId, KeyNode> = {
-    start: {
+const KEY_STEPS = [
+    {
+        num: 1,
         question: "Does it have legs?",
-        yesNode: "has_legs",
-        noNode: "no_legs"
+        options: [
+            { text: "Yes", destination: "Go to step 4" },
+            { text: "No", destination: "Go to step 2" }
+        ]
     },
-    no_legs: {
+    {
+        num: 2,
         question: "Does it have a shell?",
-        yesNode: "shell",
-        noNode: "no_shell"
+        options: [
+            { text: "Yes", destination: "Snail 🐌" },
+            { text: "No", destination: "Go to step 3" }
+        ]
     },
-    shell: {
-        resultTitle: "Snail",
-        resultEmoji: "🐌",
-        resultDesc: "A soft-bodied creature that carries its coiled home on its back!"
-    },
-    no_shell: {
+    {
+        num: 3,
         question: "Is its body divided into many segments?",
-        yesNode: "worm",
-        noNode: "slug"
+        options: [
+            { text: "Yes", destination: "Earthworm 🪱" },
+            { text: "No", destination: "Slug 🐌(slug)" }
+        ]
     },
-    worm: {
-        resultTitle: "Earthworm",
-        resultEmoji: "🪱",
-        resultDesc: "A segmented worm that helps aerate the soil."
-    },
-    slug: {
-        resultTitle: "Slug",
-        resultEmoji: "🐌(slug)",
-        resultDesc: "Like a snail, but without a shell!"
-    },
-    has_legs: {
+    {
+        num: 4,
         question: "Does it have exactly 6 legs?",
-        yesNode: "six_legs",
-        noNode: "more_legs"
+        options: [
+            { text: "Yes", destination: "Go to step 5" },
+            { text: "No", destination: "Go to step 6" }
+        ]
     },
-    six_legs: {
+    {
+        num: 5,
         question: "Does it have hard wing cases?",
-        yesNode: "beetle",
-        noNode: "bug_or_fly"
+        options: [
+            { text: "Yes", destination: "Beetle 🪲" },
+            { text: "No", destination: "Other Insect 🦟" }
+        ]
     },
-    beetle: {
-        resultTitle: "Beetle",
-        resultEmoji: "🪲",
-        resultDesc: "An insect with hard protective wing cases (elytra)."
-    },
-    bug_or_fly: {
-        resultTitle: "Other Insect",
-        resultEmoji: "🦟",
-        resultDesc: "Could be a fly, bee, wasp, or butterfly!"
-    },
-    more_legs: {
+    {
+        num: 6,
         question: "Does it have exactly 8 legs?",
-        yesNode: "spider",
-        noNode: "many_legs"
+        options: [
+            { text: "Yes", destination: "Spider 🕷️" },
+            { text: "No", destination: "Go to step 7" }
+        ]
     },
-    spider: {
-        resultTitle: "Spider",
-        resultEmoji: "🕷️",
-        resultDesc: "An arachnid that spins webs to catch its prey."
-    },
-    many_legs: {
+    {
+        num: 7,
         question: "Does it have a flat body with one pair of legs per segment?",
-        yesNode: "centipede",
-        noNode: "millipede"
-    },
-    centipede: {
-        resultTitle: "Centipede",
-        resultEmoji: "🐛",
-        resultDesc: "A fast-moving predator with a flat body."
-    },
-    millipede: {
-        resultTitle: "Millipede",
-        resultEmoji: "🐛",
-        resultDesc: "A slower moving detritivore with a round body and two pairs of legs per segment."
+        options: [
+            { text: "Yes", destination: "Centipede 🐛" },
+            { text: "No", destination: "Millipede 🐛" }
+        ]
     }
-};
+];
+
+const RESULTS = [
+    { name: "Snail", emoji: "🐌", desc: "A soft-bodied creature that carries its coiled home on its back!" },
+    { name: "Slug", emoji: "🐌(slug)", desc: "Like a snail, but without a shell!" },
+    { name: "Earthworm", emoji: "🪱", desc: "A segmented worm that helps aerate the soil." },
+    { name: "Beetle", emoji: "🪲", desc: "An insect with hard protective wing cases (elytra)." },
+    { name: "Other Insect", emoji: "🦟", desc: "Could be a fly, bee, wasp, or butterfly!" },
+    { name: "Spider", emoji: "🕷️", desc: "An arachnid that spins webs to catch its prey." },
+    { name: "Centipede", emoji: "🐛", desc: "A fast-moving predator with a flat body." },
+    { name: "Millipede", emoji: "🐛", desc: "A slower moving detritivore with a round body and two pairs of legs per segment." },
+];
 
 export const TaxonomicKey: React.FC<TaxonomicKeyProps> = ({ id, title }) => {
-    const [currentNode, setCurrentNode] = useState<NodeId>('start');
-    const [history, setHistory] = useState<NodeId[]>([]);
-    
-    const node = INVERTEBRATE_KEY[currentNode];
-
-    const handleAnswer = (nextNode: NodeId) => {
-        setHistory([...history, currentNode]);
-        setCurrentNode(nextNode);
-    };
-
-    const handleBack = () => {
-        if (history.length > 0) {
-            const prev = history[history.length - 1];
-            setHistory(history.slice(0, -1));
-            setCurrentNode(prev);
-        }
-    };
-
-    const handleReset = () => {
-        setHistory([]);
-        setCurrentNode('start');
-    };
-
     return (
         <SelectableResource
             resourceId={id}
@@ -128,70 +84,55 @@ export const TaxonomicKey: React.FC<TaxonomicKeyProps> = ({ id, title }) => {
             title={title}
             data={{}}
         >
-            <div className="bg-white border-2 border-green-200 rounded-xl overflow-hidden shadow-sm my-6">
-                <div className="bg-green-50 px-6 py-4 border-b border-green-200 flex justify-between items-center">
-                    <h3 className="font-bold text-green-900 flex items-center gap-2">
-                        <span className="text-xl">🔍</span> {title}
-                    </h3>
-                    {history.length > 0 && (
-                        <button onClick={handleReset} className="text-xs text-green-700 hover:text-green-900 font-semibold underline print:hidden">
-                            Start Over
-                        </button>
-                    )}
+            <div className="bg-white border-2 border-emerald-200 rounded-xl overflow-hidden shadow-sm my-6">
+                <div className="bg-emerald-50 px-6 py-4 border-b border-emerald-200 flex justify-between items-center no-print">
+                    <div>
+                        <h3 className="font-bold text-emerald-900 flex items-center gap-2">
+                            <span className="text-xl">🔍</span> {title}
+                        </h3>
+                    </div>
                 </div>
                 
-                <div className="p-8 text-center min-h-[300px] flex flex-col justify-center items-center print:hidden">
-                    {node.question ? (
-                        <div className="max-w-md w-full">
-                            <h4 className="text-2xl font-bold text-slate-800 mb-8">{node.question}</h4>
-                            <div className="flex gap-4 justify-center">
-                                <button 
-                                    onClick={() => handleAnswer(node.yesNode!)}
-                                    className="px-8 py-3 bg-green-600 hover:bg-green-700 text-white font-bold rounded-lg shadow-sm transition-transform active:scale-95"
-                                >
-                                    Yes
-                                </button>
-                                <button 
-                                    onClick={() => handleAnswer(node.noNode!)}
-                                    className="px-8 py-3 bg-slate-600 hover:bg-slate-700 text-white font-bold rounded-lg shadow-sm transition-transform active:scale-95"
-                                >
-                                    No
-                                </button>
-                            </div>
-                        </div>
-                    ) : (
-                        <div className="max-w-md w-full bg-yellow-50 p-8 rounded-2xl border border-yellow-200 animate-in fade-in zoom-in duration-300">
-                            <div className="text-6xl mb-4">{node.resultEmoji}</div>
-                            <h4 className="text-3xl font-bold text-slate-800 mb-3">{node.resultTitle}</h4>
-                            <p className="text-slate-600 text-lg">{node.resultDesc}</p>
-                        </div>
-                    )}
-                </div>
-                
-                {/* Print-only static fallback */}
-                <div className="hidden print:block p-8 border-t border-green-200 bg-white">
-                    <h4 className="text-xl font-bold mb-4 text-green-900">How to use this key outdoors:</h4>
-                    <p className="mb-4 text-sm text-slate-700">Answer the questions below to identify what you found!</p>
-                    <div className="space-y-4">
-                        {Object.entries(INVERTEBRATE_KEY).filter(([_, n]) => n.question).map(([id, n]) => (
-                            <div key={id} className="p-3 bg-slate-50 border border-slate-200 rounded">
-                                <p className="font-bold text-slate-800">{n.question}</p>
-                                <div className="ml-4 mt-2 text-sm text-slate-600">
-                                    <p>&#8226; If YES: Go to <strong>{n.yesNode}</strong></p>
-                                    <p>&#8226; If NO: Go to <strong>{n.noNode}</strong></p>
+                <div className="p-6 sm:p-10 bg-white">
+                    <div className="mb-8 border-b-2 border-slate-200 pb-4">
+                        <h4 className="text-2xl font-black text-slate-800 uppercase tracking-wide">Dichotomous Key</h4>
+                        <p className="text-slate-500 mt-2">Follow the numbered steps to identify the minibeast you found!</p>
+                    </div>
+
+                    <div className="space-y-4 mb-12">
+                        {KEY_STEPS.map((step) => (
+                            <div key={step.num} className="flex gap-4 items-start p-4 bg-slate-50 border border-slate-200 rounded-lg">
+                                <div className="flex-shrink-0 w-8 h-8 bg-emerald-600 text-white font-bold rounded-full flex items-center justify-center">
+                                    {step.num}
+                                </div>
+                                <div className="flex-1">
+                                    <div className="font-bold text-lg text-slate-800 mb-3">{step.question}</div>
+                                    <div className="space-y-2">
+                                        {step.options.map((opt, i) => (
+                                            <div key={i} className="flex justify-between items-center text-slate-700 border-b border-slate-200 border-dashed pb-1 last:border-0 last:pb-0">
+                                                <span className="font-medium">&#8226; {opt.text}</span>
+                                                <span className="font-bold text-emerald-700">{opt.destination}</span>
+                                            </div>
+                                        ))}
+                                    </div>
                                 </div>
                             </div>
                         ))}
                     </div>
-                </div>
 
-                {history.length > 0 && (
-                    <div className="px-6 py-3 bg-slate-50 border-t border-slate-100 flex justify-start print:hidden">
-                        <button onClick={handleBack} className="text-sm text-slate-500 hover:text-slate-800 font-medium flex items-center gap-1">
-                            <span aria-hidden="true">&larr;</span> Go Back
-                        </button>
+                    <div className="break-before-page">
+                        <h4 className="text-xl font-bold text-slate-800 border-b-2 border-slate-200 pb-3 mb-6">Identification Guide</h4>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                            {RESULTS.map((res) => (
+                                <div key={res.name} className="border border-slate-200 rounded-lg p-4 text-center bg-white shadow-sm">
+                                    <div className="text-4xl mb-3">{res.emoji}</div>
+                                    <div className="font-bold text-slate-800 mb-2">{res.name}</div>
+                                    <div className="text-xs text-slate-500 leading-relaxed">{res.desc}</div>
+                                </div>
+                            ))}
+                        </div>
                     </div>
-                )}
+                </div>
             </div>
         </SelectableResource>
     );
