@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Suspense } from 'react';
 import { getAllResourcesList } from '@/lib/resource-registry-api';
 import { getActivitiesForResourceIndex } from '@/lib/activities-for-index';
 import { getBiomimicryForResourceIndex } from '@/lib/biomimicry-for-index';
@@ -23,7 +23,9 @@ export default function ResourceIndexPage() {
 
     return (
         <div className="h-screen bg-slate-50 font-sans flex flex-col overflow-hidden">
-            <ResourceIndexClient resources={resources} />
+            <Suspense fallback={<div className="p-8 text-center text-slate-500">Loading resources...</div>}>
+                <ResourceIndexClient resources={resources} />
+            </Suspense>
         </div>
     );
 }
