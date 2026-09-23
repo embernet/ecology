@@ -300,7 +300,7 @@ A large, common tree that makes its own food using energy from the sun.<br />**H
 
 
 
-<Habitat id={`n128`} 
+<Creature id={`n128`} 
   title={`Caterpillar (Primary Consumer)`} 
   emoji={`🐛`} 
   facts={`- A caterpillar's main job is to eat! In just a few weeks, it can increase its body mass by more than 1,000 times.
@@ -308,12 +308,12 @@ A large, common tree that makes its own food using energy from the sun.<br />**H
 - The holes you see in leaves are often a sign that a caterpillar has been eating there.`}
 >
 The larva of a moth or butterfly that eats plants to grow.<br />**How to identify:** Look for its long, segmented body, many legs, and evidence of it chewing on leaves.
-</Habitat>
+</Creature>
 
 
 
 
-<Habitat id={`n129`} 
+<Creature id={`n129`} 
   title={`Blue Tit (Secondary Consumer)`} 
   emoji={``} 
   facts={`- This tiny bird is a skilled acrobat and can easily cling to the thinnest branches to find insects.
@@ -321,7 +321,7 @@ The larva of a moth or butterfly that eats plants to grow.<br />**How to identif
 - A pair of blue tits might need to find 1,000 caterpillars a day to feed their chicks.`}
 >
 A small, colourful bird that eats insects.<br />**How to identify:** Look for its bright blue, yellow, and white feathers and acrobatic behaviour.
-</Habitat>
+</Creature>
 
 
 

@@ -4237,36 +4237,6 @@
       "wikiImages": []
     }
   },
-  "n128": {
-    "type": "Habitat",
-    "title": "Caterpillar (Primary Consumer)",
-    "sourcePage": "year-2-living-things-and-their-habitats",
-    "sourcePageTitle": "Year 2: Living things and their habitats",
-    "data": {
-      "id": "n128",
-      "title": "Caterpillar (Primary Consumer)",
-      "emoji": "🐛",
-      "facts": "- A caterpillar's main job is to eat! In just a few weeks, it can increase its body mass by more than 1,000 times.\n- It is a 'primary consumer' and a 'herbivore' because it is the first animal in the chain to eat the producer.\n- The holes you see in leaves are often a sign that a caterpillar has been eating there.",
-      "type": "Habitat",
-      "childrenHtml": "<p>The larva of a moth or butterfly that eats plants to grow.<br><strong>How to identify:</strong> Look for its long, segmented body, many legs, and evidence of it chewing on leaves.</p>",
-      "wikiImages": []
-    }
-  },
-  "n129": {
-    "type": "Habitat",
-    "title": "Blue Tit (Secondary Consumer)",
-    "sourcePage": "year-2-living-things-and-their-habitats",
-    "sourcePageTitle": "Year 2: Living things and their habitats",
-    "data": {
-      "id": "n129",
-      "title": "Blue Tit (Secondary Consumer)",
-      "emoji": "",
-      "facts": "- This tiny bird is a skilled acrobat and can easily cling to the thinnest branches to find insects.\n- It is a 'secondary consumer' and a 'carnivore' (or insectivore) because it eats the primary consumer.\n- A pair of blue tits might need to find 1,000 caterpillars a day to feed their chicks.",
-      "type": "Habitat",
-      "childrenHtml": "<p>A small, colourful bird that eats insects.<br><strong>How to identify:</strong> Look for its bright blue, yellow, and white feathers and acrobatic behaviour.</p>",
-      "wikiImages": []
-    }
-  },
   "n115": {
     "type": "Creature",
     "title": "Bee",
@@ -4279,6 +4249,36 @@
       "facts": "- A bee is alive because it moves, breathes, and needs nectar (food) from flowers to survive.\n- A single honeybee may visit up to 2,000 flowers in one day.\n- Bees communicate the location of good flowers to each other by performing a special 'waggle dance'.",
       "type": "Creature",
       "childrenHtml": "<p>A flying insect that is vital for pollinating flowers.<br><strong>How to identify:</strong> Look for its fuzzy, black and yellow striped body, four wings, and the buzzing sound it makes.</p>",
+      "wikiImages": []
+    }
+  },
+  "n128": {
+    "type": "Creature",
+    "title": "Caterpillar (Primary Consumer)",
+    "sourcePage": "year-2-living-things-and-their-habitats",
+    "sourcePageTitle": "Year 2: Living things and their habitats",
+    "data": {
+      "id": "n128",
+      "title": "Caterpillar (Primary Consumer)",
+      "emoji": "🐛",
+      "facts": "- A caterpillar's main job is to eat! In just a few weeks, it can increase its body mass by more than 1,000 times.\n- It is a 'primary consumer' and a 'herbivore' because it is the first animal in the chain to eat the producer.\n- The holes you see in leaves are often a sign that a caterpillar has been eating there.",
+      "type": "Creature",
+      "childrenHtml": "<p>The larva of a moth or butterfly that eats plants to grow.<br><strong>How to identify:</strong> Look for its long, segmented body, many legs, and evidence of it chewing on leaves.</p>",
+      "wikiImages": []
+    }
+  },
+  "n129": {
+    "type": "Creature",
+    "title": "Blue Tit (Secondary Consumer)",
+    "sourcePage": "year-2-living-things-and-their-habitats",
+    "sourcePageTitle": "Year 2: Living things and their habitats",
+    "data": {
+      "id": "n129",
+      "title": "Blue Tit (Secondary Consumer)",
+      "emoji": "",
+      "facts": "- This tiny bird is a skilled acrobat and can easily cling to the thinnest branches to find insects.\n- It is a 'secondary consumer' and a 'carnivore' (or insectivore) because it eats the primary consumer.\n- A pair of blue tits might need to find 1,000 caterpillars a day to feed their chicks.",
+      "type": "Creature",
+      "childrenHtml": "<p>A small, colourful bird that eats insects.<br><strong>How to identify:</strong> Look for its bright blue, yellow, and white feathers and acrobatic behaviour.</p>",
       "wikiImages": []
     }
   },

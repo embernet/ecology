@@ -7,7 +7,7 @@ import { getHabitatsForResourceIndex } from '@/lib/habitats-for-index';
 import ResourceIndexClient from '@/components/ResourceIndexClient';
 
 export default function ResourceIndexPage() {
-    const registryResources = getAllResourcesList().filter(r => r.id && r.type);
+    const registryResources = getAllResourcesList().filter(r => r.id && r.type && r.type !== 'Habitat');
     const activityResources = getActivitiesForResourceIndex();
     const biomimicryResources = getBiomimicryForResourceIndex();
     const butWhyResources = getButWhyForResourceIndex();
