@@ -21,7 +21,7 @@ export interface HabitatEntry {
   curriculum_links: CurriculumLink[];
 }
 
-export const HABITATS: HabitatEntry[] = data as HabitatEntry[];
+export const HABITATS: HabitatEntry[] = (data as HabitatEntry[]).sort((a, b) => a.title.localeCompare(b.title));
 
 export function getHabitatEntry(id: string): HabitatEntry | null {
   return HABITATS.find((e) => e.id === id) ?? null;
