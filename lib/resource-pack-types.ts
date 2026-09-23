@@ -1,6 +1,20 @@
 import { typeColorConfig } from './type-colors';
 
-export type ResourceType = keyof typeof typeColorConfig;
+export type ResourceType = 
+  | 'Creature'
+  | 'NatureExample'
+  | 'Activity'
+  | 'Reflection'
+  | 'Requirement'
+  | 'Note'
+  | 'Guidance'
+  | 'Handout'
+  | 'InteractiveActivity'
+  | 'Biomimicry'
+  | 'Habitat'
+  | 'ButWhy'
+  | 'FieldNotebookTemplate'
+  | 'TaxonomicKey';
 
 export interface WikiImageData {
   filename: string;
