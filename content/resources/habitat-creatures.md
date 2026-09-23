@@ -250,7 +250,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🦦`} 
   facts={`- Has webbed feet for powerful swimming, dense waterproof fur, and can close its ears and nose underwater while hunting for fish.`}>
 <figure data-wiki-filename="river-eurasian-otter.jpg">
-  <img src="/habitat-images/animals/river-eurasian-otter.jpg" alt="Eurasian Otter" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/river-eurasian-otter.jpg" alt="Eurasian Otter" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Eurasian Otter</figcaption>
 </figure>
 <p>A playful and elusive fish-hunter found in clean rivers.</p>
@@ -261,7 +261,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🐦`} 
   facts={`- A bird with a streamlined, bullet-shaped body that lets it dive into the water without making a splash to catch small fish.`}>
 <figure data-wiki-filename="river-kingfisher.jpg">
-  <img src="/habitat-images/animals/river-kingfisher.jpg" alt="Kingfisher" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/river-kingfisher.jpg" alt="Kingfisher" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Kingfisher</figcaption>
 </figure>
 <p>A brilliant blue-and-orange bird that dives for small fish.</p>
@@ -272,7 +272,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🐟`} 
   facts={`- Born in the river, swims out to the ocean to grow, and then uses a magnetic sense to find its exact birth river to lay its own eggs!`}>
 <figure data-wiki-filename="river-atlantic-salmon.jpg">
-  <img src="/habitat-images/animals/river-atlantic-salmon.jpg" alt="Atlantic Salmon" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/river-atlantic-salmon.jpg" alt="Atlantic Salmon" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Atlantic Salmon</figcaption>
 </figure>
 <p>A remarkable fish that migrates between rivers and the ocean.</p>
@@ -283,7 +283,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🦀`} 
   facts={`- Has a tough exoskeleton to protect it from waves and predators, and hides deep in the rocky crevices when the tide is out.`}>
 <figure data-wiki-filename="rock-pool-shore-crab.jpg">
-  <img src="/habitat-images/animals/rock-pool-shore-crab.jpg" alt="Shore Crab" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/rock-pool-shore-crab.jpg" alt="Shore Crab" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Shore Crab</figcaption>
 </figure>
 <p>A tough-shelled crustacean hiding in rocky crevices.</p>
@@ -294,7 +294,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🐌`} 
   facts={`- Clamps down onto the rock with incredible force, sealing water inside its shell to stop itself from drying out in the sun.`}>
 <figure data-wiki-filename="rock-pool-common-limpet.jpg">
-  <img src="/habitat-images/animals/rock-pool-common-limpet.jpg" alt="Common Limpet" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/rock-pool-common-limpet.jpg" alt="Common Limpet" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Common Limpet</figcaption>
 </figure>
 <p>A sea snail that clamps onto rocks with incredible force.</p>
@@ -305,7 +305,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🪸`} 
   facts={`- Pulls its stinging tentacles inside its body when the tide goes out, looking like a harmless blob of red jelly to conserve moisture.`}>
 <figure data-wiki-filename="rock-pool-beadlet-anemone.jpg">
-  <img src="/habitat-images/animals/rock-pool-beadlet-anemone.jpg" alt="Beadlet Anemone" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/rock-pool-beadlet-anemone.jpg" alt="Beadlet Anemone" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Beadlet Anemone</figcaption>
 </figure>
 <p>A jelly-like predator that survives low tide by pulling its tentacles inside.</p>
@@ -316,7 +316,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🐻`} 
   facts={`- Eats heavily during the short summer to build up fat, then hibernates in a den through the freezing winter when food is scarce.`}>
 <figure data-wiki-filename="taiga-forest-brown-bear.jpg">
-  <img src="/habitat-images/animals/taiga-forest-brown-bear.jpg" alt="Brown Bear" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/taiga-forest-brown-bear.jpg" alt="Brown Bear" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Brown Bear</figcaption>
 </figure>
 <p>A massive omnivore that hibernates through the harsh winter.</p>
@@ -327,7 +327,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🦌`} 
   facts={`- Has incredibly long legs to wade through deep winter snow and reach the high branches of pine trees.`}>
 <figure data-wiki-filename="taiga-forest-moose-elk.jpg">
-  <img src="/habitat-images/animals/taiga-forest-moose-elk.jpg" alt="Moose" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/taiga-forest-moose-elk.jpg" alt="Moose" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Moose</figcaption>
 </figure>
 <p>The largest species of deer, perfectly adapted to deep snow.</p>
@@ -338,7 +338,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🦡`} 
   facts={`- An agile tree-climber with semi-retractable claws, allowing it to leap between snow-covered branches to hunt red squirrels.`}>
 <figure data-wiki-filename="taiga-forest-pine-marten.jpg">
-  <img src="/habitat-images/animals/taiga-forest-pine-marten.jpg" alt="Pine Marten" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/taiga-forest-pine-marten.jpg" alt="Pine Marten" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Pine Marten</figcaption>
 </figure>
 <p>An agile tree-climbing predator with semi-retractable claws.</p>
@@ -349,7 +349,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🦊`} 
   facts={`- Highly adaptable and not a fussy eater; it will hunt mice, eat fallen fruit, or scavenge leftover takeaways from bins.`}>
 <figure data-wiki-filename="urban-garden-urban-fox.jpg">
-  <img src="/habitat-images/animals/urban-garden-urban-fox.jpg" alt="Urban Fox" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/urban-garden-urban-fox.jpg" alt="Urban Fox" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Urban Fox</figcaption>
 </figure>
 <p>A highly adaptable scavenger that thrives in towns and cities.</p>
@@ -360,7 +360,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🦔`} 
   facts={`- Travels through small holes in fences at night, eating slugs and snails from the flowerbeds to help the gardeners.`}>
 <figure data-wiki-filename="urban-garden-hedgehog.jpg">
-  <img src="/habitat-images/animals/urban-garden-hedgehog.jpg" alt="Hedgehog" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/urban-garden-hedgehog.jpg" alt="Hedgehog" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Hedgehog</figcaption>
 </figure>
 <p>A prickly nocturnal mammal that visits gardens to eat slugs.</p>
@@ -371,7 +371,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🕷️`} 
   facts={`- Spins large orb webs across gaps in fences or bushes to catch flying insects, rebuilding the web every single morning.`}>
 <figure data-wiki-filename="urban-garden-garden-spider.jpg">
-  <img src="/habitat-images/animals/urban-garden-garden-spider.jpg" alt="Garden Spider" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/urban-garden-garden-spider.jpg" alt="Garden Spider" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Garden Spider</figcaption>
 </figure>
 <p>A master web-weaver found in almost every garden.</p>
@@ -382,7 +382,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🐝`} 
   facts={`- Covered in thick hair to stay warm while flying from flower to flower, collecting nectar and accidentally pollinating the plants.`}>
 <figure data-wiki-filename="wildflower-meadow-buff-tailed-bumblebee.jpg">
-  <img src="/habitat-images/animals/wildflower-meadow-buff-tailed-bumblebee.jpg" alt="Buff-tailed Bumblebee" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/wildflower-meadow-buff-tailed-bumblebee.jpg" alt="Buff-tailed Bumblebee" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Buff-tailed Bumblebee</figcaption>
 </figure>
 <p>An essential pollinator for meadow flowers.</p>
@@ -393,7 +393,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🦋`} 
   facts={`- The caterpillars feed exclusively on the fine meadow grasses, perfectly camouflaged in the green stems.`}>
 <figure data-wiki-filename="wildflower-meadow-meadow-brown-butterfly.jpg">
-  <img src="/habitat-images/animals/wildflower-meadow-meadow-brown-butterfly.jpg" alt="Meadow Brown Butterfly" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/wildflower-meadow-meadow-brown-butterfly.jpg" alt="Meadow Brown Butterfly" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Meadow Brown Butterfly</figcaption>
 </figure>
 <p>A camouflaged butterfly whose caterpillars eat fine grasses.</p>
@@ -404,7 +404,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🐭`} 
   facts={`- Weaves intricate tunnel networks through the tall grass to safely hunt for seeds without being spotted by birds of prey above.`}>
 <figure data-wiki-filename="wildflower-meadow-field-vole.jpg">
-  <img src="/habitat-images/animals/wildflower-meadow-field-vole.jpg" alt="Field Vole" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/wildflower-meadow-field-vole.jpg" alt="Field Vole" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Field Vole</figcaption>
 </figure>
 <p>A small mammal that weaves tunnels through the tall grass.</p>
@@ -415,7 +415,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🐜`} 
   facts={`- Cuts pieces of leaves and carries them underground, using them to farm a special fungus which they then eat.`}>
 <figure data-wiki-filename="rainforest-floor-leaf-cutter-ant.jpg">
-  <img src="/habitat-images/animals/rainforest-floor-leaf-cutter-ant.jpg" alt="Leaf-cutter Ant" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/rainforest-floor-leaf-cutter-ant.jpg" alt="Leaf-cutter Ant" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Leaf-cutter Ant</figcaption>
 </figure>
 <p>A strong insect that farms fungus underground.</p>
@@ -426,7 +426,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🐆`} 
   facts={`- Has a beautiful spotted coat (rosettes) that provides perfect camouflage in the dappled shadows of the forest floor while stalking prey.`}>
 <figure data-wiki-filename="rainforest-floor-jaguar.jpg">
-  <img src="/habitat-images/animals/rainforest-floor-jaguar.jpg" alt="Jaguar" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/rainforest-floor-jaguar.jpg" alt="Jaguar" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Jaguar</figcaption>
 </figure>
 <p>A powerful apex predator perfectly camouflaged for the shadows.</p>
@@ -437,7 +437,7 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
   emoji={`🐸`} 
   facts={`- Uses incredibly bright colours to warn predators on the dark forest floor that its skin is highly toxic.`}>
 <figure data-wiki-filename="rainforest-floor-poison-dart-frog.jpg">
-  <img src="/habitat-images/animals/rainforest-floor-poison-dart-frog.jpg" alt="Poison Dart Frog" style={{maxWidth:"100%",height:"auto"}} loading="lazy" />
+  <img src="/habitat-images/animals/rainforest-floor-poison-dart-frog.jpg" alt="Poison Dart Frog" style="max-width:100%;height:auto;" loading="lazy" />
   <figcaption>Poison Dart Frog</figcaption>
 </figure>
 <p>A tiny, brightly coloured amphibian with highly toxic skin.</p>
