@@ -33,15 +33,41 @@ export default async function CreaturesPage() {
               <Link key={shortId} href={`/creatures/${shortId}`} className="group block h-full">
                 <article className="bg-white rounded-xl shadow-sm border border-amber-100 overflow-hidden hover:shadow-md transition-shadow h-full flex flex-col">
                   <div className="bg-gradient-to-r from-amber-50 to-orange-50 p-4 flex-grow border-b border-amber-100 flex flex-col items-center text-center justify-center gap-2">
-                    {c.data?.emoji ? (
-                      <div className="w-12 h-12 flex items-center justify-center text-2xl bg-white rounded-full shadow-sm border border-amber-100 group-hover:scale-110 transition-transform">
-                        {c.data.emoji}
-                      </div>
-                    ) : (
-                      <div className="w-12 h-12 flex items-center justify-center text-2xl bg-white rounded-full shadow-sm border border-amber-100 group-hover:scale-110 transition-transform">
-                        🐾
-                      </div>
-                    )}
+                    {(() => {
+                      let imageUrl = null;
+                      if (c.data?.wikiImages && c.data.wikiImages.length > 0) {
+                        const img = c.data.wikiImages[0];
+                        if (img.isStandardImg) {
+                          imageUrl = img.filename;
+                        } else {
+                          const cleanFilename = img.filename.trim().split(' ').join('_');
+                          imageUrl = `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(cleanFilename)}?width=400`;
+                        }
+                      }
+                      
+                      if (imageUrl) {
+                        return (
+                          <div className="w-full aspect-[4/3] relative mb-2 rounded-lg overflow-hidden shadow-sm border border-amber-200/50 group-hover:scale-105 transition-transform bg-amber-50 flex-shrink-0">
+                            <img 
+                              src={imageUrl} 
+                              alt={c.title} 
+                              className="w-full h-full object-cover"
+                              loading="lazy"
+                            />
+                          </div>
+                        );
+                      }
+                      
+                      return c.data?.emoji ? (
+                        <div className="w-16 h-16 flex items-center justify-center text-3xl bg-white rounded-full shadow-sm border border-amber-100 group-hover:scale-110 transition-transform">
+                          {c.data.emoji}
+                        </div>
+                      ) : (
+                        <div className="w-16 h-16 flex items-center justify-center text-3xl bg-white rounded-full shadow-sm border border-amber-100 group-hover:scale-110 transition-transform">
+                          🐾
+                        </div>
+                      );
+                    })()}
                     <h3 className="text-md font-bold text-amber-900 leading-tight">
                       {c.title}
                     </h3>
