@@ -403,7 +403,7 @@ Usually identified by its small, dome-shaped body, which is often red or yellow 
 
 
 
-<Creature id={`n51`} 
+<Creature id={`n44`} 
   title={`Fox`} 
   emoji={`🦊`} 
   facts={`- Foxes have amazing hearing and can hear a mouse squeak from 100 metres away.
@@ -439,7 +439,7 @@ Look for an animal with two main body parts and eight legs (insects have three b
 ### Omnivores (Eat plants and meat)
 
 
-<Creature id={`n53`} 
+<Creature id={`n45`} 
   title={`Badger`} 
   emoji={`🦡`} 
   facts={`- Earthworms are a badger's favourite food, and they can eat hundreds in a single night!
@@ -456,7 +456,7 @@ Unmistakeable due to its stocky, grey body and the bold black and white stripes 
 
 
 
-<Creature id={`n54`} 
+<Creature id={`n42`} 
   title={`Blue Tit`} 
   emoji={``} 
   facts={`- In winter, blue tits team up with other tit species to form big flocks, making it easier to find food and spot danger.

@@ -1,3 +1,4 @@
+import { Suspense } from 'react';
 import { HabitatsBrowser } from '@/components/HabitatsBrowser';
 
 export const metadata = {
@@ -20,7 +21,9 @@ export default function HabitatsPage() {
           </p>
         </header>
 
-        <HabitatsBrowser />
+        <Suspense fallback={<div className="text-center py-12 text-slate-500">Loading habitats...</div>}>
+          <HabitatsBrowser />
+        </Suspense>
       </div>
     </div>
   );

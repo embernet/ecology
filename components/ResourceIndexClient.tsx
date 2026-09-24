@@ -211,8 +211,9 @@ function ResourceCard({ resource }: { resource: IndexResource }) {
     if (resource.data.activityImages?.length) return resource.data.activityImages;
     if (!resource.data.wikiImages) return [];
     return resource.data.wikiImages.map(img => {
+      if (img.isStandardImg) return img.filename;
       const cleanFilename = img.filename.trim().split(' ').join('_');
-      return `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(cleanFilename)}`;
+      return `https://commons.wikimedia.org/wiki/Special:FilePath/${encodeURIComponent(cleanFilename)}?width=400`;
     });
   }, [resource.data]);
 

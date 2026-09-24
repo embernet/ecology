@@ -20,6 +20,9 @@ slug: "year-2-living-things-and-their-habitats"
 - A single honeybee may visit up to 2,000 flowers in one day.
 - Bees communicate the location of good flowers to each other by performing a special 'waggle dance'.`}
 >
+<WikiImage filename="Bee.jpg" alt="Bee" />
+<p>A pollinating insect essential for many ecosystems.</p>
+
 A flying insect that is vital for pollinating flowers.<br />**How to identify:** Look for its fuzzy, black and yellow striped body, four wings, and the buzzing sound it makes.
 </Creature>
 
@@ -307,6 +310,9 @@ A large, common tree that makes its own food using energy from the sun.<br />**H
 - It is a 'primary consumer' and a 'herbivore' because it is the first animal in the chain to eat the producer.
 - The holes you see in leaves are often a sign that a caterpillar has been eating there.`}
 >
+<WikiImage filename="Caterpillar.jpg" alt="Caterpillar" />
+<p>The larval stage of a butterfly or moth.</p>
+
 The larva of a moth or butterfly that eats plants to grow.<br />**How to identify:** Look for its long, segmented body, many legs, and evidence of it chewing on leaves.
 </Creature>
 
@@ -320,6 +326,9 @@ The larva of a moth or butterfly that eats plants to grow.<br />**How to identif
 - It is a 'secondary consumer' and a 'carnivore' (or insectivore) because it eats the primary consumer.
 - A pair of blue tits might need to find 1,000 caterpillars a day to feed their chicks.`}
 >
+<WikiImage filename="Blue_Tit.jpg" alt="Blue Tit" />
+<p>A small garden bird that commonly eats caterpillars.</p>
+
 A small, colourful bird that eats insects.<br />**How to identify:** Look for its bright blue, yellow, and white feathers and acrobatic behaviour.
 </Creature>
 
@@ -333,6 +342,9 @@ A small, colourful bird that eats insects.<br />**How to identify:** Look for it
 - It is a 'tertiary consumer' and a 'top predator' as it is at the top of this food chain.
 - Female sparrowhawks are much larger than the males.`}
 >
+<WikiImage filename="Sparrowhawk.jpg" alt="Sparrowhawk" />
+<p>A small bird of prey that hunts other birds.</p>
+
 A powerful bird of prey that hunts smaller birds.<br />**How to identify:** Look for its broad wings, long tail, and fierce yellow eyes. It flies with a distinctive 'flap-flap-glide' pattern.
 </Creature>
 

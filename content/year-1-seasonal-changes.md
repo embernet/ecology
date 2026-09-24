@@ -71,7 +71,7 @@ In spring, frogs wake up from their winter hibernation and head straight to a po
 
 
 
-<Creature id={`n87`} 
+<Creature id={`n42`} 
   title={`Blue Tit`} 
   emoji={`🐦`} 
   facts={`- Blue tits can lay up to 12 eggs at once, which is a lot for such a tiny bird!
@@ -308,7 +308,7 @@ Robins are one of the few birds you can hear singing all through the winter. The
 
 
 
-<Creature id={`n99`} 
+<Creature id={`n35`} 
   title={`Common Frog`} 
   emoji={`🐸`} 
   facts={`- When a frog hibernates at the bottom of a pond, it doesn't need to come up for air. It breathes through its skin instead!
@@ -325,7 +325,7 @@ Frogs get very, very sleepy in winter. They hibernate (go into a deep sleep) to 
 
 
 
-<Creature id={`n100`} 
+<Creature id={`n50`} 
   title={`Ladybird`} 
   emoji={`🐞`} 
   facts={`- A group of ladybirds is sometimes called a 'loveliness'.

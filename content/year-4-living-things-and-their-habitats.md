@@ -35,13 +35,16 @@ slug: "year-4-living-things-and-their-habitats"
 
 ### Examples of Invertebrates
 
-<Creature id={`n180`} 
+<Creature id={`n48`} 
   title={`Snail`} 
   emoji={`🐌`} 
   facts={`- A snail can sleep for up to three years if the conditions are not right for it.
 - It moves on a single, muscular 'foot' that is lubricated by a trail of slime.
 - Its blood is blue, not red.`}
 >
+<WikiImage filename="Snail.jpg" alt="Snail" />
+<p>A mollusk with a coiled shell.</p>
+
 A slow-moving mollusc that carries its spiral shell on its back.<br />**Key Question:** Does it have a shell? **Yes.**
 </Creature>
 
@@ -55,19 +58,25 @@ A slow-moving mollusc that carries its spiral shell on its back.<br />**Key Ques
 - They have four tentacles on their head; the top two have eyes, and the bottom two are for smelling and feeling.
 - Some slugs can stretch to 20 times their resting length to squeeze through tiny gaps.`}
 >
+<WikiImage filename="Slug.jpg" alt="Slug" />
+<p>A mollusk closely related to snails, but without a visible shell.</p>
+
 A mollusc similar to a snail but without a visible shell.<br />**Key Question:** Does it have a shell? **No.**
 </Creature>
 
 
 
 
-<Creature id={`n182`} 
+<Creature id={`n52`} 
   title={`Spider`} 
   emoji={`🕷️`} 
   facts={`- Most spiders have eight eyes, but many have poor vision and use vibrations in their web to "see" what they've caught.
 - Unlike insects, spiders have two main body parts instead of three.
 - Spider silk is, weight for weight, stronger than steel.`}
 >
+<WikiImage filename="Spider.jpg" alt="Spider" />
+<p>An arachnid with eight legs that often spins webs.</p>
+
 An eight-legged arachnid that produces silk.<br />**Key Question:** Does it have eight legs? **Yes.**
 </Creature>
 
@@ -81,6 +90,9 @@ An eight-legged arachnid that produces silk.<br />**Key Question:** Does it have
 - The hard front wings, called elytra, protect the delicate flight wings underneath.
 - Glow-worms, often seen in the British countryside, are actually a type of beetle.`}
 >
+<WikiImage filename="Beetle.jpg" alt="Beetle" />
+<p>An insect with hard front wings that form a protective case.</p>
+
 An insect with a hard, protective wing case.<br />**Key Question:** Does it have six legs and a hard wing case? **Yes.**
 </Creature>
 

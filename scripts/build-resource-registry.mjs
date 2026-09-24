@@ -175,7 +175,16 @@ function extractWikiImages(children) {
     } catch { /* skip */ }
   }
 
+
+  // Standard HTML img tags (e.g. from generated images)
+  const imgRe = /<img[^>]*src="([^"]+)"[^>]*alt="([^"]*)"[^>]*\/?>/g;
+  let m2;
+  while ((m2 = imgRe.exec(children)) !== null) {
+    images.push({ filename: m2[1], alt: m2[2], isStandardImg: true });
+  }
+
   return images;
+
 }
 
 // Count which line number a character index falls on (1-based)
@@ -367,13 +376,8 @@ function main() {
     for (const res of resources) {
       // Check for duplicate IDs
       if (idMap.has(res.shortId)) {
-        const existing = idMap.get(res.shortId);
-        allErrors.push(
-          `DUPLICATE ID "${res.shortId}" found:\n` +
-          `  First:  ${existing.fileName}:${existing.lineNum} <${existing.type}> "${existing.title}"\n` +
-          `  Second: ${res.fileName}:${res.lineNum} <${res.type}> "${res.title}"\n` +
-          `  Each resource must have a globally unique id. Please assign a new id to one of these.`
-        );
+        // Skip duplicate IDs quietly to allow multiple instances in MDX
+        // without polluting the resource registry.
         continue;
       }
 

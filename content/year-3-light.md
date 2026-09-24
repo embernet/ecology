@@ -141,7 +141,7 @@ So, night-time animals have to pay attention to the dark and how much light the 
 
 
 
-<Creature id={`n142`} 
+<Creature id={`n95`} 
   title={`Hedgehog`} 
   emoji={`🦔`} 
   facts={`- A hedgehog is a gardener's friend because it loves to eat slugs, snails, and insects that might damage plants.
@@ -194,7 +194,7 @@ Look for their five-toed footprints in muddy riverbanks and for their poo, calle
 
 
 
-<Creature id={`n145`} 
+<Creature id={`n44`} 
   title={`Fox`} 
   emoji={`🦊`} 
   facts={`- A fox's hearing is so good it can hear a mouse squeak from 100 metres away, helping it to hunt in the dark.

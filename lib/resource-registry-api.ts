@@ -9,7 +9,7 @@ export interface ResourceData {
   description?: string;
   text?: string;
   childrenHtml: string;
-  wikiImages?: { filename: string; alt: string }[];
+  wikiImages?: { filename: string; alt: string; isStandardImg?: boolean }[];
 }
 
 export interface RegistryResource {

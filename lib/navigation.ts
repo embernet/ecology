@@ -151,6 +151,10 @@ export const navigation: NavEntry[] = [
     children: HABITATS.map((h) => ({ label: h.title, href: `/habitats/${h.id}` })),
   },
   {
+    label: 'Creature Directory',
+    href: '/creatures',
+  },
+  {
     label: 'Biomimicry',
     href: '/biomimicry',
     children: BIOMIMICRY.map((e) => ({ label: e.title, href: `/biomimicry/${e.id}` })),

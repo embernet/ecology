@@ -15,13 +15,11 @@ slug: "year-6-evolution-and-inheritance"
 <Creature id={`n216`} 
   title={`Arctic Fox`} 
   emoji={`❄️`} 
-  facts={`- **Coat:** The Arctic fox is a master of disguise. Its coat is brilliant white in winter to blend in with snow, but it changes to a brownish-grey in summer to match the tundra rocks.
-- **Warmth:** Its fur is the best insulating fur of any mammal. The fox can survive temperatures as low as -50°C (-58°F) before it even needs to start shivering.
-- **Ears & Paws:** The fox has fur on the bottom of its paws to protect them from the cold ground and provide grip on the ice. Its small ears and short nose also help prevent heat loss.`}
->
-A small fox found in the Arctic, perfectly suited to its frozen environment.
-
-**Adaptations:** Has a thick white coat for camouflage and warmth, and small ears to reduce heat loss.
+  facts={`- Their fur turns from brown in summer to white in winter for camouflage.
+- They wrap their bushy tails around themselves like a blanket to stay warm.
+- They have fur on the soles of their feet to prevent slipping on ice.`}>
+<img src="/habitat-images/animals/n216-arctic-fox.jpg" alt="Arctic Fox" className="max-w-full h-auto" />
+<p>A small fox with a thick coat that changes color with the seasons.</p>
 </Creature>
 
 
@@ -45,13 +43,11 @@ A succulent plant that thrives in dry, desert climates.
 <Creature id={`n218`} 
   title={`Giraffe`} 
   emoji={`🦒`} 
-  facts={`- **Neck:** A giraffe has the same number of neck bones as a human—just seven! Each vertebra, however, is extremely long, measuring up to 25 cm (10 inches).
-- **Tongue:** To eat from thorny acacia trees, a giraffe uses its tough, 45 cm (18-inch) long prehensile tongue to delicately strip the leaves from between the spikes.
-- **Heart:** To pump blood all the way up its long neck to its brain, a giraffe has a massive heart that can be 60 cm (2 feet) long and weigh over 11 kg (25 lbs).`}
->
-The world's tallest mammal, native to the African savanna.
-
-**Adaptations:** A very long neck allows it to browse on leaves high up on acacia trees, a food source other animals can't reach.
+  facts={`- A giraffe's neck is too short to reach the ground, so it has to splay its legs to drink.
+- They only need to drink once every few days because they get most of their water from leaves.
+- Each giraffe's spot pattern is completely unique, like a human fingerprint.`}>
+<WikiImage filename="Giraffe.jpg" alt="Giraffe" />
+<p>The tallest living land animal, known for its incredibly long neck.</p>
 </Creature>
 
 

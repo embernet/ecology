@@ -20,6 +20,7 @@ export type ResourceType =
 export interface WikiImageData {
   filename: string;
   alt: string;
+  isStandardImg?: boolean;
   credit?: string;
 }
 

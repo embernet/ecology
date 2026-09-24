@@ -3,6 +3,8 @@ import Link from 'next/link';
 import { getResourceRegistry } from '@/lib/resource-registry-api';
 import { ResourceComponents } from '@/lib/resource-components';
 import { SPECIES_HANDOUT_LINKS } from '@/lib/species-handouts';
+import { PrevNextNav } from '@/components/PrevNextNav';
+import type { NavItem } from '@/lib/navigation';
 
 export function generateStaticParams() {
   const registry = getResourceRegistry();
@@ -26,16 +28,23 @@ export default async function CreaturePage({ params }: { params: Promise<{ id: s
   
   const relatedHandouts = SPECIES_HANDOUT_LINKS.filter(h => h.creatures.some(c => c.id === resolvedParams.id));
 
+  
+  const allCreatures = Object.entries(registry)
+    .filter(([_, res]) => res.type === 'Creature')
+    .sort((a, b) => a[1].title.localeCompare(b[1].title));
+    
+  const currentIndex = allCreatures.findIndex(([id]) => id === resolvedParams.id);
+  const prevCreature = currentIndex > 0 ? allCreatures[currentIndex - 1] : null;
+  const nextCreature = currentIndex < allCreatures.length - 1 ? allCreatures[currentIndex + 1] : null;
+  
+  const prev: NavItem | null = prevCreature ? { href: `/creatures/${prevCreature[0]}`, label: prevCreature[1].title } : null;
+  const next: NavItem | null = nextCreature ? { href: `/creatures/${nextCreature[0]}`, label: nextCreature[1].title } : null;
+
   return (
     <div className="main-scroll-area bg-slate-50">
       
-      {/* Breadcrumbs */}
-      <div className="bg-white border-b border-slate-200 py-3 px-4 sm:px-6 lg:px-8">
-        <div className="max-w-4xl mx-auto flex items-center text-sm text-slate-500">
-          <Link href="/creatures" className="hover:text-amber-600 transition-colors">Creature Directory</Link>
-          <span className="mx-2">/</span>
-          <span className="text-slate-900 font-medium">{creature.title}</span>
-        </div>
+      <div className="flex-shrink-0 z-10 bg-white border-b border-slate-200" style={{ padding: '0.8rem 2rem' }}>
+        <PrevNextNav prev={prev} next={next} sectionLabel="Creature Directory" sectionHref="/creatures" title={creature.title} />
       </div>
 
       <div className="py-10">

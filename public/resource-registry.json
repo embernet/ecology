@@ -1911,26 +1911,6 @@
       ]
     }
   },
-  "n51": {
-    "type": "Creature",
-    "title": "Fox",
-    "sourcePage": "year-1-animals-including-humans",
-    "sourcePageTitle": "Year 1: Animals, including humans",
-    "data": {
-      "id": "n51",
-      "title": "Fox",
-      "emoji": "🦊",
-      "facts": "- Foxes have amazing hearing and can hear a mouse squeak from 100 metres away.\n- They use their bushy tail as a warm cover in cold weather and as a signal to communicate with other foxes.\n- They are skilled hunters with a varied diet, eating everything from rabbits and rodents to fruit and discarded takeaways.",
-      "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"Red Fox (Vulpes vulpes) (4).jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Red_Fox_(Vulpes_vulpes)_(4).jpg\" alt=\"Two red foxes\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Two red foxes</figcaption></figure>\n<p>A cunning, dog-like mammal with a bushy tail, common in both rural and urban areas.</p>\n<p><strong>How to identify:</strong><br></p>\n<p>Look for its reddish-brown fur, long bushy tail (brush) with a white tip, and pointed muzzle.</p>",
-      "wikiImages": [
-        {
-          "filename": "Red Fox (Vulpes vulpes) (4).jpg",
-          "alt": "Two red foxes"
-        }
-      ]
-    }
-  },
   "n52": {
     "type": "Creature",
     "title": "Spider",
@@ -1947,46 +1927,6 @@
         {
           "filename": "Common Garden Spider - geograph.org.uk - 4683897.jpg",
           "alt": "A common garden spider in it's web"
-        }
-      ]
-    }
-  },
-  "n53": {
-    "type": "Creature",
-    "title": "Badger",
-    "sourcePage": "year-1-animals-including-humans",
-    "sourcePageTitle": "Year 1: Animals, including humans",
-    "data": {
-      "id": "n53",
-      "title": "Badger",
-      "emoji": "🦡",
-      "facts": "- Earthworms are a badger's favourite food, and they can eat hundreds in a single night!\n- They have long, powerful claws for digging their extensive underground homes, called setts.\n- Although they eat mainly worms and insects, they will also eat fruit, seeds, and small mammals.",
-      "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"European Badger - Meles meles - Scotland (53260881618).jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/European_Badger_-_Meles_meles_-_Scotland_(53260881618).jpg\" alt=\"A badger\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>A badger</figcaption></figure>\n<p>A powerful, nocturnal mammal with a distinctive black and white striped face.</p>\n<p><strong>How to identify:</strong><br></p>\n<p>Unmistakeable due to its stocky, grey body and the bold black and white stripes on its head.</p>",
-      "wikiImages": [
-        {
-          "filename": "European Badger - Meles meles - Scotland (53260881618).jpg",
-          "alt": "A badger"
-        }
-      ]
-    }
-  },
-  "n54": {
-    "type": "Creature",
-    "title": "Blue Tit",
-    "sourcePage": "year-1-animals-including-humans",
-    "sourcePageTitle": "Year 1: Animals, including humans",
-    "data": {
-      "id": "n54",
-      "title": "Blue Tit",
-      "emoji": "",
-      "facts": "- In winter, blue tits team up with other tit species to form big flocks, making it easier to find food and spot danger.\n- They are very clever and are famous for learning how to peck through the foil tops of milk bottles to drink the cream.\n- Their diet changes with the seasons; they eat caterpillars and insects in the spring and switch to seeds and nuts in the winter.",
-      "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"073 Wild Eurasian blue tit parent feeding at Pfyn-Finges Photo by Giles Laurent.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/073_Wild_Eurasian_blue_tit_parent_feeding_at_Pfyn-Finges_Photo_by_Giles_Laurent.jpg\" alt=\"A bluetit feeding a catterpillar to it's baby\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>A bluetit feeding a catterpillar to it's baby</figcaption></figure>\n<p>A small, colourful garden bird with a blue cap.</p>\n<p><strong>How to identify:</strong><br></p>\n<p>Look for its bright blue, yellow, and white feathers, small size, and acrobatic behaviour on bird feeders.</p>",
-      "wikiImages": [
-        {
-          "filename": "073 Wild Eurasian blue tit parent feeding at Pfyn-Finges Photo by Giles Laurent.jpg",
-          "alt": "A bluetit feeding a catterpillar to it's baby"
         }
       ]
     }
@@ -3387,26 +3327,6 @@
       ]
     }
   },
-  "n87": {
-    "type": "Creature",
-    "title": "Blue Tit",
-    "sourcePage": "year-1-seasonal-changes",
-    "sourcePageTitle": "Year 1: Seasonal changes",
-    "data": {
-      "id": "n87",
-      "title": "Blue Tit",
-      "emoji": "🐦",
-      "facts": "- Blue tits can lay up to 12 eggs at once, which is a lot for such a tiny bird!\n- They are very acrobatic and love to hang upside down on bird feeders.\n- Their bright feathers can even see colours that humans can't (called ultraviolet light), which helps them find a partner.",
-      "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"Blue Tit @ nest box 02.06.11 (5790732023).jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Blue_Tit_%40_nest_box_02.06.11_(5790732023).jpg\" alt=\"A blue tit bringing food to its nest box\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>A blue tit bringing food to its nest box</figcaption></figure>\n<p>A small, colourful bird with blue, yellow, and green feathers.</p>\n<p><strong>Seasonal Behaviour:</strong><br></p>\n<p>Spring is nest-building time! Blue tits look for a small hole, like a bird box or a crack in a tree, and fill it with soft materials like moss, wool, and feathers. They get it ready for the female to lay her eggs and raise her chicks.</p>",
-      "wikiImages": [
-        {
-          "filename": "Blue Tit @ nest box 02.06.11 (5790732023).jpg",
-          "alt": "A blue tit bringing food to its nest box"
-        }
-      ]
-    }
-  },
   "n88": {
     "type": "Creature",
     "title": "Brown Hare",
@@ -3563,50 +3483,6 @@
         {
           "filename": "European robin (Erithacus rubecula) singing 3.jpg",
           "alt": "Robin singing"
-        }
-      ]
-    }
-  },
-  "n99": {
-    "type": "Creature",
-    "title": "Common Frog",
-    "sourcePage": "year-1-seasonal-changes",
-    "sourcePageTitle": "Year 1: Seasonal changes",
-    "data": {
-      "id": "n99",
-      "title": "Common Frog",
-      "emoji": "🐸",
-      "facts": "- When a frog hibernates at the bottom of a pond, it doesn't need to come up for air. It breathes through its skin instead!\n- A frog's heart can slow down so much during hibernation that it only beats a few times every minute.\n- Some frogs can even survive being frozen solid in ice and will wake up when the ice thaws in spring.",
-      "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"Common frog (Rana temporaria).jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Common_frog_(Rana_temporaria).jpg\" alt=\"A common frog sitting in shallow water\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>A common frog sitting in shallow water</figcaption></figure>\n<p>These amphibians live in ponds and damp, grassy places.</p>\n<p><strong>Seasonal Behaviour:</strong><br></p>\n<p>Frogs get very, very sleepy in winter. They hibernate (go into a deep sleep) to save energy. Most frogs will hide in a log pile or a compost heap, but some will even sleep at the very bottom of a pond, hiding in the mud!</p>",
-      "wikiImages": [
-        {
-          "filename": "Common frog (Rana temporaria).jpg",
-          "alt": "A common frog sitting in shallow water"
-        }
-      ]
-    }
-  },
-  "n100": {
-    "type": "Creature",
-    "title": "Ladybird",
-    "sourcePage": "year-1-seasonal-changes",
-    "sourcePageTitle": "Year 1: Seasonal changes",
-    "data": {
-      "id": "n100",
-      "title": "Ladybird",
-      "emoji": "🐞",
-      "facts": "- A group of ladybirds is sometimes called a 'loveliness'.\n- Their bright colours are a warning to birds, saying \"Don't eat me, I taste horrible!\"\n- The number of spots on a ladybird does not tell you its age, but it can help you tell what type of ladybird it is.\n- Ladybirds will often start to hibernate towards the end of summer even before it starts to get cold. They do this because there are no more greenfly around - because there is not enough food, so they go to sleep until there is food again!\n- The large cluster of red and black creates a stronger visual warning to birds that this will not taste nice!",
-      "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"Ladybirds emerge from hibernation by telegraph pole (23903082068).jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Ladybirds_emerge_from_hibernation_by_telegraph_pole_(23903082068).jpg\" alt=\"A cluster of ladybirds emerge from hibernation\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>A cluster of ladybirds emerge from hibernation</figcaption></figure>\n<figure data-wiki-filename=\"Close-up of a mass gathering of ladybugs near the peak of Glorieta Baldy north of Glorieta, New Mexico on 29 August, 2022.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Close-up_of_a_mass_gathering_of_ladybugs_near_the_peak_of_Glorieta_Baldy_north_of_Glorieta%2C_New_Mexico_on_29_August%2C_2022.jpg\" alt=\"A mass gathering of ladybirds on a tree in New Mexico getting ready for hibernation\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>A mass gathering of ladybirds on a tree in New Mexico getting ready for hibernation</figcaption></figure>\n<p>A small, spotty beetle that is very helpful in the garden because it eats aphids (greenfly).</p>\n<p><strong>Seasonal Behaviour:</strong><br></p>\n<p>In winter, you won't find many ladybirds crawling on plants. They are all hibernating! They often huddle together in a big group, called a 'cluster', to keep warm. They will hide in sheds, under tree bark, or in tiny gaps in your window frames.</p>",
-      "wikiImages": [
-        {
-          "filename": "Ladybirds emerge from hibernation by telegraph pole (23903082068).jpg",
-          "alt": "A cluster of ladybirds emerge from hibernation"
-        },
-        {
-          "filename": "Close-up of a mass gathering of ladybugs near the peak of Glorieta Baldy north of Glorieta, New Mexico on 29 August, 2022.jpg",
-          "alt": "A mass gathering of ladybirds on a tree in New Mexico getting ready for hibernation"
         }
       ]
     }
@@ -4596,8 +4472,13 @@
       "emoji": "🐝",
       "facts": "- A bee is alive because it moves, breathes, and needs nectar (food) from flowers to survive.\n- A single honeybee may visit up to 2,000 flowers in one day.\n- Bees communicate the location of good flowers to each other by performing a special 'waggle dance'.",
       "type": "Creature",
-      "childrenHtml": "<p>A flying insect that is vital for pollinating flowers.<br><strong>How to identify:</strong> Look for its fuzzy, black and yellow striped body, four wings, and the buzzing sound it makes.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Bee.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Bee.jpg\" alt=\"Bee\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Bee</figcaption></figure>\n<p>A pollinating insect essential for many ecosystems.</p>\n<p>A flying insect that is vital for pollinating flowers.<br><strong>How to identify:</strong> Look for its fuzzy, black and yellow striped body, four wings, and the buzzing sound it makes.</p>",
+      "wikiImages": [
+        {
+          "filename": "Bee.jpg",
+          "alt": "Bee"
+        }
+      ]
     }
   },
   "n128": {
@@ -4611,8 +4492,13 @@
       "emoji": "🐛",
       "facts": "- A caterpillar's main job is to eat! In just a few weeks, it can increase its body mass by more than 1,000 times.\n- It is a 'primary consumer' and a 'herbivore' because it is the first animal in the chain to eat the producer.\n- The holes you see in leaves are often a sign that a caterpillar has been eating there.",
       "type": "Creature",
-      "childrenHtml": "<p>The larva of a moth or butterfly that eats plants to grow.<br><strong>How to identify:</strong> Look for its long, segmented body, many legs, and evidence of it chewing on leaves.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Caterpillar.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Caterpillar.jpg\" alt=\"Caterpillar\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Caterpillar</figcaption></figure>\n<p>The larval stage of a butterfly or moth.</p>\n<p>The larva of a moth or butterfly that eats plants to grow.<br><strong>How to identify:</strong> Look for its long, segmented body, many legs, and evidence of it chewing on leaves.</p>",
+      "wikiImages": [
+        {
+          "filename": "Caterpillar.jpg",
+          "alt": "Caterpillar"
+        }
+      ]
     }
   },
   "n129": {
@@ -4626,8 +4512,13 @@
       "emoji": "",
       "facts": "- This tiny bird is a skilled acrobat and can easily cling to the thinnest branches to find insects.\n- It is a 'secondary consumer' and a 'carnivore' (or insectivore) because it eats the primary consumer.\n- A pair of blue tits might need to find 1,000 caterpillars a day to feed their chicks.",
       "type": "Creature",
-      "childrenHtml": "<p>A small, colourful bird that eats insects.<br><strong>How to identify:</strong> Look for its bright blue, yellow, and white feathers and acrobatic behaviour.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Blue_Tit.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Blue_Tit.jpg\" alt=\"Blue Tit\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Blue Tit</figcaption></figure>\n<p>A small garden bird that commonly eats caterpillars.</p>\n<p>A small, colourful bird that eats insects.<br><strong>How to identify:</strong> Look for its bright blue, yellow, and white feathers and acrobatic behaviour.</p>",
+      "wikiImages": [
+        {
+          "filename": "Blue_Tit.jpg",
+          "alt": "Blue Tit"
+        }
+      ]
     }
   },
   "n130": {
@@ -4641,8 +4532,13 @@
       "emoji": "",
       "facts": "- A sparrowhawk has incredible eyesight that's up to eight times sharper than a human's, allowing it to spot small prey from high in the sky.\n- It is a 'tertiary consumer' and a 'top predator' as it is at the top of this food chain.\n- Female sparrowhawks are much larger than the males.",
       "type": "Creature",
-      "childrenHtml": "<p>A powerful bird of prey that hunts smaller birds.<br><strong>How to identify:</strong> Look for its broad wings, long tail, and fierce yellow eyes. It flies with a distinctive 'flap-flap-glide' pattern.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Sparrowhawk.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Sparrowhawk.jpg\" alt=\"Sparrowhawk\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Sparrowhawk</figcaption></figure>\n<p>A small bird of prey that hunts other birds.</p>\n<p>A powerful bird of prey that hunts smaller birds.<br><strong>How to identify:</strong> Look for its broad wings, long tail, and fierce yellow eyes. It flies with a distinctive 'flap-flap-glide' pattern.</p>",
+      "wikiImages": [
+        {
+          "filename": "Sparrowhawk.jpg",
+          "alt": "Sparrowhawk"
+        }
+      ]
     }
   },
   "a42": {
@@ -5396,26 +5292,6 @@
       ]
     }
   },
-  "n142": {
-    "type": "Creature",
-    "title": "Hedgehog",
-    "sourcePage": "year-3-light",
-    "sourcePageTitle": "Year 3: Light",
-    "data": {
-      "id": "n142",
-      "title": "Hedgehog",
-      "emoji": "🦔",
-      "facts": "- A hedgehog is a gardener's friend because it loves to eat slugs, snails, and insects that might damage plants.\n- When it's scared, it can roll up into a tight ball of over 5,000 spines to protect itself.\n- They hibernate through the winter in a cosy nest of leaves and log piles called a 'hibernaculum'.",
-      "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"Hedgehog at Forest How (15194383706).jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Hedgehog_at_Forest_How_(15194383706).jpg\" alt=\"Hedgehog out at night\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Hedgehog out at night</figcaption></figure>\n<p>A familiar spiny mammal that is nocturnal, meaning it sleeps all day and comes out at night when the Moon is in the sky. It uses the darkness to stay hidden from predators like badgers and foxes.</p>\n<p><strong>How to spot them:</strong><br></p>\n<p>Listen for snuffling and rustling sounds in bushes or undergrowth in your garden after the sun has gone down.</p>",
-      "wikiImages": [
-        {
-          "filename": "Hedgehog at Forest How (15194383706).jpg",
-          "alt": "Hedgehog out at night"
-        }
-      ]
-    }
-  },
   "n143": {
     "type": "Creature",
     "title": "Beaver",
@@ -5460,34 +5336,6 @@
         {
           "filename": "Sea-otter-morro-bay 13.jpg",
           "alt": "Sea otter floating on their back"
-        }
-      ]
-    }
-  },
-  "n145": {
-    "type": "Creature",
-    "title": "Fox",
-    "sourcePage": "year-3-light",
-    "sourcePageTitle": "Year 3: Light",
-    "data": {
-      "id": "n145",
-      "title": "Fox",
-      "emoji": "🦊",
-      "facts": "- A fox's hearing is so good it can hear a mouse squeak from 100 metres away, helping it to hunt in the dark.\n- They are **omnivores**, which means they eat almost anything, from earthworms and beetles to fruit and berries, and leftover food from our bins!\n- Foxes live in underground dens called 'earths', which they sometimes dig under garden sheds.",
-      "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"Yellowstone Red Fox (Vulpes vulpes) (29452017504).jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Yellowstone_Red_Fox_(Vulpes_vulpes)_(29452017504).jpg\" alt=\"Red Fox out at night\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Red Fox out at night</figcaption></figure>\n<figure data-wiki-filename=\"Red Fox - Flickr - alexislours.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Red_Fox_-_Flickr_-_alexislours.jpg\" alt=\"Red Fox drinking\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Red Fox drinking</figcaption></figure>\n<figure data-wiki-filename=\"Fox in the Snow (5335213647).jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Fox_in_the_Snow_(5335213647).jpg\" alt=\"Red Fox curled up in the snow\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Red Fox curled up in the snow</figcaption></figure>\n<p>The Red Fox is a common night-time hunter that is very clever and adaptable, living in our countryside, towns, and even big cities. It uses the cover of darkness to search for food and is often most active at dusk and dawn.</p>\n<p><strong>How to spot signs:</strong></p>\n<p>At night, listen for their strange, high-pitched scream or bark. In mud or snow, look for their footprints – they look like a small dog's, but are narrower and more oval-shaped.</p>",
-      "wikiImages": [
-        {
-          "filename": "Yellowstone Red Fox (Vulpes vulpes) (29452017504).jpg",
-          "alt": "Red Fox out at night"
-        },
-        {
-          "filename": "Red Fox - Flickr - alexislours.jpg",
-          "alt": "Red Fox drinking"
-        },
-        {
-          "filename": "Fox in the Snow (5335213647).jpg",
-          "alt": "Red Fox curled up in the snow"
         }
       ]
     }
@@ -6860,21 +6708,6 @@
       "wikiImages": []
     }
   },
-  "n180": {
-    "type": "Creature",
-    "title": "Snail",
-    "sourcePage": "year-4-living-things-and-their-habitats",
-    "sourcePageTitle": "Year 4: Living things and their habitats",
-    "data": {
-      "id": "n180",
-      "title": "Snail",
-      "emoji": "🐌",
-      "facts": "- A snail can sleep for up to three years if the conditions are not right for it.\n- It moves on a single, muscular 'foot' that is lubricated by a trail of slime.\n- Its blood is blue, not red.",
-      "type": "Creature",
-      "childrenHtml": "<p>A slow-moving mollusc that carries its spiral shell on its back.<br><strong>Key Question:</strong> Does it have a shell? <strong>Yes.</strong></p>",
-      "wikiImages": []
-    }
-  },
   "n181": {
     "type": "Creature",
     "title": "Slug",
@@ -6886,23 +6719,13 @@
       "emoji": "",
       "facts": "- A slug's body is mostly water, which is why they must stay in damp places to avoid drying out.\n- They have four tentacles on their head; the top two have eyes, and the bottom two are for smelling and feeling.\n- Some slugs can stretch to 20 times their resting length to squeeze through tiny gaps.",
       "type": "Creature",
-      "childrenHtml": "<p>A mollusc similar to a snail but without a visible shell.<br><strong>Key Question:</strong> Does it have a shell? <strong>No.</strong></p>",
-      "wikiImages": []
-    }
-  },
-  "n182": {
-    "type": "Creature",
-    "title": "Spider",
-    "sourcePage": "year-4-living-things-and-their-habitats",
-    "sourcePageTitle": "Year 4: Living things and their habitats",
-    "data": {
-      "id": "n182",
-      "title": "Spider",
-      "emoji": "🕷️",
-      "facts": "- Most spiders have eight eyes, but many have poor vision and use vibrations in their web to \"see\" what they've caught.\n- Unlike insects, spiders have two main body parts instead of three.\n- Spider silk is, weight for weight, stronger than steel.",
-      "type": "Creature",
-      "childrenHtml": "<p>An eight-legged arachnid that produces silk.<br><strong>Key Question:</strong> Does it have eight legs? <strong>Yes.</strong></p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Slug.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Slug.jpg\" alt=\"Slug\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Slug</figcaption></figure>\n<p>A mollusk closely related to snails, but without a visible shell.</p>\n<p>A mollusc similar to a snail but without a visible shell.<br><strong>Key Question:</strong> Does it have a shell? <strong>No.</strong></p>",
+      "wikiImages": [
+        {
+          "filename": "Slug.jpg",
+          "alt": "Slug"
+        }
+      ]
     }
   },
   "n183": {
@@ -6916,8 +6739,13 @@
       "emoji": "🐞",
       "facts": "- Beetles make up almost a quarter of all known animal species on Earth, with over 400,000 different types.\n- The hard front wings, called elytra, protect the delicate flight wings underneath.\n- Glow-worms, often seen in the British countryside, are actually a type of beetle.",
       "type": "Creature",
-      "childrenHtml": "<p>An insect with a hard, protective wing case.<br><strong>Key Question:</strong> Does it have six legs and a hard wing case? <strong>Yes.</strong></p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Beetle.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Beetle.jpg\" alt=\"Beetle\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Beetle</figcaption></figure>\n<p>An insect with hard front wings that form a protective case.</p>\n<p>An insect with a hard, protective wing case.<br><strong>Key Question:</strong> Does it have six legs and a hard wing case? <strong>Yes.</strong></p>",
+      "wikiImages": [
+        {
+          "filename": "Beetle.jpg",
+          "alt": "Beetle"
+        }
+      ]
     }
   },
   "a69": {
@@ -8541,10 +8369,16 @@
       "id": "n216",
       "title": "Arctic Fox",
       "emoji": "❄️",
-      "facts": "- **Coat:** The Arctic fox is a master of disguise. Its coat is brilliant white in winter to blend in with snow, but it changes to a brownish-grey in summer to match the tundra rocks.\n- **Warmth:** Its fur is the best insulating fur of any mammal. The fox can survive temperatures as low as -50°C (-58°F) before it even needs to start shivering.\n- **Ears & Paws:** The fox has fur on the bottom of its paws to protect them from the cold ground and provide grip on the ice. Its small ears and short nose also help prevent heat loss.",
+      "facts": "- Their fur turns from brown in summer to white in winter for camouflage.\n- They wrap their bushy tails around themselves like a blanket to stay warm.\n- They have fur on the soles of their feet to prevent slipping on ice.",
       "type": "Creature",
-      "childrenHtml": "<p>A small fox found in the Arctic, perfectly suited to its frozen environment.</p>\n<p><strong>Adaptations:</strong> Has a thick white coat for camouflage and warmth, and small ears to reduce heat loss.</p>",
-      "wikiImages": []
+      "childrenHtml": "<img src=\"/habitat-images/animals/n216-arctic-fox.jpg\" alt=\"Arctic Fox\" className=\"max-w-full h-auto\" />\n<p>A small fox with a thick coat that changes color with the seasons.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/n216-arctic-fox.jpg",
+          "alt": "Arctic Fox",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n218": {
@@ -8556,10 +8390,15 @@
       "id": "n218",
       "title": "Giraffe",
       "emoji": "🦒",
-      "facts": "- **Neck:** A giraffe has the same number of neck bones as a human—just seven! Each vertebra, however, is extremely long, measuring up to 25 cm (10 inches).\n- **Tongue:** To eat from thorny acacia trees, a giraffe uses its tough, 45 cm (18-inch) long prehensile tongue to delicately strip the leaves from between the spikes.\n- **Heart:** To pump blood all the way up its long neck to its brain, a giraffe has a massive heart that can be 60 cm (2 feet) long and weigh over 11 kg (25 lbs).",
+      "facts": "- A giraffe's neck is too short to reach the ground, so it has to splay its legs to drink.\n- They only need to drink once every few days because they get most of their water from leaves.\n- Each giraffe's spot pattern is completely unique, like a human fingerprint.",
       "type": "Creature",
-      "childrenHtml": "<p>The world's tallest mammal, native to the African savanna.</p>\n<p><strong>Adaptations:</strong> A very long neck allows it to browse on leaves high up on acacia trees, a food source other animals can't reach.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Giraffe.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Giraffe.jpg\" alt=\"Giraffe\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Giraffe</figcaption></figure>\n<p>The tallest living land animal, known for its incredibly long neck.</p>",
+      "wikiImages": [
+        {
+          "filename": "Giraffe.jpg",
+          "alt": "Giraffe"
+        }
+      ]
     }
   },
   "n219": {
@@ -9249,19 +9088,6 @@
       "wikiImages": []
     }
   },
-  "n300": {
-    "type": "Creature",
-    "title": "Common frog",
-    "sourcePage": "creatures-from-habitats",
-    "sourcePageTitle": "Creatures from Habitats",
-    "data": {
-      "id": "n300",
-      "title": "Common frog",
-      "type": "Creature",
-      "childrenHtml": "<p>Frogs lay their jelly-like eggs (spawn) in the still water. The tadpoles grow underwater before developing legs to hop onto land.</p>",
-      "wikiImages": []
-    }
-  },
   "n301": {
     "type": "Creature",
     "title": "Great diving beetle",
@@ -9270,9 +9096,16 @@
     "data": {
       "id": "n301",
       "title": "Great diving beetle",
+      "emoji": "🐾",
+      "facts": "- They breathe underwater by trapping a bubble of air under their wing cases.\n- Both the adults and their larvae are fierce predators that even eat small fish.\n- They can fly and often move between ponds at night.",
       "type": "Creature",
-      "childrenHtml": "<p>Breathes underwater by trapping a bubble of air under its wing cases.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Geelgerande02.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Geelgerande02.jpg\" alt=\"Great Diving Beetle\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Great Diving Beetle</figcaption></figure>\n<p>A large, predatory water beetle that hunts in ponds and slow-moving streams.</p>",
+      "wikiImages": [
+        {
+          "filename": "Geelgerande02.jpg",
+          "alt": "Great Diving Beetle"
+        }
+      ]
     }
   },
   "n302": {
@@ -9283,9 +9116,16 @@
     "data": {
       "id": "n302",
       "title": "Smooth newt",
+      "emoji": "🐾",
+      "facts": "- During breeding season, males develop a wavy crest along their backs.\n- They can absorb oxygen directly through their moist skin while underwater.\n- Their diet consists of insects, slugs, and worms.",
       "type": "Creature",
-      "childrenHtml": "<p>Can absorb oxygen directly through its moist skin while underwater.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Triturus_vulgaris_maennchen_cropped.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Triturus_vulgaris_maennchen_cropped.jpg\" alt=\"Smooth Newt\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Smooth Newt</figcaption></figure>\n<p>A small amphibian that spends its spring breeding in water and the rest of the year on land.</p>",
+      "wikiImages": [
+        {
+          "filename": "Triturus_vulgaris_maennchen_cropped.jpg",
+          "alt": "Smooth Newt"
+        }
+      ]
     }
   },
   "n303": {
@@ -9296,9 +9136,16 @@
     "data": {
       "id": "n303",
       "title": "Woodpecker",
+      "emoji": "🐾",
+      "facts": "- They have shock-absorbing skulls to protect their brains from the impact of pecking.\n- They use a long, sticky, barbed tongue to extract insects from deep inside trees.\n- Their stiff tail feathers act like a prop to support them on tree trunks.",
       "type": "Creature",
-      "childrenHtml": "<p>Uses its long, sticky tongue to pull insects out of holes it drills in tree bark. Nests safely high up in tree trunks.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Woodpecker.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Woodpecker.jpg\" alt=\"Woodpecker\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Woodpecker</figcaption></figure>\n<p>A bird known for drumming on tree trunks to communicate and find food.</p>",
+      "wikiImages": [
+        {
+          "filename": "Woodpecker.jpg",
+          "alt": "Woodpecker"
+        }
+      ]
     }
   },
   "n304": {
@@ -9309,9 +9156,16 @@
     "data": {
       "id": "n304",
       "title": "Eurasian badger",
+      "emoji": "🐾",
+      "facts": "- They live in underground burrow systems called setts, which can be centuries old.\n- They are incredibly clean animals and change their bedding of leaves and grass regularly.\n- Earthworms make up the majority of their diet.",
       "type": "Creature",
-      "childrenHtml": "<p>Digs complex underground tunnel systems called setts to stay safe and warm.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"European_badger_(Meles_meles_taxus)_Drenthe.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/European_badger_(Meles_meles_taxus)_Drenthe.jpg\" alt=\"Eurasian Badger\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Eurasian Badger</figcaption></figure>\n<p>A heavily built nocturnal mammal with a distinctive black-and-white striped face.</p>",
+      "wikiImages": [
+        {
+          "filename": "European_badger_(Meles_meles_taxus)_Drenthe.jpg",
+          "alt": "Eurasian Badger"
+        }
+      ]
     }
   },
   "n305": {
@@ -9322,9 +9176,16 @@
     "data": {
       "id": "n305",
       "title": "Tawny owl",
+      "emoji": "🐾",
+      "facts": "- They have specialized fringed feathers that allow them to fly completely silently.\n- They are strictly nocturnal and rely on exceptional hearing to hunt in the dark.\n- The 'twit twoo' sound is actually two owls calling to each other (a female's 'twit' and a male's 'twoo').",
       "type": "Creature",
-      "childrenHtml": "<p>Has specialized feathers with soft edges for completely silent flight to catch prey in the dark.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Tawny_Owl.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Tawny_Owl.jpg\" alt=\"Tawny Owl\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Tawny Owl</figcaption></figure>\n<p>A woodland owl commonly heard making the classic 'twit twoo' call.</p>",
+      "wikiImages": [
+        {
+          "filename": "Tawny_Owl.jpg",
+          "alt": "Tawny Owl"
+        }
+      ]
     }
   },
   "n306": {
@@ -9335,9 +9196,16 @@
     "data": {
       "id": "n306",
       "title": "Hazel dormouse",
+      "emoji": "🐾",
+      "facts": "- They spend up to seven months of the year hibernating in a woven nest.\n- They are agile climbers and rarely come down to the ground.\n- They fatten up on hazelnuts and berries in autumn to survive the winter.",
       "type": "Creature",
-      "childrenHtml": "<p>Uses the continuous line of branches to travel safely above ground, finding berries and nuts without being seen by predators.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Haselmaus.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Haselmaus.jpg\" alt=\"Hazel Dormouse\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Hazel Dormouse</figcaption></figure>\n<p>A tiny, golden-furred rodent that lives in hedgerows and woodland edges.</p>",
+      "wikiImages": [
+        {
+          "filename": "Haselmaus.jpg",
+          "alt": "Hazel Dormouse"
+        }
+      ]
     }
   },
   "n307": {
@@ -9348,9 +9216,16 @@
     "data": {
       "id": "n307",
       "title": "European hedgehog",
+      "emoji": "🐾",
+      "facts": "- They have around 5,000 to 7,000 spines covering their backs for protection.\n- When threatened, they roll into a tight ball, protecting their soft faces and bellies.\n- They are highly immune to snake venom.",
       "type": "Creature",
-      "childrenHtml": "<p>Rolls into a tight ball of sharp spines to protect itself from predators.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"European_Hedgehog.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/European_Hedgehog.jpg\" alt=\"European Hedgehog\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>European Hedgehog</figcaption></figure>\n<p>A spiny mammal often found foraging in gardens and woodland undergrowth.</p>",
+      "wikiImages": [
+        {
+          "filename": "European_Hedgehog.jpg",
+          "alt": "European Hedgehog"
+        }
+      ]
     }
   },
   "n308": {
@@ -9361,9 +9236,16 @@
     "data": {
       "id": "n308",
       "title": "Yellowhammer",
+      "emoji": "🐾",
+      "facts": "- Their song is often described as sounding like 'a little bit of bread and no cheese'.\n- They build their cup-shaped nests on or very close to the ground.\n- In winter, they often join mixed flocks to forage for seeds.",
       "type": "Creature",
-      "childrenHtml": "<p>Builds well-hidden cup nests deep within the thorny brambles to keep its chicks safe.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Yellowhammer.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Yellowhammer.jpg\" alt=\"Yellowhammer\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Yellowhammer</figcaption></figure>\n<p>A bright yellow bird commonly seen perched on hedgerows in farmland.</p>",
+      "wikiImages": [
+        {
+          "filename": "Yellowhammer.jpg",
+          "alt": "Yellowhammer"
+        }
+      ]
     }
   },
   "n309": {
@@ -9374,9 +9256,16 @@
     "data": {
       "id": "n309",
       "title": "Stag beetle",
+      "emoji": "🐾",
+      "facts": "- The males use their large antlers to wrestle rival males for mates.\n- The larvae can spend up to seven years living inside and eating rotting wood.\n- Despite their fierce appearance, adult stag beetles cannot bite hard and mostly drink tree sap.",
       "type": "Creature",
-      "childrenHtml": "<p>The larvae spend several years living inside the dead wood, eating the rotting timber until they are ready to emerge as adult beetles.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Golden_stag_beetle.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Golden_stag_beetle.jpg\" alt=\"Stag Beetle\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Stag Beetle</figcaption></figure>\n<p>One of the largest insects in Europe, known for the male's large jaw 'antlers'.</p>",
+      "wikiImages": [
+        {
+          "filename": "Golden_stag_beetle.jpg",
+          "alt": "Stag Beetle"
+        }
+      ]
     }
   },
   "n310": {
@@ -9387,9 +9276,16 @@
     "data": {
       "id": "n310",
       "title": "Woodlouse",
+      "emoji": "🐾",
+      "facts": "- They are not insects, but crustaceans, closely related to crabs and lobsters.\n- They breathe through gills, which is why they must live in damp environments.\n- Some species can roll up into a perfect sphere when threatened.",
       "type": "Creature",
-      "childrenHtml": "<p>Has a tough segmented exoskeleton and thrives in the damp, dark microclimate of rotting wood.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Woodlouse_collage_x4.png\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Woodlouse_collage_x4.png\" alt=\"Woodlouse\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Woodlouse</figcaption></figure>\n<p>A small terrestrial crustacean found in damp, dark places like under logs.</p>",
+      "wikiImages": [
+        {
+          "filename": "Woodlouse_collage_x4.png",
+          "alt": "Woodlouse"
+        }
+      ]
     }
   },
   "n311": {
@@ -9400,9 +9296,16 @@
     "data": {
       "id": "n311",
       "title": "Centipede",
+      "emoji": "🐾",
+      "facts": "- Despite their name meaning '100 legs', they can have anywhere from 30 to over 300 legs.\n- They have venomous claws near their head to paralyze their insect prey.\n- They are strictly carnivorous, unlike the similar-looking herbivorous millipedes.",
       "type": "Creature",
-      "childrenHtml": "<p>A fast predator that hunts smaller insects and grubs hiding in the crevices of the dead log.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Centipede.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Centipede.jpg\" alt=\"Centipede\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Centipede</figcaption></figure>\n<p>A fast-moving predatory arthropod with a long, segmented body and many legs.</p>",
+      "wikiImages": [
+        {
+          "filename": "Centipede.jpg",
+          "alt": "Centipede"
+        }
+      ]
     }
   },
   "n312": {
@@ -9413,9 +9316,16 @@
     "data": {
       "id": "n312",
       "title": "Purple hairstreak butterfly",
+      "emoji": "🐾",
+      "facts": "- The males have a brilliant purple sheen on their wings, while females only have small purple patches.\n- Their caterpillars feed exclusively on oak leaves.\n- Adults feed on honeydew secreted by aphids rather than flower nectar.",
       "type": "Creature",
-      "childrenHtml": "<p>Spends almost its entire life high in the oak canopy. The caterpillars feed exclusively on oak leaves.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Atlides_halesus_CramerStoll.png\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Atlides_halesus_CramerStoll.png\" alt=\"Purple Hairstreak Butterfly\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Purple Hairstreak Butterfly</figcaption></figure>\n<p>A small, elusive butterfly that spends most of its time high up in oak trees.</p>",
+      "wikiImages": [
+        {
+          "filename": "Atlides_halesus_CramerStoll.png",
+          "alt": "Purple Hairstreak Butterfly"
+        }
+      ]
     }
   },
   "n313": {
@@ -9426,9 +9336,16 @@
     "data": {
       "id": "n313",
       "title": "Eurasian jay",
+      "emoji": "🐾",
+      "facts": "- They are excellent mimics and can perfectly copy the calls of birds of prey to scare other birds.\n- They bury thousands of acorns in autumn to eat during winter, helping to plant new oak forests.\n- They have bright blue patches on their wings that are actually created by the structure of the feathers, not pigment.",
       "type": "Creature",
-      "childrenHtml": "<p>Caches (buries) thousands of acorns in the ground for winter food, helping plant new oak trees.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Eurasian_Jay.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Eurasian_Jay.jpg\" alt=\"Eurasian Jay\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Eurasian Jay</figcaption></figure>\n<p>A colorful member of the crow family, known for its loud, screeching calls.</p>",
+      "wikiImages": [
+        {
+          "filename": "Eurasian_Jay.jpg",
+          "alt": "Eurasian Jay"
+        }
+      ]
     }
   },
   "n314": {
@@ -9439,22 +9356,16 @@
     "data": {
       "id": "n314",
       "title": "Gall wasp",
+      "emoji": "🐾",
+      "facts": "- The female wasp lays an egg inside an oak leaf bud, tricking the tree into growing a protective 'gall' around it.\n- The developing wasp larva lives safely inside the gall, eating the nutritious tissue.\n- There are hundreds of species of gall wasps, each creating a uniquely shaped gall on the tree.",
       "type": "Creature",
-      "childrenHtml": "<p>Lays eggs in oak leaves, causing the tree to grow protective round 'galls' that shelter the growing larvae.</p>",
-      "wikiImages": []
-    }
-  },
-  "n315": {
-    "type": "Creature",
-    "title": "Polar Bear",
-    "sourcePage": "creatures-from-habitats",
-    "sourcePageTitle": "Creatures from Habitats",
-    "data": {
-      "id": "n315",
-      "title": "Polar Bear",
-      "type": "Creature",
-      "childrenHtml": "<p>Uses the vast ice floes as a platform to hunt seals when they surface to breathe. Thick blubber and hollow hair keep it warm.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Gall_Wasp_-_Cynipidae_family,_Leesylvania_State_Park,_Woodbridge,_Virginia.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Gall_Wasp_-_Cynipidae_family%2C_Leesylvania_State_Park%2C_Woodbridge%2C_Virginia.jpg\" alt=\"Gall Wasp\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Gall Wasp</figcaption></figure>\n<p>A tiny wasp that causes oak trees to grow strange, round structures called galls.</p>",
+      "wikiImages": [
+        {
+          "filename": "Gall_Wasp_-_Cynipidae_family,_Leesylvania_State_Park,_Woodbridge,_Virginia.jpg",
+          "alt": "Gall Wasp"
+        }
+      ]
     }
   },
   "n316": {
@@ -9465,35 +9376,16 @@
     "data": {
       "id": "n316",
       "title": "Ringed seal",
+      "emoji": "🐾",
+      "facts": "- They use their sharp claws to dig breathing holes through thick sea ice.\n- They build snow caves (lairs) above their breathing holes to protect their pups from polar bears.\n- They get their name from the silver ring-shaped markings on their dark backs.",
       "type": "Creature",
-      "childrenHtml": "<p>Uses strong claws to scratch and keep breathing holes open in the thick ice all winter.</p>",
-      "wikiImages": []
-    }
-  },
-  "n317": {
-    "type": "Creature",
-    "title": "Arctic fox",
-    "sourcePage": "creatures-from-habitats",
-    "sourcePageTitle": "Creatures from Habitats",
-    "data": {
-      "id": "n317",
-      "title": "Arctic fox",
-      "type": "Creature",
-      "childrenHtml": "<p>Often follows polar bears out onto the sea ice to scavenge leftover food during the harsh winter.</p>",
-      "wikiImages": []
-    }
-  },
-  "n318": {
-    "type": "Creature",
-    "title": "Arctic Fox",
-    "sourcePage": "creatures-from-habitats",
-    "sourcePageTitle": "Creatures from Habitats",
-    "data": {
-      "id": "n318",
-      "title": "Arctic Fox",
-      "type": "Creature",
-      "childrenHtml": "<p>Changes its coat colour from brown in summer to thick white in winter for camouflage. Has a compact body to retain heat.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Ringed_Seal.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Ringed_Seal.jpg\" alt=\"Ringed Seal\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Ringed Seal</figcaption></figure>\n<p>The most common seal in the Arctic, heavily reliant on sea ice for breeding.</p>",
+      "wikiImages": [
+        {
+          "filename": "Ringed_Seal.jpg",
+          "alt": "Ringed Seal"
+        }
+      ]
     }
   },
   "n319": {
@@ -9504,9 +9396,16 @@
     "data": {
       "id": "n319",
       "title": "Reindeer",
+      "emoji": "🐾",
+      "facts": "- Their hooves change from soft and spongy in summer to hard and sharp in winter to cut through ice.\n- They are the only deer species where both males and females grow antlers.\n- Their noses warm the freezing air they breathe before it reaches their lungs.",
       "type": "Creature",
-      "childrenHtml": "<p>Has wide, scoop-like hooves to walk easily on snow and dig down to eat buried lichen.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Reindeer.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Reindeer.jpg\" alt=\"Reindeer\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Reindeer</figcaption></figure>\n<p>A cold-adapted deer species crucial to the ecology of the Arctic tundra.</p>",
+      "wikiImages": [
+        {
+          "filename": "Reindeer.jpg",
+          "alt": "Reindeer"
+        }
+      ]
     }
   },
   "n320": {
@@ -9517,22 +9416,16 @@
     "data": {
       "id": "n320",
       "title": "Snowy owl",
+      "emoji": "🐾",
+      "facts": "- Unlike most owls, they are diurnal, meaning they hunt during the daytime.\n- The males are almost entirely white, while females and juveniles have dark spots for camouflage on the tundra.\n- They heavily rely on lemmings for food and will lay more eggs in years when lemmings are plentiful.",
       "type": "Creature",
-      "childrenHtml": "<p>Its thick white feathers provide perfect camouflage against the snow and keep it warm in freezing winds.</p>",
-      "wikiImages": []
-    }
-  },
-  "n321": {
-    "type": "Creature",
-    "title": "Ringed Seal",
-    "sourcePage": "creatures-from-habitats",
-    "sourcePageTitle": "Creatures from Habitats",
-    "data": {
-      "id": "n321",
-      "title": "Ringed Seal",
-      "type": "Creature",
-      "childrenHtml": "<p>Uses strong claws on its front flippers to hollow out a den (lair) inside the snowdrift to safely hide its pup from polar bears.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Snowy_Owl.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Snowy_Owl.jpg\" alt=\"Snowy Owl\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Snowy Owl</figcaption></figure>\n<p>A large, white owl that hunts during the day in the continuous light of the Arctic summer.</p>",
+      "wikiImages": [
+        {
+          "filename": "Snowy_Owl.jpg",
+          "alt": "Snowy Owl"
+        }
+      ]
     }
   },
   "n322": {
@@ -9543,9 +9436,16 @@
     "data": {
       "id": "n322",
       "title": "Stoat",
+      "emoji": "🐾",
+      "facts": "- In winter, their coat turns white (known as ermine) except for a distinctive black tip on the tail.\n- They are capable of taking down prey much larger than themselves, like rabbits.\n- They perform a mesmerizing 'dance' with leaps and flips to confuse their prey before striking.",
       "type": "Creature",
-      "childrenHtml": "<p>Changes its brown summer coat to pure white in winter for camouflage while hunting in the snow.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Stoat.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Stoat.jpg\" alt=\"Stoat\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Stoat</figcaption></figure>\n<p>A small, fierce predator that turns completely white in winter.</p>",
+      "wikiImages": [
+        {
+          "filename": "Stoat.jpg",
+          "alt": "Stoat"
+        }
+      ]
     }
   },
   "n323": {
@@ -9556,9 +9456,17 @@
     "data": {
       "id": "n323",
       "title": "Snow vole",
+      "emoji": "🐾",
+      "facts": "- They spend the winter living in the 'subnivium', a network of tunnels under the snow layer.\n- Their thick fur insulates them against freezing mountain temperatures.\n- They don't hibernate, staying active and foraging for roots all winter.",
       "type": "Creature",
-      "childrenHtml": "<p>Builds extensive tunnel networks under the snowpack to find roots and stay hidden from owls.</p>",
-      "wikiImages": []
+      "childrenHtml": "<img src=\"/habitat-images/animals/n323-snow-vole.jpg\" alt=\"Snow Vole\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Snow Vole</figcaption>\n<p>A small rodent adapted to living in high alpine and snowy environments.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/n323-snow-vole.jpg",
+          "alt": "Snow Vole",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n324": {
@@ -9569,22 +9477,16 @@
     "data": {
       "id": "n324",
       "title": "Narwhal",
+      "emoji": "🐾",
+      "facts": "- The tusk is actually an overgrown canine tooth with millions of nerve endings.\n- They are known as the 'unicorns of the sea'.\n- They can dive over a mile deep and hold their breath for 25 minutes.",
       "type": "Creature",
-      "childrenHtml": "<p>Has no dorsal fin on its back, allowing it to swim smoothly just below the thick ice without getting stuck.</p>",
-      "wikiImages": []
-    }
-  },
-  "n325": {
-    "type": "Creature",
-    "title": "Narwhal",
-    "sourcePage": "creatures-from-habitats",
-    "sourcePageTitle": "Creatures from Habitats",
-    "data": {
-      "id": "n325",
-      "title": "Narwhal",
-      "type": "Creature",
-      "childrenHtml": "<p>Uses its long tusk as a highly sensitive sensory organ to navigate and find food in freezing, dark waters.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Narwhal.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Narwhal.jpg\" alt=\"Narwhal\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Narwhal</figcaption></figure>\n<p>A medium-sized whale known for the male's long, spiraled tusk.</p>",
+      "wikiImages": [
+        {
+          "filename": "Narwhal.jpg",
+          "alt": "Narwhal"
+        }
+      ]
     }
   },
   "n326": {
@@ -9595,22 +9497,16 @@
     "data": {
       "id": "n326",
       "title": "Beluga whale",
+      "emoji": "🐾",
+      "facts": "- They are known as 'sea canaries' because of their high-pitched whistles and clicks.\n- Unlike most whales, their neck vertebrae are not fused, allowing them to turn their heads.\n- They lack a dorsal fin, which helps them swim easily under the ice.",
       "type": "Creature",
-      "childrenHtml": "<p>Lacks a dorsal fin on its back, allowing it to swim smoothly right up against the underside of the ice sheets.</p>",
-      "wikiImages": []
-    }
-  },
-  "n327": {
-    "type": "Creature",
-    "title": "Snowy Owl",
-    "sourcePage": "creatures-from-habitats",
-    "sourcePageTitle": "Creatures from Habitats",
-    "data": {
-      "id": "n327",
-      "title": "Snowy Owl",
-      "type": "Creature",
-      "childrenHtml": "<p>Nests on the bare ground of these raised mounds, giving it a clear 360-degree view to spot predators and hunt lemmings.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Oceanogràfic_29102004.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Oceanogr%C3%A0fic_29102004.jpg\" alt=\"Beluga Whale\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Beluga Whale</figcaption></figure>\n<p>A highly vocal, all-white whale that lives in Arctic and sub-Arctic waters.</p>",
+      "wikiImages": [
+        {
+          "filename": "Oceanogràfic_29102004.jpg",
+          "alt": "Beluga Whale"
+        }
+      ]
     }
   },
   "n328": {
@@ -9621,9 +9517,16 @@
     "data": {
       "id": "n328",
       "title": "Arctic hare",
+      "emoji": "🐾",
+      "facts": "- They have large, heavily furred hind feet that act like snowshoes.\n- Their fur turns bright white in the winter and brown or gray in the summer.\n- They have shorter ears than desert hares to prevent heat loss in the cold.",
       "type": "Creature",
-      "childrenHtml": "<p>Has heavily padded, large hind legs for running fast over snow to escape predators without sinking.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Arctic_Hare.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Arctic_Hare.jpg\" alt=\"Arctic Hare\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Arctic Hare</figcaption></figure>\n<p>A species of hare highly adapted to freezing temperatures and deep snow.</p>",
+      "wikiImages": [
+        {
+          "filename": "Arctic_Hare.jpg",
+          "alt": "Arctic Hare"
+        }
+      ]
     }
   },
   "n329": {
@@ -9634,9 +9537,16 @@
     "data": {
       "id": "n329",
       "title": "Ptarmigan",
+      "emoji": "🐾",
+      "facts": "- They are the only birds in the world that moult into a completely white plumage for winter.\n- Their feet are heavily feathered to act as snowshoes and provide insulation.\n- They often bury themselves in the snow to stay warm during blizzards.",
       "type": "Creature",
-      "childrenHtml": "<p>A hardy bird with heavily feathered feet that act exactly like snowshoes in deep winter snow.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Ptarmigan.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Ptarmigan.jpg\" alt=\"Ptarmigan\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Ptarmigan</figcaption></figure>\n<p>A plump, cold-adapted bird that lives on high mountains and Arctic tundra.</p>",
+      "wikiImages": [
+        {
+          "filename": "Ptarmigan.jpg",
+          "alt": "Ptarmigan"
+        }
+      ]
     }
   },
   "n330": {
@@ -9647,22 +9557,16 @@
     "data": {
       "id": "n330",
       "title": "Fennec Fox",
+      "emoji": "🐾",
+      "facts": "- Their large ears act like radiators to dissipate heat and help them hear prey underground.\n- Their kidneys are adapted to restrict water loss, so they don't need to drink free-standing water.\n- They have thick fur on the soles of their feet to protect them from the burning desert sand.",
       "type": "Creature",
-      "childrenHtml": "<p>Has enormous ears that act like radiators to let body heat escape, and fur on the bottom of its paws to protect them from scorching sand.</p>",
-      "wikiImages": []
-    }
-  },
-  "n331": {
-    "type": "Creature",
-    "title": "Fennec fox",
-    "sourcePage": "creatures-from-habitats",
-    "sourcePageTitle": "Creatures from Habitats",
-    "data": {
-      "id": "n331",
-      "title": "Fennec fox",
-      "type": "Creature",
-      "childrenHtml": "<p>Has huge ears that act like radiators to release body heat, and help it listen for prey moving underground.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Fennec_Fox_Vulpes_zerda.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Fennec_Fox_Vulpes_zerda.jpg\" alt=\"Fennec Fox\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Fennec Fox</figcaption></figure>\n<p>A tiny nocturnal fox native to the Sahara Desert, easily recognizable by its massive ears.</p>",
+      "wikiImages": [
+        {
+          "filename": "Fennec_Fox_Vulpes_zerda.jpg",
+          "alt": "Fennec Fox"
+        }
+      ]
     }
   },
   "n332": {
@@ -9673,9 +9577,17 @@
     "data": {
       "id": "n332",
       "title": "Sandfish skink",
+      "emoji": "🐾",
+      "facts": "- They can dive into loose sand and wriggle through it just like a fish swimming in water.\n- They have transparent scales covering their eyes to keep the sand out.\n- Their wedge-shaped snout acts like a shovel to help them dig quickly.",
       "type": "Creature",
-      "childrenHtml": "<p>A smooth lizard that can literally 'swim' through loose sand to escape the hot sun and hide.</p>",
-      "wikiImages": []
+      "childrenHtml": "<img src=\"/habitat-images/animals/n332-sandfish-skink.jpg\" alt=\"Sandfish Skink\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Sandfish Skink</figcaption>\n<p>A desert lizard that literally 'swims' through loose sand.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/n332-sandfish-skink.jpg",
+          "alt": "Sandfish Skink",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n333": {
@@ -9686,9 +9598,16 @@
     "data": {
       "id": "n333",
       "title": "Dromedary Camel",
+      "emoji": "🐾",
+      "facts": "- Their hump stores fat, not water, which can be broken down into energy and water when food is scarce.\n- They can drink up to 30 gallons of water in just 13 minutes when they find a water source.\n- They have long eyelashes and sealable nostrils to keep out blowing desert sand.",
       "type": "Creature",
-      "childrenHtml": "<p>Stores fat (not water) in its hump to survive long journeys. Has long eyelashes and closing nostrils to keep out blowing sand.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Dromedary_Camel.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Dromedary_Camel.jpg\" alt=\"Dromedary Camel\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Dromedary Camel</figcaption></figure>\n<p>A large desert mammal with a single hump on its back.</p>",
+      "wikiImages": [
+        {
+          "filename": "Dromedary_Camel.jpg",
+          "alt": "Dromedary Camel"
+        }
+      ]
     }
   },
   "n334": {
@@ -9699,9 +9618,17 @@
     "data": {
       "id": "n334",
       "title": "Namib Desert beetle",
+      "emoji": "🐾",
+      "facts": "- They stand on their heads on sand dunes to catch water droplets from the coastal fog on their bumpy backs.\n- The bumps on their back are hydrophilic (water-attracting), while the valleys are hydrophobic (water-repelling).\n- The water droplets roll down their back straight into their mouth.",
       "type": "Creature",
-      "childrenHtml": "<p>Stands on its head to collect morning fog on its bumpy back, which drips down to its mouth as drinking water.</p>",
-      "wikiImages": []
+      "childrenHtml": "<img src=\"/habitat-images/animals/n334-namib-desert-beetle.jpg\" alt=\"Namib Desert Beetle\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Namib Desert Beetle</figcaption>\n<p>A beetle that survives in the dry Namib Desert by harvesting water from morning fog.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/n334-namib-desert-beetle.jpg",
+          "alt": "Namib Desert Beetle",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n335": {
@@ -9712,9 +9639,16 @@
     "data": {
       "id": "n335",
       "title": "Arabian oryx",
+      "emoji": "🐾",
+      "facts": "- They can survive for weeks or even months without drinking water, getting moisture from roots and melons.\n- Their white coats reflect the desert sun, while their dark legs help them absorb heat on cold mornings.\n- They can sense rainfall from miles away and will migrate toward the fresh plant growth.",
       "type": "Creature",
-      "childrenHtml": "<p>Has a bright white coat to reflect the intense sun and wide hooves for walking on soft sand dunes.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Arabian_oryx_(oryx_leucoryx).jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Arabian_oryx_(oryx_leucoryx).jpg\" alt=\"Arabian Oryx\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Arabian Oryx</figcaption></figure>\n<p>A highly desert-adapted antelope with long, straight horns.</p>",
+      "wikiImages": [
+        {
+          "filename": "Arabian_oryx_(oryx_leucoryx).jpg",
+          "alt": "Arabian Oryx"
+        }
+      ]
     }
   },
   "n336": {
@@ -9725,9 +9659,16 @@
     "data": {
       "id": "n336",
       "title": "Thorny Devil",
+      "emoji": "🐾",
+      "facts": "- They have a 'false head' on the back of their neck that they present to predators while hiding their real head.\n- The microscopic grooves between their scales channel dew and rain straight to their mouths.\n- They eat almost exclusively ants, consuming up to 3,000 in a single day.",
       "type": "Creature",
-      "childrenHtml": "<p>Covered in spikes that collect tiny drops of morning dew. The water then travels through microscopic grooves straight to its mouth.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Thorny_Devil.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Thorny_Devil.jpg\" alt=\"Thorny Devil\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Thorny Devil</figcaption></figure>\n<p>A small Australian lizard covered entirely in sharp, conical spines.</p>",
+      "wikiImages": [
+        {
+          "filename": "Thorny_Devil.jpg",
+          "alt": "Thorny Devil"
+        }
+      ]
     }
   },
   "n337": {
@@ -9738,9 +9679,17 @@
     "data": {
       "id": "n337",
       "title": "Kangaroo rat",
+      "emoji": "🐾",
+      "facts": "- They never need to drink water in their entire lives, extracting all they need from the seeds they eat.\n- Their powerful hind legs allow them to leap up to 9 feet to escape predators like rattlesnakes.\n- They have specialized cheek pouches to carry seeds back to their burrows.",
       "type": "Creature",
-      "childrenHtml": "<p>Never needs to drink liquid water; it gets all the moisture it needs to survive from dry seeds.</p>",
-      "wikiImages": []
+      "childrenHtml": "<img src=\"/habitat-images/animals/n337-kangaroo-rat.jpg\" alt=\"Kangaroo Rat\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Kangaroo Rat</figcaption>\n<p>A small, leaping rodent native to North American deserts.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/n337-kangaroo-rat.jpg",
+          "alt": "Kangaroo Rat",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n338": {
@@ -9751,9 +9700,16 @@
     "data": {
       "id": "n338",
       "title": "Roadrunner",
+      "emoji": "🐾",
+      "facts": "- They can run at speeds of up to 20 miles per hour to chase down lizards and insects.\n- They secrete excess salt from their bodies through special glands near their eyes to conserve water.\n- They are known to hunt and eat venomous rattlesnakes.",
       "type": "Creature",
-      "childrenHtml": "<p>A fast-running bird that is quick enough to hunt and eat venomous snakes and scorpions in the scrubland.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Roadrunner.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Roadrunner.jpg\" alt=\"Roadrunner\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Roadrunner</figcaption></figure>\n<p>A fast-running bird found in the deserts of the American Southwest.</p>",
+      "wikiImages": [
+        {
+          "filename": "Roadrunner.jpg",
+          "alt": "Roadrunner"
+        }
+      ]
     }
   },
   "n339": {
@@ -9764,9 +9720,17 @@
     "data": {
       "id": "n339",
       "title": "Sidewinder Rattlesnake",
+      "emoji": "🐾",
+      "facts": "- It moves sideways in a J-shaped pattern (sidewinding), so only two small parts of its body touch the hot sand at a time.\n- They bury themselves in the sand with only their eyes and nostrils exposed to ambush prey.\n- They have 'horns' over their eyes that act like sunshades and keep sand out.",
       "type": "Creature",
-      "childrenHtml": "<p>Moves in a unique sideways motion (J-shape) so only two small points of its body touch the burning sand at any one time.</p>",
-      "wikiImages": []
+      "childrenHtml": "<img src=\"/habitat-images/animals/n339-sidewinder.jpg\" alt=\"Sidewinder Rattlesnake\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Sidewinder Rattlesnake</figcaption>\n<p>A venomous snake adapted to moving across loose desert sand.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/n339-sidewinder.jpg",
+          "alt": "Sidewinder Rattlesnake",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n340": {
@@ -9777,9 +9741,17 @@
     "data": {
       "id": "n340",
       "title": "Fringe-toed lizard",
+      "emoji": "🐾",
+      "facts": "- They have special fringes of scales on their toes that act like snowshoes on the loose sand.\n- When running at top speed, they often run only on their hind legs.\n- They can dive headfirst into the sand to hide from predators.",
       "type": "Creature",
-      "childrenHtml": "<p>Has scale 'fringes' on its toes that let it run quickly across loose, scorching sand without sinking in.</p>",
-      "wikiImages": []
+      "childrenHtml": "<img src=\"/habitat-images/animals/n340-fringe-toed-lizard.jpg\" alt=\"Fringe Toed Lizard\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Fringe Toed Lizard</figcaption>\n<p>A fast-running lizard adapted to sandy desert dunes.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/n340-fringe-toed-lizard.jpg",
+          "alt": "Fringe Toed Lizard",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n341": {
@@ -9790,9 +9762,16 @@
     "data": {
       "id": "n341",
       "title": "Antlion",
+      "emoji": "🐾",
+      "facts": "- The larva digs a cone-shaped pit in loose sand and waits buried at the bottom with its jaws open.\n- When an ant falls in, the antlion throws sand at it to cause miniature avalanches and drag it down.\n- They only walk backward, leaving distinctive winding trails in the sand.",
       "type": "Creature",
-      "childrenHtml": "<p>Digs clever pitfall traps in the loose sand to catch unwary insects that slip down the sides.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Antlion.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Antlion.jpg\" alt=\"Antlion\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Antlion</figcaption></figure>\n<p>The fierce larva of a winged insect that traps prey in sand pits.</p>",
+      "wikiImages": [
+        {
+          "filename": "Antlion.jpg",
+          "alt": "Antlion"
+        }
+      ]
     }
   },
   "n342": {
@@ -9803,9 +9782,17 @@
     "data": {
       "id": "n342",
       "title": "Desert Tortoise",
+      "emoji": "🐾",
+      "facts": "- They can survive for more than a year without access to fresh water.\n- They spend up to 95% of their lives in underground burrows to escape the extreme heat and cold.\n- Their large bladders can hold an amount of water equal to 40% of their body weight.",
       "type": "Creature",
-      "childrenHtml": "<p>Spends up to 95% of its life underground to escape extreme heat. Can store a large amount of water in its bladder for months.</p>",
-      "wikiImages": []
+      "childrenHtml": "<img src=\"/habitat-images/animals/n342-desert-tortoise.jpg\" alt=\"Desert Tortoise\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Desert Tortoise</figcaption>\n<p>A large reptile heavily adapted to surviving in dry desert conditions.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/n342-desert-tortoise.jpg",
+          "alt": "Desert Tortoise",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n343": {
@@ -9816,9 +9803,17 @@
     "data": {
       "id": "n343",
       "title": "Gila monster",
+      "emoji": "🐾",
+      "facts": "- Unlike venomous snakes, they don't inject venom through fangs, but rather chew it into their prey from glands in their lower jaw.\n- They spend most of their time in burrows and only come out to hunt a few weeks a year.\n- They store fat in their thick tails to survive when food is scarce.",
       "type": "Creature",
-      "childrenHtml": "<p>Spends over 90% of its life hidden in cool underground burrows to escape the extreme desert heat.</p>",
-      "wikiImages": []
+      "childrenHtml": "<img src=\"/habitat-images/animals/n343-gila-monster.jpg\" alt=\"Gila Monster\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Gila Monster</figcaption>\n<p>One of the few venomous lizards in the world, native to the Mojave Desert.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/n343-gila-monster.jpg",
+          "alt": "Gila Monster",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n344": {
@@ -9829,9 +9824,17 @@
     "data": {
       "id": "n344",
       "title": "Desert tarantula",
+      "emoji": "🐾",
+      "facts": "- They don't spin webs to catch prey; they actively hunt on the ground at night.\n- When threatened, they can rub their hind legs against their abdomen to flick irritating barbed hairs into a predator's eyes.\n- Females can live for up to 30 years in the wild.",
       "type": "Creature",
-      "childrenHtml": "<p>Lines its deep burrow with silk to keep the walls stable and maintain a cool, humid microclimate.</p>",
-      "wikiImages": []
+      "childrenHtml": "<img src=\"/habitat-images/animals/n344-desert-tarantula.jpg\" alt=\"Desert Tarantula\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Desert Tarantula</figcaption>\n<p>A large, hairy spider that hunts at night in the desert.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/n344-desert-tarantula.jpg",
+          "alt": "Desert Tarantula",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n345": {
@@ -9842,9 +9845,17 @@
     "data": {
       "id": "n345",
       "title": "Three-toed Sloth",
+      "emoji": "🐾",
+      "facts": "- They move so slowly that green algae grows in their fur, providing excellent camouflage in the canopy.\n- Their stomachs are huge and complex, taking up to a month to digest a single meal of tough leaves.\n- They only come down from the trees once a week to go to the bathroom.",
       "type": "Creature",
-      "childrenHtml": "<p>Moves incredibly slowly to avoid being seen by eagles. Its fur even grows green algae, providing perfect camouflage among the leaves.</p>",
-      "wikiImages": []
+      "childrenHtml": "<img src=\"/habitat-images/animals/n345-sloth.jpg\" alt=\"Three Toed Sloth\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Three Toed Sloth</figcaption>\n<p>A slow-moving mammal that spends its life hanging upside down in rainforest trees.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/n345-sloth.jpg",
+          "alt": "Three Toed Sloth",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n346": {
@@ -9855,9 +9866,16 @@
     "data": {
       "id": "n346",
       "title": "Scarlet macaw",
+      "emoji": "🐾",
+      "facts": "- They use their strong, curved beaks to crack open incredibly hard nuts and seeds.\n- They mate for life and often fly in pairs, calling loudly to each other.\n- They often eat clay from riverbanks to neutralize the toxins in some of the seeds they eat.",
       "type": "Creature",
-      "childrenHtml": "<p>Uses its incredibly powerful, curved beak to crack open hard rainforest nuts and seeds that other animals can't eat.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Scarlet_Macaw.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Scarlet_Macaw.jpg\" alt=\"Scarlet Macaw\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Scarlet Macaw</figcaption></figure>\n<p>A large, incredibly colorful parrot native to Central and South American rainforests.</p>",
+      "wikiImages": [
+        {
+          "filename": "Scarlet_Macaw.jpg",
+          "alt": "Scarlet Macaw"
+        }
+      ]
     }
   },
   "n347": {
@@ -9868,9 +9886,17 @@
     "data": {
       "id": "n347",
       "title": "Spider monkey",
+      "emoji": "🐾",
+      "facts": "- They have a prehensile tail that acts like a fifth hand, able to support their entire body weight.\n- They don't have thumbs, which helps their hands act like hooks for swinging through the trees.\n- They use a 'brachiation' technique to swing effortlessly from branch to branch.",
       "type": "Creature",
-      "childrenHtml": "<p>Has a prehensile (gripping) tail that acts like a fifth hand for swinging safely through the high branches.</p>",
-      "wikiImages": []
+      "childrenHtml": "<img src=\"/habitat-images/animals/n347-spider-monkey.jpg\" alt=\"Spider Monkey\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Spider Monkey</figcaption>\n<p>A highly agile monkey named for its long, spindly limbs.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/n347-spider-monkey.jpg",
+          "alt": "Spider Monkey",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n348": {
@@ -9881,9 +9907,16 @@
     "data": {
       "id": "n348",
       "title": "Clownfish",
+      "emoji": "🐾",
+      "facts": "- They are immune to the anemone's stings because of a thick layer of protective mucus on their skin.\n- They have a symbiotic relationship with the anemone: the fish gets a safe home, and the anemone gets scraps of food.\n- All clownfish are born male; the largest and most dominant one in a group will turn into a female.",
       "type": "Creature",
-      "childrenHtml": "<p>Develops a thick layer of mucus on its skin to protect it from the stinging tentacles of the sea anemone, giving it a safe, hidden home (commensalism).</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Clownfish.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Clownfish.jpg\" alt=\"Clownfish\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Clownfish</figcaption></figure>\n<p>A small, bright orange fish that lives amongst the stinging tentacles of sea anemones.</p>",
+      "wikiImages": [
+        {
+          "filename": "Clownfish.jpg",
+          "alt": "Clownfish"
+        }
+      ]
     }
   },
   "n349": {
@@ -9894,9 +9927,16 @@
     "data": {
       "id": "n349",
       "title": "Parrotfish",
+      "emoji": "🐾",
+      "facts": "- They use their strong beaks to scrape algae off coral reefs, helping to keep the reef clean and healthy.\n- They digest the hard coral skeletons and poop out fine white sand, creating many of the world's tropical beaches.\n- At night, they secrete a protective mucus bubble around themselves like a sleeping bag to hide their scent from predators.",
       "type": "Creature",
-      "childrenHtml": "<p>Uses its beak-like teeth to scrape algae off coral. It digests the algae and poops out the coral as fine white sand!</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Parrotfish.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Parrotfish.jpg\" alt=\"Parrotfish\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Parrotfish</figcaption></figure>\n<p>A brightly colored reef fish with teeth fused together into a beak shape.</p>",
+      "wikiImages": [
+        {
+          "filename": "Parrotfish.jpg",
+          "alt": "Parrotfish"
+        }
+      ]
     }
   },
   "n350": {
@@ -9907,9 +9947,16 @@
     "data": {
       "id": "n350",
       "title": "Moray eel",
+      "emoji": "🐾",
+      "facts": "- They have a second set of jaws hidden in their throat (pharyngeal jaws) that shoot forward to drag prey down their throat.\n- They constantly open and close their mouths to pump water over their gills so they can breathe.\n- They have poor eyesight and rely almost entirely on their excellent sense of smell to hunt.",
       "type": "Creature",
-      "childrenHtml": "<p>Hides its long body inside narrow coral crevices, waiting to ambush passing prey with its sharp teeth.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Moray_Eel.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Moray_Eel.jpg\" alt=\"Moray Eel\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Moray Eel</figcaption></figure>\n<p>A snake-like fish that hides in crevices on the coral reef.</p>",
+      "wikiImages": [
+        {
+          "filename": "Moray_Eel.jpg",
+          "alt": "Moray Eel"
+        }
+      ]
     }
   },
   "n351": {
@@ -9920,9 +9967,16 @@
     "data": {
       "id": "n351",
       "title": "Anglerfish",
+      "emoji": "🐾",
+      "facts": "- The glowing lure is filled with bioluminescent bacteria that light up to attract prey in the pitch black.\n- Their teeth are angled inward, making it impossible for prey to escape once bitten.\n- In some species, the tiny male permanently attaches himself to the much larger female, eventually fusing with her body.",
       "type": "Creature",
-      "childrenHtml": "<p>Uses a glowing lure on its head (created by bioluminescent bacteria) to attract curious prey straight into its massive, sharp-toothed mouth in the dark.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Anglerfish.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Anglerfish.jpg\" alt=\"Anglerfish\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Anglerfish</figcaption></figure>\n<p>A deep-sea fish known for the glowing lure on its head.</p>",
+      "wikiImages": [
+        {
+          "filename": "Anglerfish.jpg",
+          "alt": "Anglerfish"
+        }
+      ]
     }
   },
   "n352": {
@@ -9933,9 +9987,17 @@
     "data": {
       "id": "n352",
       "title": "Giant isopod",
+      "emoji": "🐾",
+      "facts": "- It is an example of 'deep-sea gigantism', where deep-sea creatures grow much larger than their shallow-water relatives.\n- They are primarily scavengers that eat dead whales, fish, and squid that sink to the ocean floor.\n- They can survive for years without eating anything at all between large meals.",
       "type": "Creature",
-      "childrenHtml": "<p>A deep-sea scavenger with a rigid, tough exoskeleton to survive the immense crushing pressure of the abyss.</p>",
-      "wikiImages": []
+      "childrenHtml": "<img src=\"/habitat-images/animals/n352-giant-isopod.jpg\" alt=\"Giant Isopod\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Giant Isopod</figcaption>\n<p>A huge deep-sea crustacean that looks like an enormous woodlouse.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/n352-giant-isopod.jpg",
+          "alt": "Giant Isopod",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n353": {
@@ -9946,9 +10008,17 @@
     "data": {
       "id": "n353",
       "title": "Vampire squid",
+      "emoji": "🐾",
+      "facts": "- Despite its name, it doesn't drink blood; it uses sticky filaments to catch falling 'marine snow' (dead plankton and poop).\n- When threatened, it turns inside out, exposing rows of spiky-looking cirri on its arms to look intimidating.\n- It can shoot a cloud of glowing blue bioluminescent mucus to confuse predators in the dark.",
       "type": "Creature",
-      "childrenHtml": "<p>Can turn itself inside out to display frightening spines and release glowing mucus to confuse predators in the dark.</p>",
-      "wikiImages": []
+      "childrenHtml": "<img src=\"/habitat-images/animals/n353-vampire-squid.jpg\" alt=\"Vampire Squid\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Vampire Squid</figcaption>\n<p>A strange deep-sea cephalopod that looks like a cross between an octopus and a squid.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/n353-vampire-squid.jpg",
+          "alt": "Vampire Squid",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n354": {
@@ -9959,22 +10029,16 @@
     "data": {
       "id": "n354",
       "title": "Cheetah",
+      "emoji": "🐾",
+      "facts": "- They can accelerate from 0 to 60 miles per hour in just 3 seconds.\n- They have non-retractable claws that grip the ground like soccer cleats when they run.\n- Their long, muscular tail acts like a rudder to help them steer while running at top speed.",
       "type": "Creature",
-      "childrenHtml": "<p>Evolved a flexible spine and non-retractable claws (like football boots) for immense grip, making it the fastest land animal to sprint across the open plains.</p>",
-      "wikiImages": []
-    }
-  },
-  "n355": {
-    "type": "Creature",
-    "title": "Giraffe",
-    "sourcePage": "creatures-from-habitats",
-    "sourcePageTitle": "Creatures from Habitats",
-    "data": {
-      "id": "n355",
-      "title": "Giraffe",
-      "type": "Creature",
-      "childrenHtml": "<p>Has a uniquely long neck to reach nutritious leaves on tall acacia trees that grazing animals below cannot reach.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Cheetah.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Cheetah.jpg\" alt=\"Cheetah\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Cheetah</figcaption></figure>\n<p>The fastest land animal on Earth, built for incredible sprints.</p>",
+      "wikiImages": [
+        {
+          "filename": "Cheetah.jpg",
+          "alt": "Cheetah"
+        }
+      ]
     }
   },
   "n356": {
@@ -9985,9 +10049,16 @@
     "data": {
       "id": "n356",
       "title": "African elephant",
+      "emoji": "🐾",
+      "facts": "- Their trunk has around 40,000 muscles in it, making it strong enough to rip off tree branches and delicate enough to pick up a peanut.\n- Their large ears act as cooling fans; blood vessels in the ears release heat to cool the elephant down.\n- They can communicate with low-frequency rumbles that travel for miles through the ground.",
       "type": "Creature",
-      "childrenHtml": "<p>Flaps its giant ears to cool its blood, and uses its trunk to dig for water during the dry season.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"African_Elephant.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/African_Elephant.jpg\" alt=\"African Elephant\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>African Elephant</figcaption></figure>\n<p>The largest land animal on Earth, distinguished by its huge ears and long trunk.</p>",
+      "wikiImages": [
+        {
+          "filename": "African_Elephant.jpg",
+          "alt": "African Elephant"
+        }
+      ]
     }
   },
   "n357": {
@@ -9998,9 +10069,16 @@
     "data": {
       "id": "n357",
       "title": "Snow Leopard",
+      "emoji": "🐾",
+      "facts": "- They use their long, thick tails for balance on steep cliffs and wrap them around their bodies for warmth like a scarf.\n- Their large paws act like natural snowshoes to prevent them from sinking into the deep snow.\n- Unlike most big cats, they cannot roar.",
       "type": "Creature",
-      "childrenHtml": "<p>Has a giant, thick tail nearly a metre long, which it wraps around its face like a scarf to stay warm while sleeping on freezing rocky ledges.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Snow_Leopard.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Snow_Leopard.jpg\" alt=\"Snow Leopard\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Snow Leopard</figcaption></figure>\n<p>An elusive big cat adapted to the freezing, steep mountains of Central Asia.</p>",
+      "wikiImages": [
+        {
+          "filename": "Snow_Leopard.jpg",
+          "alt": "Snow Leopard"
+        }
+      ]
     }
   },
   "n358": {
@@ -10011,9 +10089,16 @@
     "data": {
       "id": "n358",
       "title": "Alpine ibex",
+      "emoji": "🐾",
+      "facts": "- Their specialized hooves have a hard outer edge and a soft, rubbery center that grips perfectly onto near-vertical rock faces.\n- The males' horns can grow over a meter long and are used to battle rivals.\n- They often climb incredibly steep dams just to lick the salt off the stones.",
       "type": "Creature",
-      "childrenHtml": "<p>Has specialized cloven hooves with soft, rubbery pads that grip sheer, nearly vertical rock faces.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Alpine_Ibex.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Alpine_Ibex.jpg\" alt=\"Alpine Ibex\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Alpine Ibex</figcaption></figure>\n<p>A species of wild goat known for its massive, curved horns and incredible climbing abilities.</p>",
+      "wikiImages": [
+        {
+          "filename": "Alpine_Ibex.jpg",
+          "alt": "Alpine Ibex"
+        }
+      ]
     }
   },
   "n359": {
@@ -10024,9 +10109,16 @@
     "data": {
       "id": "n359",
       "title": "Himalayan monal",
+      "emoji": "🐾",
+      "facts": "- The males have dazzling, iridescent feathers in nine different colors to attract mates.\n- They are strong diggers and use their curved upper beak to root around in the dirt and snow for insects and roots.\n- They are the national bird of Nepal.",
       "type": "Creature",
-      "childrenHtml": "<p>A hardy bird that uses its strong curved beak to dig through mountain snow to find buried roots and seeds.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"Himalayan_Monal.jpg\" data-wiki-credit=\"\"><img src=\"https://commons.wikimedia.org/wiki/Special:FilePath/Himalayan_Monal.jpg\" alt=\"Himalayan Monal\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" /><figcaption>Himalayan Monal</figcaption></figure>\n<p>An incredibly colorful pheasant that lives high in the Himalayan mountains.</p>",
+      "wikiImages": [
+        {
+          "filename": "Himalayan_Monal.jpg",
+          "alt": "Himalayan Monal"
+        }
+      ]
     }
   },
   "n360": {
@@ -10040,8 +10132,14 @@
       "emoji": "🦦",
       "facts": "- Has webbed feet for powerful swimming, dense waterproof fur, and can close its ears and nose underwater while hunting for fish.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"river-eurasian-otter.jpg\">\n<img src=\"/habitat-images/animals/river-eurasian-otter.jpg\" alt=\"Eurasian Otter\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Eurasian Otter</figcaption>\n</figure>\n<p>A playful and elusive fish-hunter found in clean rivers.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"river-eurasian-otter.jpg\">\n<img src=\"/habitat-images/animals/river-eurasian-otter.jpg\" alt=\"Eurasian Otter\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Eurasian Otter</figcaption>\n</figure>\n<p>A playful and elusive fish-hunter found in clean rivers.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/river-eurasian-otter.jpg",
+          "alt": "Eurasian Otter",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n361": {
@@ -10055,8 +10153,14 @@
       "emoji": "🐦",
       "facts": "- A bird with a streamlined, bullet-shaped body that lets it dive into the water without making a splash to catch small fish.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"river-kingfisher.jpg\">\n<img src=\"/habitat-images/animals/river-kingfisher.jpg\" alt=\"Kingfisher\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Kingfisher</figcaption>\n</figure>\n<p>A brilliant blue-and-orange bird that dives for small fish.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"river-kingfisher.jpg\">\n<img src=\"/habitat-images/animals/river-kingfisher.jpg\" alt=\"Kingfisher\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Kingfisher</figcaption>\n</figure>\n<p>A brilliant blue-and-orange bird that dives for small fish.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/river-kingfisher.jpg",
+          "alt": "Kingfisher",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n362": {
@@ -10070,8 +10174,14 @@
       "emoji": "🐟",
       "facts": "- Born in the river, swims out to the ocean to grow, and then uses a magnetic sense to find its exact birth river to lay its own eggs!",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"river-atlantic-salmon.jpg\">\n<img src=\"/habitat-images/animals/river-atlantic-salmon.jpg\" alt=\"Atlantic Salmon\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Atlantic Salmon</figcaption>\n</figure>\n<p>A remarkable fish that migrates between rivers and the ocean.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"river-atlantic-salmon.jpg\">\n<img src=\"/habitat-images/animals/river-atlantic-salmon.jpg\" alt=\"Atlantic Salmon\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Atlantic Salmon</figcaption>\n</figure>\n<p>A remarkable fish that migrates between rivers and the ocean.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/river-atlantic-salmon.jpg",
+          "alt": "Atlantic Salmon",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n363": {
@@ -10085,8 +10195,14 @@
       "emoji": "🦀",
       "facts": "- Has a tough exoskeleton to protect it from waves and predators, and hides deep in the rocky crevices when the tide is out.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"rock-pool-shore-crab.jpg\">\n<img src=\"/habitat-images/animals/rock-pool-shore-crab.jpg\" alt=\"Shore Crab\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Shore Crab</figcaption>\n</figure>\n<p>A tough-shelled crustacean hiding in rocky crevices.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"rock-pool-shore-crab.jpg\">\n<img src=\"/habitat-images/animals/rock-pool-shore-crab.jpg\" alt=\"Shore Crab\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Shore Crab</figcaption>\n</figure>\n<p>A tough-shelled crustacean hiding in rocky crevices.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/rock-pool-shore-crab.jpg",
+          "alt": "Shore Crab",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n364": {
@@ -10100,8 +10216,14 @@
       "emoji": "🐌",
       "facts": "- Clamps down onto the rock with incredible force, sealing water inside its shell to stop itself from drying out in the sun.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"rock-pool-common-limpet.jpg\">\n<img src=\"/habitat-images/animals/rock-pool-common-limpet.jpg\" alt=\"Common Limpet\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Common Limpet</figcaption>\n</figure>\n<p>A sea snail that clamps onto rocks with incredible force.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"rock-pool-common-limpet.jpg\">\n<img src=\"/habitat-images/animals/rock-pool-common-limpet.jpg\" alt=\"Common Limpet\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Common Limpet</figcaption>\n</figure>\n<p>A sea snail that clamps onto rocks with incredible force.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/rock-pool-common-limpet.jpg",
+          "alt": "Common Limpet",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n365": {
@@ -10115,8 +10237,14 @@
       "emoji": "🪸",
       "facts": "- Pulls its stinging tentacles inside its body when the tide goes out, looking like a harmless blob of red jelly to conserve moisture.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"rock-pool-beadlet-anemone.jpg\">\n<img src=\"/habitat-images/animals/rock-pool-beadlet-anemone.jpg\" alt=\"Beadlet Anemone\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Beadlet Anemone</figcaption>\n</figure>\n<p>A jelly-like predator that survives low tide by pulling its tentacles inside.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"rock-pool-beadlet-anemone.jpg\">\n<img src=\"/habitat-images/animals/rock-pool-beadlet-anemone.jpg\" alt=\"Beadlet Anemone\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Beadlet Anemone</figcaption>\n</figure>\n<p>A jelly-like predator that survives low tide by pulling its tentacles inside.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/rock-pool-beadlet-anemone.jpg",
+          "alt": "Beadlet Anemone",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n366": {
@@ -10130,8 +10258,14 @@
       "emoji": "🐻",
       "facts": "- Eats heavily during the short summer to build up fat, then hibernates in a den through the freezing winter when food is scarce.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"taiga-forest-brown-bear.jpg\">\n<img src=\"/habitat-images/animals/taiga-forest-brown-bear.jpg\" alt=\"Brown Bear\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Brown Bear</figcaption>\n</figure>\n<p>A massive omnivore that hibernates through the harsh winter.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"taiga-forest-brown-bear.jpg\">\n<img src=\"/habitat-images/animals/taiga-forest-brown-bear.jpg\" alt=\"Brown Bear\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Brown Bear</figcaption>\n</figure>\n<p>A massive omnivore that hibernates through the harsh winter.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/taiga-forest-brown-bear.jpg",
+          "alt": "Brown Bear",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n367": {
@@ -10145,8 +10279,14 @@
       "emoji": "🦌",
       "facts": "- Has incredibly long legs to wade through deep winter snow and reach the high branches of pine trees.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"taiga-forest-moose-elk.jpg\">\n<img src=\"/habitat-images/animals/taiga-forest-moose-elk.jpg\" alt=\"Moose\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Moose</figcaption>\n</figure>\n<p>The largest species of deer, perfectly adapted to deep snow.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"taiga-forest-moose-elk.jpg\">\n<img src=\"/habitat-images/animals/taiga-forest-moose-elk.jpg\" alt=\"Moose\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Moose</figcaption>\n</figure>\n<p>The largest species of deer, perfectly adapted to deep snow.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/taiga-forest-moose-elk.jpg",
+          "alt": "Moose",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n368": {
@@ -10160,8 +10300,14 @@
       "emoji": "🦡",
       "facts": "- An agile tree-climber with semi-retractable claws, allowing it to leap between snow-covered branches to hunt red squirrels.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"taiga-forest-pine-marten.jpg\">\n<img src=\"/habitat-images/animals/taiga-forest-pine-marten.jpg\" alt=\"Pine Marten\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Pine Marten</figcaption>\n</figure>\n<p>An agile tree-climbing predator with semi-retractable claws.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"taiga-forest-pine-marten.jpg\">\n<img src=\"/habitat-images/animals/taiga-forest-pine-marten.jpg\" alt=\"Pine Marten\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Pine Marten</figcaption>\n</figure>\n<p>An agile tree-climbing predator with semi-retractable claws.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/taiga-forest-pine-marten.jpg",
+          "alt": "Pine Marten",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n369": {
@@ -10175,23 +10321,14 @@
       "emoji": "🦊",
       "facts": "- Highly adaptable and not a fussy eater; it will hunt mice, eat fallen fruit, or scavenge leftover takeaways from bins.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"urban-garden-urban-fox.jpg\">\n<img src=\"/habitat-images/animals/urban-garden-urban-fox.jpg\" alt=\"Urban Fox\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Urban Fox</figcaption>\n</figure>\n<p>A highly adaptable scavenger that thrives in towns and cities.</p>",
-      "wikiImages": []
-    }
-  },
-  "n370": {
-    "type": "Creature",
-    "title": "Hedgehog",
-    "sourcePage": "creatures-from-habitats",
-    "sourcePageTitle": "Creatures from Habitats",
-    "data": {
-      "id": "n370",
-      "title": "Hedgehog",
-      "emoji": "🦔",
-      "facts": "- Travels through small holes in fences at night, eating slugs and snails from the flowerbeds to help the gardeners.",
-      "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"urban-garden-hedgehog.jpg\">\n<img src=\"/habitat-images/animals/urban-garden-hedgehog.jpg\" alt=\"Hedgehog\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Hedgehog</figcaption>\n</figure>\n<p>A prickly nocturnal mammal that visits gardens to eat slugs.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"urban-garden-urban-fox.jpg\">\n<img src=\"/habitat-images/animals/urban-garden-urban-fox.jpg\" alt=\"Urban Fox\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Urban Fox</figcaption>\n</figure>\n<p>A highly adaptable scavenger that thrives in towns and cities.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/urban-garden-urban-fox.jpg",
+          "alt": "Urban Fox",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n371": {
@@ -10205,8 +10342,14 @@
       "emoji": "🕷️",
       "facts": "- Spins large orb webs across gaps in fences or bushes to catch flying insects, rebuilding the web every single morning.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"urban-garden-garden-spider.jpg\">\n<img src=\"/habitat-images/animals/urban-garden-garden-spider.jpg\" alt=\"Garden Spider\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Garden Spider</figcaption>\n</figure>\n<p>A master web-weaver found in almost every garden.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"urban-garden-garden-spider.jpg\">\n<img src=\"/habitat-images/animals/urban-garden-garden-spider.jpg\" alt=\"Garden Spider\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Garden Spider</figcaption>\n</figure>\n<p>A master web-weaver found in almost every garden.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/urban-garden-garden-spider.jpg",
+          "alt": "Garden Spider",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n372": {
@@ -10220,8 +10363,14 @@
       "emoji": "🐝",
       "facts": "- Covered in thick hair to stay warm while flying from flower to flower, collecting nectar and accidentally pollinating the plants.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"wildflower-meadow-buff-tailed-bumblebee.jpg\">\n<img src=\"/habitat-images/animals/wildflower-meadow-buff-tailed-bumblebee.jpg\" alt=\"Buff-tailed Bumblebee\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Buff-tailed Bumblebee</figcaption>\n</figure>\n<p>An essential pollinator for meadow flowers.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"wildflower-meadow-buff-tailed-bumblebee.jpg\">\n<img src=\"/habitat-images/animals/wildflower-meadow-buff-tailed-bumblebee.jpg\" alt=\"Buff-tailed Bumblebee\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Buff-tailed Bumblebee</figcaption>\n</figure>\n<p>An essential pollinator for meadow flowers.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/wildflower-meadow-buff-tailed-bumblebee.jpg",
+          "alt": "Buff-tailed Bumblebee",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n373": {
@@ -10237,8 +10386,14 @@
       "citizenScienceProjectName": "Big Butterfly Count",
       "facts": "- The caterpillars feed exclusively on the fine meadow grasses, perfectly camouflaged in the green stems.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"wildflower-meadow-meadow-brown-butterfly.jpg\">\n<img src=\"/habitat-images/animals/wildflower-meadow-meadow-brown-butterfly.jpg\" alt=\"Meadow Brown Butterfly\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Meadow Brown Butterfly</figcaption>\n</figure>\n<p>A camouflaged butterfly whose caterpillars eat fine grasses.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"wildflower-meadow-meadow-brown-butterfly.jpg\">\n<img src=\"/habitat-images/animals/wildflower-meadow-meadow-brown-butterfly.jpg\" alt=\"Meadow Brown Butterfly\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Meadow Brown Butterfly</figcaption>\n</figure>\n<p>A camouflaged butterfly whose caterpillars eat fine grasses.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/wildflower-meadow-meadow-brown-butterfly.jpg",
+          "alt": "Meadow Brown Butterfly",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n374": {
@@ -10252,8 +10407,14 @@
       "emoji": "🐭",
       "facts": "- Weaves intricate tunnel networks through the tall grass to safely hunt for seeds without being spotted by birds of prey above.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"wildflower-meadow-field-vole.jpg\">\n<img src=\"/habitat-images/animals/wildflower-meadow-field-vole.jpg\" alt=\"Field Vole\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Field Vole</figcaption>\n</figure>\n<p>A small mammal that weaves tunnels through the tall grass.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"wildflower-meadow-field-vole.jpg\">\n<img src=\"/habitat-images/animals/wildflower-meadow-field-vole.jpg\" alt=\"Field Vole\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Field Vole</figcaption>\n</figure>\n<p>A small mammal that weaves tunnels through the tall grass.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/wildflower-meadow-field-vole.jpg",
+          "alt": "Field Vole",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n375": {
@@ -10267,8 +10428,14 @@
       "emoji": "🐜",
       "facts": "- Cuts pieces of leaves and carries them underground, using them to farm a special fungus which they then eat.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"rainforest-floor-leaf-cutter-ant.jpg\">\n<img src=\"/habitat-images/animals/rainforest-floor-leaf-cutter-ant.jpg\" alt=\"Leaf-cutter Ant\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Leaf-cutter Ant</figcaption>\n</figure>\n<p>A strong insect that farms fungus underground.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"rainforest-floor-leaf-cutter-ant.jpg\">\n<img src=\"/habitat-images/animals/rainforest-floor-leaf-cutter-ant.jpg\" alt=\"Leaf-cutter Ant\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Leaf-cutter Ant</figcaption>\n</figure>\n<p>A strong insect that farms fungus underground.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/rainforest-floor-leaf-cutter-ant.jpg",
+          "alt": "Leaf-cutter Ant",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n376": {
@@ -10282,8 +10449,14 @@
       "emoji": "🐆",
       "facts": "- Has a beautiful spotted coat (rosettes) that provides perfect camouflage in the dappled shadows of the forest floor while stalking prey.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"rainforest-floor-jaguar.jpg\">\n<img src=\"/habitat-images/animals/rainforest-floor-jaguar.jpg\" alt=\"Jaguar\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Jaguar</figcaption>\n</figure>\n<p>A powerful apex predator perfectly camouflaged for the shadows.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"rainforest-floor-jaguar.jpg\">\n<img src=\"/habitat-images/animals/rainforest-floor-jaguar.jpg\" alt=\"Jaguar\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Jaguar</figcaption>\n</figure>\n<p>A powerful apex predator perfectly camouflaged for the shadows.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/rainforest-floor-jaguar.jpg",
+          "alt": "Jaguar",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n377": {
@@ -10297,8 +10470,14 @@
       "emoji": "🐸",
       "facts": "- Uses incredibly bright colours to warn predators on the dark forest floor that its skin is highly toxic.",
       "type": "Creature",
-      "childrenHtml": "<figure data-wiki-filename=\"rainforest-floor-poison-dart-frog.jpg\">\n<img src=\"/habitat-images/animals/rainforest-floor-poison-dart-frog.jpg\" alt=\"Poison Dart Frog\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Poison Dart Frog</figcaption>\n</figure>\n<p>A tiny, brightly coloured amphibian with highly toxic skin.</p>",
-      "wikiImages": []
+      "childrenHtml": "<figure data-wiki-filename=\"rainforest-floor-poison-dart-frog.jpg\">\n<img src=\"/habitat-images/animals/rainforest-floor-poison-dart-frog.jpg\" alt=\"Poison Dart Frog\" className=\"max-w-full h-auto\" loading=\"lazy\" />\n<figcaption>Poison Dart Frog</figcaption>\n</figure>\n<p>A tiny, brightly coloured amphibian with highly toxic skin.</p>",
+      "wikiImages": [
+        {
+          "filename": "/habitat-images/animals/rainforest-floor-poison-dart-frog.jpg",
+          "alt": "Poison Dart Frog",
+          "isStandardImg": true
+        }
+      ]
     }
   },
   "n234": {
