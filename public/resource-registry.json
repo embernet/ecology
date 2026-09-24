@@ -1,4 +1,338 @@
 {
+  "a1003": {
+    "type": "Activity",
+    "title": "10-Minute Minibeast Hunt",
+    "sourcePage": "fieldwork-toolkit",
+    "sourcePageTitle": "Fieldwork & Recording Toolkit",
+    "data": {
+      "id": "a1003",
+      "title": "10-Minute Minibeast Hunt",
+      "emoji": "🐛",
+      "description": "Where: A garden, park, or woodland. How: Carefully turn over stones, look under dead wood, and check the leaves of plants. Use your Field Journal to record what you find! Remember to gently put everything back exactly as you found it.",
+      "type": "Activity",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a1004": {
+    "type": "Activity",
+    "title": "The 1-Metre Square Survey",
+    "sourcePage": "fieldwork-toolkit",
+    "sourcePageTitle": "Fieldwork & Recording Toolkit",
+    "data": {
+      "id": "a1004",
+      "title": "The 1-Metre Square Survey",
+      "emoji": "🔎",
+      "description": "Where: A patch of grass or a meadow. How: Use four sticks or a piece of string to mark out a 1-metre square on the ground. For 5 minutes, count every single living thing you can see inside that square. You might be surprised how much life is in such a small space!",
+      "type": "Activity",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "g1001": {
+    "type": "Guidance",
+    "title": "Guidance",
+    "sourcePage": "fieldwork-toolkit",
+    "sourcePageTitle": "Fieldwork & Recording Toolkit",
+    "data": {
+      "id": "g1001",
+      "title": "Welcome to the Fieldwork Toolkit",
+      "text": "The skills of a field naturalist start here! This toolkit provides everything you need to observe, identify, and record the wildlife around you. Whether you are in your school grounds, a local park, or your own garden, these resources will help you look closer at the natural world.",
+      "type": "Guidance",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a1002": {
+    "type": "TaxonomicKey",
+    "title": "Invertebrate Identifier Key",
+    "sourcePage": "fieldwork-toolkit",
+    "sourcePageTitle": "Fieldwork & Recording Toolkit",
+    "data": {
+      "id": "a1002",
+      "title": "Invertebrate Identifier Key",
+      "type": "TaxonomicKey",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a1001": {
+    "type": "FieldNotebookTemplate",
+    "title": "Wildlife Field Journal Template",
+    "sourcePage": "fieldwork-toolkit",
+    "sourcePageTitle": "Fieldwork & Recording Toolkit",
+    "data": {
+      "id": "a1001",
+      "title": "Wildlife Field Journal Template",
+      "type": "FieldNotebookTemplate",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a1109": {
+    "type": "Activity",
+    "title": "Spot the Farmland Wildlife",
+    "sourcePage": "habitat-farmland",
+    "sourcePageTitle": "Farmland Habitats (GCSE Core)",
+    "data": {
+      "id": "a1109",
+      "title": "Spot the Farmland Wildlife",
+      "emoji": "🔍",
+      "description": "Can you find three different types of plants or animals the next time you visit a Farmland habitat? Record them in your Field Journal!",
+      "type": "Activity",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a11010": {
+    "type": "Activity",
+    "title": "10-Minute Farmland Survey",
+    "sourcePage": "habitat-farmland",
+    "sourcePageTitle": "Farmland Habitats (GCSE Core)",
+    "data": {
+      "id": "a11010",
+      "title": "10-Minute Farmland Survey",
+      "emoji": "⏱️",
+      "description": "Sit quietly in this habitat for 10 minutes. Write down everything you hear, see, and smell. What is the most abundant species?",
+      "type": "Activity",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "g1105": {
+    "type": "Guidance",
+    "title": "Guidance",
+    "sourcePage": "habitat-farmland",
+    "sourcePageTitle": "Farmland Habitats (GCSE Core)",
+    "data": {
+      "id": "g1105",
+      "title": "Farmland Habitats",
+      "text": "Hedgerows and field margins are essential corridors for countryside wildlife. This page is part of our GCSE Natural History preparation, focusing specifically on UK native species and environments.",
+      "type": "Guidance",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a1103": {
+    "type": "Activity",
+    "title": "Spot the Freshwater Wildlife",
+    "sourcePage": "habitat-freshwater",
+    "sourcePageTitle": "Freshwater Habitats (GCSE Core)",
+    "data": {
+      "id": "a1103",
+      "title": "Spot the Freshwater Wildlife",
+      "emoji": "🔍",
+      "description": "Can you find three different types of plants or animals the next time you visit a Freshwater habitat? Record them in your Field Journal!",
+      "type": "Activity",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a1104": {
+    "type": "Activity",
+    "title": "10-Minute Freshwater Survey",
+    "sourcePage": "habitat-freshwater",
+    "sourcePageTitle": "Freshwater Habitats (GCSE Core)",
+    "data": {
+      "id": "a1104",
+      "title": "10-Minute Freshwater Survey",
+      "emoji": "⏱️",
+      "description": "Sit quietly in this habitat for 10 minutes. Write down everything you hear, see, and smell. What is the most abundant species?",
+      "type": "Activity",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "g1102": {
+    "type": "Guidance",
+    "title": "Guidance",
+    "sourcePage": "habitat-freshwater",
+    "sourcePageTitle": "Freshwater Habitats (GCSE Core)",
+    "data": {
+      "id": "g1102",
+      "title": "Freshwater Habitats",
+      "text": "Ponds, rivers, and streams teem with aquatic life. This page is part of our GCSE Natural History preparation, focusing specifically on UK native species and environments.",
+      "type": "Guidance",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a1107": {
+    "type": "Activity",
+    "title": "Spot the Grassland Wildlife",
+    "sourcePage": "habitat-grassland",
+    "sourcePageTitle": "Grassland Habitats (GCSE Core)",
+    "data": {
+      "id": "a1107",
+      "title": "Spot the Grassland Wildlife",
+      "emoji": "🔍",
+      "description": "Can you find three different types of plants or animals the next time you visit a Grassland habitat? Record them in your Field Journal!",
+      "type": "Activity",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a1108": {
+    "type": "Activity",
+    "title": "10-Minute Grassland Survey",
+    "sourcePage": "habitat-grassland",
+    "sourcePageTitle": "Grassland Habitats (GCSE Core)",
+    "data": {
+      "id": "a1108",
+      "title": "10-Minute Grassland Survey",
+      "emoji": "⏱️",
+      "description": "Sit quietly in this habitat for 10 minutes. Write down everything you hear, see, and smell. What is the most abundant species?",
+      "type": "Activity",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "g1104": {
+    "type": "Guidance",
+    "title": "Guidance",
+    "sourcePage": "habitat-grassland",
+    "sourcePageTitle": "Grassland Habitats (GCSE Core)",
+    "data": {
+      "id": "g1104",
+      "title": "Grassland Habitats",
+      "text": "Meadows and grassy plains are vital for pollinators and small mammals. This page is part of our GCSE Natural History preparation, focusing specifically on UK native species and environments.",
+      "type": "Guidance",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a11011": {
+    "type": "Activity",
+    "title": "Spot the Marine Wildlife",
+    "sourcePage": "habitat-marine",
+    "sourcePageTitle": "Marine Habitats (GCSE Core)",
+    "data": {
+      "id": "a11011",
+      "title": "Spot the Marine Wildlife",
+      "emoji": "🔍",
+      "description": "Can you find three different types of plants or animals the next time you visit a Marine habitat? Record them in your Field Journal!",
+      "type": "Activity",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a11012": {
+    "type": "Activity",
+    "title": "10-Minute Marine Survey",
+    "sourcePage": "habitat-marine",
+    "sourcePageTitle": "Marine Habitats (GCSE Core)",
+    "data": {
+      "id": "a11012",
+      "title": "10-Minute Marine Survey",
+      "emoji": "⏱️",
+      "description": "Sit quietly in this habitat for 10 minutes. Write down everything you hear, see, and smell. What is the most abundant species?",
+      "type": "Activity",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "g1106": {
+    "type": "Guidance",
+    "title": "Guidance",
+    "sourcePage": "habitat-marine",
+    "sourcePageTitle": "Marine Habitats (GCSE Core)",
+    "data": {
+      "id": "g1106",
+      "title": "Marine Habitats",
+      "text": "Rock pools, coastlines, and the shallow seas surrounding the UK. This page is part of our GCSE Natural History preparation, focusing specifically on UK native species and environments.",
+      "type": "Guidance",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a1101": {
+    "type": "Activity",
+    "title": "Spot the Urban Wildlife",
+    "sourcePage": "habitat-urban",
+    "sourcePageTitle": "Urban Habitats (GCSE Core)",
+    "data": {
+      "id": "a1101",
+      "title": "Spot the Urban Wildlife",
+      "emoji": "🔍",
+      "description": "Can you find three different types of plants or animals the next time you visit a Urban habitat? Record them in your Field Journal!",
+      "type": "Activity",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a1102": {
+    "type": "Activity",
+    "title": "10-Minute Urban Survey",
+    "sourcePage": "habitat-urban",
+    "sourcePageTitle": "Urban Habitats (GCSE Core)",
+    "data": {
+      "id": "a1102",
+      "title": "10-Minute Urban Survey",
+      "emoji": "⏱️",
+      "description": "Sit quietly in this habitat for 10 minutes. Write down everything you hear, see, and smell. What is the most abundant species?",
+      "type": "Activity",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "g1101": {
+    "type": "Guidance",
+    "title": "Guidance",
+    "sourcePage": "habitat-urban",
+    "sourcePageTitle": "Urban Habitats (GCSE Core)",
+    "data": {
+      "id": "g1101",
+      "title": "Urban Habitats",
+      "text": "Cities, towns, and villages provide surprising sanctuaries for wildlife. This page is part of our GCSE Natural History preparation, focusing specifically on UK native species and environments.",
+      "type": "Guidance",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a1105": {
+    "type": "Activity",
+    "title": "Spot the Woodland Wildlife",
+    "sourcePage": "habitat-woodland",
+    "sourcePageTitle": "Woodland Habitats (GCSE Core)",
+    "data": {
+      "id": "a1105",
+      "title": "Spot the Woodland Wildlife",
+      "emoji": "🔍",
+      "description": "Can you find three different types of plants or animals the next time you visit a Woodland habitat? Record them in your Field Journal!",
+      "type": "Activity",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "a1106": {
+    "type": "Activity",
+    "title": "10-Minute Woodland Survey",
+    "sourcePage": "habitat-woodland",
+    "sourcePageTitle": "Woodland Habitats (GCSE Core)",
+    "data": {
+      "id": "a1106",
+      "title": "10-Minute Woodland Survey",
+      "emoji": "⏱️",
+      "description": "Sit quietly in this habitat for 10 minutes. Write down everything you hear, see, and smell. What is the most abundant species?",
+      "type": "Activity",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "g1103": {
+    "type": "Guidance",
+    "title": "Guidance",
+    "sourcePage": "habitat-woodland",
+    "sourcePageTitle": "Woodland Habitats (GCSE Core)",
+    "data": {
+      "id": "g1103",
+      "title": "Woodland Habitats",
+      "text": "Forests and woods offer layers of shelter from the canopy to the forest floor. This page is part of our GCSE Natural History preparation, focusing specifically on UK native species and environments.",
+      "type": "Guidance",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
   "n9": {
     "type": "NatureExample",
     "title": "Amazing Earth Facts",
@@ -1095,6 +1429,20 @@
       "id": "q2",
       "text": "Describe and understand key aspects of physical geography, including climate zones, biomes and vegetation belts, rivers, mountains, volcanoes and earthquakes, and the water cycle.",
       "type": "Requirement",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "g1002": {
+    "type": "Guidance",
+    "title": "Guidance",
+    "sourcePage": "road-to-gcse-natural-history",
+    "sourcePageTitle": "Road to Natural History GCSE",
+    "data": {
+      "id": "g1002",
+      "title": "Preparing for the GCSE",
+      "text": "This section maps the foundational skills built on our site to the requirements of the upcoming Natural History GCSE. (Based on the June 2026 proposed GCSE content, subject to final specification).",
+      "type": "Guidance",
       "childrenHtml": "",
       "wikiImages": []
     }
@@ -8856,6 +9204,51 @@
       "wikiImages": []
     }
   },
+  "e1": {
+    "type": "ExternalResource",
+    "title": "Oak National Academy",
+    "sourcePage": "curated-links",
+    "sourcePageTitle": "Curated External Links",
+    "data": {
+      "id": "e1",
+      "title": "Oak National Academy",
+      "url": "https://www.thenational.academy/",
+      "description": "Free video lessons and resources mapped to the national curriculum.",
+      "type": "ExternalResource",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "e2": {
+    "type": "ExternalResource",
+    "title": "National Education Nature Park",
+    "sourcePage": "curated-links",
+    "sourcePageTitle": "Curated External Links",
+    "data": {
+      "id": "e2",
+      "title": "National Education Nature Park",
+      "url": "https://www.educationnaturepark.org.uk/",
+      "description": "A programme bringing together schools to enhance biodiversity on their grounds.",
+      "type": "ExternalResource",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
+  "e3": {
+    "type": "ExternalResource",
+    "title": "RSPB Wild Challenge",
+    "sourcePage": "curated-links",
+    "sourcePageTitle": "Curated External Links",
+    "data": {
+      "id": "e3",
+      "title": "RSPB Wild Challenge",
+      "url": "https://www.rspb.org.uk/fun-and-learning/for-teachers/schools-wild-challenge/",
+      "description": "Awards for schools connecting children with nature and helping wildlife.",
+      "type": "ExternalResource",
+      "childrenHtml": "",
+      "wikiImages": []
+    }
+  },
   "n300": {
     "type": "Creature",
     "title": "Common frog",
@@ -9644,8 +10037,10 @@
     "data": {
       "id": "n360",
       "title": "Eurasian Otter",
+      "emoji": "🦦",
+      "facts": "- Has webbed feet for powerful swimming, dense waterproof fur, and can close its ears and nose underwater while hunting for fish.",
       "type": "Creature",
-      "childrenHtml": "<p>Has webbed feet for powerful swimming, dense waterproof fur, and can close its ears and nose underwater while hunting for fish.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"river-eurasian-otter.jpg\">\n<img src=\"/habitat-images/animals/river-eurasian-otter.jpg\" alt=\"Eurasian Otter\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Eurasian Otter</figcaption>\n</figure>\n<p>A playful and elusive fish-hunter found in clean rivers.</p>",
       "wikiImages": []
     }
   },
@@ -9657,8 +10052,10 @@
     "data": {
       "id": "n361",
       "title": "Kingfisher",
+      "emoji": "🐦",
+      "facts": "- A bird with a streamlined, bullet-shaped body that lets it dive into the water without making a splash to catch small fish.",
       "type": "Creature",
-      "childrenHtml": "<p>A bird with a streamlined, bullet-shaped body that lets it dive into the water without making a splash to catch small fish.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"river-kingfisher.jpg\">\n<img src=\"/habitat-images/animals/river-kingfisher.jpg\" alt=\"Kingfisher\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Kingfisher</figcaption>\n</figure>\n<p>A brilliant blue-and-orange bird that dives for small fish.</p>",
       "wikiImages": []
     }
   },
@@ -9670,8 +10067,10 @@
     "data": {
       "id": "n362",
       "title": "Atlantic Salmon",
+      "emoji": "🐟",
+      "facts": "- Born in the river, swims out to the ocean to grow, and then uses a magnetic sense to find its exact birth river to lay its own eggs!",
       "type": "Creature",
-      "childrenHtml": "<p>Born in the river, swims out to the ocean to grow, and then uses a magnetic sense to find its exact birth river to lay its own eggs!</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"river-atlantic-salmon.jpg\">\n<img src=\"/habitat-images/animals/river-atlantic-salmon.jpg\" alt=\"Atlantic Salmon\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Atlantic Salmon</figcaption>\n</figure>\n<p>A remarkable fish that migrates between rivers and the ocean.</p>",
       "wikiImages": []
     }
   },
@@ -9683,8 +10082,10 @@
     "data": {
       "id": "n363",
       "title": "Shore Crab",
+      "emoji": "🦀",
+      "facts": "- Has a tough exoskeleton to protect it from waves and predators, and hides deep in the rocky crevices when the tide is out.",
       "type": "Creature",
-      "childrenHtml": "<p>Has a tough exoskeleton to protect it from waves and predators, and hides deep in the rocky crevices when the tide is out.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"rock-pool-shore-crab.jpg\">\n<img src=\"/habitat-images/animals/rock-pool-shore-crab.jpg\" alt=\"Shore Crab\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Shore Crab</figcaption>\n</figure>\n<p>A tough-shelled crustacean hiding in rocky crevices.</p>",
       "wikiImages": []
     }
   },
@@ -9696,8 +10097,10 @@
     "data": {
       "id": "n364",
       "title": "Common Limpet",
+      "emoji": "🐌",
+      "facts": "- Clamps down onto the rock with incredible force, sealing water inside its shell to stop itself from drying out in the sun.",
       "type": "Creature",
-      "childrenHtml": "<p>Clamps down onto the rock with incredible force, sealing water inside its shell to stop itself from drying out in the sun.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"rock-pool-common-limpet.jpg\">\n<img src=\"/habitat-images/animals/rock-pool-common-limpet.jpg\" alt=\"Common Limpet\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Common Limpet</figcaption>\n</figure>\n<p>A sea snail that clamps onto rocks with incredible force.</p>",
       "wikiImages": []
     }
   },
@@ -9709,8 +10112,10 @@
     "data": {
       "id": "n365",
       "title": "Beadlet Anemone",
+      "emoji": "🪸",
+      "facts": "- Pulls its stinging tentacles inside its body when the tide goes out, looking like a harmless blob of red jelly to conserve moisture.",
       "type": "Creature",
-      "childrenHtml": "<p>Pulls its stinging tentacles inside its body when the tide goes out, looking like a harmless blob of red jelly to conserve moisture.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"rock-pool-beadlet-anemone.jpg\">\n<img src=\"/habitat-images/animals/rock-pool-beadlet-anemone.jpg\" alt=\"Beadlet Anemone\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Beadlet Anemone</figcaption>\n</figure>\n<p>A jelly-like predator that survives low tide by pulling its tentacles inside.</p>",
       "wikiImages": []
     }
   },
@@ -9722,8 +10127,10 @@
     "data": {
       "id": "n366",
       "title": "Brown Bear",
+      "emoji": "🐻",
+      "facts": "- Eats heavily during the short summer to build up fat, then hibernates in a den through the freezing winter when food is scarce.",
       "type": "Creature",
-      "childrenHtml": "<p>Eats heavily during the short summer to build up fat, then hibernates in a den through the freezing winter when food is scarce.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"taiga-forest-brown-bear.jpg\">\n<img src=\"/habitat-images/animals/taiga-forest-brown-bear.jpg\" alt=\"Brown Bear\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Brown Bear</figcaption>\n</figure>\n<p>A massive omnivore that hibernates through the harsh winter.</p>",
       "wikiImages": []
     }
   },
@@ -9735,8 +10142,10 @@
     "data": {
       "id": "n367",
       "title": "Moose",
+      "emoji": "🦌",
+      "facts": "- Has incredibly long legs to wade through deep winter snow and reach the high branches of pine trees.",
       "type": "Creature",
-      "childrenHtml": "<p>Has incredibly long legs to wade through deep winter snow and reach the high branches of pine trees.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"taiga-forest-moose-elk.jpg\">\n<img src=\"/habitat-images/animals/taiga-forest-moose-elk.jpg\" alt=\"Moose\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Moose</figcaption>\n</figure>\n<p>The largest species of deer, perfectly adapted to deep snow.</p>",
       "wikiImages": []
     }
   },
@@ -9748,8 +10157,10 @@
     "data": {
       "id": "n368",
       "title": "Pine Marten",
+      "emoji": "🦡",
+      "facts": "- An agile tree-climber with semi-retractable claws, allowing it to leap between snow-covered branches to hunt red squirrels.",
       "type": "Creature",
-      "childrenHtml": "<p>An agile tree-climber with semi-retractable claws, allowing it to leap between snow-covered branches to hunt red squirrels.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"taiga-forest-pine-marten.jpg\">\n<img src=\"/habitat-images/animals/taiga-forest-pine-marten.jpg\" alt=\"Pine Marten\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Pine Marten</figcaption>\n</figure>\n<p>An agile tree-climbing predator with semi-retractable claws.</p>",
       "wikiImages": []
     }
   },
@@ -9761,8 +10172,10 @@
     "data": {
       "id": "n369",
       "title": "Urban Fox",
+      "emoji": "🦊",
+      "facts": "- Highly adaptable and not a fussy eater; it will hunt mice, eat fallen fruit, or scavenge leftover takeaways from bins.",
       "type": "Creature",
-      "childrenHtml": "<p>Highly adaptable and not a fussy eater; it will hunt mice, eat fallen fruit, or scavenge leftover takeaways from bins.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"urban-garden-urban-fox.jpg\">\n<img src=\"/habitat-images/animals/urban-garden-urban-fox.jpg\" alt=\"Urban Fox\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Urban Fox</figcaption>\n</figure>\n<p>A highly adaptable scavenger that thrives in towns and cities.</p>",
       "wikiImages": []
     }
   },
@@ -9774,8 +10187,10 @@
     "data": {
       "id": "n370",
       "title": "Hedgehog",
+      "emoji": "🦔",
+      "facts": "- Travels through small holes in fences at night, eating slugs and snails from the flowerbeds to help the gardeners.",
       "type": "Creature",
-      "childrenHtml": "<p>Travels through small holes in fences at night, eating slugs and snails from the flowerbeds to help the gardeners.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"urban-garden-hedgehog.jpg\">\n<img src=\"/habitat-images/animals/urban-garden-hedgehog.jpg\" alt=\"Hedgehog\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Hedgehog</figcaption>\n</figure>\n<p>A prickly nocturnal mammal that visits gardens to eat slugs.</p>",
       "wikiImages": []
     }
   },
@@ -9787,8 +10202,10 @@
     "data": {
       "id": "n371",
       "title": "Garden Spider",
+      "emoji": "🕷️",
+      "facts": "- Spins large orb webs across gaps in fences or bushes to catch flying insects, rebuilding the web every single morning.",
       "type": "Creature",
-      "childrenHtml": "<p>Spins large orb webs across gaps in fences or bushes to catch flying insects, rebuilding the web every single morning.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"urban-garden-garden-spider.jpg\">\n<img src=\"/habitat-images/animals/urban-garden-garden-spider.jpg\" alt=\"Garden Spider\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Garden Spider</figcaption>\n</figure>\n<p>A master web-weaver found in almost every garden.</p>",
       "wikiImages": []
     }
   },
@@ -9800,8 +10217,10 @@
     "data": {
       "id": "n372",
       "title": "Buff-tailed Bumblebee",
+      "emoji": "🐝",
+      "facts": "- Covered in thick hair to stay warm while flying from flower to flower, collecting nectar and accidentally pollinating the plants.",
       "type": "Creature",
-      "childrenHtml": "<p>Covered in thick hair to stay warm while flying from flower to flower, collecting nectar and accidentally pollinating the plants.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"wildflower-meadow-buff-tailed-bumblebee.jpg\">\n<img src=\"/habitat-images/animals/wildflower-meadow-buff-tailed-bumblebee.jpg\" alt=\"Buff-tailed Bumblebee\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Buff-tailed Bumblebee</figcaption>\n</figure>\n<p>An essential pollinator for meadow flowers.</p>",
       "wikiImages": []
     }
   },
@@ -9813,8 +10232,12 @@
     "data": {
       "id": "n373",
       "title": "Meadow Brown Butterfly",
+      "emoji": "🦋",
+      "citizenScienceUrl": "https://bigbutterflycount.butterfly-conservation.org/",
+      "citizenScienceProjectName": "Big Butterfly Count",
+      "facts": "- The caterpillars feed exclusively on the fine meadow grasses, perfectly camouflaged in the green stems.",
       "type": "Creature",
-      "childrenHtml": "<p>The caterpillars feed exclusively on the fine meadow grasses, perfectly camouflaged in the green stems.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"wildflower-meadow-meadow-brown-butterfly.jpg\">\n<img src=\"/habitat-images/animals/wildflower-meadow-meadow-brown-butterfly.jpg\" alt=\"Meadow Brown Butterfly\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Meadow Brown Butterfly</figcaption>\n</figure>\n<p>A camouflaged butterfly whose caterpillars eat fine grasses.</p>",
       "wikiImages": []
     }
   },
@@ -9826,8 +10249,10 @@
     "data": {
       "id": "n374",
       "title": "Field Vole",
+      "emoji": "🐭",
+      "facts": "- Weaves intricate tunnel networks through the tall grass to safely hunt for seeds without being spotted by birds of prey above.",
       "type": "Creature",
-      "childrenHtml": "<p>Weaves intricate tunnel networks through the tall grass to safely hunt for seeds without being spotted by birds of prey above.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"wildflower-meadow-field-vole.jpg\">\n<img src=\"/habitat-images/animals/wildflower-meadow-field-vole.jpg\" alt=\"Field Vole\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Field Vole</figcaption>\n</figure>\n<p>A small mammal that weaves tunnels through the tall grass.</p>",
       "wikiImages": []
     }
   },
@@ -9839,8 +10264,10 @@
     "data": {
       "id": "n375",
       "title": "Leaf-cutter Ant",
+      "emoji": "🐜",
+      "facts": "- Cuts pieces of leaves and carries them underground, using them to farm a special fungus which they then eat.",
       "type": "Creature",
-      "childrenHtml": "<p>Cuts pieces of leaves and carries them underground, using them to farm a special fungus which they then eat.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"rainforest-floor-leaf-cutter-ant.jpg\">\n<img src=\"/habitat-images/animals/rainforest-floor-leaf-cutter-ant.jpg\" alt=\"Leaf-cutter Ant\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Leaf-cutter Ant</figcaption>\n</figure>\n<p>A strong insect that farms fungus underground.</p>",
       "wikiImages": []
     }
   },
@@ -9852,8 +10279,10 @@
     "data": {
       "id": "n376",
       "title": "Jaguar",
+      "emoji": "🐆",
+      "facts": "- Has a beautiful spotted coat (rosettes) that provides perfect camouflage in the dappled shadows of the forest floor while stalking prey.",
       "type": "Creature",
-      "childrenHtml": "<p>Has a beautiful spotted coat (rosettes) that provides perfect camouflage in the dappled shadows of the forest floor while stalking prey.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"rainforest-floor-jaguar.jpg\">\n<img src=\"/habitat-images/animals/rainforest-floor-jaguar.jpg\" alt=\"Jaguar\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Jaguar</figcaption>\n</figure>\n<p>A powerful apex predator perfectly camouflaged for the shadows.</p>",
       "wikiImages": []
     }
   },
@@ -9865,8 +10294,10 @@
     "data": {
       "id": "n377",
       "title": "Poison Dart Frog",
+      "emoji": "🐸",
+      "facts": "- Uses incredibly bright colours to warn predators on the dark forest floor that its skin is highly toxic.",
       "type": "Creature",
-      "childrenHtml": "<p>Uses incredibly bright colours to warn predators on the dark forest floor that its skin is highly toxic.</p>",
+      "childrenHtml": "<figure data-wiki-filename=\"rainforest-floor-poison-dart-frog.jpg\">\n<img src=\"/habitat-images/animals/rainforest-floor-poison-dart-frog.jpg\" alt=\"Poison Dart Frog\" style=\"max-width:100%;height:auto;\" loading=\"lazy\" />\n<figcaption>Poison Dart Frog</figcaption>\n</figure>\n<p>A tiny, brightly coloured amphibian with highly toxic skin.</p>",
       "wikiImages": []
     }
   },

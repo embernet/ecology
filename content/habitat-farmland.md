@@ -8,9 +8,9 @@ slug: "habitat-farmland"
 ## Key UK Species to Look For
 
 Here are some common species you can find in Farmland habitats across the UK:
-- **[Hazel Dormouse](/creatures/hedgerow-dormouse)**: Rare, nocturnal climbers that rely on connected hedgerows.
-- **[Yellowhammer](/creatures/hedgerow-yellowhammer)**: Farmland birds famous for their 'little bit of bread and no cheese' song.
-- **[Bank Vole](/creatures/hedgerow-bank-vole)**: Agile climbers that forage along the bushy edges of fields.
+- **[Hazel Dormouse](/creatures/n306)**: Rare, nocturnal climbers that rely on connected hedgerows.
+- **[Yellowhammer](/creatures/n308)**: Farmland birds famous for their 'little bit of bread and no cheese' song.
+- **[Vole](/creatures/n49)**: Agile climbers and runners that forage along the bushy edges of fields.
 
 ## Identification Activity
 

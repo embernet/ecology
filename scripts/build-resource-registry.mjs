@@ -31,6 +31,7 @@ const TYPE_PREFIXES = {
   Guidance: 'g',
   TaxonomicKey: 'a',
   FieldNotebookTemplate: 'a',
+  ExternalResource: 'e',
 };
 
 // Parse frontmatter from a markdown file
@@ -201,6 +202,7 @@ function extractResources(content, slug, pageTitle, fileName) {
     Requirement: { hasChildren: false, titleProp: null, defaultTitle: 'Requirements' },
     TaxonomicKey: { hasChildren: false, titleProp: 'title' },
     FieldNotebookTemplate: { hasChildren: false, titleProp: 'title' },
+    ExternalResource: { hasChildren: false, titleProp: 'title' },
   };
 
   for (const [compName, config] of Object.entries(componentTypes)) {

@@ -8,9 +8,9 @@ slug: "habitat-freshwater"
 ## Key UK Species to Look For
 
 Here are some common species you can find in Freshwater habitats across the UK:
-- **[Common Frog](/creatures/pond-common-frog)**: Amphibians that begin their life as tadpoles in ponds.
-- **[Eurasian Otter](/creatures/river-eurasian-otter)**: Playful and elusive fish-hunters found in clean rivers.
-- **[Kingfisher](/creatures/river-kingfisher)**: Brilliant blue-and-orange birds that dive for small fish.
+- **[Common Frog](/creatures/n35)**: Amphibians that begin their life as tadpoles in ponds.
+- **[Eurasian Otter](/creatures/n360)**: Playful and elusive fish-hunters found in clean rivers.
+- **[Kingfisher](/creatures/n361)**: Brilliant blue-and-orange birds that dive for small fish.
 
 ## Identification Activity
 

@@ -8,9 +8,9 @@ slug: "habitat-marine"
 ## Key UK Species to Look For
 
 Here are some common species you can find in Marine habitats across the UK:
-- **[Shore Crab](/creatures/rock-pool-shore-crab)**: Tough-shelled crustaceans hiding in rocky crevices.
-- **[Common Limpet](/creatures/rock-pool-common-limpet)**: Sea snails that clamp onto rocks with incredible force.
-- **[Beadlet Anemone](/creatures/rock-pool-beadlet-anemone)**: Jelly-like predators that survive the low tide by pulling their tentacles inside.
+- **[Shore Crab](/creatures/n363)**: Tough-shelled crustaceans hiding in rocky crevices.
+- **[Common Limpet](/creatures/n364)**: Sea snails that clamp onto rocks with incredible force.
+- **[Beadlet Anemone](/creatures/n365)**: Jelly-like predators that survive the low tide by pulling their tentacles inside.
 
 ## Identification Activity
 

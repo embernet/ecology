@@ -8,9 +8,9 @@ slug: "habitat-grassland"
 ## Key UK Species to Look For
 
 Here are some common species you can find in Grassland habitats across the UK:
-- **[Buff-tailed Bumblebee](/creatures/wildflower-meadow-buff-tailed-bumblebee)**: Essential pollinators for meadow flowers.
-- **[Meadow Brown Butterfly](/creatures/wildflower-meadow-meadow-brown-butterfly)**: Camouflaged butterflies whose caterpillars eat fine grasses.
-- **[Field Vole](/creatures/wildflower-meadow-field-vole)**: Small mammals that weave tunnels through the tall grass.
+- **[Buff-tailed Bumblebee](/creatures/n372)**: Essential pollinators for meadow flowers.
+- **[Meadow Brown Butterfly](/creatures/n373)**: Camouflaged butterflies whose caterpillars eat fine grasses.
+- **[Field Vole](/creatures/n374)**: Small mammals that weave tunnels through the tall grass.
 
 ## Identification Activity
 

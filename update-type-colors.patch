@@ -1,0 +1,23 @@
+--- lib/type-colors.ts
++++ lib/type-colors.ts
+@@ -1,4 +1,18 @@
+-export const typeColorConfig: Record<string, {
++export type ResourceTypeEnum = 
++  | 'Creature'
++  | 'NatureExample'
++  | 'Activity'
++  | 'Reflection'
++  | 'Requirement'
++  | 'Note'
++  | 'Guidance'
++  | 'Handout'
++  | 'InteractiveActivity'
++  | 'Biomimicry'
++  | 'Habitat'
++  | 'ButWhy'
++  | 'FieldNotebookTemplate'
++  | 'TaxonomicKey';
++
++export const typeColorConfig: Record<ResourceTypeEnum, {
+   barBg: string;
+   barBorder: string;

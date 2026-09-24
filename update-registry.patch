@@ -1,0 +1,20 @@
+--- scripts/build-resource-registry.mjs
++++ scripts/build-resource-registry.mjs
+@@ -29,6 +29,8 @@
+   Requirement: 'q',
+   Note: 't',
+   Guidance: 'g',
++  TaxonomicKey: 'a',
++  FieldNotebookTemplate: 'a',
+ };
+ 
+ // Parse frontmatter from a markdown file
+@@ -197,6 +199,8 @@
+     Note: { hasChildren: false, titleProp: 'title', defaultTitle: 'Note' },
+     Guidance: { hasChildren: false, titleProp: null, defaultTitle: 'Guidance' },
+     Requirement: { hasChildren: false, titleProp: null, defaultTitle: 'Requirements' },
++    TaxonomicKey: { hasChildren: false, titleProp: 'title' },
++    FieldNotebookTemplate: { hasChildren: false, titleProp: 'title' },
+   };
+ 
+   for (const [compName, config] of Object.entries(componentTypes)) {

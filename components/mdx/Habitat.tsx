@@ -7,6 +7,7 @@ import Image from 'next/image';
 import { SelectableResource } from '../SelectableResource';
 import { dictionaryMarkdownComponents } from '../DictionaryWrapper';
 import { HABITATS } from '@/lib/habitats';
+import { CitizenScienceCallout } from './CitizenScienceCallout';
 
 interface HabitatProps {
     id: string;
@@ -14,10 +15,12 @@ interface HabitatProps {
     emoji?: string;
     facts?: string;
     hideProfileLink?: boolean;
+    citizenScienceUrl?: string;
+    citizenScienceProjectName?: string;
     children?: React.ReactNode;
 }
 
-export const Habitat: React.FC<HabitatProps> = ({ id, title, emoji, facts, hideProfileLink, children }) => {
+export const Habitat: React.FC<HabitatProps> = ({ id, title, emoji, facts, hideProfileLink, citizenScienceUrl, citizenScienceProjectName, children }) => {
     const captureRef = useRef<HTMLDivElement>(null);
 
     // Attempt to match the title to a real habitat in our JSON database
@@ -64,6 +67,12 @@ export const Habitat: React.FC<HabitatProps> = ({ id, title, emoji, facts, hideP
                         {children}
                     </div>
                 </div>
+
+                {citizenScienceUrl && citizenScienceProjectName && (
+                    <div className="px-6 pb-2">
+                        <CitizenScienceCallout url={citizenScienceUrl} projectName={citizenScienceProjectName} />
+                    </div>
+                )}
 
                 {facts && (
                     <div className="bg-yellow-50 p-6 border-t border-yellow-100">

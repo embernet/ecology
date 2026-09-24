@@ -129,6 +129,16 @@ export const typeColorConfig: Record<string, {
     badgeBorder: 'border-rose-300/50',
     badgeText: 'text-rose-800',
   },
+  ExternalResource: {
+    barBg: 'bg-fuchsia-100',
+    barBorder: 'border-fuchsia-200',
+    barText: 'text-fuchsia-900',
+    lozengeActive: 'bg-fuchsia-600 border-fuchsia-600 text-white shadow-sm',
+    lozengeInactive: 'bg-fuchsia-50 border-fuchsia-200 text-fuchsia-700 hover:bg-fuchsia-100',
+    badgeBg: 'bg-fuchsia-200/50',
+    badgeBorder: 'border-fuchsia-300/50',
+    badgeText: 'text-fuchsia-800',
+  },
 };
 
 /**
@@ -139,6 +149,7 @@ export const typeColorConfig: Record<string, {
 const TYPE_LABEL_OVERRIDES: Record<string, string> = {
   ButWhy: 'But Why?',
   InteractiveActivity: 'Interactive Activity',
+  ExternalResource: 'External Link',
 };
 
 export function formatTypeLabel(type: string): string {

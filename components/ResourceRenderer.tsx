@@ -6,6 +6,7 @@ import type { ResourcePackItem, ResourceType } from '@/lib/resource-pack-types';
 import { dictionaryMarkdownComponents } from '@/components/DictionaryWrapper';
 import { FieldNotebookTemplate } from '@/components/mdx/FieldNotebookTemplate';
 import { TaxonomicKey } from '@/components/mdx/TaxonomicKey';
+import { ExternalResource } from '@/components/mdx/ExternalResource';
 
 interface ResourceRendererProps {
   item: ResourcePackItem;
@@ -190,6 +191,10 @@ const RENDERERS: Record<ResourceType, React.FC<RendererFnProps>> = {
 
   TaxonomicKey: ({ item }) => (
     <TaxonomicKey id={item.shortId} title={item.title} />
+  ),
+
+  ExternalResource: ({ item }) => (
+    <ExternalResource id={item.shortId} title={item.title} url={item.data.url || ''} description={item.data.description || item.data.text} />
   ),
 };
 

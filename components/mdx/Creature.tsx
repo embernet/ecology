@@ -5,6 +5,7 @@ import ReactMarkdown from 'react-markdown';
 import Link from 'next/link';
 import { SelectableResource } from '../SelectableResource';
 import { dictionaryMarkdownComponents } from '../DictionaryWrapper';
+import { CitizenScienceCallout } from './CitizenScienceCallout';
 
 interface CreatureProps {
     /** Unique resource ID (e.g. "c1", "n2"). Required for URL-based resource pack sharing. */
@@ -13,10 +14,12 @@ interface CreatureProps {
     emoji?: string;
     facts?: string;
     hideProfileLink?: boolean;
+    citizenScienceUrl?: string;
+    citizenScienceProjectName?: string;
     children?: React.ReactNode;
 }
 
-export const Creature: React.FC<CreatureProps> = ({ id, title, emoji, facts, hideProfileLink, children }) => {
+export const Creature: React.FC<CreatureProps> = ({ id, title, emoji, facts, hideProfileLink, citizenScienceUrl, citizenScienceProjectName, children }) => {
     const captureRef = useRef<HTMLDivElement>(null);
 
     return (
@@ -41,6 +44,12 @@ export const Creature: React.FC<CreatureProps> = ({ id, title, emoji, facts, hid
                         {children}
                     </div>
                 </div>
+
+                {citizenScienceUrl && citizenScienceProjectName && (
+                    <div className="px-6 pb-2">
+                        <CitizenScienceCallout url={citizenScienceUrl} projectName={citizenScienceProjectName} />
+                    </div>
+                )}
 
                 {facts && (
                     <div className="bg-yellow-50 p-6 border-t border-yellow-100">

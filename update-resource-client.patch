@@ -1,0 +1,76 @@
+--- components/ResourceIndexClient.tsx
++++ components/ResourceIndexClient.tsx
+@@ -2,6 +2,7 @@
+ 
+ import React, { useState, useMemo, useEffect } from 'react';
+ import Link from 'next/link';
++import { useRouter, usePathname, useSearchParams } from 'next/navigation';
+ import { RegistryResource } from '@/lib/resource-registry-api';
+ import ImageScrubber from './ImageScrubber';
+ 
+@@ -21,24 +22,50 @@
+ }
+ 
+ export default function ResourceIndexClient({ resources }: Props) {
+-  const [search, setSearchState] = useState('');
+-  const [filterType, setFilterTypeState] = useState('All');
++  const router = useRouter();
++  const pathname = usePathname();
++  const searchParams = useSearchParams();
++
++  const [search, setSearchState] = useState(searchParams.get('q') || '');
++  const [filterType, setFilterTypeState] = useState(searchParams.get('type') || 'All');
+   const [showInfo, setShowInfo] = useState(false);
++  const [isMounted, setIsMounted] = useState(false);
+ 
+   // Load saved state on component mount
+   useEffect(() => {
++    setIsMounted(true);
++    
++    // URL takes precedence over sessionStorage
++    const urlSearch = searchParams.get('q');
++    const urlType = searchParams.get('type');
++    
+     const savedSearch = sessionStorage.getItem('resource-search');
+     const savedFilter = sessionStorage.getItem('resource-filter');
+-    if (savedSearch) setSearchState(savedSearch);
+-    if (savedFilter) setFilterTypeState(savedFilter);
+-  }, []);
+-
+-  const setSearch = (val: string) => {
+-    setSearchState(val);
+-    sessionStorage.setItem('resource-search', val);
+-  };
+-
+-  const setFilterType = (type: string) => {
+-    setFilterTypeState(type);
+-    sessionStorage.setItem('resource-filter', type);
+-  };
++    
++    const initialSearch = urlSearch !== null ? urlSearch : (savedSearch || '');
++    const initialFilter = urlType !== null ? urlType : (savedFilter || 'All');
++    
++    setSearchState(initialSearch);
++    setFilterTypeState(initialFilter);
++  }, [searchParams]);
++
++  const updateStateAndUrl = (newSearch: string, newType: string) => {
++    setSearchState(newSearch);
++    setFilterTypeState(newType);
++    
++    sessionStorage.setItem('resource-search', newSearch);
++    sessionStorage.setItem('resource-filter', newType);
++    
++    const params = new URLSearchParams(searchParams.toString());
++    if (newSearch) params.set('q', newSearch);
++    else params.delete('q');
++    
++    if (newType && newType !== 'All') params.set('type', newType);
++    else params.delete('type');
++    
++    router.replace(`${pathname}?${params.toString()}`, { scroll: false });
++  };
++
++  const setSearch = (val: string) => updateStateAndUrl(val, filterType);
++  const setFilterType = (type: string) => updateStateAndUrl(search, type);
+ 

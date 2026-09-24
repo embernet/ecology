@@ -1,0 +1,56 @@
+--- components/HabitatsBrowser.tsx
++++ components/HabitatsBrowser.tsx
+@@ -7,28 +7,41 @@
+ export function HabitatsBrowser() {
+   const [selectedCategory, setSelectedCategory] = useState<string | null>(null);
+   const [selectedYear, setSelectedYear] = useState<string | null>(null);
++  const [viewMode, setViewMode] = useState<'all' | 'gcse'>('all');
+ 
+   const categories = habitatsCategories();
+   const years = habitatsYearGroups();
+ 
+   const filtered = HABITATS.filter((h) => {
+-    if (selectedCategory !== null && h.category !== selectedCategory) return false;
+-    if (selectedYear !== null && !h.curriculum_links.some((l) => l.year_groups.includes(selectedYear))) return false;
++    if (viewMode === 'gcse') {
++      if (!h.gcse_category) return false;
++      if (selectedCategory !== null && h.gcse_category !== selectedCategory) return false;
++    } else {
++      if (selectedCategory !== null && h.category !== selectedCategory) return false;
++      if (selectedYear !== null && !h.curriculum_links.some((l) => l.year_groups.includes(selectedYear))) return false;
++    }
+     return true;
+   });
++  
++  const displayCategories = viewMode === 'gcse' 
++    ? ['Urban', 'Freshwater', 'Woodland', 'Grassland', 'Farmland', 'Marine']
++    : categories;
+ 
+   return (
+     <div>
+-      <CurriculumFilter
+-        subjects={categories}
+-        subject={selectedCategory}
+-        onSubject={setSelectedCategory}
+-        yearGroups={years}
+-        year={selectedYear}
+-        onYear={setSelectedYear}
+-        count={filtered.length}
+-        total={HABITATS.length}
+-      />
++      <div className="flex gap-4 mb-6">
++        <button onClick={() => { setViewMode('all'); setSelectedCategory(null); }} className={`px-4 py-2 rounded-full font-bold ${viewMode === 'all' ? 'bg-green-600 text-white' : 'bg-slate-200 text-slate-700 hover:bg-slate-300'}`}>All Habitats</button>
++        <button onClick={() => { setViewMode('gcse'); setSelectedCategory(null); }} className={`px-4 py-2 rounded-full font-bold ${viewMode === 'gcse' ? 'bg-amber-600 text-white' : 'bg-slate-200 text-slate-700 hover:bg-slate-300'}`}>GCSE Core Habitats (UK)</button>
++      </div>
++      
++      <div className="flex flex-wrap gap-2 mb-8">
++        <button onClick={() => setSelectedCategory(null)} className={`px-3 py-1 text-sm rounded-full ${selectedCategory === null ? 'bg-slate-800 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}>All Types</button>
++        {displayCategories.map(c => (
++          <button key={c} onClick={() => setSelectedCategory(c)} className={`px-3 py-1 text-sm rounded-full ${selectedCategory === c ? 'bg-slate-800 text-white' : 'bg-slate-100 text-slate-600 hover:bg-slate-200'}`}>{c}</button>
++        ))}
++      </div>
++      
++      <div className="mb-4 text-sm font-semibold text-slate-500 uppercase tracking-wider">Showing {filtered.length} habitats</div>
++
+       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+         {filtered.map((h) => (

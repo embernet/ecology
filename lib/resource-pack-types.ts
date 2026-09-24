@@ -14,7 +14,8 @@ export type ResourceType =
   | 'Habitat'
   | 'ButWhy'
   | 'FieldNotebookTemplate'
-  | 'TaxonomicKey';
+  | 'TaxonomicKey'
+  | 'ExternalResource';
 
 export interface WikiImageData {
   filename: string;
@@ -29,6 +30,7 @@ export interface ResourcePackItemData {
   text?: string;
   description?: string;
   imageSrc?: string;
+  url?: string;
   childrenHtml: string;
   wikiImages: WikiImageData[];
 }

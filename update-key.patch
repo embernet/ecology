@@ -1,0 +1,18 @@
+--- components/mdx/TaxonomicKey.tsx
++++ components/mdx/TaxonomicKey.tsx
+@@ -148,6 +148,15 @@
+                         </div>
+                     )}
+                 </div>
++                
++                {/* Print-only static fallback */}
++                <div className="hidden print:block p-8 text-slate-800">
++                    <h4 className="text-xl font-bold mb-4">Printable Key</h4>
++                    <ul className="list-disc pl-6 space-y-2">
++                        {Object.entries(INVERTEBRATE_KEY).filter(([_, n]) => n.question).map(([id, n]) => (
++                            <li key={id}><strong>{n.question}</strong> Yes &rarr; go to {n.yesNode}, No &rarr; go to {n.noNode}</li>
++                        ))}
++                    </ul>
++                </div>
+                 
+                 {history.length > 0 && (

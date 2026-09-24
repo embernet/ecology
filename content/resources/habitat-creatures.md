@@ -391,6 +391,8 @@ A hardy bird that uses its strong curved beak to dig through mountain snow to fi
 <Creature id={`n373`} 
   title={`Meadow Brown Butterfly`} 
   emoji={`🦋`} 
+  citizenScienceUrl={`https://bigbutterflycount.butterfly-conservation.org/`}
+  citizenScienceProjectName={`Big Butterfly Count`}
   facts={`- The caterpillars feed exclusively on the fine meadow grasses, perfectly camouflaged in the green stems.`}>
 <figure data-wiki-filename="wildflower-meadow-meadow-brown-butterfly.jpg">
   <img src="/habitat-images/animals/wildflower-meadow-meadow-brown-butterfly.jpg" alt="Meadow Brown Butterfly" style="max-width:100%;height:auto;" loading="lazy" />

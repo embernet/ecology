@@ -1,0 +1,11 @@
+--- app/resources/page.tsx
++++ app/resources/page.tsx
+@@ -19,7 +19,7 @@
+         ...biomimicryResources,
+         ...butWhyResources,
+         ...habitatResources,
+-    ];
++    ].sort((a, b) => (a.title || '').localeCompare(b.title || ''));
+ 
+     return (
+         <div className="h-screen bg-slate-50 font-sans flex flex-col overflow-hidden">
